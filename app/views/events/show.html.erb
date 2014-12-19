@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @event.sdate %>
+</p>
+
+<p>
+  <strong>Imageurl:</strong>
+  <%= image_tag @event.imageURL, size: "100x200", alt: "#{@event.title} Bild" %>
+</p>
+
+<p>
+  <strong>Club:</strong>
+  <%= @event.club_id %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

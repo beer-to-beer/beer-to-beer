@@ -1,0 +1,25 @@
+<h1>Listing events</h1>
+
+<table>
+  <tbody>
+    <% @events.each do |event| %>
+        <p>Event: <%= event.title %><br/>
+          Location: <%= event.club.name %><br/>
+          Date: <%= event.sdate.to_date %><br/>
+          Startetime: <%= event.sdate.to_formatted_s(:time) %><br/>
+       <%= link_to (image_tag event.imageURL , :height => "500", alt: "#{event.title} Bild"), event %> |
+
+
+
+
+        <%= link_to 'Show', event %>
+        <%= link_to 'Edit', edit_event_path(event) %>
+        <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </p>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event', new_event_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: 
+  startdate: 
+  imageURL: 
+  club_id: 
+
+two:
+  title: 
+  startdate: 
+  imageURL: 
+  club_id: 
