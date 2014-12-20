@@ -4760,3 +4760,2747 @@ Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-19 17:55:27 +010
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 17:55:27 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-19 18:19:13 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 15ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-19 18:19:17 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 115ms (Views: 108.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:18 +0100
+
+
+Started GET "/clubs" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+Processing by ClubsController#index as HTML
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT "clubs".* FROM "clubs"[0m
+  Rendered clubs/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 99ms (Views: 94.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:23 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:30 +0100
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-19 18:19:33 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (21.0ms)
+  Rendered events/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 88ms (Views: 86.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"Test", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"19", "sdate(4i)"=>"17", "sdate(5i)"=>"19", "club_id"=>"1"}, "commit"=>"Create Event"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-19 17:19:39.642649"], ["sdate", "2014-12-19 17:19:00.000000"], ["title", "Test"], ["updated_at", "2014-12-19 17:19:39.642649"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/3
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/events/3" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered events/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 18:19:39 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-20 10:32:31 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 23ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 166ms (Views: 153.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:35 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:42 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:32:44 +0100
+
+
+Started DELETE "/events/3" for 127.0.0.1 at 2014-12-20 10:50:49 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"3"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 3]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 17ms
+
+NameError (undefined local variable or method `model' for #<EventsController:0x007f99355d9fa0>):
+  app/controllers/events_controller.rb:58:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started DELETE "/events/3" for 127.0.0.1 at 2014-12-20 10:52:36 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"3"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=3):
+  app/controllers/events_controller.rb:71:in `set_event'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:41 +0100
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 10:52:42 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (37.1ms)
+  Rendered events/new.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"dfldfk", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"09", "sdate(5i)"=>"52", "club_id"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 09:52:48.773732"], ["sdate", "2014-12-20 09:52:00.000000"], ["title", "dfldfk"], ["updated_at", "2014-12-20 09:52:48.773732"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/4
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/events/4" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered events/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:52:48 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 10:52:50 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/events/4" for 127.0.0.1 at 2014-12-20 10:52:54 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"4"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 4]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `model' for #<EventsController:0x007f99354a9d60>):
+  app/controllers/events_controller.rb:58:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started DELETE "/events/4" for 127.0.0.1 at 2014-12-20 10:53:15 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"4"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 4]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=4):
+  app/controllers/events_controller.rb:71:in `set_event'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:19 +0100
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 10:53:21 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.2ms)
+  Rendered events/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-12-20 10:53:27 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"dfdf", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"09", "sdate(5i)"=>"53", "club_id"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 09:53:27.908092"], ["sdate", "2014-12-20 09:53:00.000000"], ["title", "dfdf"], ["updated_at", "2014-12-20 09:53:27.908092"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/5
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/events/5" for 127.0.0.1 at 2014-12-20 10:53:27 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered events/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:53:28 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 10:53:29 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/events/5" for 127.0.0.1 at 2014-12-20 10:53:34 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"5"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 5]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `presence?' for File:Class):
+  app/controllers/events_controller.rb:58:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 10:55:21 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.2ms)
+  Rendered events/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 76ms (Views: 65.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-12-20 10:55:27 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"test", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"09", "sdate(5i)"=>"55", "club_id"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 09:55:27.839706"], ["sdate", "2014-12-20 09:55:00.000000"], ["title", "test"], ["updated_at", "2014-12-20 09:55:27.839706"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/6
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/events/6" for 127.0.0.1 at 2014-12-20 10:55:27 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered events/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:55:28 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 10:55:29 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/events/6" for 127.0.0.1 at 2014-12-20 10:55:33 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"6"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 6]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `model' for #<EventsController:0x007f9936550650>):
+  app/controllers/events_controller.rb:58:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started DELETE "/events/6" for 127.0.0.1 at 2014-12-20 10:58:13 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"6"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 6]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=6):
+  app/controllers/events_controller.rb:71:in `set_event'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 10:58:16 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:17 +0100
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 10:58:18 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (9.2ms)
+  Rendered events/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 74ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"dfdfd", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"09", "sdate(5i)"=>"58", "club_id"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 09:58:23.803423"], ["sdate", "2014-12-20 09:58:00.000000"], ["title", "dfdfd"], ["updated_at", "2014-12-20 09:58:23.803423"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/7
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/events/7" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered events/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:58:23 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 10:58:25 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/events/7" for 127.0.0.1 at 2014-12-20 10:58:28 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"7"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 7]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `model' for #<EventsController:0x007f993442f688>):
+  app/controllers/events_controller.rb:58:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started DELETE "/events/7" for 127.0.0.1 at 2014-12-20 10:59:28 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"7"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 7]]
+Completed 404 Not Found in 12ms
+
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=7):
+  app/controllers/events_controller.rb:72:in `set_event'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 10:59:30 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:31 +0100
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 10:59:32 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (13.7ms)
+  Rendered events/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"dfdf", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"09", "sdate(5i)"=>"59", "club_id"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 09:59:37.195389"], ["sdate", "2014-12-20 09:59:00.000000"], ["title", "dfdf"], ["updated_at", "2014-12-20 09:59:37.195389"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/8
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/events/8" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered events/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 10:59:37 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 10:59:41 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 10:59:45 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+Completed 500 Internal Server Error in 1ms
+
+TypeError (no implicit conversion of ImageUploader into String):
+  app/controllers/events_controller.rb:58:in `exists?'
+  app/controllers/events_controller.rb:58:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:00:43 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `persisted?' for #<EventsController:0x007f99363b8450>):
+  app/controllers/events_controller.rb:57:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:00:46 +0100
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:00:51 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `persisted?' for #<EventsController:0x007f993630a0a8>):
+  app/controllers/events_controller.rb:57:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:01:20 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 12ms
+
+NoMethodError (undefined method `persisted?' for #<EventsController:0x007f9936543f40>):
+  app/controllers/events_controller.rb:57:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:01:23 +0100
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:01:27 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `persisted?' for #<EventsController:0x007f9935552028>):
+  app/controllers/events_controller.rb:57:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:02:56 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 13ms
+
+NoMethodError (undefined method `persisted?' for #<EventsController:0x007f9933b46850>):
+  app/controllers/events_controller.rb:57:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.6ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:14:55 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 8]]
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 12ms
+
+NameError (undefined local variable or method `model' for #<Event:0x007f9935740038>):
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:15:25 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 8]]
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 12ms
+
+NameError (undefined local variable or method `model' for #<Event:0x007f99354b03e0>):
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:15:38 +0100
+
+
+Started GET "/events/8/edit" for 127.0.0.1 at 2014-12-20 11:15:41 +0100
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered events/_form.html.erb (4.9ms)
+  Rendered events/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/events/8" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"dfdf", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"09", "sdate(5i)"=>"59", "imageURL"=>#<ActionDispatch::Http::UploadedFile:0x007f993cbd38c8 @tempfile=#<Tempfile:/var/folders/kk/162tg2kj3hd74sqs9s0p80vw0000gn/T/RackMultipart20141220-8365-16m92sw>, @original_filename="File-Ruby_on_Rails.svg", @content_type="image/svg+xml", @headers="Content-Disposition: form-data; name=\"event[imageURL]\"; filename=\"File-Ruby_on_Rails.svg\"\r\nContent-Type: image/svg+xml\r\n">, "club_id"=>"1"}, "commit"=>"Update Event", "id"=>"8"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered events/_form.html.erb (7.3ms)
+  Rendered events/edit.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:07 +0100
+
+
+Started PATCH "/events/8" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"dfdf", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"09", "sdate(5i)"=>"59", "imageURL"=>#<ActionDispatch::Http::UploadedFile:0x007f993e002ba0 @tempfile=#<Tempfile:/var/folders/kk/162tg2kj3hd74sqs9s0p80vw0000gn/T/RackMultipart20141220-8365-1yp5lvh>, @original_filename="tracks_3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[imageURL]\"; filename=\"tracks_3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "club_id"=>"1"}, "commit"=>"Update Event", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "events" SET "imageURL" = ?, "updated_at" = ? WHERE "events"."id" = 8[0m  [["imageURL", "tracks_3.jpg"], ["updated_at", "2014-12-20 10:17:48.149830"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/8
+Completed 302 Found in 18ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/events/8" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered events/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:17:48 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 11:17:49 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:17:53 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 8]]
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 4ms
+
+NameError (undefined local variable or method `model' for #<Event:0x007f993ca38180>):
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:19:35 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 8]]
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 11ms
+
+NameError (undefined local variable or method `model' for #<Event:0x007f993c199b50>):
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:20:40 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 8]]
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 11ms
+
+NameError (undefined local variable or method `model' for #<Event:0x007f993c390fd0>):
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started DELETE "/events/8" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"8"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 8]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 12ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:14 +0100
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 11:21:16 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (5.5ms)
+  Rendered events/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 66ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"edffdf", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"10", "sdate(5i)"=>"21", "club_id"=>"1"}, "commit"=>"Create Event"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 10:21:22.222193"], ["sdate", "2014-12-20 10:21:00.000000"], ["title", "edffdf"], ["updated_at", "2014-12-20 10:21:22.222193"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/9
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered events/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:21:22 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 11:21:23 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2014-12-20 11:21:26 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (2.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 4ms
+
+TypeError (no implicit conversion of nil into String):
+  app/models/event.rb:14:in `exists?'
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2014-12-20 11:22:25 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.9ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms
+
+ArgumentError (The parameter passed to #in? must respond to #include?):
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:22:29 +0100
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2014-12-20 11:22:34 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.4ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (The parameter passed to #in? must respond to #include?):
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2014-12-20 11:23:27 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.7ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms
+
+TypeError (no implicit conversion of nil into String):
+  app/models/event.rb:14:in `exist?'
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2014-12-20 11:24:48 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.8ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms
+
+TypeError (no implicit conversion of nil into String):
+  app/models/event.rb:15:in `exist?'
+  app/models/event.rb:15:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2014-12-20 11:27:08 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered events/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (no implicit conversion of ImageUploader into String):
+    14:   <strong>Imageurl:</strong>
+    15:   <%= image_tag @event.imageURL, size: "100x200", alt: "#{@event.title} Bild" %>
+    16: </p>
+    17: <p><%= File.exist?(@event.imageURL) %></p>
+    18: <p>
+    19:   <strong>Club:</strong>
+    20:   <%= @event.club_id %>
+  app/views/events/show.html.erb:17:in `exist?'
+  app/views/events/show.html.erb:17:in `_app_views_events_show_html_erb___1728222596292260030_70147989441680'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:11 +0100
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:44 +0100
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:46 +0100
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:47 +0100
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:27:54 +0100
+
+
+Started GET "/events/9" for 127.0.0.1 at 2014-12-20 11:28:09 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered events/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (no implicit conversion of ImageUploader into String):
+    4:   <strong>Title:</strong>
+    5:   <%= @event.title %>
+    6: </p>
+    7: <p><%= File.exist?(@event.imageURL) %></p>
+    8: <p>
+    9:   <strong>Startdate:</strong>
+   10:   <%= @event.sdate %>
+  app/views/events/show.html.erb:7:in `exist?'
+  app/views/events/show.html.erb:7:in `_app_views_events_show_html_erb___1728222596292260030_70148057650000'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2014-12-20 11:28:09 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered events/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (no implicit conversion of ImageUploader into String):
+    4:   <strong>Title:</strong>
+    5:   <%= @event.title %>
+    6: </p>
+    7: <p><%= File.exist?(@event.imageURL) %></p>
+    8: <p>
+    9:   <strong>Startdate:</strong>
+   10:   <%= @event.sdate %>
+  app/views/events/show.html.erb:7:in `exist?'
+  app/views/events/show.html.erb:7:in `_app_views_events_show_html_erb___1728222596292260030_70148062665020'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2014-12-20 11:28:34 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered events/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (no implicit conversion of ImageUploader into String):
+    4:   <strong>Title:</strong>
+    5:   <%= @event.title %>
+    6: </p>
+    7: <p><%= File.exist?(@event.imageURL).to_s %></p>
+    8: <p>
+    9:   <strong>Startdate:</strong>
+   10:   <%= @event.sdate %>
+  app/views/events/show.html.erb:7:in `exist?'
+  app/views/events/show.html.erb:7:in `_app_views_events_show_html_erb___1728222596292260030_70148065706840'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.2ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2014-12-20 11:28:35 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered events/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (no implicit conversion of ImageUploader into String):
+    4:   <strong>Title:</strong>
+    5:   <%= @event.title %>
+    6: </p>
+    7: <p><%= File.exist?(@event.imageURL).to_s %></p>
+    8: <p>
+    9:   <strong>Startdate:</strong>
+   10:   <%= @event.sdate %>
+  app/views/events/show.html.erb:7:in `exist?'
+  app/views/events/show.html.erb:7:in `_app_views_events_show_html_erb___1728222596292260030_70148065706840'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.4ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2014-12-20 11:30:07 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered events/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 58.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:30:08 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 11:30:11 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2014-12-20 11:30:14 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.6ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 4ms
+
+TypeError (no implicit conversion of nil into String):
+  app/models/event.rb:14:in `exist?'
+  app/models/event.rb:14:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started GET "/events/" for 127.0.0.1 at 2014-12-20 11:31:43 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:31:44 +0100
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2014-12-20 11:32:26 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.8ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms
+
+TypeError (no implicit conversion of nil into String):
+  app/models/event.rb:15:in `exist?'
+  app/models/event.rb:15:in `remove_img'
+  app/controllers/events_controller.rb:60:in `destroy'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started DELETE "/events/9" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"9"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 9]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/events
+Completed 302 Found in 12ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:03 +0100
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 11:33:06 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (5.7ms)
+  Rendered events/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "event"=>{"title"=>"sdss", "sdate(1i)"=>"2014", "sdate(2i)"=>"12", "sdate(3i)"=>"20", "sdate(4i)"=>"10", "sdate(5i)"=>"33", "imageURL"=>#<ActionDispatch::Http::UploadedFile:0x007f9934326f70 @tempfile=#<Tempfile:/var/folders/kk/162tg2kj3hd74sqs9s0p80vw0000gn/T/RackMultipart20141220-8365-grf9l6>, @original_filename="tracks_3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"event[imageURL]\"; filename=\"tracks_3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "club_id"=>"1"}, "commit"=>"Create Event"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 10:33:16.041093"], ["imageURL", "tracks_3.jpg"], ["sdate", "2014-12-20 10:33:00.000000"], ["title", "sdss"], ["updated_at", "2014-12-20 10:33:16.041093"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/10
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/events/10" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered events/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:16 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 11:33:18 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 82ms (Views: 81.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/events/10" for 127.0.0.1 at 2014-12-20 11:33:22 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gsw/zqTdhgpPh4CYj4q7IoBO0aJf0x2onjlwEJ1uHK4=", "id"=>"10"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 10]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 6ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 11:33:22 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:33:23 +0100
+
+
+Started GET "/clubs" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+Processing by ClubsController#index as HTML
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT "clubs".* FROM "clubs"[0m
+  Rendered clubs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:36:22 +0100
+
+
+Started GET "/events" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:37:02 +0100
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 11:37:11 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (6.2ms)
+  Rendered events/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :club_id %><br>
+    28:     <%= f.collection_select :club_id, Club.all, :id, :name, { selected: @event.club.map(&:id), include_hidden: false }, multiple: true %>
+    29: 
+    30:   </div>
+    31:   <div class="actions">
+  app/views/events/_form.html.erb:28:in `block in _app_views_events__form_html_erb__4039544683521842556_70148065591400'
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__4039544683521842556_70148065591400'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__142766616593855334_70147987629360'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.2ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 11:37:11 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (6.0ms)
+  Rendered events/new.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :club_id %><br>
+    28:     <%= f.collection_select :club_id, Club.all, :id, :name, { selected: @event.club.map(&:id), include_hidden: false }, multiple: true %>
+    29: 
+    30:   </div>
+    31:   <div class="actions">
+  app/views/events/_form.html.erb:28:in `block in _app_views_events__form_html_erb__4039544683521842556_70148061626920'
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__4039544683521842556_70148061626920'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__142766616593855334_70148061649480'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 11:38:40 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (6.2ms)
+  Rendered events/new.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `clubs' for #<Event:0x007f993c6484a8>):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :club_id %><br>
+    28:     <%= f.collection_select :club_id, Club.all, :id, :name, { selected: @event.clubs.map(&:id), include_hidden: false }, multiple: true %>
+    29: 
+    30:   </div>
+    31:   <div class="actions">
+  app/views/events/_form.html.erb:28:in `block in _app_views_events__form_html_erb__4039544683521842556_70148059934620'
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__4039544683521842556_70148059934620'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__142766616593855334_70148061649480'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 11:43:00 +0100
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.9ms)
+  Rendered events/new.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `clubs' for #<Event:0x007f993c5037f0>):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :club_id %><br>
+    28:     <%= f.collection_select :club_id, Club.all, :id, :name, { selected: @event.clubs.map(&:id), include_hidden: false }, multiple: false %>
+    29: 
+    30:   </div>
+    31:   <div class="actions">
+  app/views/events/_form.html.erb:28:in `block in _app_views_events__form_html_erb__4039544683521842556_70148059286720'
+  app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__4039544683521842556_70148059286720'
+  app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb__142766616593855334_70148061649480'
+
+
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/thorstenwoywod/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.0ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+Processing by EventsController#new as HTML
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT "clubs".* FROM "clubs"[0m
+  Rendered events/_form.html.erb (11.5ms)
+  Rendered events/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 11:43:13 +0100
