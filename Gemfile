@@ -27,6 +27,20 @@ gem 'spring',        group: :development
 # Selbst hinzugefühgte gems
 
 # gem für file upload uploads
-gem 'carrierwave'
+gem 'carrierwave', '0.10.0'
 # gem für die bearbeitung von files z.B. Größe verändern, converten, ...
-gem 'mini_magick'
+gem 'mini_magick', '4.0.1'
+
+#Gems fürs testen
+group :development, :test do
+  gem 'rspec-rails', '3.1.0'
+  gem 'capybara', '2.4.4'
+  gem 'factory_girl_rails', '4.5.0'
+  gem 'guard-rspec', '4.5.0'
+  gem 'faker', '1.4.3'
+end
+
+#gem für die Production umgebung
+group :production do
+  gem 'pg'
+end
