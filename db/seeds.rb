@@ -5,5 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Club.create(name: "Test Club")
-Event.create(title: "Test", sdate: "2014-12-19 16:38:00", club: "1")
+#Club.create(name: "Test Club")
+Event.create(title: "Test", sdate: Date.current, club_id: Club.first.id, imageURL: File.new("public/uploads/event/imageURL/image.jpg"))

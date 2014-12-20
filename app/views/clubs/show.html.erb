@@ -19,6 +19,11 @@
   <strong>User:</strong>
   <%= @club.user_id %>
 </p>
-
+<p>Veranstalltungen:</p>
+<p>
+  <% @club.events.map(&:imageURL).each do |p| %>
+  <%= image_tag p %> <br/>
+  <% end %>
+</p>
 <%= link_to 'Edit', edit_club_path(@club) %> |
 <%= link_to 'Back', clubs_path %>
