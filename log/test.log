@@ -1,0 +1,1770 @@
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "adress_id" integer, "url" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "sdate" datetime, "club_id" integer, "created_at" datetime, "updated_at" datetime, "imageURL" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141218204300')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141218194114')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141218194919')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-20 19:21:57.718971"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:21:57.718971"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-20 19:21:57.724791"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:21:57.724791"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:22:18.249152"], ["name", "My Club"], ["updated_at", "2014-12-20 19:22:18.249152"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "events" ("created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-20 19:22:18.253702"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:22:18.253702"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:22:18.260791"], ["name", "My Club"], ["updated_at", "2014-12-20 19:22:18.260791"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-20 19:22:18.262153"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:22:18.262153"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:23:59.315793"], ["name", "My Club"], ["updated_at", "2014-12-20 19:23:59.315793"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:24:00.013100"], ["name", "My Club"], ["updated_at", "2014-12-20 19:24:00.013100"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:24:45.247110"], ["name", "My Club"], ["updated_at", "2014-12-20 19:24:45.247110"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:24:45.554897"], ["name", "My Club"], ["updated_at", "2014-12-20 19:24:45.554897"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:25:02.735930"], ["name", "My Club"], ["updated_at", "2014-12-20 19:25:02.735930"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:25:03.060479"], ["name", "My Club"], ["updated_at", "2014-12-20 19:25:03.060479"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:25:57.629741"], ["name", "My Club"], ["updated_at", "2014-12-20 19:25:57.629741"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:25:57.975620"], ["name", "My Club"], ["updated_at", "2014-12-20 19:25:57.975620"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:26:53.775351"], ["name", "My Club"], ["updated_at", "2014-12-20 19:26:53.775351"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:26:53.783260"], ["name", "My Club"], ["updated_at", "2014-12-20 19:26:53.783260"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:26:54.114659"], ["name", "My Club"], ["updated_at", "2014-12-20 19:26:54.114659"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:26:54.116348"], ["name", "My Club"], ["updated_at", "2014-12-20 19:26:54.116348"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:27:05.545547"], ["name", "My Club"], ["updated_at", "2014-12-20 19:27:05.545547"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:27:05.552495"], ["name", "My Club"], ["updated_at", "2014-12-20 19:27:05.552495"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:27:28.971761"], ["name", "My Club"], ["updated_at", "2014-12-20 19:27:28.971761"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:27:28.979577"], ["name", "My Club"], ["updated_at", "2014-12-20 19:27:28.979577"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:27:29.301373"], ["name", "My Club"], ["updated_at", "2014-12-20 19:27:29.301373"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:27:29.303521"], ["name", "My Club"], ["updated_at", "2014-12-20 19:27:29.303521"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:28:34.411427"], ["name", "My Club"], ["updated_at", "2014-12-20 19:28:34.411427"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:28:34.419242"], ["name", "My Club"], ["updated_at", "2014-12-20 19:28:34.419242"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:28:34.732064"], ["name", "My Club"], ["updated_at", "2014-12-20 19:28:34.732064"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:28:34.733803"], ["name", "My Club"], ["updated_at", "2014-12-20 19:28:34.733803"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:29:04.454021"], ["name", "My Club"], ["updated_at", "2014-12-20 19:29:04.454021"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:29:04.462594"], ["name", "My Club"], ["updated_at", "2014-12-20 19:29:04.462594"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:29:04.784625"], ["name", "My Club"], ["updated_at", "2014-12-20 19:29:04.784625"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:29:04.786817"], ["name", "My Club"], ["updated_at", "2014-12-20 19:29:04.786817"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:30:03.578086"], ["name", "My Club"], ["updated_at", "2014-12-20 19:30:03.578086"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:30:03.585418"], ["name", "My Club"], ["updated_at", "2014-12-20 19:30:03.585418"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 2], ["created_at", "2014-12-20 19:30:03.587646"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:30:03.587646"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:30:03.592717"], ["name", "My Club"], ["updated_at", "2014-12-20 19:30:03.592717"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:30:03.594280"], ["name", "My Club"], ["updated_at", "2014-12-20 19:30:03.594280"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 2], ["created_at", "2014-12-20 19:30:03.595595"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:30:03.595595"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:30:44.230372"], ["name", "My Club"], ["updated_at", "2014-12-20 19:30:44.230372"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:30:44.238246"], ["name", "My Club"], ["updated_at", "2014-12-20 19:30:44.238246"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 2], ["created_at", "2014-12-20 19:30:44.240799"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:30:44.240799"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:30:44.246821"], ["name", "My Club"], ["updated_at", "2014-12-20 19:30:44.246821"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:30:44.248974"], ["name", "My Club"], ["updated_at", "2014-12-20 19:30:44.248974"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 2], ["created_at", "2014-12-20 19:30:44.251096"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:30:44.251096"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:31:19.676708"], ["name", "My Club"], ["updated_at", "2014-12-20 19:31:19.676708"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:31:19.684561"], ["name", "My Club"], ["updated_at", "2014-12-20 19:31:19.684561"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 2], ["created_at", "2014-12-20 19:31:19.686475"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:31:19.686475"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:31:19.691518"], ["name", "My Club"], ["updated_at", "2014-12-20 19:31:19.691518"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:31:19.693131"], ["name", "My Club"], ["updated_at", "2014-12-20 19:31:19.693131"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 2], ["created_at", "2014-12-20 19:31:19.694598"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:31:19.694598"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:31:24.890263"], ["name", "My Club"], ["updated_at", "2014-12-20 19:31:24.890263"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:31:24.898756"], ["name", "My Club"], ["updated_at", "2014-12-20 19:31:24.898756"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 2], ["created_at", "2014-12-20 19:31:24.900836"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:31:24.900836"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:31:24.905442"], ["name", "My Club"], ["updated_at", "2014-12-20 19:31:24.905442"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:31:24.907129"], ["name", "My Club"], ["updated_at", "2014-12-20 19:31:24.907129"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 2], ["created_at", "2014-12-20 19:31:24.908791"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:31:24.908791"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:34:34.934160"], ["name", "My Club"], ["updated_at", "2014-12-20 19:34:34.934160"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:34:34.941794"], ["name", "My Club"], ["updated_at", "2014-12-20 19:34:34.941794"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:34:35.261427"], ["name", "My Club"], ["updated_at", "2014-12-20 19:34:35.261427"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:34:35.262966"], ["name", "My Club"], ["updated_at", "2014-12-20 19:34:35.262966"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:34:52.941740"], ["name", "My Club"], ["updated_at", "2014-12-20 19:34:52.941740"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:34:52.950269"], ["name", "My Club"], ["updated_at", "2014-12-20 19:34:52.950269"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 2], ["created_at", "2014-12-20 19:34:52.952940"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:34:52.952940"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:34:52.958370"], ["name", "My Club"], ["updated_at", "2014-12-20 19:34:52.958370"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:34:52.960298"], ["name", "My Club"], ["updated_at", "2014-12-20 19:34:52.960298"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 2], ["created_at", "2014-12-20 19:34:52.961665"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:34:52.961665"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:39:44.978279"], ["name", "My Club"], ["updated_at", "2014-12-20 19:39:44.978279"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:39:57.593296"], ["name", "My Club"], ["updated_at", "2014-12-20 19:39:57.593296"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:40:47.792886"], ["name", "My Club"], ["updated_at", "2014-12-20 19:40:47.792886"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:40:48.116645"], ["name", "My Club"], ["updated_at", "2014-12-20 19:40:48.116645"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:47:03.627470"], ["name", "My Club"], ["updated_at", "2014-12-20 19:47:03.627470"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:47:03.955367"], ["name", "My Club"], ["updated_at", "2014-12-20 19:47:03.955367"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:48:01.924495"], ["name", "My Club"], ["updated_at", "2014-12-20 19:48:01.924495"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 19:48:01.932645"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:48:01.932645"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:48:01.939017"], ["name", "My Club"], ["updated_at", "2014-12-20 19:48:01.939017"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 19:48:01.940659"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:48:01.940659"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:48:18.649838"], ["name", "My Club"], ["updated_at", "2014-12-20 19:48:18.649838"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 19:48:18.657748"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:48:18.657748"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:48:18.663151"], ["name", "My Club"], ["updated_at", "2014-12-20 19:48:18.663151"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 19:48:18.664953"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:48:18.664953"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:52:50.927110"], ["name", "My Club"], ["updated_at", "2014-12-20 19:52:50.927110"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:52:50.936072"], ["name", "My Club"], ["updated_at", "2014-12-20 19:52:50.936072"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:53:07.242274"], ["name", "My Club"], ["updated_at", "2014-12-20 19:53:07.242274"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 19:53:07.250810"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:53:07.250810"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:53:07.257590"], ["name", "My Club"], ["updated_at", "2014-12-20 19:53:07.257590"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 19:53:07.260184"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:53:07.260184"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:53:26.015134"], ["name", "My Club"], ["updated_at", "2014-12-20 19:53:26.015134"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:53:26.023995"], ["name", "My Club"], ["updated_at", "2014-12-20 19:53:26.023995"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.2ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:53:34.743756"], ["name", "My Club"], ["updated_at", "2014-12-20 19:53:34.743756"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 19:53:34.755232"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:53:34.755232"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:53:34.761341"], ["name", "My Club"], ["updated_at", "2014-12-20 19:53:34.761341"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 19:53:34.763724"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:53:34.763724"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:54:16.052871"], ["name", "My Club"], ["updated_at", "2014-12-20 19:54:16.052871"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 19:54:16.063061"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:54:16.063061"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:54:16.068386"], ["name", "My Club"], ["updated_at", "2014-12-20 19:54:16.068386"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 19:54:16.070424"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:54:16.070424"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 19:59:50.091579"], ["name", "My Club"], ["updated_at", "2014-12-20 19:59:50.091579"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 19:59:50.100441"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:59:50.100441"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 19:59:50.107209"], ["name", "My Club"], ["updated_at", "2014-12-20 19:59:50.107209"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 19:59:50.109638"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 19:59:50.109638"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 20:00:33.460717"], ["name", "My Club"], ["updated_at", "2014-12-20 20:00:33.460717"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:00:33.470245"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:00:33.470245"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 20:00:33.476369"], ["name", "My Club"], ["updated_at", "2014-12-20 20:00:33.476369"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:00:33.478715"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:00:33.478715"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 20:01:44.500660"], ["name", "My Club"], ["updated_at", "2014-12-20 20:01:44.500660"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:01:44.513294"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:01:44.513294"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 20:01:44.833856"], ["name", "My Club"], ["updated_at", "2014-12-20 20:01:44.833856"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:01:44.835793"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:01:44.835793"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 20:02:04.988234"], ["name", "My Club"], ["updated_at", "2014-12-20 20:02:04.988234"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:02:04.997661"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:02:04.997661"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 20:02:05.325617"], ["name", "My Club"], ["updated_at", "2014-12-20 20:02:05.325617"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:02:05.327650"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:02:05.327650"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 20:02:18.571317"], ["name", "My Club"], ["updated_at", "2014-12-20 20:02:18.571317"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:02:18.583122"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:02:18.583122"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 20:02:18.910978"], ["name", "My Club"], ["updated_at", "2014-12-20 20:02:18.910978"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:02:18.913088"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:02:18.913088"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 20:03:30.721284"], ["name", "My Club"], ["updated_at", "2014-12-20 20:03:30.721284"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:03:30.730388"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:03:30.730388"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 20:03:31.052091"], ["name", "My Club"], ["updated_at", "2014-12-20 20:03:31.052091"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:03:31.054330"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:03:31.054330"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 20:03:48.126819"], ["name", "My Club"], ["updated_at", "2014-12-20 20:03:48.126819"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:03:48.136179"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:03:48.136179"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 20:03:48.460428"], ["name", "My Club"], ["updated_at", "2014-12-20 20:03:48.460428"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:03:48.463180"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:03:48.463180"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 20:05:11.408011"], ["name", "My Club"], ["updated_at", "2014-12-20 20:05:11.408011"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:05:11.416932"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:05:11.416932"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 20:05:11.422760"], ["name", "My Club"], ["updated_at", "2014-12-20 20:05:11.422760"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:05:11.425036"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:05:11.425036"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-20 20:05:59.974208"], ["name", "My Club"], ["updated_at", "2014-12-20 20:05:59.974208"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:05:59.986001"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:05:59.986001"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-20 20:06:00.300397"], ["name", "My Club"], ["updated_at", "2014-12-20 20:06:00.300397"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:06:00.302610"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:06:00.302610"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:06:27.721647"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:06:27.721647"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:06:27.729117"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:06:27.729117"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:06:47.614214"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:06:47.614214"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:06:47.939965"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:06:47.939965"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:08:54.276954"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:08:54.276954"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:08:54.620539"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:08:54.620539"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:09:24.762065"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:09:24.762065"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:09:36.701915"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:09:36.701915"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:09:36.710511"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:09:36.710511"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:09:51.523993"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:09:51.523993"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:10:49.127096"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:10:49.127096"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-20 20:11:17.647130"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:11:17.647130"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-20 20:11:17.664453"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:11:17.664453"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:12:40.760285"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:12:40.760285"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:14:38.335400"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:14:38.335400"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:14:57.215450"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:14:57.215450"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:15:38.173931"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:15:38.173931"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:17:25.507908"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:17:25.507908"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:18:59.799241"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:18:59.799241"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:18:59.808169"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:18:59.808169"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:22:30.550623"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:22:30.550623"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:23:00.939428"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:23:00.939428"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:23:13.330049"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:23:13.330049"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:25:02.219951"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:25:02.219951"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:25:02.540882"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:25:02.540882"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:25:34.882175"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:25:34.882175"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:25:35.200594"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:25:35.200594"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:26:06.162826"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:26:06.162826"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:26:06.485067"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:26:06.485067"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:34:33.106204"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:34:33.106204"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:34:33.437151"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:34:33.437151"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:35:57.304862"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:35:57.304862"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:35:57.628891"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:35:57.628891"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:42:21.248470"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:42:21.248470"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:42:21.611101"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:42:21.611101"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:42:32.456400"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:42:32.456400"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:42:32.775454"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:42:32.775454"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:42:58.454218"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:42:58.454218"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:42:58.773453"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:42:58.773453"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:44:30.220876"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:44:30.220876"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:44:30.557294"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:44:30.557294"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:44:42.070082"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:44:42.070082"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:44:42.402124"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:44:42.402124"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:44:57.245402"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:44:57.245402"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:44:57.564604"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:44:57.564604"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:45:20.483174"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:45:20.483174"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:45:20.804777"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:45:20.804777"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:45:36.430910"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:45:36.430910"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:45:36.759092"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:45:36.759092"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:45:57.830212"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:45:57.830212"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:45:58.152816"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:45:58.152816"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:46:07.010522"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:46:07.010522"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:46:07.344846"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:46:07.344846"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:48:14.676649"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:48:14.676649"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:48:14.983331"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:48:14.983331"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:48:25.380335"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:48:25.380335"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:48:25.708022"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:48:25.708022"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:48:39.139850"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:48:39.139850"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:48:39.451944"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:48:39.451944"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:50:23.941268"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:50:23.941268"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-20 20:50:24.275021"], ["sdate", "2014-12-20 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-20 20:50:24.275021"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 10:59:11.623664"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 10:59:11.623664"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 10:59:25.028251"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 10:59:25.028251"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+  [1m[35m (2.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:04:13.834538"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:04:13.834538"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started GET "/events/1" for 127.0.0.1 at 2014-12-21 12:04:13 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 959ms (Views: 948.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:05:11.341655"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:05:11.341655"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started GET "/events/1" for 127.0.0.1 at 2014-12-21 12:05:11 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 24.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:05:40.045359"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:05:40.045359"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started GET "/events/1" for 127.0.0.1 at 2014-12-21 12:05:40 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 20.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:08:31.681150"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:08:31.681150"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/events/1" for 127.0.0.1 at 2014-12-21 12:08:31 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 20.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:09:12.911340"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:09:12.911340"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/events/" for 127.0.0.1 at 2014-12-21 12:09:12 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 43ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:17:00.454703"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:17:00.454703"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/events/" for 127.0.0.1 at 2014-12-21 12:17:00 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mClub Load (0.2ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 42ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:17:00 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:17:18.382213"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:17:18.382213"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/events/" for 127.0.0.1 at 2014-12-21 12:17:18 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mClub Load (0.2ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 40ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:17:18 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 3ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.9ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:17:46.209336"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:17:46.209336"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:17:46 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 13ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:01.941747"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:01.941747"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:19:01 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:10.762815"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:10.762815"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:11.160687"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:11.160687"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:21.779842"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:21.779842"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:22.084025"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:22.084025"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:28.047691"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:28.047691"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:28.346529"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:28.346529"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:55.697250"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:55.697250"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:19:56.025617"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:19:56.025617"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 11:20:09.258644"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:20:09.258644"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 11:20:09.579258"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:20:09.579258"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:20:23.554271"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:20:23.554271"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:20:23.878114"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:20:23.878114"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:21:27.396664"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:21:27.396664"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:21:27 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 12ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:21:27.436443"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:21:27.436443"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:21:27.740565"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:21:27.740565"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:27:58.951718"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:27:58.951718"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:27:58 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:27:58.988054"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:27:58.988054"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:27:59.305314"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:27:59.305314"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:28:26.066652"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:28:26.066652"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:28:26 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:28:26.101878"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:28:26.101878"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:28:26.399942"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:28:26.399942"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/events" for 127.0.0.1 at 2014-12-21 12:28:26 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:29:30.973803"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:29:30.973803"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:29:30 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 11ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:29:31.007347"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:29:31.007347"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:29:31.320509"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:29:31.320509"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clubs" for 127.0.0.1 at 2014-12-21 12:29:31 +0100
+Processing by ClubsController#index as HTML
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT "clubs".* FROM "clubs"[0m
+  Rendered clubs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/events" for 127.0.0.1 at 2014-12-21 12:29:31 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:33:51.143359"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:33:51.143359"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:33:51 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-21 11:33:51.178172"], ["name", "My Club"], ["updated_at", "2014-12-21 11:33:51.178172"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 11:33:51.181906"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:33:51.181906"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 11:33:51.497812"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:33:51.497812"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/clubs" for 127.0.0.1 at 2014-12-21 12:33:51 +0100
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.2ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered clubs/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/events" for 127.0.0.1 at 2014-12-21 12:33:51 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:34:29.063580"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:34:29.063580"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:34:29 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-21 11:34:29.097282"], ["name", "My Club"], ["updated_at", "2014-12-21 11:34:29.097282"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-21 11:34:29.099750"], ["name", "My Club"], ["updated_at", "2014-12-21 11:34:29.099750"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:34:29.102705"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:34:29.102705"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:34:29.412424"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:34:29.412424"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clubs" for 127.0.0.1 at 2014-12-21 12:34:29 +0100
+Processing by ClubsController#index as HTML
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT "clubs".* FROM "clubs"[0m
+  Rendered clubs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/events" for 127.0.0.1 at 2014-12-21 12:34:29 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:35:08.266569"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:35:08.266569"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:35:08 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM "events" WHERE "events"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events
+Completed 302 Found in 12ms (ActiveRecord: 1.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (2.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-21 11:35:08.302915"], ["name", "My Club"], ["updated_at", "2014-12-21 11:35:08.302915"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 11:35:08.306123"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:35:08.306123"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.2ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 11:35:08.633313"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:35:08.633313"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/clubs" for 127.0.0.1 at 2014-12-21 12:35:08 +0100
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.2ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered clubs/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/events" for 127.0.0.1 at 2014-12-21 12:35:08 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-21 11:37:00.633806"], ["name", "My Club"], ["updated_at", "2014-12-21 11:37:00.633806"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+Started DELETE "/clubs/3" for 127.0.0.1 at 2014-12-21 12:37:00 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "clubs" WHERE "clubs"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/clubs
+Completed 302 Found in 13ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+  [1m[35m (2.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 11:37:00.677818"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:37:00.677818"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 12:37:00 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/events
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-21 11:37:00.688494"], ["name", "My Club"], ["updated_at", "2014-12-21 11:37:00.688494"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:37:00.691620"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:37:00.691620"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 11:37:01.007282"], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 11:37:01.007282"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clubs" for 127.0.0.1 at 2014-12-21 12:37:01 +0100
+Processing by ClubsController#index as HTML
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT "clubs".* FROM "clubs"[0m
+  Rendered clubs/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/events" for 127.0.0.1 at 2014-12-21 12:37:01 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

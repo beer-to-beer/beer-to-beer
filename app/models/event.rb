@@ -2,6 +2,8 @@ class Event < ActiveRecord::Base
   belongs_to :club
   mount_uploader :imageURL, ImageUploader
 
+  validates :club_id, :title, presence: true
+
   before_destroy :remember_image
   after_destroy :remove_img
 
