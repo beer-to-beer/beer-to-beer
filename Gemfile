@@ -31,6 +31,16 @@ gem 'carrierwave', '0.10.0'
 # gem für die bearbeitung von files z.B. Größe verändern, converten, ...
 gem 'mini_magick', '4.0.1'
 
+#bootstrap und co
+gem 'therubyracer'
+gem 'twitter-bootstrap-rails'
+gem 'less-rails'
+
+#user authentication
+gem 'devise'
+gem 'devise-bootstrap-views'
+
+
 #Gems fürs testen
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
@@ -38,6 +48,8 @@ group :development, :test do
   gem 'factory_girl_rails', '4.5.0'
   gem 'guard-rspec', '4.5.0'
   gem 'faker', '1.4.3'
+  #erleichterte formularausfüllung bei rspec tests
+  gem 'formulaic'
 end
 
 #gem für die Production umgebung
