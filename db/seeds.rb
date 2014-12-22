@@ -5,5 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+User.new(email: "beer@beer.com", password: 'Hallo123', password_confirmation: 'Hallo123', first_name: 'Peter', last_name: 'Mueller')
 Club.create(name: "Test Club")
-Event.create(title: "Test", sdate: Date.current, club_id: Club.first.id, imageURL: File.new("public/uploads/eventimage.jpg"))
+Event.create(title: "Test", sdate: Date.current, club_id: Club.first.id, imageURL: File.new("public/uploads/event/image.jpg"))

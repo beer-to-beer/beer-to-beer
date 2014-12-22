@@ -15,6 +15,9 @@ class ClubsController < ApplicationController
   # GET /clubs/new
   def new
     @club = Club.new
+    address=@club.build_address
+
+
   end
 
   # GET /clubs/1/edit
@@ -24,8 +27,10 @@ class ClubsController < ApplicationController
   # POST /clubs
   # POST /clubs.json
   def create
+
     @club = Club.new(club_params)
 
+    @club.user_id = User.find_by_email(current_user.email).id
     respond_to do |format|
       if @club.save
         format.html { redirect_to @club, notice: 'Club was successfully created.' }
@@ -66,9 +71,8 @@ class ClubsController < ApplicationController
     def set_club
       @club = Club.find(params[:id])
     end
-
     # Never trust parameters from the scary internet, only allow the white list through.
     def club_params
-      params.require(:club).permit(:name, :adress_id, :url, :user_id)
+      params.require(:club).permit(:name, :url, :user_id, address_attributes: [:city, :postal_code, :street, :house_number, :country] )
     end
 end
