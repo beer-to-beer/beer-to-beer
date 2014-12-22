@@ -2072,3 +2072,131 @@ Processing by EventsController#index as HTML
   [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
 Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-21 21:43:26.528110"], ["name", "My Club"], ["updated_at", "2014-12-21 21:43:26.528110"], ["url", "http://crooks.net/lily"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+Started DELETE "/clubs/3" for 127.0.0.1 at 2014-12-21 22:43:26 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "clubs" WHERE "clubs"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/clubs
+Completed 302 Found in 13ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 21:43:26.579472"], ["imageURL", nil], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 21:43:26.579472"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 22:43:26 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/events
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-21 21:43:26.591337"], ["name", "My Club"], ["updated_at", "2014-12-21 21:43:26.591337"], ["url", "http://crooks.net/lily"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 21:43:26.594609"], ["imageURL", nil], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 21:43:26.594609"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 21:43:26.598658"], ["imageURL", nil], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 21:43:26.598658"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clubs" for 127.0.0.1 at 2014-12-21 22:43:26 +0100
+Processing by ClubsController#index as HTML
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT "clubs".* FROM "clubs"[0m
+  Rendered clubs/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/events" for 127.0.0.1 at 2014-12-21 22:43:26 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clubs" ("created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?)  [["created_at", "2014-12-21 21:43:30.524740"], ["name", "My Club"], ["updated_at", "2014-12-21 21:43:30.524740"], ["url", "http://mertz.biz/jaquan.tillman"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+Started DELETE "/clubs/3" for 127.0.0.1 at 2014-12-21 22:43:30 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "clubs" WHERE "clubs"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/clubs
+Completed 302 Found in 12ms (ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2014-12-21 21:43:30.566789"], ["imageURL", nil], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 21:43:30.566789"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+Started DELETE "/events/1" for 127.0.0.1 at 2014-12-21 22:43:30 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "events" WHERE "events"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/events
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-21 21:43:30.577351"], ["name", "My Club"], ["updated_at", "2014-12-21 21:43:30.577351"], ["url", "http://mertz.biz/jaquan.tillman"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 21:43:30.580814"], ["imageURL", nil], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 21:43:30.580814"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-21 21:43:30.584600"], ["imageURL", nil], ["sdate", "2014-12-21 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2014-12-21 21:43:30.584600"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clubs" for 127.0.0.1 at 2014-12-21 22:43:30 +0100
+Processing by ClubsController#index as HTML
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT "clubs".* FROM "clubs"[0m
+  Rendered clubs/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/events" for 127.0.0.1 at 2014-12-21 22:43:30 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
