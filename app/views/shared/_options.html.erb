@@ -1,8 +1,8 @@
-<li class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+<li class="dropdown menu-level1">
+  <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
     Optionen
     <span class="caret"></span>
-  </button>
+  </a>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
     <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= link_to "Edit Profile",edit_user_registration_path%></a></li>
     <% if Club.find_by_user_id(User.find_by_email(current_user.email)).nil? %>
