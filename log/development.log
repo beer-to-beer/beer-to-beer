@@ -32711,3 +32711,311 @@ Binary data inserted for `string` type on column `encrypted_password`
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-28 19:43:55.307346"], ["imageURL", "image.jpg"], ["sdate", "2014-12-28 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-28 19:43:55.307346"]]
   [1m[35m (0.8ms)[0m  commit transaction
+
+
+Started GET "/clubs" for 127.0.0.1 at 2014-12-28 21:28:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.4ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered clubs/index.html.erb within layouts/application (7.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered shared/_navigation.html.erb (19.6ms)
+Completed 200 OK in 504ms (Views: 487.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/shops" for 127.0.0.1 at 2014-12-28 21:30:24 +0100
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.4ms)[0m  SELECT "shops".* FROM "shops"
+  Rendered shops/index.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navigation.html.erb (0.6ms)
+Completed 200 OK in 246ms (Views: 241.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/shops/new" for 127.0.0.1 at 2014-12-28 21:30:26 +0100
+Processing by ShopsController#new as HTML
+  Rendered shops/_form.html.erb (22.9ms)
+  Rendered shops/new.html.erb within layouts/application (24.7ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 293ms (Views: 274.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/shops" for 127.0.0.1 at 2014-12-28 21:30:40 +0100
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EM3OnmTIQ5qCoXb6reFkTW8GoiVk0R2t/LApdviX2Vw=", "shop"=>{"name"=>"Test Shop", "address_attributes"=>{"city"=>"Münster", "postal_code"=>"48167", "street"=>"Amdkfdjfjdk", "house_number"=>"111", "country"=>"Deutschland"}}, "commit"=>"Create Shop"}
+Unpermitted parameters: address_attributes
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered shops/_form.html.erb (1.9ms)
+  Rendered shops/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navigation.html.erb (0.4ms)
+Completed 200 OK in 256ms (Views: 241.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
