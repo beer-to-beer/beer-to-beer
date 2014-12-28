@@ -30,7 +30,7 @@ class ClubsController < ApplicationController
 
     @club = Club.new(club_params)
 
-    @club.user_id = User.find_by_email(current_user.email).id
+    @club.user_id = User.find(current_user.id).id
     respond_to do |format|
       if @club.save
         format.html { redirect_to @club, notice: 'Club was successfully created.' }
