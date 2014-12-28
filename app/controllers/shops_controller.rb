@@ -33,8 +33,12 @@ class ShopsController < ApplicationController
   end
 
   def destroy
+    @shop.address.destroy if @shop.address.present?
     @shop.destroy
-    respond_with(@shop)
+    respond_to do |format|
+      format.html { redirect_to shops_url, notice: 'Shop was successfully destroyed.' }
+      format.json { head :no_content }
+    end
   end
 
   private
