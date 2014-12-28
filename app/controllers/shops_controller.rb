@@ -14,6 +14,7 @@ class ShopsController < ApplicationController
 
   def new
     @shop = Shop.new
+    address=@shop.build_address
     respond_with(@shop)
   end
 
