@@ -32623,17 +32623,31 @@ Binary data inserted for `string` type on column `encrypted_password`
   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 2], ["created_at", "2014-12-28 19:39:26.938802"], ["imageURL", "image.jpg"], ["sdate", "2014-12-28 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-28 19:39:26.938802"]]
   [1m[36m (15.9ms)[0m  [1mcommit transaction[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+<<<<<<< HEAD
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
-  [1m[36m (0.3ms)[0m  [1m            SELECT sql
-            FROM sqlite_master
-            WHERE name='index_users_on_reset_password_token' AND type='index'
-            UNION ALL
-            SELECT sql
-            FROM sqlite_temp_master
-            WHERE name='index_users_on_reset_password_token' AND type='index'
-[0m
-  [1m[35m (0.3ms)[0m              SELECT sql
+Migrating to CreateEvents (20141218194114)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "sdate" datetime, "club_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218194114"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateClubs (20141218194919)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218194919"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to AddImageToEvents (20141218204300)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "events" ADD "imageURL" varchar(255)
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218204300"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20141220120016)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
             UNION ALL
@@ -32641,6 +32655,382 @@ Binary data inserted for `string` type on column `encrypted_password`
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "first_name" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "last_name" varchar(255)[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220120016"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAddresses (20141220124555)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city" varchar(255), "postal_code" integer, "street" varchar(255), "house_number" varchar(255), "country" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220124555"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddAddressIdToUsers (20141220140146)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "address_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220140146"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddAddressIdToClubs (20141222173754)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "clubs" ADD "address_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141222173754"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShops (20141227170216)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "shops" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141227170216"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+>>>>>>> 84fea21d4fe5d7dc6099d7ac192aefa26e0e131d
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+<<<<<<< HEAD
+  [1m[35m (0.1ms)[0m              SELECT sql
+=======
+  [1m[35m (0.3ms)[0m              SELECT sql
+>>>>>>> 84fea21d4fe5d7dc6099d7ac192aefa26e0e131d
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+<<<<<<< HEAD
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-28 19:43:55.189923"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-28 19:43:55.189923"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2014-12-28 19:43:55.280315"], ["email", "beer@beer.com"], ["encrypted_password", "$2a$10$9327QBYh9H7D5ATCD1ut/eZjiM/TZzG2ru3wkI/M9C7Zp2tK/9Kz."], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2014-12-28 19:43:55.280315"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2014-12-28 19:43:55.294741"], ["name", "Test Club"], ["updated_at", "2014-12-28 19:43:55.294741"], ["user_id", 1]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-28 19:43:55.307346"], ["imageURL", "image.jpg"], ["sdate", "2014-12-28 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-28 19:43:55.307346"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+
+
+Started GET "/clubs" for 127.0.0.1 at 2014-12-28 21:28:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.4ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered clubs/index.html.erb within layouts/application (7.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered shared/_navigation.html.erb (19.6ms)
+Completed 200 OK in 504ms (Views: 487.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:28:42 +0100
+
+
+Started GET "/shops" for 127.0.0.1 at 2014-12-28 21:30:24 +0100
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.4ms)[0m  SELECT "shops".* FROM "shops"
+  Rendered shops/index.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navigation.html.erb (0.6ms)
+Completed 200 OK in 246ms (Views: 241.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:25 +0100
+
+
+Started GET "/shops/new" for 127.0.0.1 at 2014-12-28 21:30:26 +0100
+Processing by ShopsController#new as HTML
+  Rendered shops/_form.html.erb (22.9ms)
+  Rendered shops/new.html.erb within layouts/application (24.7ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 293ms (Views: 274.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/shops" for 127.0.0.1 at 2014-12-28 21:30:40 +0100
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EM3OnmTIQ5qCoXb6reFkTW8GoiVk0R2t/LApdviX2Vw=", "shop"=>{"name"=>"Test Shop", "address_attributes"=>{"city"=>"Münster", "postal_code"=>"48167", "street"=>"Amdkfdjfjdk", "house_number"=>"111", "country"=>"Deutschland"}}, "commit"=>"Create Shop"}
+Unpermitted parameters: address_attributes
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered shops/_form.html.erb (1.9ms)
+  Rendered shops/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navigation.html.erb (0.4ms)
+Completed 200 OK in 256ms (Views: 241.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 21:30:41 +0100
+=======
 
 
 Started GET "/" for 127.0.0.1 at 2014-12-28 11:43:30 -0800
@@ -32760,6 +33150,7 @@ Processing by ClubsController#index as HTML
   Rendered clubs/index.html.erb within layouts/application (16.4ms)
   Rendered shared/_navigation.html.erb (1.2ms)
 Completed 200 OK in 972ms (Views: 966.0ms | ActiveRecord: 0.5ms)
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
@@ -33372,3 +33763,6 @@ Migrating to CreateBeers (20141228222028)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "beers" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-28 22:37:25.868365"], ["title", "Veltins"], ["updated_at", "2014-12-28 22:37:25.868365"]]
   [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+=======
+>>>>>>> 84fea21d4fe5d7dc6099d7ac192aefa26e0e131d
+>>>>>>> 0727c58641e259b7369ea2b331a715d32b8e0632
