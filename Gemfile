@@ -40,6 +40,10 @@ gem 'less-rails'
 gem 'devise'
 gem 'devise-bootstrap-views'
 
+#Rollenmanagement
+gem 'rolify'
+
+gem 'cancan'
 
 #Gems fürs testen
 group :development, :test do
