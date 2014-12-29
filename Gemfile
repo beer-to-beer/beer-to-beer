@@ -45,6 +45,8 @@ gem 'rolify'
 
 gem 'cancan'
 
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 #Gems fürs testen
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
