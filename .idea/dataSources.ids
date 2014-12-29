@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="Rails beer-to-beer: development" uuid="3b234f7d-4e8f-45b8-b104-6dbc16a46c44">
+  <data-source source="LOCAL" name="Rails beer-to-beer: development" uuid="3b234f7d-4e8f-45b8-b104-6dbc16a46c44">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails beer-to-beer: test" uuid="2b229620-6edf-4eb4-b8e0-78759ee37418">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>
