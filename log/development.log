@@ -40450,3 +40450,2033 @@ Binary data inserted for `string` type on column `encrypted_password`
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users_roles" ("role_id", "user_id") VALUES (?, ?)[0m  [["role_id", 1], ["user_id", 3]]
   [1m[35m (23.4ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-29 07:18:11 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.6ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered clubs/index.html.erb within layouts/application (181.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered shared/_navigation.html.erb (476.5ms)
+Completed 200 OK in 6256ms (Views: 6049.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:18 -0800
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:18 -0800
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:19 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:20 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:21 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:18:22 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-29 07:19:37 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (412.2ms)
+  Rendered shared/_navigation.html.erb (1.3ms)
+Completed 200 OK in 2626ms (Views: 2605.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-29 07:19:40 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (251.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (405.7ms)
+  Rendered shared/_navigation.html.erb (1.4ms)
+Completed 200 OK in 2412ms (Views: 2408.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-29 07:19:57 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wX1nXC40H+SjEFiacx+ZubNSKo3CzZx+4np/eutInMs=", "user"=>{"email"=>"jan@beer.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'jan@beer.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 29ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wX1nXC40H+SjEFiacx+ZubNSKo3CzZx+4np/eutInMs=", "user"=>{"email"=>"jan@beer.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.0ms)
+  Rendered shared/_navigation.html.erb (1.9ms)
+Completed 200 OK in 2209ms (Views: 1914.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 07:19:59 -0800
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:19:59 -0800
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 07:19:59 -0800
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 07:19:59 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 07:19:59 -0800
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 07:19:59 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 07:19:59 -0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:00 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:02 -0800
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-29 07:20:25 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wX1nXC40H+SjEFiacx+ZubNSKo3CzZx+4np/eutInMs=", "user"=>{"email"=>"jan@beer.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (6.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'jan@beer.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 12ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wX1nXC40H+SjEFiacx+ZubNSKo3CzZx+4np/eutInMs=", "user"=>{"email"=>"jan@beer.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+  Rendered shared/_navigation.html.erb (1.2ms)
+Completed 200 OK in 2505ms (Views: 2156.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:29 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:30 -0800
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-29 07:20:44 -0800
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (8.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (102.1ms)
+  Rendered shared/_navigation.html.erb (1.2ms)
+Completed 200 OK in 2875ms (Views: 2502.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:48 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:20:49 -0800
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-29 07:21:35 -0800
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wX1nXC40H+SjEFiacx+ZubNSKo3CzZx+4np/eutInMs=", "user"=>{"email"=>"jan@beer.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"Jan", "last_name"=>"Wendt", "address_attributes"=>{"city"=>"Altenberge", "postal_code"=>"48341", "street"=>"Am Hang", "house_number"=>"20", "country"=>"NRW"}}, "commit"=>"Sign up"}
+  [1m[35m (5.7ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'jan@beer.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.5ms)
+  Rendered shared/_navigation.html.erb (2.3ms)
+Completed 200 OK in 2959ms (Views: 2199.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:38 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:39 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:21:40 -0800
+  [1m[36m (40.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (20.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateEvents (20141218194114)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "sdate" datetime, "club_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218194114"]]
+  [1m[35m (14.1ms)[0m  commit transaction
+Migrating to CreateClubs (20141218194919)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218194919"]]
+  [1m[35m (20.8ms)[0m  commit transaction
+Migrating to AddImageToEvents (20141218204300)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  ALTER TABLE "events" ADD "imageURL" varchar(255)
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218204300"]]
+  [1m[35m (19.9ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20141220120016)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (8.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "users" ADD "first_name" varchar(255)
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "last_name" varchar(255)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220120016"]]
+  [1m[36m (30.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAddresses (20141220124555)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city" varchar(255), "postal_code" integer, "street" varchar(255), "house_number" varchar(255), "country" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220124555"]]
+  [1m[36m (16.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddAddressIdToUsers (20141220140146)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "address_id" integer[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220140146"]]
+  [1m[36m (26.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddAddressIdToClubs (20141222173754)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.9ms)[0m  [1mALTER TABLE "clubs" ADD "address_id" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141222173754"]]
+  [1m[36m (31.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShops (20141227170216)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "shops" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141227170216"]]
+  [1m[36m (27.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateBeers (20141228222028)
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (8.2ms)[0m  [1mCREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141228222028"]]
+  [1m[36m (17.6ms)[0m  [1mcommit transaction[0m
+Migrating to RolifyCreateRoles (20141229135725)
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "resource_id" integer, "resource_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users_roles" ("user_id" integer, "role_id" integer) 
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_roles_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_roles_on_name' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141229135725"]]
+  [1m[35m (28.2ms)[0m  commit transaction
+Migrating to CreateActiveAdminComments (20141229142327)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "namespace" varchar(255), "body" text, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+
+  [1m[36m (0.5ms)[0m  [1mCREATE  INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141229142327"]]
+  [1m[35m (24.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+
+  [1m[36m (0.6ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_roles_on_name_and_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_roles_on_name_and_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_roles_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_roles_on_name' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_roles_on_user_id_and_role_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_roles_on_user_id_and_role_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 15:23:30.854027"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 15:23:30.854027"]]
+  [1m[35m (80.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2014-12-29 15:23:31.440880"], ["email", "beer@beer.com"], ["encrypted_password", "$2a$10$jOcpvpOO5J2xfjTd3gK2we1ylXVIZbsS3px55KlYg3D9d2fhDn9mS"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2014-12-29 15:23:31.440880"]]
+  [1m[35m (14.9ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2014-12-29 15:23:31.480413"], ["name", "Test Club"], ["updated_at", "2014-12-29 15:23:31.480413"], ["user_id", 1]]
+  [1m[36m (19.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-29 15:23:31.528135"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 15:23:31.528135"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "beers" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-29 15:23:31.563834"], ["title", "Krombacher"], ["updated_at", "2014-12-29 15:23:31.563834"]]
+  [1m[36m (33.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "beers" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 15:23:31.601259"], ["title", "Veltins"], ["updated_at", "2014-12-29 15:23:31.601259"]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'admin@beer.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2014-12-29 15:23:31.851112"], ["email", "admin@beer.com"], ["encrypted_password", "$2a$10$WhqquLCtU8izFC36A26I0eI5wBRCgn8dRDrvfswbFC.hE56smvnri"], ["first_name", "Admin"], ["last_name", "Admin"], ["updated_at", "2014-12-29 15:23:31.851112"]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles"  WHERE "roles"."name" = 'admin' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL  ORDER BY "roles"."id" ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "roles" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 15:23:32.010290"], ["name", "admin"], ["updated_at", "2014-12-29 15:23:32.010290"]]
+  [1m[35m (34.5ms)[0m  commit transaction
+  [1m[36mRole Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = 1 LIMIT 1[0m  [["user_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT "roles".id FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?  [["user_id", 2]]
+  [1m[36mRole Load (1.9ms)[0m  [1mSELECT  "roles".* FROM "roles"  WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.4ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users_roles" ("role_id", "user_id") VALUES (?, ?)  [["role_id", 1], ["user_id", 2]]
+  [1m[36m (20.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'jan@beer.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2014-12-29 15:23:32.602748"], ["email", "jan@beer.com"], ["encrypted_password", "$2a$10$vSlL.V8TKrD21maNIxqCw.JI2sddBRHGCXbCgntaQ/VB9Ne3R70xa"], ["first_name", "Jan"], ["last_name", "Wendt"], ["updated_at", "2014-12-29 15:23:32.602748"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mRole Load (0.5ms)[0m  SELECT  "roles".* FROM "roles"  WHERE "roles"."name" = 'admin' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL  ORDER BY "roles"."id" ASC LIMIT 1
+  [1m[36mRole Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = 1 LIMIT 1[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT "roles".id FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?  [["user_id", 3]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles"  WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?  [["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users_roles" ("role_id", "user_id") VALUES (?, ?)  [["role_id", 1], ["user_id", 3]]
+  [1m[36m (22.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'thorsten@beer.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2014-12-29 15:23:32.893516"], ["email", "thorsten@beer.com"], ["encrypted_password", "$2a$10$goDFgdOsKsiogCSpLv7L3uY0ELZMmZtM5JiJMEaCPhkRS/IJrKYw6"], ["first_name", "Thorsten"], ["last_name", "Woywod"], ["updated_at", "2014-12-29 15:23:32.893516"]]
+  [1m[36m (15.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mRole Load (1.3ms)[0m  SELECT  "roles".* FROM "roles"  WHERE "roles"."name" = 'admin' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL  ORDER BY "roles"."id" ASC LIMIT 1
+  [1m[36mRole Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = 1 LIMIT 1[0m  [["user_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT "roles".id FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?  [["user_id", 4]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles"  WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?  [["user_id", 4]]
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users_roles" ("role_id", "user_id") VALUES (?, ?)  [["role_id", 1], ["user_id", 4]]
+  [1m[36m (18.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-29 07:24:46 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.4ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered clubs/index.html.erb within layouts/application (201.8ms)
+  Rendered shared/_navigation.html.erb (16.2ms)
+Completed 200 OK in 4057ms (Views: 3878.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:51 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:53 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:54 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:54 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:54 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:54 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:54 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:54 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:54 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:54 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:24:55 -0800
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-29 07:24:58 -0800
+Processing by Admin::DashboardController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Filter chain halted as :authenticate_active_admin_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-29 07:24:58 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (9.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (588.9ms)
+  Rendered shared/_navigation.html.erb (1.1ms)
+Completed 200 OK in 2952ms (Views: 2833.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:03 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:04 -0800
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-29 07:25:18 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wX1nXC40H+SjEFiacx+ZubNSKo3CzZx+4np/eutInMs=", "user"=>{"email"=>"jan@beer.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'jan@beer.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (22.4ms)[0m  [1mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["remember_created_at", "2014-12-29 15:25:19.580674"], ["updated_at", "2014-12-29 15:25:19.583022"]]
+  [1m[35m (54.3ms)[0m  commit transaction
+  [1m[36m (6.3ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["current_sign_in_at", "2014-12-29 15:25:19.709062"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-12-29 15:25:19.709062"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-12-29 15:25:19.718006"]]
+  [1m[36m (22.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1162ms (ActiveRecord: 107.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-29 07:25:20 -0800
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.7ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered clubs/index.html.erb within layouts/application (13.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'jan@beer.com' LIMIT 1
+  [1m[36mClub Load (0.6ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."user_id" = 3 LIMIT 1[0m
+  Rendered shared/_options.html.erb (23.0ms)
+  Rendered shared/_navigation.html.erb (43.7ms)
+Completed 200 OK in 2410ms (Views: 2405.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:22 -0800
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:22 -0800
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:22 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:22 -0800
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:22 -0800
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:22 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:23 -0800
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:24 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:25 -0800
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-29 07:25:29 -0800
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 3]]
+  Rendered /home/marcel/.bundler/ruby/1.9.1/active_admin-b5afbf1260f9/app/views/active_admin/page/index.html.arb (869.2ms)
+Completed 200 OK in 1589ms (Views: 873.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:31 -0800
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:31 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:31 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:31 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:31 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:32 -0800
+
+
+Started GET "/admin/addresses" for 127.0.0.1 at 2014-12-29 07:25:35 -0800
+Processing by Admin::AddressesController#index as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))[0m  [["user_id", 3]]
+  [1m[35m (4.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "addresses"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "addresses"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "addresses"
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "addresses"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mAddress Load (8.8ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mClub Load (0.5ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered /home/marcel/.bundler/ruby/1.9.1/active_admin-b5afbf1260f9/app/views/active_admin/resource/index.html.arb (2058.3ms)
+Completed 200 OK in 2125ms (Views: 2058.3ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:37 -0800
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:37 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:37 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:37 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:37 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:38 -0800
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-12-29 07:25:39 -0800
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-12-29 07:25:39 -0800
+
+
+Started GET "/admin/beers" for 127.0.0.1 at 2014-12-29 07:25:40 -0800
+Processing by Admin::BeersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND (((roles.name = 'admin') AND (roles.resource_type IS NULL) AND (roles.resource_id IS NULL)))  [["user_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "beers"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "beers"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "beers"[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "beers"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mBeer Load (0.4ms)[0m  [1mSELECT  "beers".* FROM "beers"   ORDER BY "beers"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered /home/marcel/.bundler/ruby/1.9.1/active_admin-b5afbf1260f9/app/views/active_admin/resource/index.html.arb (1085.9ms)
+Completed 200 OK in 1166ms (Views: 1110.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:41 -0800
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:42 -0800
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:43 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:43 -0800
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:43 -0800
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:43 -0800
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-29 07:25:43 -0800
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-12-29 07:25:43 -0800
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-12-29 07:25:44 -0800
