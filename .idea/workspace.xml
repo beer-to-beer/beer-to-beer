@@ -2,106 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d0d2e73-a61f-42d0-8622-4362a8edbc44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/04b6b9faed652a7056797cdd06cc408c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/0c99b8d87ebd2f3067d4770033d1b31c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/0d34f25ac3acce5a3994e5ba1c4aded4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/172af0bf09368630f02805a824fd4a02" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/183f410621bfc5fbd05b09d8f42f9370" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/1c6fa30771d6288b214959cbea39a51b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/20cb860c348b2bdcb99389d4a0aae32d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2193aa42aee125ea38f1d8b6f89c6deb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2414291814089b9b71fd9ccafcda39b5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2421eba5a89d7af6da2b4f8e82b734cc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2732895699b2415b6c62c19a435ea643" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2b795eaf8e0130159ae458d43b37633c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/317c7078e81f9d240b6505c1a58745e6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/3778259e2a93b6ff5b23315792146857" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/39fa640cd146184a537801d75c7f1c23" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/3eace26c4b2037c494cd4383a939782e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/43590ab618785a6d85cf43175c4d3d69" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/441ac2ff3c4335174e6027fffaa04c21" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/4bc9c2b9077dff41b18293767cbca5d0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/51063f2f50fe3a7af3ca5a71708dbf81" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/53dc72a173bf2df3270264ca91963543" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/54097fe6633642f5ed05112739321458" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/558cb48f8fba0ed5e43577f7c0f47c5c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/5e455bb002ca3f4da3cd09a4786ec5a6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/62df26b9a8c0638116a405bf0c840abb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/6a7dc0af899d99d6dbb0eab713cfba40" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/6af05a7916a0a46fdeb1dde0c7e29364" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/6e4b66b8eeb91629d786fadc71c6280e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/6edf3105d6ff45ea40b0110b977145f6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/72d4b3cbad7e3a6a66e56ac55e4c081a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/753a475879beaa73fd2c82b559c9286a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/7657103c85fdb43be31c507d8232da07" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/779ed577fb5b26c1b796ac474f46cdb8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/785be1c49b30346955b408972bb5893b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/7997b6347b5b534f9408e8e1bcf58636" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/7a8f179998166fb63de442aca5f4e440" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/8057a4ab34e97a5c318c99558d73a6e8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/817f67d50414aedd079437a3566ce697" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/82ffd3394232da4b117f776668993233" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/8ee9a0755c1871f351d84acb6907991b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/8fe78fdd2c93d64c12dc6562860396fb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/949a97940555d8774b25cc5280d9c088" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/95fad168ea3545cffd2fe04415cbba65" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/9711f98553a0a3a52dc21b71afc833c1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/a1833c75c7ce0e60fb7608eafc781fc1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/a2c49660be08836c4a435ad2c80913f9" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/a2d578a4a69da3db0db6622ea490d06d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/a45f03c4ac511b25468089996699b601" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/af948ede8b99b4326a49196ca57a5b3f" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/b0d5632718db92356f46d20b26870ec4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/c1daab37eafb4ac844b95c21e7dbab3e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/c58f8d363ad46b8d19375834fd1cc33e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/c61a50d7aedc2bbc4fc1647dc5a7541b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/cd62f9e8d793c1e7e528d330a684395d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sass/cb7a007d94903ddfea0ad150547aef05c76783a3/devise_bootstrap_views.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/e0d8c6444f38077e34eb50038d49204e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/e776b2ab72de3f154608a9b545af66ae" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/eadaae145c3a3b1879af804ec7ee8d2e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/eae8bce8d772e05465d66357da60152c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f08d7da043399c79861f1401bb47d460" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f4e4476cceb547278d2fc682676c52c1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f5e4f4789949ff19fb853b621e2dbdd5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f60c54e111fcb834945106370a9cb200" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f6419745b2be389e4bae0a702d75a832" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f6e5ddb3903d0ef4492e998de935f7d9" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f947364a4822d290dd821eeef20b60a6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/fdad10ebc559db0c588d9c6b63b364e5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/fe516687c969fbd13790a41a5f9c4438" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/febec10194cd6fb225673236fd102a34" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/ff0b34efe4470214a8c6c08d52c87d8d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/event/imageURL/4/image.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/uploads/event/imageURL/1/image.jpg" afterPath="$PROJECT_DIR$/public/uploads/event/imageURL/3/image.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/13fe41fee1fe35b49d145bcc06610705" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/13fe41fee1fe35b49d145bcc06610705" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/357970feca3ac29060c1e3861e2c0953" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/357970feca3ac29060c1e3861e2c0953" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/8c2b061e379a23e7c4d207adcf992462" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/8c2b061e379a23e7c4d207adcf992462" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/d585a06e2ee6203ccb04c8b84150d14d" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/d585a06e2ee6203ccb04c8b84150d14d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/cffd775d018f68ce5dba1ee0d951a994" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/cffd775d018f68ce5dba1ee0d951a994" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/d771ace226fc8215a3572e0aa35bb0d6" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/d771ace226fc8215a3572e0aa35bb0d6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__beer_to_beer.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__beer_to_beer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/beer-to-beer.iml" afterPath="$PROJECT_DIR$/.idea/beer-to-beer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/shop.rb" afterPath="$PROJECT_DIR$/app/models/shop.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test__beer_to_beer.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__beer_to_beer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="beer-to-beer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,8 +51,8 @@
       <file leaf-file-name="beer.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17175573" vertical-offset="0" max-vertical-offset="524">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.24045801" vertical-offset="0" max-vertical-offset="524">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -174,8 +81,8 @@
       <file leaf-file-name="shop.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/shop.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -318,8 +225,9 @@
     <property name="options.lastSelected" value="terminal" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="IRB console.Rails console: beer-to-beer">
+  <component name="RunManager" selected="Rails.Development: beer-to-beer">
     <configuration default="false" name="IRB console: beer-to-beer" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="beer-to-beer" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -467,7 +375,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="64" width="1008" height="600" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32851985" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -650,16 +558,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/shop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17175573" vertical-offset="0" max-vertical-offset="524">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.24045801" vertical-offset="0" max-vertical-offset="524">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding />
         </state>
       </provider>
