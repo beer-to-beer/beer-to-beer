@@ -5,6 +5,5 @@ cl = Club.create(name: "Test Club" , address_id: ad.id , user_id: us.id)
 Event.create(title: "Test", sdate: Date.current, club_id: cl.id, imageURL: File.new("public/uploads/event/image.jpg", :encoding => "UTF-8"))
 Beer.create(title: "Krombacher")
 Beer.create(title: "Veltins")
-#Admin anlegen
-admin = User.create(:email => "admin@beertobeer.com", :password => 'admin', :password_confirmation => 'admin')
+admin = User.create(:email => "admin@beer.com", :password => 'Admin123', :password_confirmation => 'Admin123', :first_name => 'Admin', :last_name => 'Admin', :address_id => ad.id)
 admin.add_role :admin
