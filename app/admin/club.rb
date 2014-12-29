@@ -4,7 +4,15 @@ ActiveAdmin.register Club do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  # permit_params :list, :of, :attributes, :on, :model
+
+    form do |f|
+      f.inputs "Details" do
+        f.input :name
+        f.input :url
+        f.input :address
+      end
+     f.actions
+    end
   #
   # or
   #
