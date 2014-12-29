@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
+  resources :shop_beers
+
+  resources :beers
 
   resources :shops
 

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Shop:</strong>
+  <%= @shop_beer.shop %>
+</p>
+
+<p>
+  <strong>Beer:</strong>
+  <%= @shop_beer.beer %>
+</p>
+
+<%= link_to 'Edit', edit_shop_beer_path(@shop_beer) %> |
+<%= link_to 'Back', shop_beers_path %>

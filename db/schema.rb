@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141227170216) do
+ActiveRecord::Schema.define(version: 20141229171232) do
+
+  create_table "active_admin_comments", force: true do |t|
+    t.string   "namespace"
+    t.text     "body"
+    t.string   "resource_id",   null: false
+    t.string   "resource_type", null: false
+    t.integer  "author_id"
+    t.string   "author_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
+  add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace"
+  add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
 
   create_table "addresses", force: true do |t|
     t.string   "city"
@@ -19,6 +34,23 @@ ActiveRecord::Schema.define(version: 20141227170216) do
     t.string   "street"
     t.string   "house_number"
     t.string   "country"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "beers", force: true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "category_id"
+    t.integer  "producer_id"
+  end
+
+  add_index "beers", ["category_id"], name: "index_beers_on_category_id"
+  add_index "beers", ["producer_id"], name: "index_beers_on_producer_id"
+
+  create_table "categories", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,6 +72,37 @@ ActiveRecord::Schema.define(version: 20141227170216) do
     t.datetime "updated_at"
     t.string   "imageURL"
   end
+
+  create_table "producers", force: true do |t|
+    t.string   "name"
+    t.integer  "address_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "producers", ["address_id"], name: "index_producers_on_address_id"
+
+  create_table "roles", force: true do |t|
+    t.string   "name"
+    t.integer  "resource_id"
+    t.string   "resource_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
+  add_index "roles", ["name"], name: "index_roles_on_name"
+
+  create_table "shop_beers", force: true do |t|
+    t.integer  "shop_id"
+    t.integer  "beer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.float    "price"
+  end
+
+  add_index "shop_beers", ["beer_id"], name: "index_shop_beers_on_beer_id"
+  add_index "shop_beers", ["shop_id"], name: "index_shop_beers_on_shop_id"
 
   create_table "shops", force: true do |t|
     t.string   "name"
@@ -68,5 +131,12 @@ ActiveRecord::Schema.define(version: 20141227170216) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "users_roles", id: false, force: true do |t|
+    t.integer "user_id"
+    t.integer "role_id"
+  end
+
+  add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
 
 end
