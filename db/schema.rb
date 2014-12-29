@@ -11,6 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20141229171232) do
+=======
 ActiveRecord::Schema.define(version: 20141229142327) do
 
   create_table "active_admin_comments", force: true do |t|
@@ -27,6 +30,7 @@ ActiveRecord::Schema.define(version: 20141229142327) do
   add_index "active_admin_comments", ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
   add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace"
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
+>>>>>>> 5f46a206e82acd2ffbedc1f0f279af45e97f2e92
 
   create_table "addresses", force: true do |t|
     t.string   "city"
@@ -40,6 +44,17 @@ ActiveRecord::Schema.define(version: 20141229142327) do
 
   create_table "beers", force: true do |t|
     t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "category_id"
+    t.integer  "producer_id"
+  end
+
+  add_index "beers", ["category_id"], name: "index_beers_on_category_id"
+  add_index "beers", ["producer_id"], name: "index_beers_on_producer_id"
+
+  create_table "categories", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -62,16 +77,37 @@ ActiveRecord::Schema.define(version: 20141229142327) do
     t.string   "imageURL"
   end
 
+<<<<<<< HEAD
+  create_table "producers", force: true do |t|
+    t.string   "name"
+    t.integer  "address_id"
+=======
   create_table "roles", force: true do |t|
     t.string   "name"
     t.integer  "resource_id"
     t.string   "resource_type"
+>>>>>>> 5f46a206e82acd2ffbedc1f0f279af45e97f2e92
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+  add_index "producers", ["address_id"], name: "index_producers_on_address_id"
+
+  create_table "shop_beers", force: true do |t|
+    t.integer  "shop_id"
+    t.integer  "beer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.float    "price"
+  end
+
+  add_index "shop_beers", ["beer_id"], name: "index_shop_beers_on_beer_id"
+  add_index "shop_beers", ["shop_id"], name: "index_shop_beers_on_shop_id"
+=======
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], name: "index_roles_on_name"
+>>>>>>> 5f46a206e82acd2ffbedc1f0f279af45e97f2e92
 
   create_table "shops", force: true do |t|
     t.string   "name"

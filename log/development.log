@@ -33766,6 +33766,119 @@ Migrating to CreateBeers (20141228222028)
 =======
 >>>>>>> 84fea21d4fe5d7dc6099d7ac192aefa26e0e131d
 >>>>>>> 0727c58641e259b7369ea2b331a715d32b8e0632
+<<<<<<< HEAD
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-29 00:23:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.2ms)[0m  SELECT "clubs".* FROM "clubs"
+  Rendered clubs/index.html.erb within layouts/application (25.2ms)
+  Rendered shared/_navigation.html.erb (10.0ms)
+Completed 200 OK in 1749ms (Views: 1709.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2014-12-29 00:23:53 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Migrating to RolifyCreateRoles (20141229135725)
   [1m[35m (0.2ms)[0m  begin transaction
@@ -34221,6 +34334,7 @@ NoMethodError (undefined method `current_admin_user' for #<Admin::DashboardContr
   actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
   actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 5f46a206e82acd2ffbedc1f0f279af45e97f2e92
   actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
   railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
   railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
@@ -34240,6 +34354,234 @@ NoMethodError (undefined method `current_admin_user' for #<Admin::DashboardContr
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
+  /home/we2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/we2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/we2/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/we2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/we2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.4ms)
+  Rendered /home/we2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.2ms)
+  Rendered /home/we2/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.2ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2014-12-29 00:26:02 +0100
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.7ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered beers/index.html.erb within layouts/application (12.8ms)
+  Rendered shared/_navigation.html.erb (0.6ms)
+Completed 200 OK in 782ms (Views: 769.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/devise_bootstrap_views.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/clubs.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/upload.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 00:26:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCategories (20141229140046)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141229140046"]]
+  [1m[36m (23.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddCategoryRefToBeers (20141229161330)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "beers" ADD "category_id" integer[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_beers_on_category_id" ON "beers" ("category_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141229161330"]]
+  [1m[36m (19.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 16:14:00.137888"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 16:14:00.137888"]]
+  [1m[35m (165.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 7], ["created_at", "2014-12-29 16:14:00.421073"], ["name", "Test Club"], ["updated_at", "2014-12-29 16:14:00.421073"]]
+  [1m[35m (51.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 7], ["created_at", "2014-12-29 16:14:00.499399"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 16:14:00.499399"]]
+  [1m[36m (37.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "beers" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 16:14:00.546719"], ["title", "Krombacher"], ["updated_at", "2014-12-29 16:14:00.546719"]]
+  [1m[35m (27.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "beers" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-29 16:14:00.580517"], ["title", "Veltins"], ["updated_at", "2014-12-29 16:14:00.580517"]]
+  [1m[36m (32.4ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 16:15:49.099275"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 16:15:49.099275"]]
+  [1m[35m (191.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 8], ["created_at", "2014-12-29 16:15:49.409999"], ["name", "Test Club"], ["updated_at", "2014-12-29 16:15:49.409999"]]
+  [1m[35m (18.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 8], ["created_at", "2014-12-29 16:15:49.441520"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 16:15:49.441520"]]
+  [1m[36m (25.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 16:15:49.475684"], ["name", "Weizen"], ["updated_at", "2014-12-29 16:15:49.475684"]]
+  [1m[35m (48.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "beers" ("category_id", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-12-29 16:15:49.561568"], ["title", "Krombacher Weizen"], ["updated_at", "2014-12-29 16:15:49.561568"]]
+  [1m[36m (43.3ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducers (20141229162930)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "producers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_producers_on_address_id" ON "producers" ("address_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141229162930"]]
+  [1m[36m (179.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+=======
   /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
   /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
   /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
@@ -41540,10 +41882,359 @@ Migrating to CreateActiveAdminComments (20141229142327)
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
             UNION ALL
+>>>>>>> 5f46a206e82acd2ffbedc1f0f279af45e97f2e92
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+<<<<<<< HEAD
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 16:31:47.025313"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 16:31:47.025313"]]
+  [1m[35m (88.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 9], ["created_at", "2014-12-29 16:31:47.238987"], ["name", "Test Club"], ["updated_at", "2014-12-29 16:31:47.238987"]]
+  [1m[35m (33.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 9], ["created_at", "2014-12-29 16:31:47.284895"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 16:31:47.284895"]]
+  [1m[36m (31.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 16:31:47.324202"], ["name", "Weizen"], ["updated_at", "2014-12-29 16:31:47.324202"]]
+  [1m[35m (21.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "beers" ("category_id", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["category_id", 2], ["created_at", "2014-12-29 16:31:47.352867"], ["title", "Krombacher Weizen"], ["updated_at", "2014-12-29 16:31:47.352867"]]
+  [1m[36m (23.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 16:33:15.163877"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 16:33:15.163877"]]
+  [1m[35m (81.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 10], ["created_at", "2014-12-29 16:33:15.365787"], ["name", "Test Club"], ["updated_at", "2014-12-29 16:33:15.365787"]]
+  [1m[35m (28.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 10], ["created_at", "2014-12-29 16:33:15.407402"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 16:33:15.407402"]]
+  [1m[36m (31.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 16:33:15.447083"], ["name", "Weizen"], ["updated_at", "2014-12-29 16:33:15.447083"]]
+  [1m[35m (46.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "beers" ("category_id", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["category_id", 3], ["created_at", "2014-12-29 16:33:15.501836"], ["title", "Krombacher Weizen"], ["updated_at", "2014-12-29 16:33:15.501836"]]
+  [1m[36m (40.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "producers" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 10], ["created_at", "2014-12-29 16:33:15.554881"], ["name", "Krombacher"], ["updated_at", "2014-12-29 16:33:15.554881"]]
+  [1m[35m (47.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddProducerRefToBeers (20141229163442)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "beers" ADD "producer_id" integer[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_beers_on_producer_id" ON "beers" ("producer_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141229163442"]]
+  [1m[35m (177.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 16:35:59.267584"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 16:35:59.267584"]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 11], ["created_at", "2014-12-29 16:35:59.383106"], ["name", "Test Club"], ["updated_at", "2014-12-29 16:35:59.383106"]]
+  [1m[35m (26.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 11], ["created_at", "2014-12-29 16:35:59.422966"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 16:35:59.422966"]]
+  [1m[36m (35.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 16:35:59.465543"], ["name", "Weizen"], ["updated_at", "2014-12-29 16:35:59.465543"]]
+  [1m[35m (41.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "producers" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 11], ["created_at", "2014-12-29 16:35:59.515070"], ["name", "Krombacher"], ["updated_at", "2014-12-29 16:35:59.515070"]]
+  [1m[36m (60.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 4], ["created_at", "2014-12-29 16:35:59.594047"], ["producer_id", 2], ["title", "Krombacher Weizen"], ["updated_at", "2014-12-29 16:35:59.594047"]]
+  [1m[35m (38.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 16:41:46.878744"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 16:41:46.878744"]]
+  [1m[35m (21.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 12], ["created_at", "2014-12-29 16:41:47.006667"], ["name", "Test Club"], ["updated_at", "2014-12-29 16:41:47.006667"]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 12], ["created_at", "2014-12-29 16:41:47.031568"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 16:41:47.031568"]]
+  [1m[36m (24.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 16:41:47.064921"], ["name", "Weizen"], ["updated_at", "2014-12-29 16:41:47.064921"]]
+  [1m[35m (99.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "producers" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 12], ["created_at", "2014-12-29 16:41:47.183275"], ["name", "Krombacher"], ["updated_at", "2014-12-29 16:41:47.183275"]]
+  [1m[36m (19.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 16:52:20.793110"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 16:52:20.793110"]]
+  [1m[35m (110.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 13], ["created_at", "2014-12-29 16:52:21.017947"], ["name", "Test Club"], ["updated_at", "2014-12-29 16:52:21.017947"]]
+  [1m[35m (50.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 13], ["created_at", "2014-12-29 16:52:21.079943"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 16:52:21.079943"]]
+  [1m[36m (20.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 16:52:21.107571"], ["name", "Weizen"], ["updated_at", "2014-12-29 16:52:21.107571"]]
+  [1m[35m (51.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "producers" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 13], ["created_at", "2014-12-29 16:52:21.167235"], ["name", "Krombacher"], ["updated_at", "2014-12-29 16:52:21.167235"]]
+  [1m[36m (33.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 6], ["created_at", "2014-12-29 16:52:21.212766"], ["producer_id", 4], ["title", "Krombacher Weizen"], ["updated_at", "2014-12-29 16:52:21.212766"]]
+  [1m[35m (25.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShopBeers (20141229170923)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "shop_beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shop_id" integer, "beer_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_shop_beers_on_shop_id" ON "shop_beers" ("shop_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shop_beers_on_shop_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shop_beers_on_shop_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_shop_beers_on_beer_id" ON "shop_beers" ("beer_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141229170923"]]
+  [1m[36m (30.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddPriceToShopBeer (20141229171232)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "shop_beers" ADD "price" double[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141229171232"]]
+  [1m[36m (53.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shop_beers_on_beer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shop_beers_on_beer_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shop_beers_on_shop_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shop_beers_on_shop_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 17:25:55.072120"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 17:25:55.072120"]]
+  [1m[35m (25.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 14], ["created_at", "2014-12-29 17:25:55.205004"], ["name", "Test Club"], ["updated_at", "2014-12-29 17:25:55.205004"]]
+  [1m[35m (45.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 14], ["created_at", "2014-12-29 17:25:55.263203"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 17:25:55.263203"]]
+  [1m[36m (46.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 17:25:55.316932"], ["name", "Weizen"], ["updated_at", "2014-12-29 17:25:55.316932"]]
+  [1m[35m (39.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "producers" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 14], ["created_at", "2014-12-29 17:25:55.365141"], ["name", "Krombacher"], ["updated_at", "2014-12-29 17:25:55.365141"]]
+  [1m[36m (36.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 7], ["created_at", "2014-12-29 17:25:55.418529"], ["producer_id", 5], ["title", "Krombacher Weizen"], ["updated_at", "2014-12-29 17:25:55.418529"]]
+  [1m[35m (62.6ms)[0m  commit transaction
+=======
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
             FROM sqlite_master
             WHERE name='index_users_roles_on_user_id_and_role_id' AND type='index'
@@ -45739,6 +46430,7 @@ Processing by ClubsController#index as HTML
   Rendered shared/_options.html.erb (7.7ms)
   Rendered shared/_navigation.html.erb (11.8ms)
 Completed 200 OK in 1960ms (Views: 1927.0ms | ActiveRecord: 2.3ms)
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
@@ -49205,3 +49897,6 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 18:34:59
 
 
 Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-12-29 18:34:59 +0100
+=======
+>>>>>>> 5f46a206e82acd2ffbedc1f0f279af45e97f2e92
+>>>>>>> e8c6ec71bcc315a0962f901ba0d3ae049ef632f5
