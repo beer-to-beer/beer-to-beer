@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-
-<<<<<<< HEAD
+  ActiveAdmin.routes(self)
   resources :shop_beers
 
-=======
-  ActiveAdmin.routes(self)
->>>>>>> 5f46a206e82acd2ffbedc1f0f279af45e97f2e92
   resources :beers
 
   resources :shops
