@@ -1,6 +1,6 @@
 class ClubsController < ApplicationController
   before_action :set_club, only: [:show, :edit, :update, :destroy]
-  load_and_authorize_resource
+  #load_and_authorize_resource
   # GET /clubs
   # GET /clubs.json
   def index
@@ -30,16 +30,17 @@ class ClubsController < ApplicationController
 
     @club = Club.new(club_params)
 
-    @club.user_id = User.find(current_user.id).id
-    respond_to do |format|
+    @club.user_id = current_user.id
+
+    respond_to { |format|
       if @club.save
-        format.html { redirect_to @club, notice: 'Club was successfully created.' }
+        format.html { redirect_to @club, notice: "Club was successfully created." }
         format.json { render :show, status: :created, location: @club }
       else
         format.html { render :new }
         format.json { render json: @club.errors, status: :unprocessable_entity }
       end
-    end
+    }
   end
 
   # PATCH/PUT /clubs/1

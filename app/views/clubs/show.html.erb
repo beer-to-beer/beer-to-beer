@@ -6,8 +6,24 @@
 </p>
 
 <p>
-  <strong>Address:</strong>
-  <%= @club.address_id %>
+  <strong>Street:</strong>
+  <%= @club.address.street %>
+</p>
+<p>
+  <strong>House number:</strong>
+  <%= @club.address.house_number %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%= @club.address.city %>
+</p>
+<p>
+  <strong>Postal code:</strong>
+  <%= @club.address.postal_code %>
+</p>
+<p>
+  <strong>Country:</strong>
+  <%= @club.address.country %>
 </p>
 
 <p>
