@@ -58768,3 +58768,347 @@ Started GET "/assets/upload.js?body=1" for 127.0.0.1 at 2014-12-29 20:31:03 +010
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-29 20:31:03 +0100
 >>>>>>> master
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateEvents (20141218194114)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "sdate" datetime, "club_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218194114"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateClubs (20141218194919)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218194919"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to AddImageToEvents (20141218204300)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "events" ADD "imageURL" varchar(255)
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141218204300"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20141220120016)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "first_name" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "last_name" varchar(255)[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220120016"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAddresses (20141220124555)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city" varchar(255), "postal_code" integer, "street" varchar(255), "house_number" varchar(255), "country" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220124555"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddAddressIdToUsers (20141220140146)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "address_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141220140146"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to AddAddressIdToClubs (20141222173754)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "clubs" ADD "address_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141222173754"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShops (20141227170216)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "shops" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141227170216"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateBeers (20141228222028)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141228222028"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to RolifyCreateRoles (20141229135725)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "resource_id" integer, "resource_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "users_roles" ("user_id" integer, "role_id" integer) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_roles_on_name" ON "roles" ("name")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_roles_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_roles_on_name' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141229135725"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateCategories (20141229140046)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141229140046"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateActiveAdminComments (20141229142327)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "namespace" varchar(255), "body" text, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141229142327"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddCategoryRefToBeers (20141229161330)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "beers" ADD "category_id" integer
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_beers_on_category_id" ON "beers" ("category_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141229161330"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProducers (20141229162930)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "producers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_producers_on_address_id" ON "producers" ("address_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141229162930"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to AddProducerRefToBeers (20141229163442)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "beers" ADD "producer_id" integer
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_beers_on_producer_id" ON "beers" ("producer_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141229163442"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateShopBeers (20141229170923)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "shop_beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shop_id" integer, "beer_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_shop_beers_on_shop_id" ON "shop_beers" ("shop_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shop_beers_on_shop_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shop_beers_on_shop_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_shop_beers_on_beer_id" ON "shop_beers" ("beer_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141229170923"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddPriceToShopBeer (20141229171232)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "shop_beers" ADD "price" double[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141229171232"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_producer_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_producers_on_address_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_roles_on_name_and_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_roles_on_name_and_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_roles_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_roles_on_name' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shop_beers_on_beer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shop_beers_on_beer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shop_beers_on_shop_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shop_beers_on_shop_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_roles_on_user_id_and_role_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_roles_on_user_id_and_role_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Münster"], ["country", "Germany"], ["created_at", "2014-12-29 19:34:57.824324"], ["house_number", "11"], ["postal_code", 48167], ["street", "Straße"], ["updated_at", "2014-12-29 19:34:57.824324"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'beer@beer.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2014-12-29 19:34:57.912373"], ["email", "beer@beer.com"], ["encrypted_password", "$2a$10$rNDsIltIa90yXRygCqKf2ekmsRmT9Lrt3I1TF1n1bYoM9xeg0PIRG"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2014-12-29 19:34:57.912373"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2014-12-29 19:34:57.918586"], ["name", "Test Club"], ["updated_at", "2014-12-29 19:34:57.918586"], ["user_id", 1]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2014-12-29 19:34:57.926939"], ["imageURL", "image.jpg"], ["sdate", "2014-12-29 00:00:00.000000"], ["title", "Test"], ["updated_at", "2014-12-29 19:34:57.926939"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-29 19:34:57.934519"], ["name", "Weizen"], ["updated_at", "2014-12-29 19:34:57.934519"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "producers" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2014-12-29 19:34:57.941056"], ["name", "Krombacher"], ["updated_at", "2014-12-29 19:34:57.941056"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2014-12-29 19:34:57.946209"], ["producer_id", 1], ["title", "Krombacher Weizen"], ["updated_at", "2014-12-29 19:34:57.946209"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'admin@beer.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2014-12-29 19:34:58.015809"], ["email", "admin@beer.com"], ["encrypted_password", "$2a$10$aLJK45C07KqNtdc..QBl/e5C5M6k/Um3kISoj4sLBnp1lT7jZKxEu"], ["first_name", "Admin"], ["last_name", "Admin"], ["updated_at", "2014-12-29 19:34:58.015809"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles"  WHERE "roles"."name" = 'admin' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL  ORDER BY "roles"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "roles" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-12-29 19:34:58.032340"], ["name", "admin"], ["updated_at", "2014-12-29 19:34:58.032340"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mRole Exists (0.2ms)[0m  SELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = 1 LIMIT 1  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT "roles".id FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles"  WHERE "roles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users_roles" ("role_id", "user_id") VALUES (?, ?)[0m  [["role_id", 1], ["user_id", 2]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'jan@beer.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2014-12-29 19:34:58.227499"], ["email", "jan@beer.com"], ["encrypted_password", "$2a$10$5NvdZRQX2WJTS3UUBwdbqeNFUAhKZfq4Gp0d7hx19V83vl4O3fY1i"], ["first_name", "Jan"], ["last_name", "Wendt"], ["updated_at", "2014-12-29 19:34:58.227499"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles"  WHERE "roles"."name" = 'admin' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL  ORDER BY "roles"."id" ASC LIMIT 1[0m
+  [1m[35mRole Exists (0.1ms)[0m  SELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = 1 LIMIT 1  [["user_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT "roles".id FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles"  WHERE "roles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users_roles" ("role_id", "user_id") VALUES (?, ?)[0m  [["role_id", 1], ["user_id", 3]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles"  WHERE "roles"."name" = 'user' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL  ORDER BY "roles"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "roles" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-29 19:34:58.235582"], ["name", "user"], ["updated_at", "2014-12-29 19:34:58.235582"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles"  WHERE "roles"."id" IN (1, 2)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users_roles" ("role_id", "user_id") VALUES (?, ?)[0m  [["role_id", 2], ["user_id", 3]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'thorsten@beer.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2014-12-29 19:34:58.304484"], ["email", "thorsten@beer.com"], ["encrypted_password", "$2a$10$sQ9ZBsOKSqnl1ULAz1Gvvu1MiwoddZWhcS3oO/mFRPylzzS8ThDDC"], ["first_name", "Thorsten"], ["last_name", "Woywod"], ["updated_at", "2014-12-29 19:34:58.304484"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles"  WHERE "roles"."name" = 'admin' AND "roles"."resource_type" IS NULL AND "roles"."resource_id" IS NULL  ORDER BY "roles"."id" ASC LIMIT 1[0m
+  [1m[35mRole Exists (0.1ms)[0m  SELECT  1 AS one FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ? AND "roles"."id" = 1 LIMIT 1  [["user_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT "roles".id FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles"  WHERE "roles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "users_roles" ON "roles"."id" = "users_roles"."role_id" WHERE "users_roles"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users_roles" ("role_id", "user_id") VALUES (?, ?)[0m  [["role_id", 1], ["user_id", 4]]
+  [1m[35m (0.9ms)[0m  commit transaction
