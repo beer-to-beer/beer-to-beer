@@ -43,6 +43,10 @@
     <%= f.label :url %><br>
     <%= f.text_field :url %>
   </div>
+  <div class="field">
+    <%= f.label :beer %> <br>
+    <%= f.collection_check_boxes :beer_ids, Beer.all, :id, :title, {selected: @club.beers.map(&:id), include_hidden: false }, multiple: true %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
