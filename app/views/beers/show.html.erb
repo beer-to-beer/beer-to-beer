@@ -4,6 +4,17 @@
   <strong>Title:</strong>
   <%= @beer.title %>
 </p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @beer.category.name %>
+</p>
+
+<p>
+  <strong>Producer:</strong>
+  <%= @beer.producer.name %>
+</p>
+
 <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id) %> |
 <%= link_to 'Edit', edit_beer_path(@beer) %> |
 <%= link_to 'Back', beers_path %>
