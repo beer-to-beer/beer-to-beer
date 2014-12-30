@@ -1,0 +1,47 @@
+<%= form_for(@rating) do |f| %>
+  <% if @rating.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
+
+      <ul>
+      <% @rating.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<% if current_user %>
+   <%= f.hidden_field :beer_id,:value => params[:beer_id]%>
+    <%= f.hidden_field :user_id, :value => current_user.id%>
+    <%= current_user.id %>
+
+
+            <%= f.fields_for :criterions,@criterion do |info| %>
+                <div class="fields">
+                 <strong> Price: </strong>
+
+                  <%= info.hidden_field :name, :value => "Price" %>
+                  <div class="form-group">
+                    <%= info.label :value %>
+                    <%= info.text_field :value , class: "form-control"%>
+                  </div>
+
+                 </div>
+
+            <% end %>
+
+        
+
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% else %>
+        please login
+ <% end %>
+<% end %>

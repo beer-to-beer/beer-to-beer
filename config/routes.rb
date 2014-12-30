@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   resources :beers
 
   resources :shops
-
+  resources :ratings
+  resources :criterions
   resources :clubs
   resources :addresses
 
