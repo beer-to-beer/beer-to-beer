@@ -3,8 +3,9 @@ class RatingsController < InheritedResources::Base
   def new
     @rating = Rating.new
     @rating.criterions.build
+    @rating.criterions.build
+    @rating.criterions.build
   end
-
 
 
 

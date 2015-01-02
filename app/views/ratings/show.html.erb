@@ -1,22 +1,57 @@
+<link href="/assets/ratingbar.css" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"
+      type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="/assets/jquery.barrating.js"></script>
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Beer:</strong>
-  <%= @rating.beer_id %>
+<%= @rating.beer_id %>
+  <%= Beer.find(@rating.beer_id).title %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @rating.user_id %>
+  <%= User.find(@rating.user_id).email %>
 </p>
-<p>
-  <strong>Price Rating:</strong>
-    <%= @rating.criterions.first.value %>
-</p>
+
+<% @rating.criterions.each do |criterion| %>
+    <%= form_for(Criterion.new) do |info| %>
+            <div class="fields">
+
+
+        <div class="form-group">
+          <div class="input select rating-a">
+            <label for="example-a"> <%= criterion.name %></label>
+            <%= info.select criterion.name, ['1', '2', '3','4','5','6','7','8','9','10'],class: "form-control", :selected => criterion.value%>
+          </div>
+        </div>
+          </div>
+    <%end%>
+<% end %>
+
+
+
+
 <p>
   <strong>Comment:</strong>
   <%= @rating.comment %>
 </p>
 
-<%= link_to 'Edit', edit_rating_path(@rating) %> |
+<%= link_to 'Edit', edit_rating_path(@rating,:beer_id => @rating.beer_id) %> |
 <%= link_to 'Back', ratings_path %>
+
+
+<script>
+    $('#criterion_Price').barrating('show', {
+        readonly:true
+    });
+    $('#criterion_Taste').barrating('show', {
+        readonly:true
+    });
+    $('#criterion_Headache').barrating('show', {
+        readonly:true
+    });
+
+</script>
