@@ -10,6 +10,13 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *= require devise_bootstrap_views
+ *= require stylesheets/ace/effects
+ *= require stylesheets/ace/img-hover-effect
+ *= require stylesheets/ace/style
+ *= require stylesheets/ace/style_responsive
+ *= require stylesheets/ace/themes/default
+ *= require stylesheets/ace/headers/header1
+ *= require stylesheets/ace/headers/header2
  *= require_tree .
  *= require_self
  */
