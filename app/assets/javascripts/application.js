@@ -13,10 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require javascripts/ace/app.js
-//= require javascripts/ace/jquery-1.8.2.min.js
-//= require javascripts/ace/modernizr.custom.js
-//= require javascripts/ace/respond.js
-//= require javascripts/ace/pages/contact.js
-//= require javascripts/ace/pages/index.js
+//= require_tree ../../../ace/app/assets/
 //= require_tree .

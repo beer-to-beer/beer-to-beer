@@ -19,7 +19,7 @@ a.read-more:hover {
 /*Slider
 ------------------------------------*/
 .da-slide h2 i {
-	background:url(assets/plugins/ace/parallax-slider/img/bg-heading.png) repeat;
+	background:url(/assets/ace/parallax-slider/img/bg-heading.png) repeat;
 }
 
 /*Purchase
@@ -85,10 +85,10 @@ a.read-more:hover {
 }
 
 .bx-wrapper .bx-prev {
-	background-image: url(assets/plugins/ace/bxslider/images/controls.png);
+	background-image: url(/assets/ace/bxslider/images/controls.png);
 }
 .bx-wrapper .bx-next {
-	background-image: url(assets/plugins/ace/bxslider/images/controls.png);
+	background-image: url(/assets/ace/bxslider/images/controls.png);
 }
 
 /*Typography
