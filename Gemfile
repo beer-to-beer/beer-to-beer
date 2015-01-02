@@ -61,4 +61,14 @@ end
 #gem für die Production umgebung
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
+
+
+gem 'ace'
+gem 'ace-rails-ap'
+gem 'wrap-bootstrap-rails'
+gem 'font-awesome-rails'
+gem 'bootstrap-sass'
+gem 'sprockets'
+gem 'sprockets-rails'
