@@ -19,6 +19,9 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    ace (0.4.9)
+      template-inheritance
+    ace-rails-ap (3.0.2)
     actionmailer (4.1.8)
       actionpack (= 4.1.8)
       actionview (= 4.1.8)
@@ -49,6 +52,8 @@ GEM
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.9)
+    bootstrap-sass (3.3.1.0)
+      sass (~> 3.2)
     bourbon (3.2.3)
       sass (~> 3.2)
       thor
@@ -95,6 +100,8 @@ GEM
     faker (1.4.3)
       i18n (~> 0.5)
     ffi (1.9.6)
+    font-awesome-rails (4.2.0.0)
+      railties (>= 3.2, < 5.0)
     formatador (0.2.5)
     formtastic (3.1.2)
       actionpack (>= 3.2.13)
@@ -115,6 +122,8 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    haml (4.0.6)
+      tilt
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -243,6 +252,9 @@ GEM
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.10)
+    template-inheritance (0.3.1)
+      haml
+      tilt
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -263,8 +275,11 @@ GEM
     uglifier (2.6.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unindent (1.0)
     warden (1.2.3)
       rack (>= 1.0)
+    wrap-bootstrap-rails (0.0.3)
+      unindent
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -272,7 +287,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ace
+  ace-rails-ap
   activeadmin!
+  bootstrap-sass
   cancan
   capybara (= 2.4.4)
   carrierwave (= 0.10.0)
@@ -281,6 +299,7 @@ DEPENDENCIES
   devise-bootstrap-views
   factory_girl_rails (= 4.5.0)
   faker (= 1.4.3)
+  font-awesome-rails
   formulaic
   guard-rspec (= 4.5.0)
   jbuilder (~> 2.0)
@@ -294,8 +313,11 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
+  sprockets
+  sprockets-rails
   sqlite3
   therubyracer
   turbolinks
   twitter-bootstrap-rails
   uglifier (>= 1.3.0)
+  wrap-bootstrap-rails

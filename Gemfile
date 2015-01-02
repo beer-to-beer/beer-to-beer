@@ -62,3 +62,12 @@ end
 group :production do
   gem 'pg'
 end
+
+
+gem 'ace'
+gem 'ace-rails-ap'
+gem 'wrap-bootstrap-rails'
+gem 'font-awesome-rails'
+gem 'bootstrap-sass'
+gem 'sprockets'
+gem 'sprockets-rails'
