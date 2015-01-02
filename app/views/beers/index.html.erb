@@ -14,8 +14,8 @@
     <% @beers.each do |beer| %>
       <tr>
         <td><%= beer.title %></td>
-        <td><%= "#{Category.find_by(beer.category_id).name}" %></td>
-        <td><%= "#{Producer.find_by(beer.producer_id).name}" %></td>
+        <td><%= beer.category.name %></td>
+        <td><%= beer.producer.name %></td>
         <td><%= link_to 'Show', beer %></td>
         <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
         <td><%= link_to 'Destroy', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
