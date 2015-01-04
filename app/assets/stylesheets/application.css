@@ -9,9 +9,13 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *= require devise_bootstrap_views
- *= require devise_bootstrap_views
- *= require_tree ../../../ace/app/assets/
- *= require_tree .
- *= require_self
+ *= require plugins/ace/bootstrap/css/bootstrap.min
+ *= require stylesheets/ace/style
+ *= require stylesheets/ace/headers/header1
+ *= require plugins/ace/bootstrap/css/bootstrap-responsive.min
+ *= require stylesheets/ace/style_responsive
+ *= require plugins/ace/font-awesome/css/font-awesome
+ *= require plugins/ace/flexslider/flexslider
+ *= require plugins/ace/parallax-slider/css/parallax-slider
+ *= require stylesheets/ace/themes/default
  */
