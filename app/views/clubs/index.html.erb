@@ -1,26 +1,31 @@
 <h1>Listing clubs</h1>
 <% if current_user %>
     <% if current_user.has_role? :admin %>
+        <% if @clubs_activ.count == 0 %>
+        <div>Currently all clubs are activated.</div>
+        <% else %>
         <table class="table">
           <thead>
             <tr>
               <th>Name</th>
-              <th>aktivate</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
+
             <% @clubs_activ.each do |a| %>
                 <tr>
                   <td>
                     <%=a.name %>
                   </td>
                   <td>
-
+                    <%= link_to( "aktivate", edit_club_path(a)) %>
                   </td>
                 </tr>
             <% end %>
           </tbody>
         </table>
+            <% end %>
     <% end %>
 <% end %>
 <table class="table table-striped">

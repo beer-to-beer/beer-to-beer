@@ -9,12 +9,16 @@ Rails.application.routes.draw do
   resources :shops
   resources :ratings
   resources :criterions
-  resources :clubs
+
   resources :addresses
 
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :events
-  match '/clubs/activate/:id' => 'clubs#activate', via: [:post, :PATCH] , as: 'club_activate'
+
+  resources :clubs
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

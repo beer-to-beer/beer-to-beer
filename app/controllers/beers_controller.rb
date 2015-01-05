@@ -46,7 +46,7 @@ class BeersController < ApplicationController
     respond_to do |format|
       if @beer.update(beer_params)
         format.html { redirect_to @beer, notice: 'Beer was successfully updated.' }
-        format.json { render :show, status: :ok, location: @beer }
+        format.json { render :'clubs/index', status: :ok, location: @beer }
       else
         format.html { render :edit }
         format.json { render json: @beer.errors, status: :unprocessable_entity }

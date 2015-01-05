@@ -1,5 +1,7 @@
 class ClubsController < ApplicationController
-  before_action :set_club, only: [:show,:activate ,:edit, :update, :destroy]
+  before_action :set_club, only: [:show ,:edit, :update, :destroy]
+  helper_method :activate_club_club
+
   #load_and_authorize_resource
   # GET /clubs
   # GET /clubs.json
@@ -7,17 +9,13 @@ class ClubsController < ApplicationController
     @clubs = Club.where(active: true)
     @clubs_activ = Club.where(active: false)
 
+
     #
   end
 
   # GET /clubs/1
   # GET /clubs/1.json
   def show
-  end
-
-  def activate(a)
-    #@clubs_activ.active = true
-    Club.find(a).active = true
   end
 
   # GET /clubs/new
@@ -56,8 +54,8 @@ class ClubsController < ApplicationController
   def update
     respond_to do |format|
       if @club.update(club_params)
-        format.html { redirect_to @club, notice: 'Club was successfully updated.' }
-        format.json { render :show, status: :ok, location: @club }
+        format.html { redirect_to clubs_path, notice: 'Club was successfully updated.' }
+        format.json { render :index, status: :ok, location: @club }
       else
         format.html { render :edit }
         format.json { render json: @club.errors, status: :unprocessable_entity }
@@ -80,9 +78,11 @@ class ClubsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_club
-
+     if params[:format].nil?
       @club = Club.find(params[:id])
-
+     else
+       @club = Club.find(params[:format])
+       end
     end
     # Never trust parameters from the scary internet, only allow the white list through.
     def club_params
