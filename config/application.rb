@@ -13,7 +13,11 @@ module BierToBier
 
     config.serve_static_assets = true
 
-
+    config.assets.paths << Rails.root.join("ace","app","assets")
+    config.assets.paths << Rails.root.join("ace","app","assets","plugins","ace")
+    config.assets.paths << Rails.root.join("ace","app","assets","plugins","ace","font-awesome","font")
+    config.assets.paths << Rails.root.join("ace","app","assets","plugins","ace","glyphicons","fonts")
+    config.assets.paths << Rails.root.join("ace","app","assets","stylesheets")
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
