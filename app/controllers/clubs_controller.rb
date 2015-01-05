@@ -1,15 +1,23 @@
 class ClubsController < ApplicationController
-  before_action :set_club, only: [:show, :edit, :update, :destroy]
+  before_action :set_club, only: [:show,:activate ,:edit, :update, :destroy]
   #load_and_authorize_resource
   # GET /clubs
   # GET /clubs.json
   def index
-    @clubs = Club.all
+    @clubs = Club.where(active: true)
+    @clubs_activ = Club.where(active: false)
+
+    #
   end
 
   # GET /clubs/1
   # GET /clubs/1.json
   def show
+  end
+
+  def activate(a)
+    #@clubs_activ.active = true
+    Club.find(a).active = true
   end
 
   # GET /clubs/new
@@ -29,7 +37,7 @@ class ClubsController < ApplicationController
   def create
 
     @club = Club.new(club_params)
-
+    @club.active = false
     @club.user_id = current_user.id
 
     respond_to { |format|
@@ -72,10 +80,12 @@ class ClubsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_club
+
       @club = Club.find(params[:id])
+
     end
     # Never trust parameters from the scary internet, only allow the white list through.
     def club_params
-      params.require(:club).permit(:name, :url, :user_id, address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
+      params.require(:club).permit(:name, :url, :user_id, :active , address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
     end
 end
