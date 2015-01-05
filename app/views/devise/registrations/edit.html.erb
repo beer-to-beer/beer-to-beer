@@ -1,57 +1,97 @@
-<%= bootstrap_devise_error_messages! %>
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4><%= t('.title', :resource => resource_class.model_name.human , :default => 'Edit #{resource_name.to_s.humanize}') %></h4>
+<link href="/assets/users.css?body=1" media="all" rel="stylesheet"/>
+<div class="body">
+  <div class="breadcrumbs margin-bottom-50">
+    <div class="container">
+      <h1 class="color-green pull-left">Edit Profile</h1>
+      <ul class="pull-right breadcrumb">
+        <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+        <li class="active">Edit Profile</li>
+      </ul>
+    </div>
+    <!--/container-->
   </div>
-  <div class="panel-body">
-    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-    <div class="form-group">
-      <%= f.label :email %>
-      <%= f.email_field :email, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :password %> <i>(<%= t('.leave_blank_if_you_don_t_want_to_change_it', :default => "leave blank if you don't want to change it") %>)</i><br />
-      <%= f.password_field :password, :autocomplete => "off", class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, class: "form-control"  %>
-    </div>
-    <div class="form-group">
-      <%= f.label :current_password %> <i>(<%= t('.we_need_your_current_password_to_confirm_your_changes', :default => 'we need your current password to confirm your changes') %>)</i>
-      <%= f.password_field :current_password, class: "form-control" %>
-    </div>
-        <div class="form-group">
+  <!--/breadcrumbs-->
+  <%= bootstrap_devise_error_messages! %>
+  <div class="container">
+    <div class="row-fluid margin-bottom-10">
 
-          <%= f.fields_for :address,@address do |info| %>
-              <div class="form-group">
-                <%= info.label :city %>
-                <%= info.text_field :city , class: "form-control"%>
-              </div>
-              <div class="form-group">
-                <%= info.label :postal_code %>
-                <%= info.text_field :postal_code , class: "form-control"%>
-              </div>
-              <div class="form-group">
-                <%= info.label :street %>
-                <%= info.text_field :street, class: "form-control" %>
-              </div>
-              <div class="form-group">
-                <%= info.label :house_number %>
-                <%= info.text_field :house_number , class: "form-control"%>
-              </div>
-              <div class="form-group">
-                <%= info.label :country %>
-                <%= info.text_field :country, class: "form-control" %>
-              </div>
-          <% end %>
+
+      <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:method => :put,class: "reg-page"}) do |f| %>
+          <h3>Edit your Profile</h3>
+
+          <div class="controls">
+
+            <%= f.label :email %>
+            <%= f.email_field :email, class: "span12" %>
           </div>
 
+          <div class="controls">
+            <div class="span6">
+              <%= f.label :password %>
 
-          <%= f.submit t('.update', :default => "Update"), class: "btn btn-primary" %></div>
-<% end %>
-</div>
+              <%= f.password_field :password, class: "span12", :autocomplete => "off"%>
+            </div>
+            <div class="span6">
+              <%= f.label :password_confirmation %>
+              <%= f.password_field :password_confirmation, class: "span12"%>
+            </div>
+            </div>
+            <div class="controls">
 
-<p><%= t('.unhappy', :default => 'Unhappy') %>? <%= link_to t('.cancel_my_account', :default => "Cancel my account"), registration_path(resource_name), :data => { :confirm => t('.are_you_sure', :default => "Are you sure?") }, :method => :delete %>.</p>
+              <%= f.label :current_password %>
+              <i>(<%= t('.we_need_your_current_password_to_confirm_your_changes', :default => 'we need your current password to confirm your changes') %>)</i>
+              <%= f.password_field :current_password, class: "span12"%>
+            </div>
 
-<%= link_to "Back", :back %>
+          <div class="controls">
+            <div class="span6">
+
+              <%= f.label :first_name %>
+              <%= f.text_field :first_name, class: "span12" %>
+            </div>
+            <div class="span6">
+
+              <%= f.label :last_name %>
+              <%= f.text_field :last_name, class: "span12" %>
+            </div>
+            </div>
+
+            <div class="controls">
+
+              <%= f.fields_for :address, @address do |info| %>
+                  <div class="fields">
+                    <div class="form-group">
+                      <%= info.label :city %>
+                      <%= info.text_field :city, class: "span12" %>
+                    </div>
+                    <div class="form-group">
+                      <%= info.label :postal_code %>
+                      <%= info.text_field :postal_code, class: "span12" %>
+                    </div>
+                    <div class="form-group">
+                      <%= info.label :street %>
+                      <%= info.text_field :street, class: "span12" %>
+                    </div>
+                    <div class="form-group">
+                      <%= info.label :house_number %>
+                      <%= info.text_field :house_number, class: "span12" %>
+                    </div>
+                    <div class="form-group">
+                      <%= info.label :country %>
+                      <%= info.text_field :country, class: "span12" %>
+                    </div>
+
+              <% end %>
+              </div>
+
+
+              <%= f.submit t('.update', :default => "Update"), class: "btn-u pull-right" %></div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+  <p><%= t('.unhappy', :default => 'Unhappy') %>
+    ? <%= link_to t('.cancel_my_account', :default => "Cancel my account"), registration_path(resource_name), :data => {:confirm => t('.are_you_sure', :default => "Are you sure?")}, :method => :delete %>
+    .</p>
+
+  <%= link_to "Back", :back %>

@@ -1,27 +1,44 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4><%= t('.sign_in', :default => "Sign in") %></h4>
+<link href="/assets/users.css?body=1" media="all" rel="stylesheet"/>
+<div class="body">
+  <div class="breadcrumbs margin-bottom-50">
+    <div class="container">
+      <h1 class="color-green pull-left">Register</h1>
+      <ul class="pull-right breadcrumb">
+        <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+        <li class="active">Registration</li>
+      </ul>
+    </div>
+    <!--/container-->
   </div>
-  <div class="panel-body">
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { role: "form" }) do |f| %>
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, autofocus: true, class: "form-control" %>
-      </div>
-      <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
-      </div>
+  <!--/breadcrumbs-->
+  <div class="container">
+    <div class="row-fluid">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { role: "form",class: "log-page" }) do |f| %>
+          <h3>Login to your account</h3>
+          <div class="input-prepend">
+            <span class="add-on"><i class="icon-user"></i></span>
+
+        <%= f.email_field :email, autofocus: true, class: "input-xlarge" ,placeholder: "Email"%>
+          </div>
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-lock"></i></span>
+
+        <%= f.password_field :password, autocomplete: "off", class: "input-xlarge" ,placeholder: "Password"%>
+            </div>
+          <div class="controls form-inline">
       <% if devise_mapping.rememberable? %>
-        <div class="checkbox">
-          <label>
-            <%= f.check_box :remember_me %>
-            <%= f.label :remember_me %>
+
+          <label class="checkbox">
+            <%= f.check_box :remember_me ,class: "checkbox"%>
+            <%= f.label :remember_me, class: "checkbox"%>
           </label>
-        </div>
+
+
         <% end %>
-      <%= f.submit  t('.sign_in', :default => "Sign in"), class: "btn btn-primary" %>
+      <%= f.submit  t('.sign_in', :default => "Sign in"), class: "btn-u pull-right" %>
+          </div>
     <% end %>
+      <%= render "devise/shared/links" %>
   </div>
 </div>
-<%= render "devise/shared/links" %>
+
