@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="row-fluid">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
@@ -45,9 +45,10 @@
   </div>
   <div class="field">
     <%= f.label :beer %> <br>
-    <%= f.collection_check_boxes :beer_ids, Beer.all, :id, :title, {selected: @club.beers.map(&:id), include_hidden: false }, multiple: true %>
+    <%= f.collection_check_boxes :beer_ids, Beer.all, :id, :title, {selected: @club.beers.map(&:id), include_hidden: false }, multiple: true , class: "checkbox inline"%>
   </div>
   <div class="actions">
-    <%= f.submit %>
+
+    <%= f.submit class: "btn-u btn-u-green btn-large"%>
   </div>
 <% end %>

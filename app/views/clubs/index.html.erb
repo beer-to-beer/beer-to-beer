@@ -1,16 +1,29 @@
 <h1>Listing clubs</h1>
 <% if current_user %>
     <% if current_user.has_role? :admin %>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>aktivate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @clubs_activ.each do |a| %>
+                <tr>
+                  <td>
+                    <%=a.name %>
+                  </td>
+                  <td>
 
-        <% @clubs_activ.each do |a| %>
-
-            <%=a.name %>   <%= link_to 'aktivate', :method => activate(a.id) %>
-
-
-        <% end %>
+                  </td>
+                </tr>
+            <% end %>
+          </tbody>
+        </table>
     <% end %>
 <% end %>
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Name</th>
@@ -36,4 +49,4 @@
 
 <br>
 
-<%= link_to 'New Club', new_club_path %>
+<%= link_to 'New Club', new_club_path , {:class => "btn btn-large btn-block btn-primary"}%>

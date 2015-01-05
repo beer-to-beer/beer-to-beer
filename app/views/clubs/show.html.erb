@@ -1,47 +1,64 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @club.name %>
-</p>
+<div class= "headline">
+  <h3>Club: <%= @club.name %></h3>
+</div>
+<div class="container portfolio-columns">
+  <div class="row-fluid">
+    <div class="view view-tenth span6">
+        <h2>Location</h2>
+            <%= @club.address.street %>
+            <%= @club.address.house_number %><br>
+            <%= @club.address.city %><br>
+            <%= @club.address.postal_code %><br>
+            <%= @club.address.country %>
+    </div>
+    <div class="view view-tenth span6">
 
-<p>
-  <strong>Street:</strong>
-  <%= @club.address.street %>
-</p>
-<p>
-  <strong>House number:</strong>
-  <%= @club.address.house_number %>
-</p>
-<p>
-  <strong>City:</strong>
-  <%= @club.address.city %>
-</p>
-<p>
-  <strong>Postal code:</strong>
-  <%= @club.address.postal_code %>
-</p>
-<p>
-  <strong>Country:</strong>
-  <%= @club.address.country %>
-</p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="view view-tenth span6">
+      <h2>Webside</h2>
+      <%= link_to @club.url, @club.url, :target => "_blank" %>
+  </div>
+    <div class="view view-tenth span6">
+      <h2>Owner</h2>
+      <% u=User.find(@club.user_id) %>
+      E-Mail: <%= mail_to User.find(@club.user_id).email, "#{u.first_name} #{u.last_name}" %>
+    </div>
+  </div>
+</div>
+<div class= "headline">
+  <h3>Beers</h3>
+</div>
+<div class="row-fluid margin-bottom-10">
+  <div class="bx-wrapper">
+    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 218px;">
+        <% @club.beers.each do |b| %>
+            <li>
+              <%= link_to(b.title, b) %>
+            </li>
+          <% end %>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Url:</strong>
-  <%= link_to @club.url, @club.url, :target => "_blank" %>
+<div class= "headline">
+    <h3>Events</h3>
+</div>
+<div class="row-fluid margin-bottom-10">
+    <div class="bx-wrapper">
+        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 218px;">
+              <% @club.events.each do |p| %>
+                <li style="float: left; list-style: none; position: relative; width: 173.5px; margin-right: 10px;">
+                        <%= link_to(image_tag(p.imageURL), p) %>
+                </li>
+            <% end %>
+        </div>
+    </div>
+</div>
 
 
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= mail_to User.find(@club.user_id).email, User.find(@club.user_id).email %>
-</p>
-<p>Veranstalltungen:</p>
-<p>
-  <% @club.events.map(&:imageURL).each do |p| %>
-  <%= image_tag p %> <br/>
-  <% end %>
-</p>
-<%= link_to 'Edit', edit_club_path(@club) %> |
-<%= link_to 'Back', clubs_path %>
+<%= link_to 'Edit', edit_club_path(@club) , {:class => "btn btn-large btn-primary"}%>
+<%= link_to 'Back', clubs_path , {:class => "btn btn-large btn-primary"}%>
