@@ -9,7 +9,14 @@ ActiveAdmin.register Club do
       f.inputs "Details" do
         f.input :name
         f.input :url
-        f.input :address
+        f.input :active
+        f.fields_for :address do |info|
+          info.input :street
+          info.input :city
+          info.input :postal_code
+          info.input :house_number
+          #info.input :country
+        end
       end
      f.actions
     end

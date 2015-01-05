@@ -72,3 +72,5 @@ gem 'font-awesome-rails'
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'sprockets-rails'
+
+gem 'country_select', github: 'stefanpenner/country_select'
