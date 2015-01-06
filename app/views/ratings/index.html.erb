@@ -31,22 +31,26 @@
 
         <tbody>
         <% @ratings.each do |rating| %>
-            <tr>
-              <td><%= rating.beer.title %></td>
-              <td><%= rating.user.email %></td>
-              <td><%= rating.criterions.where(:name => "Price").first.value %>/10</td>
-              <td><%= rating.criterions.where(:name => "Taste").first.value %>/10</td>
-              <td><%= rating.criterions.where(:name => "Headache").first.value %>/10</td>
-              <td><%= rating.criterions.sum(:value)/3 %>/10</td>
-              <% if rating.comment.length > 15 %>
-                  <td><%= rating.comment.slice!(0..15) %>...</td>
-              <% else %>
-                  <td><%= rating.comment %></td>
-              <% end %>
-              <td><%= link_to 'Show', rating, data: {no_turbolink: true} %></td>
-              <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
-              <td><%= link_to 'Destroy', rating, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-            </tr>
+
+            <% if (params[:beer_id].to_i == rating.beer_id.to_i) or !params[:beer_id]%>
+
+                <tr>
+                  <td><%= rating.beer.title %></td>
+                  <td><%= rating.user.email %></td>
+                  <td><%= rating.criterions.where(:name => "Price").first.value %>/10</td>
+                  <td><%= rating.criterions.where(:name => "Taste").first.value %>/10</td>
+                  <td><%= rating.criterions.where(:name => "Headache").first.value %>/10</td>
+                  <td><%= rating.criterions.sum(:value)/3 %>/10</td>
+                  <% if rating.comment.length > 15 %>
+                      <td><%= rating.comment.slice!(0..15) %>...</td>
+                  <% else %>
+                      <td><%= rating.comment %></td>
+                  <% end %>
+                  <td><%= link_to 'Show', rating, data: {no_turbolink: true} %></td>
+                  <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
+                  <td><%= link_to 'Destroy', rating, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                </tr>
+            <% end %>
         <% end %>
         </tbody>
       </table>

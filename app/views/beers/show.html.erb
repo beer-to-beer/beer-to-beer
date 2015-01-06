@@ -16,5 +16,6 @@
 </p>
 
 <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id),data: { no_turbolink: true } %> |
+<%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
 <%= link_to 'Edit', edit_beer_path(@beer) %> |
 <%= link_to 'Back', beers_path %>
