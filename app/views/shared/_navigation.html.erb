@@ -32,9 +32,9 @@
           <li><%= link_to current_user.email, destroy_user_session_path, method: :delete %></li>
           <%= render partial: 'shared/options' %>
       <% else %>
-          <li><%= link_to 'Sign in', new_user_session_path %></li>
+          <li><%= link_to 'Sign in', new_user_session_path,data: { no_turbolink: true } %></li>
           <li class="devider">&nbsp;</li>
-          <li><%= link_to 'Sign up', new_user_registration_path %></li>
+          <li><%= link_to 'Sign up', new_user_registration_path,data: { no_turbolink: true } %></li>
       <% end %>
     </ul>
   </div>
@@ -46,7 +46,7 @@
   <div class="container">
     <!-- Logo -->
     <div class="logo">
-      <a href=<%= root_path %>><img id="logo-header" src="/assets/img/ace/logo1-default.png" alt="Logo" /></a>
+      <a href=<%= root_path %>><img id="logo-header" src="/assets/img/ace/logo.png" alt="Logo" /></a>
     </div><!-- /logo -->
 
     <!-- Menu -->
@@ -167,17 +167,17 @@
 </div><!--/header -->
 <!--=== End Header ===-->
 <!-- JS Global Compulsory -->
-<script type="text/javascript" src="assets/javascripts/ace/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="assets/javascripts/ace/modernizr.custom.js"></script>
-<script type="text/javascript" src="assets/plugins/ace/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/javascripts/ace/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/assets/javascripts/ace/modernizr.custom.js"></script>
+<script type="text/javascript" src="/assets/plugins/ace/bootstrap/js/bootstrap.min.js"></script>
 <!-- JS Implementing Plugins -->
-<script type="text/javascript" src="assets/plugins/ace/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="assets/plugins/ace/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="assets/plugins/ace/parallax-slider/js/jquery.cslider.js"></script>
-<script type="text/javascript" src="assets/plugins/ace/back-to-top.js"></script>
+<script type="text/javascript" src="/assets/plugins/ace/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/ace/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="/assets/plugins/ace/parallax-slider/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="/assets/plugins/ace/back-to-top.js"></script>
 <!-- JS Page Level -->
-<script type="text/javascript" src="assets/javascripts/ace/app.js"></script>
-<script type="text/javascript" src="assets/javascripts/ace/pages/index.js"></script>
+<script type="text/javascript" src="/assets/javascripts/ace/app.js"></script>
+<script type="text/javascript" src="/assets/javascripts/ace/pages/index.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
@@ -186,7 +186,7 @@
     });
 </script>
 <!--[if lt IE 9]>
-<script src="assets/javascripts/ace/respond.js"></script>
+<script src="/assets/javascripts/ace/respond.js"></script>
 <![endif]-->
 <script type="text/javascript">
     var _gaq = _gaq || [];

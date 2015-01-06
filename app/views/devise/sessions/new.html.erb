@@ -2,10 +2,10 @@
 <div class="body">
   <div class="breadcrumbs margin-bottom-50">
     <div class="container">
-      <h1 class="color-green pull-left">Register</h1>
+      <h1 class="color-green pull-left">Login</h1>
       <ul class="pull-right breadcrumb">
         <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-        <li class="active">Registration</li>
+        <li class="active">Login</li>
       </ul>
     </div>
     <!--/container-->
@@ -35,10 +35,15 @@
 
 
         <% end %>
+
       <%= f.submit  t('.sign_in', :default => "Sign in"), class: "btn-u pull-right" %>
           </div>
+          <hr />
+          <h4>Forgot your Password? </h4>
+          <p>no worries, <%= link_to t(".forgot_your_password", :default => "click here"), new_password_path(resource_name),class: "color-green" %> to reset your password</p>
     <% end %>
-      <%= render "devise/shared/links" %>
+
   </div>
 </div>
 
+</div>

@@ -4,11 +4,24 @@
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script src="/assets/jquery.barrating.js"></script>
 
+<div class="body">
+  <div class="breadcrumbs margin-bottom-50">
+    <div class="container">
+      <h1 class="color-green pull-left">New Rating</h1>
+      <ul class="pull-right breadcrumb">
+        <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+        <li><%= link_to 'Beers' ,beers_path%><span class="divider">/</span></li>
+        <li><%= link_to Beer.find(params[:beer_id]).title,Beer.find(params[:beer_id])%></a> <span class="divider">/</span></li>
+        <li class="active">Rating</li>
+      </ul>
+    </div><!--/container-->
+  </div><!--/breadcrumbs-->
 
+  <div class="container">
+    <div class="row-fluid margin-bottom-10">
 
-
-
-<%= form_for(@rating) do |f| %>
+<%= form_for(@rating,  html: {class: "reg-page"}) do |f| %>
+          <h2>Rate <%=Beer.find(params[:beer_id]).title %></h2>
   <% if @rating.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
@@ -21,21 +34,26 @@
     </div>
   <% end %>
 
-<% if current_user %>
+
+
+          <% if current_user %>
    <%= f.hidden_field :beer_id,:value => params[:beer_id]%>
     <%= f.hidden_field :user_id, :value => current_user.id%>
-
+              <div class="controls">
 
 
             <%= f.fields_for :criterions,@criterion do |info| %>
                 <div class="fields">
 
                   <% if info.index == 0 %>
-i
+
                       <%= info.hidden_field :name, :value => "Price" %>
                       <div class="form-group">
                         <div class="input select rating-a">
                           <label for="example-a">Price:</label>
+                          <%= info.select :value, ['1', '2', '3','4','5','6','7','8','9','10'], class: "form-control"%>
+                        </div>
+                      </div>
                   <% end %>
                   <% if info.index == 1%>
 
@@ -43,6 +61,9 @@ i
                           <div class="form-group">
                             <div class="input select rating-a">
                               <label for="example-a">Taste:</label>
+                              <%= info.select :value, ['1', '2', '3','4','5','6','7','8','9','10'], class: "form-control"%>
+                            </div>
+                          </div>
                   <% end %>
                   <% if info.index == 2%>
 
@@ -50,11 +71,12 @@ i
                                   <div class="form-group">
                                     <div class="input select rating-a">
                                       <label for="example-a">Headache:</label>
+                                      <%= info.select :value, ['1', '2', '3','4','5','6','7','8','9','10'], class: "form-control"%>
+                                    </div>
+                                  </div>
                   <% end %>
 
-                  <%= info.select :value, ['1', '2', '3','4','5','6','7','8','9','10'], class: "form-control"%>
-                    </div>
-                  </div>
+
                 </div>
 
 
@@ -67,16 +89,21 @@ i
 
   <div class="field">
     <%= f.label :comment %><br>
-    <%= f.text_area :comment %>
+    <%= f.text_area :comment, class: "span12" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+              </div>
+              <div class="controls form-inline">
+    <%= f.submit class: "btn-u pull-right"%>
   </div>
+
 
 <% else %>
         please login
  <% end %>
 <% end %>
+    </div><!--/row-fluid-->
+  </div><!--/container-->
+</div><!--/body-->
 
 <script>
 $('#rating_criterions_attributes_0_value').barrating();
