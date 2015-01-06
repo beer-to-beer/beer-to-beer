@@ -196,7 +196,7 @@
 
 .collapse.in li a:hover,
 .collapse.in li a.dropdown-toggle { 
-	border-bottom:solid 1px #72c02c !important;
+	border-bottom:solid 1px #f9ba00 !important;
 	background:none;
 }
 
@@ -216,15 +216,15 @@
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  	color:#72c02c;
-	border-bottom:solid 2px #72c02c;
+  	color:#f9ba00;
+	border-bottom:solid 2px #f9ba00;
 }
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:focus {
-  	color:#72c02c;	
+  	color:#f9ba00;	
   	text-decoration:none;
-	border-bottom:solid 2px #72c02c;
+	border-bottom:solid 2px #f9ba00;
   	background:none;	
   	-webkit-box-shadow:none;
        -moz-box-shadow:none;
@@ -232,9 +232,9 @@
 }
 
 .navbar .nav > .active > a:hover {	
-  	color:#72c02c;	
+  	color:#f9ba00;	
 	background:none;		
-	border-bottom:solid 2px #72c02c;
+	border-bottom:solid 2px #f9ba00;
   	-webkit-box-shadow:none;
        -moz-box-shadow:none;
           	box-shadow:none;
@@ -243,8 +243,8 @@
 /*Arrow for menu*/
 .navbar .nav > li > a .caret {
   margin:9px 0 0 3px !important;	
-  border-top-color: #72c02c!important;	
-  border-bottom-color: #72c02c !important;
+  border-top-color: #f9ba00!important;	
+  border-bottom-color: #f9ba00 !important;
 }
 
 /*Dropdown Menu*/
@@ -254,7 +254,7 @@
 	margin-top:-2px; 
 	min-width:200px;
 	border-radius:0; 
-	border-top:solid 2px #72c02c; 
+	border-top:solid 2px #f9ba00; 
 	border-bottom:solid 2px #687074; 
 	z-index: 9999 !important;
 }
@@ -287,7 +287,7 @@
 	padding:10px 15px;
 	margin-top:1px;
 	margin-right:0;
-	background:#72c02c;
+	background:#f9ba00;
 	border:none !important;	
 }
 .navbar .btn-navbar:hover {
@@ -308,8 +308,8 @@
 }
 .navbar .nav > li > .dropdown-menu:after {
 	left:19px;
-	border-top-color: #72c02c !important;
-	border-bottom-color: #72c02c !important;
+	border-top-color: #f9ba00 !important;
+	border-bottom-color: #f9ba00 !important;
 }
 
 /*Serach*/
@@ -342,8 +342,8 @@
 	border-bottom-color:#aaa;
 }
 .navbar .nav > li > a.search:hover {
-	color:#72c02c;
-	border-bottom-color:#72c02c;
+	color:#f9ba00;
+	border-bottom-color:#f9ba00;
 }
 
 /*Fancybox for gallery page*/
