@@ -1,6 +1,8 @@
 class EventsController < ApplicationController
+
   before_action :set_event, only: [:show, :edit, :update, :destroy]
   load_and_authorize_resource
+  skip_load_and_authorize_resource only: [:new, :create]
   # GET /events
   # GET /events.json
   def index
@@ -14,7 +16,12 @@ class EventsController < ApplicationController
 
   # GET /events/new
   def new
-    @event = Event.new
+    if Club.where(user_id: current_user.id, id: params[:club_id] ).count == 1
+      @event = Event.new
+    else
+      authorize! :create, Event
+    end
+
   end
 
   # GET /events/1/edit
@@ -24,7 +31,10 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
+    #authorize! :create, Event
     @event = Event.new(event_params)
+
+
 
     respond_to do |format|
       if @event.save

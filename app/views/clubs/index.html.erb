@@ -19,7 +19,7 @@
                     <%=a.name %>
                   </td>
                   <td>
-                    <%= link_to( "aktivate", edit_club_path(a)) %>
+                    <%= link_to( "aktivate", edit_club_path(a, :active => true)) %>
                   </td>
                 </tr>
             <% end %>

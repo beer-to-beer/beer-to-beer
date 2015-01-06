@@ -1,5 +1,9 @@
 class ClubsController < ApplicationController
   before_action :set_club, only: [:show ,:edit, :update, :destroy]
+  load_and_authorize_resource
+
+    skip_load_and_authorize_resource only: [:edit, :update]
+
   helper_method :activate_club_club
 
   #load_and_authorize_resource
@@ -28,7 +32,10 @@ class ClubsController < ApplicationController
 
   # GET /clubs/1/edit
   def edit
+    #@club = Club.where(id: params[:id])
+    authorize!(:edit, @club)
   end
+
 
   # POST /clubs
   # POST /clubs.json
@@ -37,9 +44,12 @@ class ClubsController < ApplicationController
     @club = Club.new(club_params)
     @club.active = false
     @club.user_id = current_user.id
+    #authorize! :manage, @club
+
 
     respond_to { |format|
       if @club.save
+
         format.html { redirect_to @club, notice: "Club was successfully created." }
         format.json { render :show, status: :created, location: @club }
       else
@@ -52,6 +62,7 @@ class ClubsController < ApplicationController
   # PATCH/PUT /clubs/1
   # PATCH/PUT /clubs/1.json
   def update
+    #authorize!(:update, @club)
     respond_to do |format|
       if @club.update(club_params)
         format.html { redirect_to clubs_path, notice: 'Club was successfully updated.' }
@@ -78,11 +89,9 @@ class ClubsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_club
-     if params[:format].nil?
+
       @club = Club.find(params[:id])
-     else
-       @club = Club.find(params[:format])
-       end
+
     end
     # Never trust parameters from the scary internet, only allow the white list through.
     def club_params

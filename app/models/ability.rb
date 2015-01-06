@@ -12,7 +12,11 @@ class Ability
       #
     else
       can :read, :all
+
+
     end
+    #can :create, Event, :user_id => user.id
+
     #
 
     # The first argument to `can` is the action you are giving the user 
@@ -32,5 +36,6 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/ryanb/cancan/wiki/Defining-Abilities
-  end
+
+    end
 end

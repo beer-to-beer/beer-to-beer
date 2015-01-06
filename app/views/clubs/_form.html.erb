@@ -51,16 +51,22 @@
                 <td></td>
               </tr>
               <% if current_user.has_role? :admin %>
-              <tr>
+              <tr class="color-red">
                 <td><%= f.label :active %></td>
-                <td><%= f.check_box :active %></td>
+                <% if params[:active] = "true" %>
+                    <td><%= f.check_box :active , { :checked => true} %></td>
+                <% else %>
+                    <td><%= f.check_box :active %></td>
+                <% end %>
               </tr>
               <% end %>
             </table>
         </div>
-        <div class="view view-tenth span6">
+        <div class="view view-tenth span6" >
           <%= f.label :beer %>
-          <%= f.collection_check_boxes :beer_ids, Beer.all, :id, :title, {selected: @club.beers.map(&:id), include_hidden: false }, multiple: true , class: "checkbox inline"%>
+          <%= f.collection_check_boxes(:beer_ids, Beer.all, :id, :title, {selected: @club.beers.map(&:id), include_hidden: false }, multiple: true , class: "checkbox inline") do |d| %>
+           <div><%= d.label  %><%= d.check_box %></div><br>
+          <% end %>
 
         </div>
       </div>
