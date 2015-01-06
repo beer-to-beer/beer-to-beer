@@ -196,7 +196,7 @@
 
 .collapse.in li a:hover,
 .collapse.in li a.dropdown-toggle { 
-	border-bottom:solid 1px #f9ba00 !important;
+	border-bottom:solid 1px #fac001 !important;
 	background:none;
 }
 
@@ -216,15 +216,15 @@
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  	color:#f9ba00;
-	border-bottom:solid 2px #f9ba00;
+  	color:#fac001;
+	border-bottom:solid 2px #fac001;
 }
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:focus {
-  	color:#f9ba00;	
+  	color:#fac001;	
   	text-decoration:none;
-	border-bottom:solid 2px #f9ba00;
+	border-bottom:solid 2px #fac001;
   	background:none;	
   	-webkit-box-shadow:none;
        -moz-box-shadow:none;
@@ -232,9 +232,9 @@
 }
 
 .navbar .nav > .active > a:hover {	
-  	color:#f9ba00;	
+  	color:#fac001;	
 	background:none;		
-	border-bottom:solid 2px #f9ba00;
+	border-bottom:solid 2px #fac001;
   	-webkit-box-shadow:none;
        -moz-box-shadow:none;
           	box-shadow:none;
@@ -243,8 +243,8 @@
 /*Arrow for menu*/
 .navbar .nav > li > a .caret {
   margin:9px 0 0 3px !important;	
-  border-top-color: #f9ba00!important;	
-  border-bottom-color: #f9ba00 !important;
+  border-top-color: #fac001!important;	
+  border-bottom-color: #fac001 !important;
 }
 
 /*Dropdown Menu*/
@@ -254,7 +254,7 @@
 	margin-top:-2px; 
 	min-width:200px;
 	border-radius:0; 
-	border-top:solid 2px #f9ba00; 
+	border-top:solid 2px #fac001; 
 	border-bottom:solid 2px #687074; 
 	z-index: 9999 !important;
 }
@@ -287,7 +287,7 @@
 	padding:10px 15px;
 	margin-top:1px;
 	margin-right:0;
-	background:#f9ba00;
+	background:#fac001;
 	border:none !important;	
 }
 .navbar .btn-navbar:hover {
@@ -308,8 +308,8 @@
 }
 .navbar .nav > li > .dropdown-menu:after {
 	left:19px;
-	border-top-color: #f9ba00 !important;
-	border-bottom-color: #f9ba00 !important;
+	border-top-color: #fac001 !important;
+	border-bottom-color: #fac001 !important;
 }
 
 /*Serach*/
@@ -342,8 +342,8 @@
 	border-bottom-color:#aaa;
 }
 .navbar .nav > li > a.search:hover {
-	color:#f9ba00;
-	border-bottom-color:#f9ba00;
+	color:#fac001;
+	border-bottom-color:#fac001;
 }
 
 /*Fancybox for gallery page*/
