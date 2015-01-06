@@ -34,7 +34,7 @@ a:active {
    outline:0 !important;
 }
 a:hover {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:underline;
 }
 
@@ -68,7 +68,7 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 	padding-right:10px;
 	display:inline-block;
 	text-shadow:0 0 1px #f6f6f6;
-	border-bottom:2px solid #72c02c;
+	border-bottom:2px solid #fac001;
 }
 
 /*Purchase*/
@@ -97,16 +97,16 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 	margin-top:22px;
 	font-weight:bold;
 	border-radius:2px;
-	background:#72c02c;
+	background:#fac001;
 	display:inline-block;
 	text-decoration:none;
 	padding:12px 28px 9px;
 	text-transform:uppercase;
-	text-shadow:0 1px 0 #51a00b;
+	text-shadow:0 1px 0 #fac001;
 }
 .purchase a.btn-buy:hover {
 	color:#fff;
-	background:#68af28;
+	background:#fac001;
 	text-decoration:none;
 	box-shadow:0 0 5px #c0c2c1;
 } 
@@ -131,7 +131,7 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 .service i {
 	float:left;
 	padding:10px;
-	color:#72c02c;
+	color:#fac001;
 	font-size:45px;  
 	text-align:center;
     -webkit-transition:all 0.4s ease-in-out;
@@ -157,7 +157,7 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 
 /*Blockquote*/
 blockquote:hover {
-	border-left-color:#72c02c; 
+	border-left-color:#fac001; 
     -webkit-transition:all 0.4s ease-in-out;
     -moz-transition:all 0.4s ease-in-out;
     -o-transition:all 0.4s ease-in-out;
@@ -169,7 +169,7 @@ blockquote:hover {
 	color:#566c8a;
 	font-size:16px;
 	background:#fcfcfc;
-	border-left:4px solid #94c564; 
+	border-left:4px solid #fac001;
 	font-family:'Open Sans', sans-serif;
 }
 .hero h1, .hero p { 
@@ -234,7 +234,7 @@ blockquote:hover {
 }
 
 .recent-work a:hover span {
-	border-bottom:solid 2px #72c02c;
+	border-bottom:solid 2px #fac001;
     -webkit-transition:all 0.2s ease-in-out;
     -moz-transition:all 0.3s ease-in-out;
     -o-transition:all 0.2s ease-in-out;
@@ -291,7 +291,7 @@ blockquote:hover {
 	margin:0;
 	top:-22px;
 	float:right;
-	color:#72c02c;
+	color:#fac001;
 	font-size:25px;
 	position:relative;
 	display:inline-block;
@@ -301,7 +301,7 @@ blockquote:hover {
 .testimonal-arrow a:hover {
 	color:#fff;
 	text-decoration:none;
-	background:#72c02c !important;
+	background:#fac001 !important;
 }
 
 /*Carousel Arrow */
@@ -402,10 +402,10 @@ blockquote:hover {
 	color:#dadada;
 } 
 .footer a {
-	color:#72c02c;
+	color:#fac001;
 }
 .footer a:hover {
-	color:#a8f85f;
+	color:#fac001;
     -webkit-transition:all 0.4s ease-in-out;
     -moz-transition:all 0.4s ease-in-out;
     -o-transition:all 0.4s ease-in-out;
@@ -444,7 +444,7 @@ blockquote:hover {
 	color:#dadada;
 }
 .footer .dl-horizontal a:hover {
-	color:#a8f85f !important;
+	color:#fac001 !important;
 }
 .footer .dl-horizontal img {
 	border-color:#888 !important;
@@ -462,10 +462,10 @@ blockquote:hover {
 }
 .copyright a {
 	margin:0 5px;
-	color:#72c02c;
+	color:#fac001;
 }
 .copyright a:hover {
-	color:#a8f85f;
+	color:#fac001;
     -webkit-transition:all 0.4s ease-in-out;
     -moz-transition:all 0.4s ease-in-out;
     -o-transition:all 0.4s ease-in-out;
@@ -499,7 +499,7 @@ blockquote:hover {
 	font-size:20px;
 }
 .thumbnail-style h3 a:hover {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:none;
 }
 .thumbnail-style .thumbnail-img {
@@ -511,7 +511,7 @@ blockquote:hover {
 	color:#fff;
 	padding:1px 6px;
 	position:absolute;
-	background:#72c02c;
+	background:#fac001;
 	display:inline-block; 
 }
 .thumbnail-style a.btn-more:hover {
@@ -557,13 +557,13 @@ blockquote:hover {
 	box-shadow:0 0 8px #ddd;
 }
 .servive-block .span4 h4 a:hover {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:none;
 }
 
 .servive-block .span4:hover h4,
 .servive-block .span4:hover i {
-	color:#72c02c;
+	color:#fac001;
 }
 .servive-block .span4 i {
 	color:#565656;
@@ -574,7 +574,7 @@ blockquote:hover {
     transition:all 0.4s ease-in-out;
 }
 .servive-block-in .span4 i {
-	color:#72c02c;
+	color:#fac001;
 }
 .servive-block-in .span4:hover i {
 	color:#565656;
@@ -606,7 +606,7 @@ blockquote:hover {
 }
 .breadcrumb li.active,
 .breadcrumb li a:hover {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:none;
 }
 
@@ -624,7 +624,7 @@ blockquote:hover {
 }
 .acc-home a.active,
 .acc-home a.accordion-toggle:hover { 
-	color:#92d556; 
+	color:#fac001;
 	text-decoration:none !important;
 }
 .acc-home .accordion-group { 
@@ -643,7 +643,7 @@ blockquote:hover {
 	margin-top:-1px;
 	margin-bottom:20px;
 	background:#fdfdfd;
-	border-bottom:solid 1px #72c02c; 
+	border-bottom:solid 1px #fac001; 
 }
 
 /*Posts*/
@@ -654,7 +654,7 @@ blockquote:hover {
 	border-right:solid 2px #eee;
 }
 .posts .dl-horizontal:hover { 
-	border-right:solid 2px #72c02c;
+	border-right:solid 2px #fac001;
 	-webkit-transition:all 0.4s ease-in-out;
 	-moz-transition:all 0.4s ease-in-out;
 	-o-transition:all 0.4s ease-in-out;
@@ -680,13 +680,13 @@ blockquote:hover {
 	line-height:14px !important; 
 }
 .posts .dl-horizontal a:hover { 
-	color:#72c02c; 
+	color:#fac001; 
 	text-decoration:none;
 }
 .posts .dl-horizontal:hover dt img,
 .posts .dl-horizontal:hover dd a { 
-	color:#72c02c;
-	border-color:#72c02c !important;
+	color:#fac001;
+	border-color:#fac001 !important;
 	-webkit-transition:all 0.4s ease-in-out;
 	-moz-transition:all 0.4s ease-in-out;
 	-o-transition:all 0.4s ease-in-out;
@@ -710,7 +710,7 @@ blockquote:hover {
 }
 .carousel-control:hover { 
 	opacity:1;
-	color:#72c02c; 
+	color:#fac001; 
 }
 
 /*Tabs*/
@@ -728,7 +728,7 @@ blockquote:hover {
 .nav-tabs > .active > a:focus { 
 	color:#fff;
 	border:none; 
-	background:#72c02c; 
+	background:#fac001; 
 }
 .nav-tabs > li > a { 
 	border:none;
@@ -736,11 +736,11 @@ blockquote:hover {
 }
 .nav-tabs > li > a:hover { 
 	color:#fff; 
-	background:#72c02c; 
+	background:#fac001; 
 }
 .tab-content { 
 	padding:7px 10px;
-	border-top:solid 2px #72c02c; 
+	border-top:solid 2px #fac001; 
 }
 
 /*Home Page "Options"
@@ -750,7 +750,7 @@ blockquote:hover {
 	margin-bottom:6px;
 }
 .who li i { 
-	color:#72c02c; 
+	color:#fac001; 
 	position:relative; 
 	top:2px; 
 	margin-right:7px; 
@@ -768,7 +768,7 @@ blockquote:hover {
 ------------------------------------*/
 /*Service Blocks*/
 .service-alternative .service:hover { 
-	background:#76ca2c;
+	background:#fac001;
     -webkit-transition:all 0.4s ease-in-out;
     -moz-transition:all 0.4s ease-in-out;
     -o-transition:all 0.4s ease-in-out;
@@ -801,7 +801,7 @@ blockquote:hover {
 }
 .team ul li i:hover {
 	color:#fff;
-	background:#72c02c;
+	background:#fac001;
 	-webkit-transition:all 0.2s ease-in-out;
 	-moz-transition:all 0.2s ease-in-out;
 	-o-transition:all 0.2s ease-in-out;
@@ -818,7 +818,7 @@ blockquote:hover {
 	margin-bottom:10px;
 }
 .team .thumbnail-style:hover h3 a {
-	color:#72c02c !important;
+	color:#fac001 !important;
 }
 
 /*Icons Page
@@ -834,7 +834,7 @@ blockquote:hover {
 	margin-right:5px;
 }
 .icon-page li:hover { 
-	color:#72c02c;
+	color:#fac001;
 }
 
 /*Pricing Page
@@ -850,7 +850,7 @@ blockquote:hover {
 	box-shadow:0 0 15px #b5b5b5;
 }
 .pricing:hover h4 {
-	color:#55c931;
+	color:#fac001;
 }
 .pricing-head {
 	text-align:center;
@@ -873,10 +873,10 @@ blockquote:hover {
 	padding:12px 0;
 	font-size:35px;
 	font-family:Arial;
-	background:#55c931;
+	background:#fac001;
 	border-radius:3px 3px 0 0;
-	text-shadow:0 1px 0 #32a20f;
-	border-bottom:solid 1px #41b91c;
+	text-shadow:0 1px 0 #fac001;
+	border-bottom:solid 1px #fac001;
 }
 .pricing-head h4 {
 	color:#bac39f;
@@ -909,7 +909,7 @@ blockquote:hover {
 }
 .pricing-content li i {
 	top:2px;
-	color:#72c02c;
+	color:#fac001;
 	font-size:16px;
 	margin-right:5px;
 	position:relative;
@@ -933,16 +933,16 @@ blockquote:hover {
 	padding:6px 15px;
 	text-align:center;
 	border-radius:2px;
-	background:#55c931;
+	background:#fac001;
 	display:inline-block;
 	text-transform:uppercase;
-	text-shadow:0 1px 0 #38b312;
-	border-bottom:solid 2px #41b91c;
+	text-shadow:0 1px 0 #fac001;
+	border-bottom:solid 2px #fac001;
 }
 .pricing-footer a:hover,
 .pricing-footer button:hover {
 	cursor:pointer;
-	background:#40ba1a;
+	background:#fac001;
 	text-decoration:none;
 	box-shadow:0 0 3px #999;
 }
@@ -955,7 +955,7 @@ blockquote:hover {
 	box-shadow:0 0 15px #b5b5b5;
 }
 .price-active h4 {
-	color:#55c931;
+	color:#fac001;
 }
 
 .no-space-pricing .pricing:hover {
@@ -966,7 +966,7 @@ blockquote:hover {
 }
 .no-space-pricing .price-active .pricing-head h4,
 .no-space-pricing .pricing:hover .pricing-head h4 {
-	color:#55c931;
+	color:#fac001;
 	padding:15px 0;
 	font-size:80px;
 	-webkit-transition:color 0.5s ease-in-out;
@@ -1102,7 +1102,7 @@ blockquote:hover {
 	text-decoration:underline;
 }
 .privacy a:hover {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:none;
 }
 
@@ -1141,7 +1141,7 @@ blockquote:hover {
 	padding:0 !important;
 }
 .blog h3 {
-	color:#72c02c;
+	color:#fac001;
 }
 .blog ul {
 	color:#555;
@@ -1154,7 +1154,7 @@ blockquote:hover {
 	color:#666;
 }
 .blog li a:hover {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:none;
 }
 .blog ul.blog-info {
@@ -1175,7 +1175,7 @@ ul.blog-tags a {
 }
 ul.blog-tags a:hover,
 ul.blog-tags a:hover i {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:none;
 	-webkit-transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -1209,7 +1209,7 @@ ul.blog-tags a i {
 }
 .blog-ads li img:hover {
 	opacity:1;
-	box-shadow:0 0 0 4px #72c02c;
+	box-shadow:0 0 0 4px #fac001;
 }
 
 /*Blog Latest Tweets*/
@@ -1221,7 +1221,7 @@ ul.blog-tags a i {
 	font-size:11px; 
 }
 .blog-twitter p a {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:none;
 }
 .blog-twitter p a:hover {
@@ -1247,7 +1247,7 @@ ul.blog-tags a i {
 	position:absolute;
 }
 .blog-item h4.media-heading span a {
-	color:#72c02c;
+	color:#fac001;
 }
 
 /*Contact Page
@@ -1274,7 +1274,7 @@ ul.blog-tags a i {
 }
 
 .coming-soon-border {
-	border-top: solid 3px #72c02c;
+	border-top: solid 3px #fac001;
 }
 
 .coming-soon-logo  {
@@ -1391,7 +1391,7 @@ ul.blog-tags a i {
 	background: #e67e22;
 }
 .one-page .one-green {
-	background: #2ecc71;
+	background: #fac001;
 }
 
 /*Search Page
@@ -1419,7 +1419,7 @@ ul.blog-tags a i {
 }
 
 .booking-blocks p a {
-	color: #72c02c;
+	color: #fac001;
 }
 
 .booking-blocks .booking-img {
@@ -1467,7 +1467,7 @@ ul.blog-tags a i {
 /*Others (Global classes)
 ------------------------------------*/
 .color-red { color:#c00;}
-.color-green { color:#72c02c;}
+.color-green { color:#fac001;}
 .color-blue { color:#3498db;}
 
 .pull-lft { text-align:left;}
@@ -1503,13 +1503,13 @@ a.read-more {
 	text-decoration:none;
 }
 a.read-more:hover { 
-	color:#72c02c; 
+	color:#fac001; 
 	text-decoration:none;
 }
 
 /*Link color-green-style*/
 .linked:hover {
-	color:#72c02c;
+	color:#fac001;
 	text-decoration:none;
 }
 
@@ -1589,14 +1589,14 @@ a.read-more:hover {
 	cursor:pointer;
 	padding:5px 13px;
 	position:relative;
-	background:#72c02c;
+	background:#fac001;
 	display:inline-block;
 	color:#fff !important;
 	text-decoration:none !important;
 }
 .btn-u:hover {
 	color:#fff;
-	background:#5fb611;
+	background:#ebae01;
 	text-decoration:none;
     -webkit-transition:all 0.4s ease-in-out;
     -moz-transition:all 0.4s ease-in-out;
@@ -1743,7 +1743,7 @@ a.btn-u-large {
 }
 
 .glyphicons-demo a:hover {
-	color: #72c02c;
+	color: #fac001;
 	text-decoration: none;
 }
 
@@ -1834,7 +1834,7 @@ i.style-switcher-btn-option:hover {
 }
 
 .style-switcher li.theme-default {
-	background: #72c02c;
+	background: #fac001;
 }
 .style-switcher li.theme-blue {
 	background: #3498db;

@@ -29,7 +29,7 @@ a.read-more:hover {
 	text-shadow:0 1px 0 #e19d00;
 }
 .purchase a.btn-buy:hover {
-	background:#e19d00;
+	background:#ebae01;
 } 
 
 /*Buttons
@@ -39,7 +39,7 @@ a.read-more:hover {
 }
 
 .btn-u:hover {
-	background: #5fb611;
+	background: #ebae01;
 }
 
 /*Service
@@ -76,7 +76,7 @@ a.read-more:hover {
 	background:#fac001;
 }
 .thumbnail-style a.btn-more:hover {
-	box-shadow:0 0 0 2px #377500;
+	box-shadow:0 0 0 2px #fac001;
 }
 
 /*Carousel (Recent Work)*/
@@ -200,23 +200,23 @@ blockquote:hover {
 ------------------------------------*/
 /*Pricing Head*/
 .pricing:hover h4 {
-	color:#55c931;
+	color:#fac001;
 }
 
 .pricing-head h3 {
-	background:#55c931;
-	text-shadow:0 1px 0 #32a20f;
-	border-bottom:solid 1px #41b91c;
+	background:#fac001;
+	text-shadow:0 1px 0 #fac001;
+	border-bottom:solid 1px #fac001;
 }
 .pricing-head h4 {
 	color:#999;
-	background:#fbfef2;
-	border-bottom:solid 1px #f5f9e7;
+	background:#fac001;
+	border-bottom:solid 1px #fac001;
 }
 	
 /*Pricing Content*/
 .pricing-content li {
-	border-bottom:solid 1px #f5f9e7;
+	border-bottom:solid 1px #fac001;
 }
 .pricing-content li i {
 	color:#fac001;
@@ -226,22 +226,22 @@ blockquote:hover {
 .pricing-footer a,
 .pricing-footer button {
 	background:#fac001;
-	text-shadow:0 1px 0 #38b312;
-	border-bottom:solid 2px #41b91c;
+	text-shadow:0 1px 0 #fac001;
+	border-bottom:solid 2px #fac001;
 }
 .pricing-footer a:hover,
 .pricing-footer button:hover {
-	background:#40ba1a;
+	background:#fac001;
 }
 
 /*Priceing Active*/
 .price-active h4 {
-	color:#55c931;
+	color:#fac001;
 }
 
 .no-space-pricing .price-active .pricing-head h4,
 .no-space-pricing .pricing:hover .pricing-head h4 {
-	color:#55c931;
+	color:#fac001;
 }
 
 /*Right Sidebar
