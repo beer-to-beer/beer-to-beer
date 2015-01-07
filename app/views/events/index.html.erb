@@ -1,25 +1,42 @@
+<div class="container">
 <h1>Listing events</h1>
+<% i = 0 %>
+  <% @events.each do |event| %>
 
-<table>
-  <tbody>
-    <% @events.each do |event| %>
-        <p>Event: <%= event.title %><br/>
-          Location: <%= event.club.name %><br/>
-          Date: <%= event.sdate.to_date %><br/>
-          Startetime: <%= event.sdate.to_formatted_s(:time) %><br/>
-       <%= link_to (image_tag event.imageURL , :height => "500", alt: "#{event.title} Bild"), event %> |
+      <% if(i%3 == 0) %>
+        <div>
+          <ul class="thumbnails">
 
+      <% end %>
+            <li class="span4">
+              <div class="thumbnail thumbnail-kenburn">
+                <div class="overflow-hidden">
+                  <%= link_to (image_tag event.imageURL, size: "400x700", alt: "#{event.title} Bild"), event %>
+                </div>
+                <div class="caption">
+                  <h3><%= link_to event.title, event %></h3>
+                  <p>Date: <%= event.sdate.to_date.to_s(:rfc822) %></p>
+                  <p>Starttime: <%= event.sdate.to_s(:time) %></p>
+                  <p>Location: <%= link_to event.club.name, event.club %></p>
+                  <div class="unstyled">
+                    <%= link_to '', edit_event_path(event), :class => "icon-edit" %>
 
+                     <%= link_to '', {method: :delete }, :class => "icon-remove" %>
+                  </div>
+                </div>
+              </div>
+            </li>
+      <% if(i%3 == 2) or (i == @events.count-1) %>
 
-
-        <%= link_to 'Show', event %>
-        <%= link_to 'Edit', edit_event_path(event) %>
-        <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
-          </p>
-    <% end %>
-  </tbody>
-</table>
-
+          </ul>
+        </div>
+      <% end %>
+      <% i+= 1 %>
+  <% end %>
 <br>
 
-<%= link_to 'New Event', new_event_path %>
+
+<% if can? :create, Event %>
+  <%= link_to 'New Event', new_event_path , {:class => "btn btn-large btn-u-yellow btn-block btn-primary"}%>
+<% end %>
+</div>

@@ -1,12 +1,12 @@
 class EventsController < ApplicationController
 
   before_action :set_event, only: [:show, :edit, :update, :destroy]
-  load_and_authorize_resource
+  load_and_authorize_resource except: :create
   skip_load_and_authorize_resource only: [:new, :create]
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @events = Event.joins(:club).where('clubs.active is ? and events.sdate > ?', true, Date.current)
   end
 
   # GET /events/1
@@ -17,6 +17,8 @@ class EventsController < ApplicationController
   # GET /events/new
   def new
     if Club.where(user_id: current_user.id, id: params[:club_id] ).count == 1
+      @event = Event.new
+    elsif current_user.has_role? :admin
       @event = Event.new
     else
       authorize! :create, Event
