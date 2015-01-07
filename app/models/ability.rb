@@ -8,12 +8,20 @@ class Ability
     if user.has_role?(:admin)
       #Admins
       can :manage, :all
-    #elsif user.role? :user
-      #
-    else
+    elsif user.has_role? :user
+      can :create, Club
+
+      can :create, Shop
       can :read, :all
 
+      @clubs = Club.where(user_id: user.id)
 
+      @clubs.each do |c|
+          can :manage, c
+          can :manage, Event
+        end
+    else
+      can :read, :all
     end
     #can :create, Event, :user_id => user.id
 
@@ -37,5 +45,5 @@ class Ability
     # See the wiki for details:
     # https://github.com/ryanb/cancan/wiki/Defining-Abilities
 
-    end
+  end
 end

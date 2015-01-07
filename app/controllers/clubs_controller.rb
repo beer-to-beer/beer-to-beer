@@ -1,10 +1,10 @@
 class ClubsController < ApplicationController
   before_action :set_club, only: [:show ,:edit, :update, :destroy]
-  load_and_authorize_resource
+  #load_and_authorize_resource
 
-    skip_load_and_authorize_resource only: [:edit, :update]
+    #skip_load_and_authorize_resource only: [:edit, :update]
 
-  helper_method :activate_club_club
+
 
   #load_and_authorize_resource
   # GET /clubs
@@ -28,6 +28,7 @@ class ClubsController < ApplicationController
     address=@club.build_address
 
 
+
   end
 
   # GET /clubs/1/edit
@@ -42,9 +43,13 @@ class ClubsController < ApplicationController
   def create
 
     @club = Club.new(club_params)
-    @club.active = false
+    if (@club.active == true and current_user.has_role? :admin)
+      @club.active = true
+    else
+      @club.active = false
+    end
+
     @club.user_id = current_user.id
-    #authorize! :manage, @club
 
 
     respond_to { |format|

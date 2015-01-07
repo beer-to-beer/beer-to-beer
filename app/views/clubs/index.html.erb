@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Listing clubs</h1>
 <% if current_user %>
     <% if current_user.has_role? :admin %>
@@ -44,14 +45,22 @@
         <td><%= club.name %></td>
         <td><%= club.url %></td>
         <td><%= "#{User.find_by(club.user_id).first_name},  #{User.find_by(club.user_id).last_name}" %></td>
-        <td><%= link_to 'Show', club %></td>
-        <td><%= link_to 'Edit', edit_club_path(club) %></td>
-        <td><%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><% if can? :show, club %>
+                 <%=link_to 'Show', club %>
+              <% end %></td>
+        <td><% if can? :edit, club %>
+          <%= link_to 'Edit', edit_club_path(club) %>
+              <% end %></td>
+        <td><% if can? :delete, club %>
+          <%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <% end %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
+  <% if can? :create, Club %>
 <%= link_to 'New Club', new_club_path , {:class => "btn btn-large btn-block btn-primary"}%>
+      <% end %>
+</div>

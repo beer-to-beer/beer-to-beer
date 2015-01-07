@@ -19,3 +19,5 @@ jan.add_role :user
 
 thorsten = User.create(:email => "thorsten@beer.com", :password => 'Thorsten123', :password_confirmation => 'Thorsten123', :first_name => 'Thorsten', :last_name => 'Woywod', :address_id => ad.id)
 thorsten.add_role :admin
+user = User.create(:email => "user@beer.com", :password => 'User1234', :password_confirmation => 'User1234', :first_name => 'Thorsten', :last_name => 'Woywod', :address_id => ad.id)
+user.add_role :user
