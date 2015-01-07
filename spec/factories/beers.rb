@@ -1,6 +1,8 @@
 FactoryGirl.define do
   factory :beer do
-    title "MyString"
+    title "Beer"
+    category_id 1
+    producer_id 1
   end
 
 end
