@@ -1,23 +1,6 @@
-<link href="/assets/ratingbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"
-      type="text/css"/>
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script src="/assets/jquery.barrating.js"></script>
 
-<div class="body">
-  <div class="breadcrumbs margin-bottom-50">
-    <div class="container">
-      <h1 class="color-green pull-left">New Rating</h1>
-      <ul class="pull-right breadcrumb">
-        <li><%= link_to 'Home' ,welcome_index_path %> <span class="divider">/</span></li>
-        <li><%= link_to 'Beers' ,beers_path%><span class="divider">/</span></li>
-        <li><%= link_to Beer.find(params[:beer_id]).title,Beer.find(params[:beer_id])%></a> <span class="divider">/</span></li>
-        <li class="active">Rating</li>
-      </ul>
-    </div><!--/container-->
-  </div><!--/breadcrumbs-->
 
-  <div class="container">
+
     <div class="row-fluid margin-bottom-10">
 
 <%= form_for(@rating,  html: {class: "reg-page"}) do |f| %>
@@ -102,11 +85,6 @@
  <% end %>
 <% end %>
     </div><!--/row-fluid-->
-  </div><!--/container-->
-</div><!--/body-->
 
-<script>
-$('#rating_criterions_attributes_0_value').barrating();
-$('#rating_criterions_attributes_1_value').barrating();
-$('#rating_criterions_attributes_2_value').barrating();
-</script>
+
+
