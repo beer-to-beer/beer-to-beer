@@ -18,13 +18,15 @@
   </div><!--/breadcrumbs-->
 
   <div class="container">
+<% if current_user %>
 <% if current_user.id == @rating.user_id %>
 <%= render 'form' %>
+<% end %>
 <%else%>
-
    <P><h3> You can only edit your own Ratings</h3></P>
 
 <% end %>
+
 <%= link_to 'Show', @rating %> |
 <%= link_to 'Back', ratings_path %>
 
