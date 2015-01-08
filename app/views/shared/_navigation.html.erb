@@ -60,9 +60,9 @@
         <div class="nav-collapse collapse">
           <ul class="nav top-2">
             <li class="active">
-              <a href=<%= root_path %> class="dropdown-toggle" data-toggle="dropdown">Home
+              <%= link_to 'Home',root_path, data: { no_turbolink: true } %>
                <!-- <b class="caret"></b>-->
-              </a>
+
               <!--<ul class="dropdown-menu">
                 <li class="active"><a href="index.html">Option1: Landing Page</a></li>
               </ul>-->
