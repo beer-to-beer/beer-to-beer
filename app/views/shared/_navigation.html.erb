@@ -61,7 +61,7 @@
           <ul class="nav top-2">
             <li class="active">
               <a href=<%= root_path %> class="dropdown-toggle" data-toggle="dropdown">Home
-                <b class="caret"></b>
+               <!-- <b class="caret"></b>-->
               </a>
               <!--<ul class="dropdown-menu">
                 <li class="active"><a href="index.html">Option1: Landing Page</a></li>
@@ -73,7 +73,7 @@
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to Beer, beers_url %></li>
+                <li><%= link_to Beer, beers_path, data: { no_turbolink: true } %></li>
               </ul>
               <b class="caret-out"></b>
             </li>
@@ -82,7 +82,7 @@
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to Shop, shops_url %></li>
+                <li><%= link_to Shop, shops_path, data: { no_turbolink: true } %></li>
               </ul>
               <b class="caret-out"></b>
             </li>
@@ -91,7 +91,7 @@
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to Club, clubs_url %></li>
+                <li><%= link_to Club, clubs_path, data: { no_turbolink: true } %></li>
               </ul>
               <b class="caret-out"></b>
             </li>
@@ -100,7 +100,7 @@
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to Event, events_url %></li>
+                <li><%= link_to Event, events_path, data: { no_turbolink: true } %></li>
               </ul>
               <b class="caret-out"></b>
             </li>
@@ -109,7 +109,7 @@
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to Rating, ratings_url %></li>
+                <li><%= link_to Rating, ratings_path, data: { no_turbolink: true } %></li>
               </ul>
               <b class="caret-out"></b>
             </li>
