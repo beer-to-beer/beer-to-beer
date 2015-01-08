@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   ActiveAdmin.routes(self)
+
   resources :shop_beers
 
   resources :beers
