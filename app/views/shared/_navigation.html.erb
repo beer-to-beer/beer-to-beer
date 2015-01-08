@@ -30,7 +30,7 @@
       <li class="devider">&nbsp;</li>
       <% if current_user %>
           <% if current_user.has_role? :admin %>
-              <li><%= link_to 'Verwaltung', admin_dashboard_path %></li>
+              <li><%= link_to 'Verwaltung', admin_dashboard_path, data: { no_turbolink: true } %></li>
               <li class="devider">&nbsp;</li>
           <%end%>
           <li><%= link_to current_user.email, destroy_user_session_path, method: :delete %></li>
