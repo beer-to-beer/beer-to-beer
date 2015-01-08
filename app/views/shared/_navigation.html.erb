@@ -59,7 +59,7 @@
         </a><!-- /nav-collapse -->
         <div class="nav-collapse collapse">
           <ul class="nav top-2">
-            <li class="active">
+            <li <% if request.env['PATH_INFO']== '/' %>class="active" <%end%> >
               <%= link_to 'Home',root_path, data: { no_turbolink: true } %>
                <!-- <b class="caret"></b>-->
 
@@ -68,7 +68,7 @@
               </ul>-->
               <b class="caret-out"></b>
             </li>
-            <li>
+            <li <% if request.env['PATH_INFO'].include? '/beers' %>class="active" <%end%>>
               <a href="" class="dropdown-toggle" data-toggle="dropdown">Beer
                 <b class="caret"></b>
               </a>
@@ -77,7 +77,7 @@
               </ul>
               <b class="caret-out"></b>
             </li>
-            <li>
+            <li <% if request.env['PATH_INFO'].include? '/shops' %>class="active" <%end%> >
               <a href="" class="dropdown-toggle" data-toggle="dropdown">Shop
                 <b class="caret"></b>
               </a>
@@ -86,7 +86,7 @@
               </ul>
               <b class="caret-out"></b>
             </li>
-            <li>
+            <li <% if request.env['PATH_INFO'].include? '/clubs' %>class="active" <%end%> >
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club
                 <b class="caret"></b>
               </a>
@@ -95,7 +95,7 @@
               </ul>
               <b class="caret-out"></b>
             </li>
-            <li>
+            <li <% if request.env['PATH_INFO'].include? '/events' %>class="active" <%end%> >
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Event
                 <b class="caret"></b>
               </a>
@@ -104,7 +104,7 @@
               </ul>
               <b class="caret-out"></b>
             </li>
-            <li>
+            <li <% if request.env['PATH_INFO'].include? '/ratings' %>class="active" <%end%> >
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rating
                 <b class="caret"></b>
               </a>
@@ -162,3 +162,4 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 </script>
+
