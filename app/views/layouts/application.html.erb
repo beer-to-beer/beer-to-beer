@@ -46,7 +46,13 @@
     <%= javascript_include_tag :defaults %>
   </head>
   <body>
+
+
     <%= render partial: 'shared/navigation' %>
+
+    <% if !(request.env['PATH_INFO']== '/') %>
+      <%= render_breadcrumb %>
+    <%end%>
     <%= bootstrap_flash %>
     <%= yield %>
     <%= render partial: 'shared/footer' %>

@@ -5,17 +5,9 @@
 <script src="/assets/jquery.barrating.js"></script>
 
 <div class="body">
-  <div class="breadcrumbs margin-bottom-50">
-    <div class="container">
-      <h1 class="color-green pull-left">New Rating</h1>
-      <ul class="pull-right breadcrumb">
-        <li><%= link_to 'Home' ,welcome_index_path %> <span class="divider">/</span></li>
-        <li><%= link_to 'Beers' ,beers_path%><span class="divider">/</span></li>
-        <li><%= link_to Beer.find(params[:beer_id]).title,Beer.find(params[:beer_id])%></a> <span class="divider">/</span></li>
-        <li class="active">Rating</li>
-      </ul>
-    </div><!--/container-->
-  </div><!--/breadcrumbs-->
+
+  <% content_for :title, 'Edit Rating' %>
+  <% navigation_add 'Ratings', ratings_path %>
 
   <div class="container">
 <% if current_user %>

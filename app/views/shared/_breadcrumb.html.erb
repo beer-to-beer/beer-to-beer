@@ -1,0 +1,18 @@
+<div class="breadcrumbs margin-bottom-50">
+  <div class="container">
+    <h1 class="color-green pull-left"> <%=yield(:title)%> </h1>
+    <ul class="pull-right breadcrumb">
+
+  <% nav.each do |n| %>
+      <li><%= link_to n[:title] , n[:url] %> <span class="divider">/</span></li>
+  <% end %>
+      <li class="active"><%=yield(:title)%></li>
+
+
+
+
+    </ul>
+  </div>
+  <!--/container-->
+</div>
+<!--/breadcrumbs-->

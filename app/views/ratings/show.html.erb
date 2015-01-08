@@ -6,29 +6,9 @@
 
 
 
+  <% content_for :title, 'Rating for '+ Beer.find(@rating.beer_id).title  %>
+  <% navigation_add 'Ratings', ratings_path %>
 
-<!--=== Content Part ===-->
-<div class="body">
-  <div class="breadcrumbs margin-bottom-50">
-    <div class="container">
-      <h1 class="color-green pull-left">Rating</h1>
-      <ul class="pull-right breadcrumb">
-        <li><%= link_to 'Home' ,welcome_index_path %> <span class="divider">/</span></li>
-        <li><%= link_to 'Ratings' ,ratings_path%><span class="divider">/</span></li>
-        <li class="active">Rating for <%= Beer.find(@rating.beer_id).title %></li>
-      </ul>
-    </div><!--/container-->
-  </div><!--/breadcrumbs-->
-
-
-
-<p>
-
-</p>
-
-<p>
-
-</p>
   <div class="container">
     <div class="row-fluid margin-bottom-10">
 

@@ -1,13 +1,8 @@
 <link href="/assets/users.css?body=1" media="all" rel="stylesheet"/>
 <div class="body">
-  <div class="breadcrumbs margin-bottom-50">
-    <div class="container">
-      <h1 class="color-green pull-left">Login</h1>
-      <ul class="pull-right breadcrumb">
-        <li><%= link_to 'Home' ,welcome_index_path %> <span class="divider">/</span></li>
-        <li class="active">Login</li>
-      </ul>
-    </div>
+
+    <% content_for :title, 'Login'%>
+
     <!--/container-->
   </div>
   <!--/breadcrumbs-->

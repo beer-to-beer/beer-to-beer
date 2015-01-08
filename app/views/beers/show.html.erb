@@ -1,5 +1,7 @@
-<p id="notice"><%= notice %></p>
+<% content_for :title, @beer.title %>
+<% navigation_add 'Beers', beers_path %>
 
+<p id="notice"><%= notice %></p>
 <p>
   <strong>Title:</strong>
   <%= @beer.title %>
