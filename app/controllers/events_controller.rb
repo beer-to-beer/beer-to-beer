@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.joins(:club).where('clubs.active is ? and events.sdate > ?', true, Date.current)
+    @events = Event.joins(:club).where('sdate > ?', Date.current).where('clubs.active = ?', true)
   end
 
   # GET /events/1

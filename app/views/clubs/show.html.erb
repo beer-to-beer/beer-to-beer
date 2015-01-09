@@ -52,9 +52,12 @@
     <div class="bx-wrapper">
         <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 218px;">
               <% @club.events.each do |p| %>
-                <li style="float: left; list-style: none; position: relative; width: 173.5px; margin-right: 10px;">
-                        <%= link_to(image_tag(p.imageURL), p) %>
-                </li>
+                <% if p.sdate > Date.current %>
+                    <li style="float: left; list-style: none; position: relative; width: 173.5px; margin-right: 10px;">
+                            <%= link_to(image_tag(p.imageURL), p) %>
+                            <p><%= p.sdate.to_date %></p>
+                    </li>
+                <% end %>
             <% end %>
         </div>
     </div>
