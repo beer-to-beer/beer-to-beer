@@ -14,5 +14,4 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require plugins/ace/bootstrap/js/bootstrap.min.js
 //= require turbolinks
