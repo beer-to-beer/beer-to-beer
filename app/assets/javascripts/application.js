@@ -14,6 +14,4 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require_tree ../../../ace/app/assets/
-//= require_tree .
 //= require turbolinks
