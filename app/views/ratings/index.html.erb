@@ -28,11 +28,12 @@
 
 
                     <tr>
-                      <td><%= beer.title %></td>
+                      <td><%= link_to beer.title,beer %></td>
                       <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).count(:value) %>/10</td>
                       <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).count(:value) %>/10</td>
                       <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).count(:value) %>/10</td>
                       <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id).count(:value) %>/10</td>
+                      <td><%= link_to 'All Ratings', ratings_path(:beer_id => beer.id) %></td>
                     </tr>
 
             <% end %>
@@ -65,7 +66,7 @@
             <% if (params[:beer_id].to_i == rating.beer_id.to_i) or !params[:beer_id]%>
 
                 <tr>
-                  <td><%= rating.beer.title %></td>
+                  <td><%= link_to rating.beer.title,rating.beer %></td>
                   <td><%= rating.user.email %></td>
                   <td><%= rating.criterions.where(:name => "Price").first.value %>/10</td>
                   <td><%= rating.criterions.where(:name => "Taste").first.value %>/10</td>
