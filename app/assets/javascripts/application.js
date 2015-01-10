@@ -14,4 +14,5 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require navbar.js
 //= require turbolinks
