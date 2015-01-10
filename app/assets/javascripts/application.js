@@ -11,10 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require javascripts/ace/jquery-1.8.2.min
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require javascripts/ace/jquery-1.8.2.min
 //= require javascripts/ace/modernizr.custom
 //= require plugins/ace/bootstrap/js/bootstrap.min.js
 //= require plugins/ace/flexslider/jquery.flexslider-min.js
