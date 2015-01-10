@@ -95,7 +95,7 @@
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to Club, clubs_path, data: { no_turbolink: true } %></li>
+                <li><%= link_to Club, clubs_path %></li>
               </ul>
               <b class="caret-out"></b>
             </li>
@@ -133,18 +133,9 @@
   </div><!-- /container -->
 </div><!--/header -->
 <!--=== End Header ===-->
-<!-- JS Global Compulsory -->
-<script type="text/javascript" src="/assets/javascripts/ace/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="/assets/javascripts/ace/modernizr.custom.js"></script>
-<script type="text/javascript" src="/assets/plugins/ace/bootstrap/js/bootstrap.min.js"></script>
-<!-- JS Implementing Plugins -->
-<script type="text/javascript" src="/assets/plugins/ace/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="/assets/plugins/ace/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="/assets/plugins/ace/parallax-slider/js/jquery.cslider.js"></script>
-<script type="text/javascript" src="/assets/plugins/ace/back-to-top.js"></script>
-<!-- JS Page Level -->
-<script type="text/javascript" src="/assets/javascripts/ace/app.js"></script>
-<script type="text/javascript" src="/assets/javascripts/ace/pages/index.js"></script>
+
+<%= javascript_include_tag "navbar" %>
+
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
