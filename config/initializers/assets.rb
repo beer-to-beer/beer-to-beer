@@ -8,3 +8,4 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile << %r(bootstrap/glyphicons-halflings-regular\.(?:eot|svg|ttf|woff)$)
 Rails.application.config.assets.precompile += %w( navbar.js )
+Rails.application.config.assets.precompile += %w( plugins.js )
