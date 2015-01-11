@@ -1,41 +1,12 @@
 <% content_for :title, @beer.title %>
 <% navigation_add 'Beers', beers_path %>
-<div class="container">
-  <p id="notice"><%= notice %></p>
+<div class="container content">
+  <div class="row">
 
-  <p>
-    <strong>Title:</strong>
-    <%= @beer.title %>
-  </p>
-
-  <p>
-    <strong>Category:</strong>
-    <%= @beer.category.name %>
-  </p>
-
-  <p>
-    <strong>Producer:</strong>
-    <%= @beer.producer.name %>
-  </p>
-
-  <p>
-    <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id) %> |
-    <%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
-    <%= link_to 'Edit', edit_beer_path(@beer) %> |
-    <%= link_to 'Back', beers_path %>
-  </p>
-
-  <br>
-  <br>
   <% @ratings = Rating.all.where(beer_id: @beer.id) %>
   <% @ratings.each do |rating| %>
-
-      <p>
-
-      <div class="span6 booking-blocks">
-
+      <div class="span9 booking-blocks">
         <div style="overflow:hidden;">
-          <h2><%= link_to "Rating by " + rating.user.first_name + " " + rating.user.last_name, rating %> </h2>
           <ul class="unstyled inline">
             <% @avg = rating.criterions.sum(:value)/3 %>
             <li><i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i></li>
@@ -43,20 +14,37 @@
             <li><i class="icon-star<% if (@avg < 3) %>-empty<% end %>"></i></li>
             <li><i class="icon-star<% if (@avg < 4) %>-empty<% end %>"></i></li>
             <li><i class="icon-star<% if (@avg < 5) %>-empty<% end %>"></i></li>
+            <li><%= link_to "By " + rating.user.first_name + " " + rating.user.last_name + " on " + rating.created_at.to_date.to_s, rating %></li>
           </ul>
-          <p>
-            <% if rating.comment.length > 150 %>
-                <%= rating.comment.slice!(0..150) %>...
-                <a href="#">read more</a>
-            <% else %>
-                <%= rating.comment %>
-            <% end %>
-
-          </p>
+          <% if rating.comment.length > 150 %>
+              <%= rating.comment.slice!(0..150) %>...
+              <a href="#">read more</a>
+          <% else %>
+              <%= rating.comment %>
+          <% end %>
         </div>
       </div>
-
-      </p>
   <% end %>
 
+    <div class="col-md-3">
+      <p>
+        <strong>Category:</strong>
+        <%= @beer.category.name %>
+      </p>
+      
+      <p>
+        <strong>Producer:</strong>
+        <%= @beer.producer.name %>
+      </p>
+
+      <p>
+        <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id) %> |
+        <%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
+        <%= link_to 'Edit', edit_beer_path(@beer) %> |
+        <%= link_to 'Back', beers_path %>
+      </p>
+
+    </div>
+
+  </div>
 </div>
