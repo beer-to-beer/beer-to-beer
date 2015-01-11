@@ -22,10 +22,10 @@
 
             <tbody>
 
-            <% @ratings1 = Rating.select("*,(sum(value)/count(value)) as 'avgprice' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Price"}).group("beers.id,criterions.name") %>
-            <% @ratings2 = Rating.select("*,(sum(value)/count(value)) as 'avgtaste' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Taste"}).group("beers.id,criterions.name") %>
-            <% @ratings3 = Rating.select("*,(sum(value)/count(value)) as 'avgheadache' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Headache"}).group("beers.id,criterions.name") %>
-            <% @ratings4 = Rating.select("*,(sum(value)/count(value)) as 'overall' ").joins(:beer).joins(:criterions).group("beers.id") %>
+            <% @ratings1 = Rating.select("*,(Round(sum(value)/count(value),1)) as 'avgprice' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Price"}).group("beers.id,criterions.name") %>
+            <% @ratings2 = Rating.select("*,(Round(sum(value)/count(value),1)) as 'avgtaste' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Taste"}).group("beers.id,criterions.name") %>
+            <% @ratings3 = Rating.select("*,(Round(sum(value)/count(value),1)) as 'avgheadache' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Headache"}).group("beers.id,criterions.name") %>
+            <% @ratings4 = Rating.select("*,(Round(sum(value)/count(value),1)) as 'overall' ").joins(:beer).joins(:criterions).group("beers.id") %>
 
             <% case params[:order]  when "Price" %> <% @ratings1 = @ratings1.order('avgprice DESC') %>
                 <% when "Taste" %> <% @ratings2 = @ratings2.order('avgtaste DESC') %>
