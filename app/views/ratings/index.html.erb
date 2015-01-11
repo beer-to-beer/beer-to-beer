@@ -25,14 +25,12 @@
             <% @beers = Beer.all %>
             <% @beers.each do |beer| %>
 
-
-
                     <tr>
                       <td><%= link_to beer.title,beer %></td>
-                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).count(:value) %>/10</td>
-                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).count(:value) %>/10</td>
-                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).count(:value) %>/10</td>
-                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id).count(:value) %>/10</td>
+                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).count(:value) %>/5</td>
+                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).count(:value) %>/5</td>
+                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).count(:value) %>/5</td>
+                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id).count(:value) %>/5</td>
                       <td><%= link_to 'All Ratings', ratings_path(:beer_id => beer.id) %></td>
                     </tr>
 
