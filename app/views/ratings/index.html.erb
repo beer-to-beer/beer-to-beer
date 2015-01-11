@@ -9,7 +9,6 @@
 
       <% if params[:type] == "avg" %>
           <div class="headline"><h3>Average Ratings</h3></div>
-          
           <table class="table table-hover">
             <thead>
             <tr>
@@ -47,7 +46,7 @@
                       <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
                       <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
                       <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
-                      <%= @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
+                      <% @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
                       <td>
                         <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
                         <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
@@ -68,7 +67,7 @@
                           <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
                           <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
                           <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
-                          <%= @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
+                          <% @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
                           <td>
                             <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
                             <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
@@ -88,7 +87,7 @@
                               <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
                               <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
                               <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
-                              <%= @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
+                              <% @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
                               <td>
                                 <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
                                 <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
@@ -108,7 +107,7 @@
                                   <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
                                   <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
                                   <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
-                                  <%= @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
+                                  <% @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
                                   <td>
                                     <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
                                     <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
