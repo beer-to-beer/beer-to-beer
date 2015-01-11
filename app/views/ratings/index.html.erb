@@ -9,28 +9,45 @@
 
       <% if params[:type] == "avg" %>
           <div class="headline"><h3>Average Ratings</h3></div>
+          
           <table class="table table-hover">
             <thead>
             <tr>
               <th>Beer</th>
-              <th>Price</th>
-              <th>Taste</th>
-              <th>Headache</th>
-              <th>Overall</th>
+              <th><%= link_to "Price",ratings_path(:order => "Price",:type => "avg") %></th>
+              <th><%= link_to "Taste",ratings_path(:order => "Taste",:type => "avg") %></th>
+              <th><%= link_to "Headache",ratings_path(:order => "Headache",:type => "avg") %></th>
+              <th><%= link_to "Overall",ratings_path(:order => "Overall",:type => "avg") %></th>
             </tr>
             </thead>
 
             <tbody>
 
-            <% @beers = Beer.all %>
-            <% @beers.each do |beer| %>
+            <% @ratings1 = Rating.select("*,(sum(value)/count(value)) as 'avgprice' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Price"}).group("beers.id,criterions.name") %>
+            <% @ratings2 = Rating.select("*,(sum(value)/count(value)) as 'avgtaste' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Taste"}).group("beers.id,criterions.name") %>
+            <% @ratings3 = Rating.select("*,(sum(value)/count(value)) as 'avgheadache' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Headache"}).group("beers.id,criterions.name") %>
+            <% @ratings4 = Rating.select("*,(sum(value)/count(value)) as 'overall' ").joins(:beer).joins(:criterions).group("beers.id") %>
 
+            <% case params[:order]  when "Price" %> <% @ratings1 = @ratings1.order('avgprice DESC') %>
+                <% when "Taste" %> <% @ratings2 = @ratings2.order('avgtaste DESC') %>
+                <% when "Headache" %> <% @ratings3 = @ratings3.order('avgheadache DESC') %>
+                <% when "Overall" %> <% @ratings4 = @ratings4.order('overall DESC') %>
+            <% end %>
+
+
+
+
+
+
+            <% case params[:order]  when "Price" %>
+
+                  <% @ratings1.each do |rating| %>
                     <tr>
-                      <td><%= link_to beer.title,beer %></td>
-                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).count(:value) %>/5</td>
-                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).count(:value) %>/5</td>
-                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).count(:value) %>/5</td>
-                      <% @avg = Rating.joins(:criterions).all.where(beer_id: beer.id).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id).count(:value) %>
+                      <td><%= link_to rating.beer.title,rating.beer %></td>
+                      <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
+                      <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
+                      <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
+                      <%= @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
                       <td>
                         <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
                         <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
@@ -38,12 +55,81 @@
                         <i class="icon-star<% if (@avg < 4) %>-empty<% end %>"></i>
                         <i class="icon-star<% if (@avg < 5) %>-empty<% end %>"></i>
                       </td>
-                      <td><%= link_to 'All Ratings', ratings_path(:beer_id => beer.id) %></td>
+                      <td><%= link_to 'All Ratings', ratings_path(:beer_id => rating.beer.id) %></td>
                     </tr>
+                <% end %>
+
+
+                <% when "Taste" %>
+
+                      <% @ratings2.each do |rating| %>
+                    <tr>
+                          <td><%= link_to rating.beer.title,rating.beer %></td>
+                          <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
+                          <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
+                          <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
+                          <%= @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
+                          <td>
+                            <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
+                            <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
+                            <i class="icon-star<% if (@avg < 3) %>-empty<% end %>"></i>
+                            <i class="icon-star<% if (@avg < 4) %>-empty<% end %>"></i>
+                            <i class="icon-star<% if (@avg < 5) %>-empty<% end %>"></i>
+                          </td>
+                          <td><%= link_to 'All Ratings', ratings_path(:beer_id => rating.beer.id) %></td>
+                    </tr>
+                      <% end %>
+
+                <% when "Headache" %>
+
+                          <% @ratings3.each do |rating| %>
+                    <tr>
+                              <td><%= link_to rating.beer.title,rating.beer %></td>
+                              <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
+                              <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
+                              <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
+                              <%= @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
+                              <td>
+                                <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
+                                <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
+                                <i class="icon-star<% if (@avg < 3) %>-empty<% end %>"></i>
+                                <i class="icon-star<% if (@avg < 4) %>-empty<% end %>"></i>
+                                <i class="icon-star<% if (@avg < 5) %>-empty<% end %>"></i>
+                              </td>
+                              <td><%= link_to 'All Ratings', ratings_path(:beer_id => rating.beer.id) %></td>
+                    </tr>
+                          <% end %>
+
+                <% else %>
+
+                              <% @ratings4.each do |rating| %>
+                    <tr>
+                                  <td><%= link_to rating.beer.title,rating.beer %></td>
+                                  <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
+                                  <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
+                                  <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
+                                  <%= @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
+                                  <td>
+                                    <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
+                                    <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
+                                    <i class="icon-star<% if (@avg < 3) %>-empty<% end %>"></i>
+                                    <i class="icon-star<% if (@avg < 4) %>-empty<% end %>"></i>
+                                    <i class="icon-star<% if (@avg < 5) %>-empty<% end %>"></i>
+                                  </td>
+                                  <td><%= link_to 'All Ratings', ratings_path(:beer_id => rating.beer.id) %></td>
+                    </tr>
+                <% end %>
 
             <% end %>
+
+
             </tbody>
           </table>
+
+
+
+
+
       <% else %>
           <div class="headline"><h3>Listing Ratings</h3></div>
       <table class="table table-hover">
