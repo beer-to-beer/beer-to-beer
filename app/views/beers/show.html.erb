@@ -35,7 +35,7 @@
       <div class="span6 booking-blocks">
 
         <div style="overflow:hidden;">
-          <h2><%= link_to "Rating by " + rating.user.first_name + " " + rating.user.last_name, rating, data: { no_turbolink: true } %> </h2>
+          <h2><%= link_to "Rating by " + rating.user.first_name + " " + rating.user.last_name, rating %> </h2>
           <ul class="unstyled inline">
             <% @avg = rating.criterions.sum(:value)/3 %>
             <li><i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i></li>
@@ -43,13 +43,6 @@
             <li><i class="icon-star<% if (@avg < 3) %>-empty<% end %>"></i></li>
             <li><i class="icon-star<% if (@avg < 4) %>-empty<% end %>"></i></li>
             <li><i class="icon-star<% if (@avg < 5) %>-empty<% end %>"></i></li>
-            <li><i class="icon-star<% if (@avg < 6) %>-empty<% end %>"></i></li>
-            <li><i class="icon-star<% if (@avg < 7) %>-empty<% end %>"></i></li>
-            <li><i class="icon-star<% if (@avg < 8) %>-empty<% end %>"></i></li>
-            <li><i class="icon-star<% if (@avg < 9) %>-empty<% end %>"></i></li>
-            <li><i class="icon-star<% if (@avg < 10) %>-empty<% end %>"></i></li>
-
-
           </ul>
           <p>
             <% if rating.comment.length > 150 %>
