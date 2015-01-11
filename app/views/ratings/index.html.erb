@@ -30,7 +30,14 @@
                       <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Price"}).count(:value) %>/5</td>
                       <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Taste"}).count(:value) %>/5</td>
                       <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id, :criterions => {name: "Headache"}).count(:value) %>/5</td>
-                      <td><%= Rating.joins(:criterions).all.where(beer_id: beer.id).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id).count(:value) %>/5</td>
+                      <% @avg = Rating.joins(:criterions).all.where(beer_id: beer.id).sum(:value)/Rating.joins(:criterions).all.where(beer_id: beer.id).count(:value) %>
+                      <td>
+                        <i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i>
+                        <i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i>
+                        <i class="icon-star<% if (@avg < 3) %>-empty<% end %>"></i>
+                        <i class="icon-star<% if (@avg < 4) %>-empty<% end %>"></i>
+                        <i class="icon-star<% if (@avg < 5) %>-empty<% end %>"></i>
+                      </td>
                       <td><%= link_to 'All Ratings', ratings_path(:beer_id => beer.id) %></td>
                     </tr>
 
