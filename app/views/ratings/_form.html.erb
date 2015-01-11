@@ -34,7 +34,7 @@
                       <div class="form-group">
                         <div class="input select rating-a">
                           <label for="example-a">Price:</label>
-                          <%= info.select :value, ['1', '2', '3','4','5','6','7','8','9','10'], class: "form-control"%>
+                          <%= info.select :value, ['1', '2', '3','4','5'], class: "form-control"%>
                         </div>
                       </div>
                   <% end %>
@@ -44,7 +44,7 @@
                           <div class="form-group">
                             <div class="input select rating-a">
                               <label for="example-a">Taste:</label>
-                              <%= info.select :value, ['1', '2', '3','4','5','6','7','8','9','10'], class: "form-control"%>
+                              <%= info.select :value, ['1', '2', '3','4','5'], class: "form-control"%>
                             </div>
                           </div>
                   <% end %>
@@ -54,7 +54,7 @@
                                   <div class="form-group">
                                     <div class="input select rating-a">
                                       <label for="example-a">Headache:</label>
-                                      <%= info.select :value, ['1', '2', '3','4','5','6','7','8','9','10'], class: "form-control"%>
+                                      <%= info.select :value, ['1', '2', '3','4','5'], class: "form-control"%>
                                     </div>
                                   </div>
                   <% end %>
@@ -81,7 +81,7 @@
 
 
 <% else %>
-       <h3> please <%= link_to 'login', new_user_session_path,data: { no_turbolink: true } %> to rate a beer</h3>
+       <h3> please <%= link_to 'login', new_user_session_path %> to rate a beer</h3>
  <% end %>
 <% end %>
     </div><!--/row-fluid-->

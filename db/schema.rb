@@ -78,7 +78,7 @@ ActiveRecord::Schema.define(version: 20150102183526) do
   create_table "criterions", force: true do |t|
     t.integer  "rating_id"
     t.string   "name"
-    t.integer  "value"
+    t.float    "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

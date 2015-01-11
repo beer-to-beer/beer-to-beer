@@ -3,7 +3,7 @@ class CreateCriterions < ActiveRecord::Migration
     create_table :criterions do |t|
       t.integer :rating_id
       t.string :name
-      t.integer :value
+      t.float :value
 
       t.timestamps
     end

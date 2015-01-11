@@ -15,7 +15,11 @@
  *= require plugins/ace/bootstrap/css/bootstrap-responsive.min
  *= require stylesheets/ace/style_responsive
  *= require plugins/ace/font-awesome/css/font-awesome
+ *= require stylesheets/ace/effects
+ *= require plugins/ace/fancybox/source/jquery.fancybox
  *= require plugins/ace/flexslider/flexslider
- *= require plugins/ace/parallax-slider/css/parallax-slider
+ *= require plugins/ace/revolution_slider/css/rs-style
+ *= require plugins/ace/revolution_slider/rs-plugin/css/settings
  *= require stylesheets/ace/themes/default
+ *= require plugins/ace/glyphicons/css/glyphicons
  */
