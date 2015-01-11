@@ -14,8 +14,9 @@
 //= require javascripts/ace/modernizr.custom
 //= require plugins/ace/bootstrap/js/bootstrap.min.js
 //= require plugins/ace/flexslider/jquery.flexslider-min.js
-//= require plugins/ace/parallax-slider/js/modernizr.js
-//= require plugins/ace/parallax-slider/js/jquery.cslider.js
 //= require plugins/ace/back-to-top.js
+//= require plugins/ace/fancybox/source/jquery.fancybox.pack
+//= require plugins/ace/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min
+//= require plugins/ace/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min
 //= require javascripts/ace/app.js
 //= require javascripts/ace/pages/index.js
