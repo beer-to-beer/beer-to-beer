@@ -140,6 +140,8 @@
           <th>Taste</th>
           <th>Headache</th>
           <th>Overall</th>
+          <th></th>
+          <th></th>
           <th>Comment</th>
           <th></th>
           <th></th>
@@ -161,7 +163,14 @@
                   <td><%= rating.criterions.where(:name => "Price").first.value %>/5</td>
                   <td><%= rating.criterions.where(:name => "Taste").first.value %>/5</td>
                   <td><%= rating.criterions.where(:name => "Headache").first.value %>/5</td>
-                  <td><%= rating.criterions.sum(:value)/3 %>/5</td>
+                  <% @avg = rating.criterions.sum(:value)/3 %>
+                  <td colspan="3">
+                    <i class="icon-star<% if (@avg > 1) %><% elsif (@avg > 0.5)%>-half<% elsif (@avg <1) %>-empty<% end %>"></i>
+                    <i class="icon-star<% if (@avg > 2) %><% elsif (@avg > 1.5)%>-half<% elsif (@avg <2) %>-empty<% end %>"></i>
+                    <i class="icon-star<% if (@avg > 3) %><% elsif (@avg > 2.5)%>-half<% elsif (@avg <3) %>-empty<% end %>"></i>
+                    <i class="icon-star<% if (@avg > 4) %><% elsif (@avg > 3.5)%>-half<% elsif (@avg <4) %>-empty<% end %>"></i>
+                    <i class="icon-star<% if (@avg > 5) %><% elsif (@avg > 4.5)%>-half<% elsif (@avg <5) %>-empty<% end %>"></i>
+                  </td>
                   <% if rating.comment.length > 15 %>
                       <td colspan="4"><%= rating.comment.slice!(0..15) %>...</td>
                   <% else %>
