@@ -1,6 +1,6 @@
 <% content_for :title, @beer.title %>
 <% navigation_add 'Beers', beers_path %>
-<div class="container content">
+<div class="container">
   <div class="row">
 
   <% @ratings = Rating.all.where(beer_id: @beer.id) %>
@@ -27,24 +27,17 @@
   <% end %>
 
     <div class="col-md-3">
-      <p>
-        <strong>Category:</strong>
-        <%= @beer.category.name %>
-      </p>
-      
-      <p>
-        <strong>Producer:</strong>
-        <%= @beer.producer.name %>
-      </p>
+      <div class="headline"><h3>Facts</h3></div>
+        <div class="glyphicons-demo">
+          <a class="glyphicons no-js show_big_thumbnails" href="#"><i></i><strong>Category:</strong><%= @beer.category.name %></a>
+          <a class="glyphicons no-js beer" href="#"><i></i> <strong>Producer:</strong><%= @beer.producer.name %></a>
+        </div>
 
-      <p>
         <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id) %> |
         <%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
         <%= link_to 'Edit', edit_beer_path(@beer) %> |
         <%= link_to 'Back', beers_path %>
-      </p>
 
     </div>
-
   </div>
 </div>
