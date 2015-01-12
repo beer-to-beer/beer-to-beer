@@ -1,7 +1,6 @@
 <% content_for :title, 'Shop' %>
 
 <div class="container">
-  <div class="row-fluid">
     <div class="row-fluid margin-bottom-20">
       <div class="headline"><h3><%= @shop.name %></h3></div>
 
@@ -12,8 +11,10 @@
           <li><a href="#"><i class="icon-globe"></i>http://www.example.com</a></li>
         </ul>
 
-        <%= link_to 'Edit', edit_shop_path(@shop) %> |
-        <%= link_to 'Back', shops_path %>
+        <div class="glyphicons-demo">
+          <a class="glyphicons no-js left_arrow" href=<%= shops_path %>><i></i>Back</a>
+          <a class="glyphicons no-js edit" href=<%= edit_shop_path(@shop) %>><i></i>Edit</a>
+        </div>
 
     </div>
   </div>
