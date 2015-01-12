@@ -18,13 +18,13 @@
           <%= User.find(@rating.user_id).email %>
     <% @rating.criterions.each do |criterion| %>
 
-              <div class="controls">
+              <div class="controls" align="center">
 
 
           <div class="form-group" align="center">
-            <div class="input select rating-a" align="center">
+            <div class="input select rating-a" align="center" style="width:85px">
               <label for="example-a"> <%= criterion.name %></label>
-             <%= info.select criterion.name, ['1.0', '2.0', '3.0','4.0','5.0'], class: "form-control", :selected => criterion.value %>
+            <%= info.select criterion.name, ['1.0', '2.0', '3.0','4.0','5.0'], class: "form-control",:selected => criterion.value %>
 
             </div>
           </div>
@@ -32,10 +32,10 @@
     <% end %>
 
 
+<br>
 
 
-
-<p>
+<p align ="center">
   <strong>Comment:</strong><br>
   <%= @rating.comment %>
 </p>

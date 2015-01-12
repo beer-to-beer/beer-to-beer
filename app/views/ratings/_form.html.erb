@@ -4,7 +4,7 @@
     <div class="row-fluid margin-bottom-10">
 
 <%= form_for(@rating,  html: {class: "reg-page"}) do |f| %>
-          <h2>Rate <%=Beer.find(params[:beer_id]).title %></h2>
+          <h2 align="center">Rate <%=Beer.find(params[:beer_id]).title %></h2>
   <% if @rating.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
@@ -26,15 +26,15 @@
 
 
             <%= f.fields_for :criterions,@criterion do |info| %>
-                <div class="fields">
+                <div class="fields" align="center">
 
                   <% if info.index == 0 %>
 
                       <%= info.hidden_field :name, :value => "Price" %>
                       <div class="form-group">
-                        <div class="input select rating-a">
+                        <div class="input select rating-a" align="center" style="width:85px">
                           <label for="example-a">Price:</label>
-                          <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'], class: "form-control"%>
+                          <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'], {},:id => "price"%>
                         </div>
                       </div>
                   <% end %>
@@ -42,9 +42,9 @@
 
                           <%= info.hidden_field :name, :value => "Taste" %>
                           <div class="form-group">
-                            <div class="input select rating-a">
+                            <div class="input select rating-a" align="center" style="width:85px">
                               <label for="example-a">Taste:</label>
-                              <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'], class: "form-control"%>
+                              <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'], {},:id => "taste"%>
                             </div>
                           </div>
                   <% end %>
@@ -52,9 +52,9 @@
 
                                   <%= info.hidden_field :name, :value => "Headache" %>
                                   <div class="form-group">
-                                    <div class="input select rating-a">
+                                    <div class="input select rating-a" align="center" style="width:85px">
                                       <label for="example-a">Headache:</label>
-                                      <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'], class: "form-control"%>
+                                      <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'],{},:id => "headache"%>
                                     </div>
                                   </div>
                   <% end %>
@@ -70,7 +70,7 @@
 
         
 
-  <div class="field">
+  <div class="field" align="center">
     <%= f.label :comment %><br>
     <%= f.text_area :comment, class: "span12" %>
   </div>
