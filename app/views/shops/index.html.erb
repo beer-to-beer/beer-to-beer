@@ -17,12 +17,12 @@
              <% @count=1 %>
              <% @shops.each do |shop| %>
               <tr>
-                <td><%= @count %> </td>
-                <td><%= shop.name %></td>
-                <td><%= shop.address_id %></td>
-                <td><%= link_to 'Show', shop %></td>
-                <td><a class="glyphicons no-js edit" href=<%= edit_shop_path(shop) %>><i></i>Edit</a></td>
-                <td><%= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td style="vertical-align:middle"><%= @count %> </td>
+                <td style="vertical-align:middle"><%= shop.name %></td>
+                <td style="vertical-align:middle"><%= shop.address_id %></td>
+                <td style="vertical-align:middle"><%= link_to 'Show', shop %></td>
+                <td style="vertical-align:middle"><a class="glyphicons no-js edit" href=<%= edit_shop_path(shop) %>><i></i>Edit</a></td>
+                <td style="vertical-align:middle"><%= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               </tr>
             <% @count = @count+1 %>
             <% end %>
