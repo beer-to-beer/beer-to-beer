@@ -20,3 +20,4 @@
 //= require plugins/ace/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min
 //= require javascripts/ace/app.js
 //= require javascripts/ace/pages/index.js
+//= require jquery.barrating.js
