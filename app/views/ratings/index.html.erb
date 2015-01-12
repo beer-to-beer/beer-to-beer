@@ -52,10 +52,10 @@
             <tr>
               <th>Beer</th>
               <th>User</th>
-              <th>Price</th>
-              <th>Taste</th>
-              <th>Headache</th>
-              <th>Overall</th>
+              <th><%= link_to "Price",ratings_path(:order => "Price",:type => "all") %></th>
+              <th><%= link_to "Taste",ratings_path(:order => "Taste",:type => "all") %></th>
+              <th><%= link_to "Headache",ratings_path(:order => "Headache",:type => "all") %></th>
+              <th><%= link_to "Overall",ratings_path(:order => "Overall",:type => "all") %></th>
               <th></th>
               <th></th>
               <th>Comment</th>
@@ -68,17 +68,19 @@
 
             <tbody>
 
-            <% @ratings.each do |rating| %>
+            <% @ratings5.each do |rating| %>
 
                 <% if (params[:beer_id].to_i == rating.beer_id.to_i) or !params[:beer_id]%>
 
                     <tr>
                       <td><%= link_to rating.beer.title,rating.beer %></td>
                       <td><%= rating.user.email %></td>
-                      <td><%= rating.criterions.where(:name => "Price").first.value %>/5</td>
-                      <td><%= rating.criterions.where(:name => "Taste").first.value %>/5</td>
-                      <td><%= rating.criterions.where(:name => "Headache").first.value %>/5</td>
-                      <% @avg = rating.criterions.sum(:value)/3 %>
+                      <td><%= @ratings1.find(rating.rating_id).avgprice %>/5</td>
+                      <td><%= @ratings2.find(rating.rating_id).avgtaste %>/5</td>
+                      <td><%= @ratings3.find(rating.rating_id).avgheadache %>/5</td>
+                      <% @avg = @ratings4.find(rating.rating_id).overall %>
+                      <%= :id == rating.id %>
+                      <%= :id %> <%= rating.id %>
                       <td colspan="3">
                         <i class="icon-star<% if (@avg >= 1) %><% elsif (@avg > 0.5)%>-half<% elsif (@avg <1) %>-empty<% end %>"></i>
                         <i class="icon-star<% if (@avg >= 2) %><% elsif (@avg > 1.5)%>-half<% elsif (@avg <2) %>-empty<% end %>"></i>
