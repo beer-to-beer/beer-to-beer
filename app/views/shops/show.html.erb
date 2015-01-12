@@ -1,14 +1,20 @@
-<p id="notice"><%= notice %></p>
+<% content_for :title, 'Shop' %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @shop.name %>
-</p>
+<div class="container">
+  <div class="row-fluid">
+    <div class="row-fluid margin-bottom-20">
+      <div class="headline"><h3><%= @shop.name %></h3></div>
 
-<p>
-  <strong>Address:</strong>
-  <%= @shop.address_id %>
-</p>
+        <ul class="unstyled who margin-bottom-20">
+          <li><a href="#"><i class="icon-home"></i><%= @shop.address_id %></a></li>
+          <li><a href="#"><i class="icon-envelope-alt"></i>info@example.com</a></li>
+          <li><a href="#"><i class="icon-phone-sign"></i>0123456789</a></li>
+          <li><a href="#"><i class="icon-globe"></i>http://www.example.com</a></li>
+        </ul>
 
-<%= link_to 'Edit', edit_shop_path(@shop) %> |
-<%= link_to 'Back', shops_path %>
+        <%= link_to 'Edit', edit_shop_path(@shop) %> |
+        <%= link_to 'Back', shops_path %>
+
+    </div>
+  </div>
+</div>
