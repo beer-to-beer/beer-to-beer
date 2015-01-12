@@ -79,8 +79,6 @@
                       <td><%= @ratings2.find(rating.rating_id).avgtaste %>/5</td>
                       <td><%= @ratings3.find(rating.rating_id).avgheadache %>/5</td>
                       <% @avg = @ratings4.find(rating.rating_id).overall %>
-                      <%= :id == rating.id %>
-                      <%= :id %> <%= rating.id %>
                       <td colspan="3">
                         <i class="icon-star<% if (@avg >= 1) %><% elsif (@avg > 0.5)%>-half<% elsif (@avg <1) %>-empty<% end %>"></i>
                         <i class="icon-star<% if (@avg >= 2) %><% elsif (@avg > 1.5)%>-half<% elsif (@avg <2) %>-empty<% end %>"></i>

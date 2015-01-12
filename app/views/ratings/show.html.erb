@@ -1,8 +1,7 @@
 <link href="/assets/ratingbar.css" rel="stylesheet" type="text/css"/>
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"
       type="text/css"/>
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script src="/assets/jquery.barrating.js"></script>
+
 
 
 
@@ -22,10 +21,11 @@
               <div class="controls">
 
 
-          <div class="form-group">
-            <div class="input select rating-a">
+          <div class="form-group" align="center">
+            <div class="input select rating-a" align="center">
               <label for="example-a"> <%= criterion.name %></label>
-              <%= info.select criterion.name, ['1', '2', '3', '4', '5'], class: "form-control", :selected => criterion.value %>
+             <%= info.select criterion.name, ['1.0', '2.0', '3.0','4.0','5.0'], class: "form-control", :selected => criterion.value %>
+
             </div>
           </div>
         </div>
@@ -51,12 +51,16 @@
 
 <script>
     $('#criterion_Price').barrating('show', {
+        showSelectedRating:false,
         readonly: true
     });
     $('#criterion_Taste').barrating('show', {
+        showSelectedRating:false,
         readonly: true
+
     });
     $('#criterion_Headache').barrating('show', {
+        showSelectedRating:false,
         readonly: true
     });
 
