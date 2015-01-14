@@ -14772,3 +14772,1374 @@ Completed 500 Internal Server Error in 1458ms
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-08 09:08:21.032347"], ["name", "Name"], ["updated_at", "2015-01-08 09:08:21.032347"]]
   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by BeersController#new as HTML
+Completed 200 OK in 25ms (Views: 11.5ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "beers"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by CriterionsController#new as HTML
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "criterions"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by RatingsController#new as HTML
+Completed 200 OK in 21ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ratings"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by ShopBeersController#new as HTML
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "shop_beers"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by ShopsController#new as HTML
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "shops"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "North Jarrodmouth"], ["country", "Zambia"], ["created_at", "2015-01-11 22:15:06.496411"], ["house_number", "24162"], ["postal_code", 64830], ["street", "Zula Summit"], ["updated_at", "2015-01-11 22:15:06.496411"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-11 22:15:06.508011"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:06.508011"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2015-01-11 22:15:06.516937"], ["imageURL", nil], ["sdate", "2015-01-11 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-11 22:15:06.516937"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-11 22:15:06.520291"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:06.520291"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "North Jarrodmouth"], ["country", "Zambia"], ["created_at", "2015-01-11 22:15:06.523505"], ["house_number", "24162"], ["postal_code", 64830], ["street", "Zula Summit"], ["updated_at", "2015-01-11 22:15:06.523505"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-11 22:15:06.525300"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:06.525300"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2015-01-11 22:15:06.527998"], ["imageURL", nil], ["sdate", "2015-01-11 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-11 22:15:06.527998"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+Started DELETE "/clubs/1" for 127.0.0.1 at 2015-01-11 23:15:06 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 26ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "North Jarrodmouth"], ["country", "Zambia"], ["created_at", "2015-01-11 22:15:06.592981"], ["house_number", "24162"], ["postal_code", 64830], ["street", "Zula Summit"], ["updated_at", "2015-01-11 22:15:06.592981"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-11 22:15:06.595258"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:06.595258"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2015-01-11 22:15:06.597563"], ["imageURL", nil], ["sdate", "2015-01-11 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-11 22:15:06.597563"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "addresses"
+Started DELETE "/clubs/1" for 127.0.0.1 at 2015-01-11 23:15:06 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "addresses"
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "North Jarrodmouth"], ["country", "Zambia"], ["created_at", "2015-01-11 22:15:06.609307"], ["house_number", "24162"], ["postal_code", 64830], ["street", "Zula Summit"], ["updated_at", "2015-01-11 22:15:06.609307"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-11 22:15:06.611377"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:06.611377"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2015-01-11 22:15:06.613805"], ["imageURL", nil], ["sdate", "2015-01-11 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-11 22:15:06.613805"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "clubs"
+Started DELETE "/clubs/1" for 127.0.0.1 at 2015-01-11 23:15:06 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 20ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "North Jarrodmouth"], ["country", "Zambia"], ["created_at", "2015-01-11 22:15:06.640119"], ["house_number", "24162"], ["postal_code", 64830], ["street", "Zula Summit"], ["updated_at", "2015-01-11 22:15:06.640119"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-11 22:15:06.642287"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:06.642287"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2015-01-11 22:15:06.644525"], ["imageURL", nil], ["sdate", "2015-01-11 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-11 22:15:06.644525"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+Started DELETE "/events/1" for 127.0.0.1 at 2015-01-11 23:15:06 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.de' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 0], ["created_at", "2015-01-11 22:15:06.672618"], ["email", "test@test.de"], ["encrypted_password", "$2a$04$32qNuVQAKiTVR8j5XPNMBOOy9SkM4tUko3eps68iVSLOJEMsjf/PW"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2015-01-11 22:15:06.672618"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2015-01-11 23:15:06 +0100
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 1637ms
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:08.318561"], ["updated_at", "2015-01-11 22:15:08.318561"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.de' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["address_id", 0], ["created_at", "2015-01-11 22:15:08.322527"], ["email", "test@test.de"], ["encrypted_password", "$2a$04$Owa7yS1b0RSyh64PPhBY6.1zEbbsoXb/IZV9CqMaiEkDcNwX8hAUO"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2015-01-11 22:15:08.322527"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2015-01-11 22:15:08.327041"], ["producer_id", 1], ["title", "Beer"], ["updated_at", "2015-01-11 22:15:08.327041"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings"[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:08.330102"], ["updated_at", "2015-01-11 22:15:08.330102"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "ratings"[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:08.333366"], ["updated_at", "2015-01-11 22:15:08.333366"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.de' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 0], ["created_at", "2015-01-11 22:15:08.336854"], ["email", "test@test.de"], ["encrypted_password", "$2a$04$HSTeIAu/Scso3Q2/edB/zO8wJFx5mGF91CCiNBBKERD7tBZcXpvLG"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2015-01-11 22:15:08.336854"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2015-01-11 22:15:08.338610"], ["producer_id", 1], ["title", "Beer"], ["updated_at", "2015-01-11 22:15:08.338610"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings"
+Started DELETE "/ratings/1" for 127.0.0.1 at 2015-01-11 23:15:08 +0100
+Processing by RatingsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRating Load (0.1ms)[0m  [1mSELECT  "ratings".* FROM "ratings"  WHERE "ratings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "ratings" WHERE "ratings"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/ratings
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings"[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:08.353136"], ["updated_at", "2015-01-11 22:15:08.353136"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.de' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 0], ["created_at", "2015-01-11 22:15:08.356555"], ["email", "test@test.de"], ["encrypted_password", "$2a$04$Sel1hxdxDoTI/DWqLDWXius88cqgq7O47FY3xYkCQjemtSu7cOxKC"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2015-01-11 22:15:08.356555"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2015-01-11 22:15:08.358209"], ["producer_id", 1], ["title", "Beer"], ["updated_at", "2015-01-11 22:15:08.358209"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2015-01-11 23:15:08 +0100
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 1357ms
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2015-01-11 23:15:09 +0100
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 1235ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "North Jarrodmouth"], ["country", "Zambia"], ["created_at", "2015-01-11 22:15:10.959927"], ["house_number", "24162"], ["postal_code", 64830], ["street", "Zula Summit"], ["updated_at", "2015-01-11 22:15:10.959927"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-11 22:15:10.962051"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:10.962051"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:10.967329"], ["updated_at", "2015-01-11 22:15:10.967329"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRating Load (0.1ms)[0m  SELECT  "ratings".* FROM "ratings"   ORDER BY "ratings"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)  [["created_at", "2015-01-11 22:15:10.969979"], ["name", "Price"], ["rating_id", 1], ["updated_at", "2015-01-11 22:15:10.969979"], ["value", 5]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "North Jarrodmouth"], ["country", "Zambia"], ["created_at", "2015-01-11 22:15:10.973183"], ["house_number", "24162"], ["postal_code", 64830], ["street", "Zula Summit"], ["updated_at", "2015-01-11 22:15:10.973183"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-11 22:15:10.975117"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:10.975117"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2015-01-11 22:15:10.977267"], ["imageURL", nil], ["sdate", "2015-01-11 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-11 22:15:10.977267"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "North Jarrodmouth"], ["country", "Zambia"], ["created_at", "2015-01-11 22:15:10.980920"], ["house_number", "24162"], ["postal_code", 64830], ["street", "Zula Summit"], ["updated_at", "2015-01-11 22:15:10.980920"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-11 22:15:10.983091"], ["name", "My Club"], ["updated_at", "2015-01-11 22:15:10.983091"], ["url", "http://sawaynkohler.org/brianne.conroy"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2015-01-11 22:15:10.985543"], ["imageURL", nil], ["sdate", "2015-01-11 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-11 22:15:10.985543"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:10.988572"], ["updated_at", "2015-01-11 22:15:10.988572"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/beers" for 127.0.0.1 at 2015-01-11 23:15:10 +0100
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+Completed 500 Internal Server Error in 1220ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/clubs" for 127.0.0.1 at 2015-01-11 23:15:12 +0100
+Processing by ClubsController#index as HTML
+  [1m[35mClub Load (0.1ms)[0m  SELECT "clubs".* FROM "clubs"  WHERE "clubs"."active" = 't'
+Completed 500 Internal Server Error in 1239ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/criterions" for 127.0.0.1 at 2015-01-11 23:15:13 +0100
+Processing by CriterionsController#index as HTML
+  [1m[36mCriterion Load (0.2ms)[0m  [1mSELECT "criterions".* FROM "criterions"[0m
+Completed 500 Internal Server Error in 1243ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/events" for 127.0.0.1 at 2015-01-11 23:15:14 +0100
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" INNER JOIN "clubs" ON "clubs"."id" = "events"."club_id" WHERE (sdate > '2015-01-11') AND (clubs.active = 't')
+Completed 500 Internal Server Error in 1243ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/ratings" for 127.0.0.1 at 2015-01-11 23:15:15 +0100
+Processing by RatingsController#index as HTML
+  [1m[36mRating Load (0.2ms)[0m  [1mSELECT "ratings".* FROM "ratings" INNER JOIN "beers" ON "beers"."id" = "ratings"."beer_id"  ORDER BY title[0m
+Completed 500 Internal Server Error in 1316ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/shop_beers" for 127.0.0.1 at 2015-01-11 23:15:17 +0100
+Processing by ShopBeersController#index as HTML
+  [1m[35mShopBeer Load (0.5ms)[0m  SELECT "shop_beers".* FROM "shop_beers"
+Completed 500 Internal Server Error in 1330ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/shops" for 127.0.0.1 at 2015-01-11 23:15:18 +0100
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.1ms)[0m  [1mSELECT "shops".* FROM "shops"[0m
+Completed 500 Internal Server Error in 1245ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered beers/_form.html.erb (6.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-01-11 22:15:20.006054"], ["name", "MyString"], ["rating_id", 1], ["updated_at", "2015-01-11 22:15:20.006054"], ["value", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered criterions/_form.html.erb (6.7ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)  [["created_at", "2015-01-11 22:15:20.045744"], ["name", "Name"], ["rating_id", 1], ["updated_at", "2015-01-11 22:15:20.045744"], ["value", 2]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-01-11 22:15:20.046914"], ["name", "Name"], ["rating_id", 1], ["updated_at", "2015-01-11 22:15:20.046914"], ["value", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered criterions/_form.html.erb (3.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)  [["created_at", "2015-01-11 22:15:20.094274"], ["name", "Name"], ["rating_id", 1], ["updated_at", "2015-01-11 22:15:20.094274"], ["value", 2]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:20.107657"], ["updated_at", "2015-01-11 22:15:20.107657"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:20.119541"], ["updated_at", "2015-01-11 22:15:20.119541"], ["user_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:20.120984"], ["updated_at", "2015-01-11 22:15:20.120984"], ["user_id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mRating Load (0.1ms)[0m  [1mSELECT "ratings".* FROM "ratings" INNER JOIN "beers" ON "beers"."id" = "ratings"."beer_id"  ORDER BY title[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered ratings/_form.html.erb (6.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-11 22:15:20.168802"], ["updated_at", "2015-01-11 22:15:20.168802"], ["user_id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT  "beers".* FROM "beers"  WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "shop_beers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-01-11 22:15:20.185358"], ["updated_at", "2015-01-11 22:15:20.185358"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered shop_beers/_form.html.erb (3.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "shop_beers" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2015-01-11 22:15:20.256421"], ["updated_at", "2015-01-11 22:15:20.256421"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "shop_beers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-01-11 22:15:20.257673"], ["updated_at", "2015-01-11 22:15:20.257673"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered shop_beers/_form.html.erb (2.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "shop_beers" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2015-01-11 22:15:20.300993"], ["updated_at", "2015-01-11 22:15:20.300993"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-11 22:15:20.314544"], ["name", "MyString"], ["updated_at", "2015-01-11 22:15:20.314544"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"  WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" INNER JOIN "shop_beers" ON "beers"."id" = "shop_beers"."beer_id" WHERE "shop_beers"."shop_id" = ?  [["shop_id", 1]]
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered shops/_form.html.erb (13.3ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-11 22:15:20.361234"], ["name", "Name"], ["updated_at", "2015-01-11 22:15:20.361234"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-11 22:15:20.362527"], ["name", "Name"], ["updated_at", "2015-01-11 22:15:20.362527"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"  WHERE "addresses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers"[0m
+  Rendered shops/_form.html.erb (4.6ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-11 22:15:20.409110"], ["name", "Name"], ["updated_at", "2015-01-11 22:15:20.409110"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "namespace" varchar(255), "body" text, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.7ms)[0m  [1mCREATE  INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  CREATE  INDEX "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "city" varchar(255), "postal_code" integer, "street" varchar(255), "house_number" varchar(255), "country" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "beer_clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "beer_id" integer, "club_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_beer_clubs_on_beer_id" ON "beer_clubs" ("beer_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beer_clubs_on_beer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beer_clubs_on_beer_id' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE  INDEX "index_beer_clubs_on_club_id" ON "beer_clubs" ("club_id")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime, "category_id" integer, "producer_id" integer) 
+  [1m[36m (0.9ms)[0m  [1mCREATE  INDEX "index_beers_on_category_id" ON "beers" ("category_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_beers_on_category_id' AND type='index'
+
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_beers_on_producer_id" ON "beers" ("producer_id")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "url" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime, "address_id" integer, "active" boolean) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "criterions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating_id" integer, "name" varchar(255), "value" float, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "sdate" datetime, "club_id" integer, "created_at" datetime, "updated_at" datetime, "imageURL" varchar(255)) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "producers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_producers_on_address_id" ON "producers" ("address_id")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "beer_id" integer, "user_id" integer, "comment" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "resource_id" integer, "resource_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.8ms)[0m  CREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_roles_on_name_and_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_roles_on_name_and_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX "index_roles_on_name" ON "roles" ("name")
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "shop_beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "shop_id" integer, "beer_id" integer, "created_at" datetime, "updated_at" datetime, "price" float) [0m
+  [1m[35m (0.8ms)[0m  CREATE  INDEX "index_shop_beers_on_beer_id" ON "shop_beers" ("beer_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_shop_beers_on_beer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_shop_beers_on_beer_id' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  CREATE  INDEX "index_shop_beers_on_shop_id" ON "shop_beers" ("shop_id")
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "shops" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "first_name" varchar(255), "last_name" varchar(255), "address_id" integer) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users_roles" ("user_id" integer, "role_id" integer) 
+  [1m[36m (0.8ms)[0m  [1mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150102183526')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141218194114')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141218194919')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141218204300')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141220120016')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141220124555')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141220140146')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141222173754')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141227170216')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141228222028')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141229135725')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141229140046')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141229142327')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141229161330')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141229161755')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141229161814')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141229162930')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141229163442')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141229170923')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141229171232')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141230113734')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by BeersController#new as HTML
+Completed 200 OK in 22ms (Views: 9.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "beers"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by CriterionsController#new as HTML
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "criterions"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by RatingsController#new as HTML
+Completed 200 OK in 19ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by ShopBeersController#new as HTML
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "shop_beers"[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by ShopsController#new as HTML
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "shops"
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "Port Ova"], ["country", "British Indian Ocean Territory (Chagos Archipelago)"], ["created_at", "2015-01-13 11:26:47.338352"], ["house_number", "6203"], ["postal_code", 47502], ["street", "Frami Trail"], ["updated_at", "2015-01-13 11:26:47.338352"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.2ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-13 11:26:47.354186"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:47.354186"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2015-01-13 11:26:47.366370"], ["imageURL", nil], ["sdate", "2015-01-13 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-13 11:26:47.366370"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-13 11:26:47.369776"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:47.369776"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Port Ova"], ["country", "British Indian Ocean Territory (Chagos Archipelago)"], ["created_at", "2015-01-13 11:26:47.373732"], ["house_number", "6203"], ["postal_code", 47502], ["street", "Frami Trail"], ["updated_at", "2015-01-13 11:26:47.373732"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-13 11:26:47.376481"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:47.376481"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2015-01-13 11:26:47.379497"], ["imageURL", nil], ["sdate", "2015-01-13 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-13 11:26:47.379497"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+Started DELETE "/clubs/1" for 127.0.0.1 at 2015-01-13 12:26:47 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClub Load (0.2ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 51ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Port Ova"], ["country", "British Indian Ocean Territory (Chagos Archipelago)"], ["created_at", "2015-01-13 11:26:47.471024"], ["house_number", "6203"], ["postal_code", 47502], ["street", "Frami Trail"], ["updated_at", "2015-01-13 11:26:47.471024"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-13 11:26:47.473310"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:47.473310"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2015-01-13 11:26:47.476038"], ["imageURL", nil], ["sdate", "2015-01-13 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-13 11:26:47.476038"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "addresses"[0m
+Started DELETE "/clubs/1" for 127.0.0.1 at 2015-01-13 12:26:47 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "addresses"[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Port Ova"], ["country", "British Indian Ocean Territory (Chagos Archipelago)"], ["created_at", "2015-01-13 11:26:47.487260"], ["house_number", "6203"], ["postal_code", 47502], ["street", "Frami Trail"], ["updated_at", "2015-01-13 11:26:47.487260"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-13 11:26:47.489683"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:47.489683"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2015-01-13 11:26:47.493069"], ["imageURL", nil], ["sdate", "2015-01-13 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-13 11:26:47.493069"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+Started DELETE "/clubs/1" for 127.0.0.1 at 2015-01-13 12:26:47 +0100
+Processing by ClubsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "clubs"[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Port Ova"], ["country", "British Indian Ocean Territory (Chagos Archipelago)"], ["created_at", "2015-01-13 11:26:47.505660"], ["house_number", "6203"], ["postal_code", 47502], ["street", "Frami Trail"], ["updated_at", "2015-01-13 11:26:47.505660"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-13 11:26:47.508102"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:47.508102"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2015-01-13 11:26:47.510590"], ["imageURL", nil], ["sdate", "2015-01-13 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-13 11:26:47.510590"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+Started DELETE "/events/1" for 127.0.0.1 at 2015-01-13 12:26:47 +0100
+Processing by EventsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events"  WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events"[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.de' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["address_id", 0], ["created_at", "2015-01-13 11:26:47.540003"], ["email", "test@test.de"], ["encrypted_password", "$2a$04$ubnnPEAcSgPQuPwe6ySVHuJ1RFHXVWp8SQmirlNVSXoBwOpMHMET6"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2015-01-13 11:26:47.540003"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2015-01-13 12:26:47 +0100
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 1755ms
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:26:49.306192"], ["updated_at", "2015-01-13 11:26:49.306192"], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.de' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address_id", 0], ["created_at", "2015-01-13 11:26:49.310131"], ["email", "test@test.de"], ["encrypted_password", "$2a$04$qUNHPYNIer7zcn8WdHiVOO6Oe5.X52Lj55vhpGrCu2bGt5VSlNcaC"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2015-01-13 11:26:49.310131"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["category_id", 1], ["created_at", "2015-01-13 11:26:49.315549"], ["producer_id", 1], ["title", "Beer"], ["updated_at", "2015-01-13 11:26:49.315549"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings"
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:26:49.318097"], ["updated_at", "2015-01-13 11:26:49.318097"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings"
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:26:49.321284"], ["updated_at", "2015-01-13 11:26:49.321284"], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.de' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["address_id", 0], ["created_at", "2015-01-13 11:26:49.324994"], ["email", "test@test.de"], ["encrypted_password", "$2a$04$e7qDpS0pR1xtp7wS1Z5m6O0SjvAJGRqTSOvhLkaqDes7fqkG8f8Ra"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2015-01-13 11:26:49.324994"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2015-01-13 11:26:49.326905"], ["producer_id", 1], ["title", "Beer"], ["updated_at", "2015-01-13 11:26:49.326905"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "ratings"[0m
+Started DELETE "/ratings/1" for 127.0.0.1 at 2015-01-13 12:26:49 +0100
+Processing by RatingsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRating Load (0.1ms)[0m  SELECT  "ratings".* FROM "ratings"  WHERE "ratings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "ratings" WHERE "ratings"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ratings
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "ratings"
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:26:49.342762"], ["updated_at", "2015-01-13 11:26:49.342762"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@test.de' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("address_id", "created_at", "email", "encrypted_password", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["address_id", 0], ["created_at", "2015-01-13 11:26:49.346745"], ["email", "test@test.de"], ["encrypted_password", "$2a$04$0uxrNh5bY6j.btbCMSCKZOrZiAFL5iQbQeRqdG4SPWsqPhETWhB6K"], ["first_name", "Peter"], ["last_name", "Mueller"], ["updated_at", "2015-01-13 11:26:49.346745"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "beers" ("category_id", "created_at", "producer_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["category_id", 1], ["created_at", "2015-01-13 11:26:49.349092"], ["producer_id", 1], ["title", "Beer"], ["updated_at", "2015-01-13 11:26:49.349092"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2015-01-13 12:26:49 +0100
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 1304ms
+  [1m[36m (2.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2015-01-13 12:26:50 +0100
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 1367ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "Port Ova"], ["country", "British Indian Ocean Territory (Chagos Archipelago)"], ["created_at", "2015-01-13 11:26:52.030365"], ["house_number", "6203"], ["postal_code", 47502], ["street", "Frami Trail"], ["updated_at", "2015-01-13 11:26:52.030365"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-13 11:26:52.032485"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:52.032485"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:26:52.056655"], ["updated_at", "2015-01-13 11:26:52.056655"], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mRating Load (0.1ms)[0m  [1mSELECT  "ratings".* FROM "ratings"   ORDER BY "ratings"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-01-13 11:26:52.059283"], ["name", "Price"], ["rating_id", 1], ["updated_at", "2015-01-13 11:26:52.059283"], ["value", 5.0]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["city", "Port Ova"], ["country", "British Indian Ocean Territory (Chagos Archipelago)"], ["created_at", "2015-01-13 11:26:52.062165"], ["house_number", "6203"], ["postal_code", 47502], ["street", "Frami Trail"], ["updated_at", "2015-01-13 11:26:52.062165"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-13 11:26:52.064110"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:52.064110"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["club_id", 1], ["created_at", "2015-01-13 11:26:52.067319"], ["imageURL", nil], ["sdate", "2015-01-13 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-13 11:26:52.067319"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "addresses" ("city", "country", "created_at", "house_number", "postal_code", "street", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["city", "Port Ova"], ["country", "British Indian Ocean Territory (Chagos Archipelago)"], ["created_at", "2015-01-13 11:26:52.071614"], ["house_number", "6203"], ["postal_code", 47502], ["street", "Frami Trail"], ["updated_at", "2015-01-13 11:26:52.071614"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"   ORDER BY "addresses"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "clubs" ("address_id", "created_at", "name", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-13 11:26:52.073560"], ["name", "My Club"], ["updated_at", "2015-01-13 11:26:52.073560"], ["url", "http://rohan.biz/garrick.wisoky"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("club_id", "created_at", "imageURL", "sdate", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["club_id", 1], ["created_at", "2015-01-13 11:26:52.075730"], ["imageURL", nil], ["sdate", "2015-01-13 00:00:00.000000"], ["title", "My Event"], ["updated_at", "2015-01-13 11:26:52.075730"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:26:52.078603"], ["updated_at", "2015-01-13 11:26:52.078603"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/beers" for 127.0.0.1 at 2015-01-13 12:26:52 +0100
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers"
+Completed 500 Internal Server Error in 1398ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clubs" for 127.0.0.1 at 2015-01-13 12:26:53 +0100
+Processing by ClubsController#index as HTML
+  [1m[36mClub Load (0.1ms)[0m  [1mSELECT "clubs".* FROM "clubs"  WHERE "clubs"."active" = 't'[0m
+Completed 500 Internal Server Error in 1209ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/criterions" for 127.0.0.1 at 2015-01-13 12:26:54 +0100
+Processing by CriterionsController#index as HTML
+  [1m[35mCriterion Load (0.2ms)[0m  SELECT "criterions".* FROM "criterions"
+Completed 500 Internal Server Error in 1178ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/events" for 127.0.0.1 at 2015-01-13 12:26:55 +0100
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" INNER JOIN "clubs" ON "clubs"."id" = "events"."club_id" WHERE (sdate > '2015-01-13') AND (clubs.active = 't')[0m
+Completed 500 Internal Server Error in 1209ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/ratings" for 127.0.0.1 at 2015-01-13 12:26:57 +0100
+Processing by RatingsController#index as HTML
+  [1m[35mRating Load (0.2ms)[0m  SELECT "ratings".* FROM "ratings" INNER JOIN "beers" ON "beers"."id" = "ratings"."beer_id"  ORDER BY title
+Completed 500 Internal Server Error in 1245ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/shop_beers" for 127.0.0.1 at 2015-01-13 12:26:58 +0100
+Processing by ShopBeersController#index as HTML
+  [1m[36mShopBeer Load (0.2ms)[0m  [1mSELECT "shop_beers".* FROM "shop_beers"[0m
+Completed 500 Internal Server Error in 1239ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/shops" for 127.0.0.1 at 2015-01-13 12:26:59 +0100
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.1ms)[0m  SELECT "shops".* FROM "shops"
+Completed 500 Internal Server Error in 1216ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered beers/_form.html.erb (6.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)  [["created_at", "2015-01-13 11:27:00.965323"], ["name", "MyString"], ["rating_id", 1], ["updated_at", "2015-01-13 11:27:00.965323"], ["value", 1.0]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered criterions/_form.html.erb (6.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-01-13 11:27:01.004017"], ["name", "Name"], ["rating_id", 1], ["updated_at", "2015-01-13 11:27:01.004017"], ["value", 2.0]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)  [["created_at", "2015-01-13 11:27:01.005210"], ["name", "Name"], ["rating_id", 1], ["updated_at", "2015-01-13 11:27:01.005210"], ["value", 2.0]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered criterions/_form.html.erb (2.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "criterions" ("created_at", "name", "rating_id", "updated_at", "value") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-01-13 11:27:01.054099"], ["name", "Name"], ["rating_id", 1], ["updated_at", "2015-01-13 11:27:01.054099"], ["value", 2.0]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:27:01.068962"], ["updated_at", "2015-01-13 11:27:01.068962"], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:27:01.081856"], ["updated_at", "2015-01-13 11:27:01.081856"], ["user_id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:27:01.083111"], ["updated_at", "2015-01-13 11:27:01.083111"], ["user_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mRating Load (0.1ms)[0m  SELECT "ratings".* FROM "ratings" INNER JOIN "beers" ON "beers"."id" = "ratings"."beer_id"  ORDER BY title
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  Rendered ratings/_form.html.erb (6.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ratings" ("beer_id", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["beer_id", 1], ["comment", "MyText"], ["created_at", "2015-01-13 11:27:01.130287"], ["updated_at", "2015-01-13 11:27:01.130287"], ["user_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mBeer Load (0.1ms)[0m  SELECT  "beers".* FROM "beers"  WHERE "beers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "shop_beers" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2015-01-13 11:27:01.146774"], ["updated_at", "2015-01-13 11:27:01.146774"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered shop_beers/_form.html.erb (4.0ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "shop_beers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-01-13 11:27:01.186166"], ["updated_at", "2015-01-13 11:27:01.186166"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "shop_beers" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2015-01-13 11:27:01.187462"], ["updated_at", "2015-01-13 11:27:01.187462"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  Rendered shop_beers/_form.html.erb (2.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "shop_beers" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-01-13 11:27:01.229609"], ["updated_at", "2015-01-13 11:27:01.229609"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-13 11:27:01.243041"], ["name", "MyString"], ["updated_at", "2015-01-13 11:27:01.243041"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses"  WHERE "addresses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" INNER JOIN "shop_beers" ON "beers"."id" = "shop_beers"."beer_id" WHERE "shop_beers"."shop_id" = ?[0m  [["shop_id", 1]]
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered shops/_form.html.erb (13.9ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-13 11:27:01.288656"], ["name", "Name"], ["updated_at", "2015-01-13 11:27:01.288656"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["address_id", 1], ["created_at", "2015-01-13 11:27:01.289949"], ["name", "Name"], ["updated_at", "2015-01-13 11:27:01.289949"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses"  WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers"
+  Rendered shops/_form.html.erb (6.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "shops" ("address_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["address_id", 1], ["created_at", "2015-01-13 11:27:01.376110"], ["name", "Name"], ["updated_at", "2015-01-13 11:27:01.376110"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
