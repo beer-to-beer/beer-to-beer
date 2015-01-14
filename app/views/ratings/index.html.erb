@@ -21,26 +21,7 @@
             </thead>
 
             <tbody>
-
-            <% @ratings1 = Rating.select("*,(Round(sum(value)/count(value),1)) as 'avgprice' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Price"}).group("beers.id,criterions.name") %>
-            <% @ratings2 = Rating.select("*,(Round(sum(value)/count(value),1)) as 'avgtaste' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Taste"}).group("beers.id,criterions.name") %>
-            <% @ratings3 = Rating.select("*,(Round(sum(value)/count(value),1)) as 'avgheadache' ").joins(:beer).joins(:criterions).where(:criterions => {name: "Headache"}).group("beers.id,criterions.name") %>
-            <% @ratings4 = Rating.select("*,(Round(sum(value)/count(value),1)) as 'overall' ").joins(:beer).joins(:criterions).group("beers.id") %>
-
-            <% case params[:order]  when "Price" %> <% @ratings1 = @ratings1.order('avgprice DESC') %>
-                <% when "Taste" %> <% @ratings2 = @ratings2.order('avgtaste DESC') %>
-                <% when "Headache" %> <% @ratings3 = @ratings3.order('avgheadache DESC') %>
-                <% when "Overall" %> <% @ratings4 = @ratings4.order('overall DESC') %>
-            <% end %>
-
-
-
-
-
-
-            <% case params[:order]  when "Price" %>
-
-                  <% @ratings1.each do |rating| %>
+                <% @ratings5.each do |rating| %>
                     <tr>
                       <td><%= link_to rating.beer.title,rating.beer %></td>
                       <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
@@ -56,72 +37,7 @@
                       </td>
                       <td><%= link_to 'All Ratings', ratings_path(:beer_id => rating.beer.id) %></td>
                     </tr>
-                <% end %>
-
-
-                <% when "Taste" %>
-
-                      <% @ratings2.each do |rating| %>
-                    <tr>
-                          <td><%= link_to rating.beer.title,rating.beer %></td>
-                          <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
-                          <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
-                          <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
-                          <% @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
-                          <td>
-                            <i class="icon-star<% if (@avg >= 1) %><% elsif (@avg > 0.5)%>-half<% elsif (@avg <1) %>-empty<% end %>"></i>
-                            <i class="icon-star<% if (@avg >= 2) %><% elsif (@avg > 1.5)%>-half<% elsif (@avg <2) %>-empty<% end %>"></i>
-                            <i class="icon-star<% if (@avg >= 3) %><% elsif (@avg > 2.5)%>-half<% elsif (@avg <3) %>-empty<% end %>"></i>
-                            <i class="icon-star<% if (@avg >= 4) %><% elsif (@avg > 3.5)%>-half<% elsif (@avg <4) %>-empty<% end %>"></i>
-                            <i class="icon-star<% if (@avg >= 5) %><% elsif (@avg > 4.5)%>-half<% elsif (@avg <5) %>-empty<% end %>"></i>
-                          </td>
-                          <td><%= link_to 'All Ratings', ratings_path(:beer_id => rating.beer.id) %></td>
-                    </tr>
-                      <% end %>
-
-                <% when "Headache" %>
-
-                          <% @ratings3.each do |rating| %>
-                    <tr>
-                              <td><%= link_to rating.beer.title,rating.beer %></td>
-                              <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
-                              <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
-                              <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
-                              <% @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
-                              <td>
-                                <i class="icon-star<% if (@avg >= 1) %><% elsif (@avg > 0.5)%>-half<% elsif (@avg <1) %>-empty<% end %>"></i>
-                                <i class="icon-star<% if (@avg >= 2) %><% elsif (@avg > 1.5)%>-half<% elsif (@avg <2) %>-empty<% end %>"></i>
-                                <i class="icon-star<% if (@avg >= 3) %><% elsif (@avg > 2.5)%>-half<% elsif (@avg <3) %>-empty<% end %>"></i>
-                                <i class="icon-star<% if (@avg >= 4) %><% elsif (@avg > 3.5)%>-half<% elsif (@avg <4) %>-empty<% end %>"></i>
-                                <i class="icon-star<% if (@avg >= 5) %><% elsif (@avg > 4.5)%>-half<% elsif (@avg <5) %>-empty<% end %>"></i>
-                              </td>
-                              <td><%= link_to 'All Ratings', ratings_path(:beer_id => rating.beer.id) %></td>
-                    </tr>
-                          <% end %>
-
-                <% else %>
-
-                              <% @ratings4.each do |rating| %>
-                    <tr>
-                                  <td><%= link_to rating.beer.title,rating.beer %></td>
-                                  <td><%= @ratings1.where(:beers => {id: rating.beer_id}).first.avgprice %>/5</td>
-                                  <td><%= @ratings2.where(:beers => {id: rating.beer_id}).first.avgtaste %>/5</td>
-                                  <td><%= @ratings3.where(:beers => {id: rating.beer_id}).first.avgheadache %>/5</td>
-                                  <% @avg = @ratings4.where(:beers => {id: rating.beer_id}).first.overall %>
-                                  <td>
-                                    <i class="icon-star<% if (@avg >= 1) %><% elsif (@avg > 0.5)%>-half<% elsif (@avg <1) %>-empty<% end %>"></i>
-                                    <i class="icon-star<% if (@avg >= 2) %><% elsif (@avg > 1.5)%>-half<% elsif (@avg <2) %>-empty<% end %>"></i>
-                                    <i class="icon-star<% if (@avg >= 3) %><% elsif (@avg > 2.5)%>-half<% elsif (@avg <3) %>-empty<% end %>"></i>
-                                    <i class="icon-star<% if (@avg >= 4) %><% elsif (@avg > 3.5)%>-half<% elsif (@avg <4) %>-empty<% end %>"></i>
-                                    <i class="icon-star<% if (@avg >= 5) %><% elsif (@avg > 4.5)%>-half<% elsif (@avg <5) %>-empty<% end %>"></i>
-                                  </td>
-                                  <td><%= link_to 'All Ratings', ratings_path(:beer_id => rating.beer.id) %></td>
-                    </tr>
-                <% end %>
-
             <% end %>
-
-
             </tbody>
           </table>
 
@@ -131,61 +47,60 @@
 
       <% else %>
           <div class="headline"><h3>Listing Ratings</h3></div>
-      <table class="table table-hover">
-        <thead>
-        <tr>
-          <th>Beer</th>
-          <th>User</th>
-          <th>Price</th>
-          <th>Taste</th>
-          <th>Headache</th>
-          <th>Overall</th>
-          <th></th>
-          <th></th>
-          <th>Comment</th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th colspan="3"></th>
-        </tr>
-        </thead>
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>Beer</th>
+              <th>User</th>
+              <th><%= link_to "Price",ratings_path(:order => "Price",:type => "all") %></th>
+              <th><%= link_to "Taste",ratings_path(:order => "Taste",:type => "all") %></th>
+              <th><%= link_to "Headache",ratings_path(:order => "Headache",:type => "all") %></th>
+              <th><%= link_to "Overall",ratings_path(:order => "Overall",:type => "all") %></th>
+              <th></th>
+              <th></th>
+              <th>Comment</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th colspan="3"></th>
+            </tr>
+            </thead>
 
-        <tbody>
-        <% @ratings = Rating.joins(:beer).all.order("title") %>
+            <tbody>
 
-        <% @ratings.each do |rating| %>
+            <% @ratings5.each do |rating| %>
 
-            <% if (params[:beer_id].to_i == rating.beer_id.to_i) or !params[:beer_id]%>
+                <% if (params[:beer_id].to_i == rating.beer_id.to_i) or !params[:beer_id]%>
 
-                <tr>
-                  <td><%= link_to rating.beer.title,rating.beer %></td>
-                  <td><%= rating.user.email %></td>
-                  <td><%= rating.criterions.where(:name => "Price").first.value %>/5</td>
-                  <td><%= rating.criterions.where(:name => "Taste").first.value %>/5</td>
-                  <td><%= rating.criterions.where(:name => "Headache").first.value %>/5</td>
-                  <% @avg = rating.criterions.sum(:value)/3 %>
-                  <td colspan="3">
-                    <i class="icon-star<% if (@avg >= 1) %><% elsif (@avg > 0.5)%>-half<% elsif (@avg <1) %>-empty<% end %>"></i>
-                    <i class="icon-star<% if (@avg >= 2) %><% elsif (@avg > 1.5)%>-half<% elsif (@avg <2) %>-empty<% end %>"></i>
-                    <i class="icon-star<% if (@avg >= 3) %><% elsif (@avg > 2.5)%>-half<% elsif (@avg <3) %>-empty<% end %>"></i>
-                    <i class="icon-star<% if (@avg >= 4) %><% elsif (@avg > 3.5)%>-half<% elsif (@avg <4) %>-empty<% end %>"></i>
-                    <i class="icon-star<% if (@avg >= 5) %><% elsif (@avg > 4.5)%>-half<% elsif (@avg <5) %>-empty<% end %>"></i>
-                  </td>
-                  <% if rating.comment.length > 15 %>
-                      <td colspan="4"><%= rating.comment.slice!(0..15) %>...</td>
-                  <% else %>
-                      <td colspan="4"><%= rating.comment %></td>
-                  <% end %>
-                  <td><%= link_to 'Show', rating %></td>
-                  <td><%= link_to 'Edit', edit_rating_path(rating, :beer_id => rating.beer_id) %></td>
-                  <td><%= link_to 'Destroy', rating, method: :delete, data: {confirm: 'Are you sure?'} %></td>
-                </tr>
+                    <tr>
+                      <td><%= link_to rating.beer.title,rating.beer %></td>
+                      <td><%= rating.user.email %></td>
+                      <td><%= @ratings1.find(rating.rating_id).avgprice %>/5</td>
+                      <td><%= @ratings2.find(rating.rating_id).avgtaste %>/5</td>
+                      <td><%= @ratings3.find(rating.rating_id).avgheadache %>/5</td>
+                      <% @avg = @ratings4.find(rating.rating_id).overall %>
+                      <td colspan="3">
+                        <i class="icon-star<% if (@avg >= 1) %><% elsif (@avg > 0.5)%>-half<% elsif (@avg <1) %>-empty<% end %>"></i>
+                        <i class="icon-star<% if (@avg >= 2) %><% elsif (@avg > 1.5)%>-half<% elsif (@avg <2) %>-empty<% end %>"></i>
+                        <i class="icon-star<% if (@avg >= 3) %><% elsif (@avg > 2.5)%>-half<% elsif (@avg <3) %>-empty<% end %>"></i>
+                        <i class="icon-star<% if (@avg >= 4) %><% elsif (@avg > 3.5)%>-half<% elsif (@avg <4) %>-empty<% end %>"></i>
+                        <i class="icon-star<% if (@avg >= 5) %><% elsif (@avg > 4.5)%>-half<% elsif (@avg <5) %>-empty<% end %>"></i>
+                      </td>
+                      <% if rating.comment.length > 15 %>
+                          <td colspan="4"><%= rating.comment.slice!(0..15) %>...</td>
+                      <% else %>
+                          <td colspan="4"><%= rating.comment %></td>
+                      <% end %>
+                      <td><%= link_to 'Show', rating %></td>
+                      <td><%= link_to 'Edit', edit_rating_path(rating, :beer_id => rating.beer_id) %></td>
+                      <td><%= link_to 'Destroy', rating, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+                    </tr>
+                <% end %>
             <% end %>
-        <% end %>
-        </tbody>
-      </table>
+            </tbody>
+          </table>
 
-      <%end%>
+        <%end%>
     </div>
   </div>
   <!--/row-fluid-->

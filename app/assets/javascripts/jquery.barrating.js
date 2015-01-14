@@ -301,7 +301,7 @@
     return $.fn.barrating.defaults = {
         initialRating:null, // initial rating
         showValues:false, // display rating values on the bars?
-        showSelectedRating:true, // append a div with a rating to the widget?
+        showSelectedRating:false, // append a div with a rating to the widget?
         reverse:false, // reverse the rating?
         readonly:false, // make the rating ready-only?
         onSelect:function (value, text) {

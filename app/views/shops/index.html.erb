@@ -1,27 +1,35 @@
-<h1>Listing shops</h1>
+<% content_for :title, 'Shop' %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @shops.each do |shop| %>
-      <tr>
-        <td><%= shop.name %></td>
-        <td><%= shop.address_id %></td>
-        <td><%= link_to 'Show', shop %></td>
-        <td><%= link_to 'Edit', edit_shop_path(shop) %></td>
-        <td><%= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Shop', new_shop_path %>
+<div class="container">
+  <div class="row-fluid">
+    <div class="row-fluid margin-bottom-20">
+      <div class="span6">
+       <div class="headline"><h3>All Shops</h3></div>
+        <table class="table table-hover">
+          <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Address</th>
+              </tr>
+          </thead>
+          <tbody>
+             <% @count=1 %>
+             <% @shops.each do |shop| %>
+              <tr>
+                <td style="vertical-align:middle"><%= @count %> </td>
+                <td style="vertical-align:middle"><%= shop.name %></td>
+                <td style="vertical-align:middle"><%= shop.address_id %></td>
+                <td style="vertical-align:middle"><%= link_to 'Show', shop %></td>
+                <td style="vertical-align:middle"><a class="glyphicons no-js edit" href=<%= edit_shop_path(shop) %>><i></i>Edit</a></td>
+                <td style="vertical-align:middle"><%= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% @count = @count+1 %>
+            <% end %>
+          </tbody>
+        </table>
+              <%= link_to 'New Shop', new_shop_path %>
+      </div>
+    </div>
+  </div>
+</div>

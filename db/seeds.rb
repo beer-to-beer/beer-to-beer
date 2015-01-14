@@ -26,6 +26,8 @@ b1 = Beer.create(title: "Krombacher Weizen", category_id: ca.id, producer_id: pr
 b2 = Beer.create(title: "Krombacher", category_id: ca1.id, producer_id: pr.id)
 b3 = Beer.create(title: "Veltins", category_id: ca1.id, producer_id: pr1.id)
 
+sh = Shop.create(name: "Test Shop", address_id: ad.id)
+
 r1 = Rating.create(beer_id: b1.id, user_id:jan.id, comment:"gut gut gut" )
 r2 = Rating.create(beer_id: b2.id, user_id:jan.id, comment:"gut. dieser text muss lang werden" )
 r3 = Rating.create(beer_id: b3.id, user_id:jan.id, comment:"gut gut gut" )
