@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(version: 20150102183526) do
   create_table "ratings", force: true do |t|
     t.integer  "beer_id"
     t.integer  "user_id"
+    t.string   "headline"
     t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -19,9 +19,12 @@
                   <p>Starttime: <%= event.sdate.to_s(:time) %></p>
                   <p>Location: <%= link_to event.club.name, event.club %></p>
                   <div class="unstyled">
-                    <%= link_to '', edit_event_path(event), :class => "icon-edit" %>
-
-                     <%= link_to '', {method: :delete }, :class => "icon-remove" %>
+                    <% if can? :update, event %>
+                       <%= link_to '', edit_event_path(event), :class => "icon-edit" %>
+                    <% end %>
+                    <% if can? :delete, event %>
+                       <%= link_to '', {method: :delete }, :class => "icon-remove" %>
+                    <% end %>
                   </div>
                 </div>
               </div>
