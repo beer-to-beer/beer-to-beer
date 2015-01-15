@@ -18,9 +18,10 @@
 
 <% end %>
 
-<%= link_to 'Show', @rating %> |
-<%= link_to 'Back', ratings_path %>
-
+    <div class="glyphicons-demo">
+      <a class="glyphicons no-js left_arrow" href=<%= @rating %>><i></i>Back</a>
+      <%= link_to 'Show', @rating %>
+    </div>
   </div>
 
 </div><!--/body-->

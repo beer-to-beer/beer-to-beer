@@ -67,7 +67,10 @@
 
 
             <% end %>
-
+                <div class="field" align="center">
+                  <%= f.label :headline %><br>
+                  <%= f.text_field :headline, class: "span12" %>
+                </div>
         
 
   <div class="field" align="center">
@@ -81,7 +84,7 @@
 
 
 <% else %>
-       <h3> please <%= link_to 'login', new_user_session_path %> to rate a beer</h3>
+       <h3 align="center"> please <%= link_to 'login', new_user_session_path %> to rate a beer</h3>
  <% end %>
 <% end %>
     </div><!--/row-fluid-->
