@@ -58,6 +58,11 @@
               <th><%= link_to "Overall",ratings_path(:order => "Overall",:type => "all") %></th>
               <th></th>
               <th></th>
+              <th>Headline</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
               <th>Comment</th>
               <th></th>
               <th></th>
@@ -86,6 +91,13 @@
                         <i class="icon-star<% if (@avg >= 4) %><% elsif (@avg > 3.5)%>-half<% elsif (@avg <4) %>-empty<% end %>"></i>
                         <i class="icon-star<% if (@avg >= 5) %><% elsif (@avg > 4.5)%>-half<% elsif (@avg <5) %>-empty<% end %>"></i>
                       </td>
+
+                      <% if rating.headline.length > 15 %>
+                          <td colspan="5"><%= rating.headline.slice!(0..15) %>...</td>
+                      <% else %>
+                          <td colspan="5"><%= rating.headline %></td>
+                      <% end %>
+
                       <% if rating.comment.length > 15 %>
                           <td colspan="4"><%= rating.comment.slice!(0..15) %>...</td>
                       <% else %>
