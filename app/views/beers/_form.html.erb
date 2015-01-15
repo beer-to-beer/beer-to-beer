@@ -1,4 +1,5 @@
-<%= form_for(@beer) do |f| %>
+<div class="row-fluid margin-bottom-10">
+<%= form_for(@beer, html: {class: "reg-page"}) do |f| %>
   <% if @beer.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@beer.errors.count, "error") %> prohibited this beer from being saved:</h2>
@@ -19,6 +20,7 @@
   <div class="field">
     <strong>Category</strong>
     <%= f.fields_for :category do |info| %>
+        <%= info.label :name %>
         <%= info.text_field :name %>
     <% end %>
   </div>
@@ -26,11 +28,12 @@
   <div class="field">
     <strong>Producer</strong>
     <%= f.fields_for :producer do |info| %>
+        <%= info.label :name %>
         <%= info.text_field :name %>
     <% end %>
   </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+      <div class="controls form-inline">
+        <%= f.submit class: "btn-u pull-right"%>
+      </div>
+</div>
 <% end %>

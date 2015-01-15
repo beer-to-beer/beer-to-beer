@@ -1,7 +1,12 @@
-<% content_for :title, 'New Beer' %>
-<% navigation_add 'Beers', beers_path %>
-<h1>New beer</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', beers_path %>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"
+      type="text/css"/>
+<div class="body">
+    <% content_for :title, 'New Beer' %>
+    <% navigation_add 'Beers', beers_path %>
+    <div class="container">
+        <%= render 'form' %>
+        <div class="glyphicons-demo">
+            <a class="glyphicons no-js left_arrow" href=<%= beers_path %>><i></i>Back</a>
+        </div>
+    </div>
+</div>
