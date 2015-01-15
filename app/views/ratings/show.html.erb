@@ -34,14 +34,20 @@
 
 <br>
 
-
+          <p align ="center">
+            <strong>Title:</strong><br>
+            <%= @rating.title %>
+          </p>
 <p align ="center">
   <strong>Comment:</strong><br>
   <%= @rating.comment %>
 </p>
 
-          <div align="center"> <%= link_to 'Edit', edit_rating_path(@rating, :beer_id => @rating.beer_id) %> |
-          <%= link_to 'Back', ratings_path %></div>
+
+          <div class="glyphicons-demo">
+            <a class="glyphicons no-js left_arrow" href=<%= ratings_path %>><i></i>Back</a>
+            <a class="glyphicons no-js edit" href=<%= edit_rating_path(@rating, :beer_id => @rating.beer_id) %>><i></i>Edit</a>
+          </div>
       <% end %>
 
 

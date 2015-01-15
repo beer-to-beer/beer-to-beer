@@ -43,6 +43,6 @@ class RatingsController < InheritedResources::Base
   private
 
     def rating_params
-      params.require(:rating).permit(:beer_id, :user_id, :comment, criterions_attributes:[:id,:rating_id, :name, :value])
+      params.require(:rating).permit(:beer_id, :user_id,:title, :comment, criterions_attributes:[:id,:rating_id, :name, :value])
     end
 end
