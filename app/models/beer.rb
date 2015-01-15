@@ -6,5 +6,5 @@ class Beer < ActiveRecord::Base
   has_many :ratings
   has_many :users, :through => :ratings
   accepts_nested_attributes_for :category, :producer
-  validates :title, :category_id, :producer_id, presence: true
+  #validates :title, :category_id, :producer_id, presence: true
 end
