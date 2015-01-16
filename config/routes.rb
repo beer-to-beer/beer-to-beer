@@ -17,7 +17,8 @@ Rails.application.routes.draw do
   resources :events
 
   resources :clubs
-
+  resources :categories
+  resources :producers
 
 
 
