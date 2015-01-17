@@ -1,0 +1,23 @@
+<div class="row-fluid margin-bottom-10">
+  <%= form_for(@category, html: {class: "reg-page"}) do |f| %>
+      <% if @category.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+            <ul>
+              <% @category.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+      <div class="controls form-inline">
+        <%= f.submit class: "btn-u pull-right"%>
+      </div>
+      </div>
+  <% end %>

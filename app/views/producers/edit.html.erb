@@ -1,0 +1,12 @@
+<div class="body">
+
+  <% content_for :title, 'Edit Producer' %>
+  <% navigation_add 'Producers', producers_path %>
+
+<%= render 'form' %>
+
+<div class="glyphicons-demo">
+  <a class="glyphicons no-js left_arrow" href=<%= @producer %>><i></i>Back</a>
+  <%= link_to 'Show', @producer %>
+</div>
+</div>
