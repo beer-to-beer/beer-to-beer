@@ -13,7 +13,6 @@ describe 'Sign in' do
       click_link 'Sign in'
       fill_form(:user, { email: 'test@test.de', password: 'Hallo123' })
       click_button 'Sign in'
-      save_and_open_page
       expect(page).to have_content user.email
     end
 
