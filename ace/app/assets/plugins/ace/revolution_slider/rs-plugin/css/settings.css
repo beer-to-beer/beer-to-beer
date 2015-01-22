@@ -609,7 +609,7 @@ website:   	http://www.themepunch.com
 /************************************
 		-	TP BANNER TIMER		-
 *************************************/
-.tp-bannertimer								{	width:100%; height:10px; background:url(../assets/timer.png);position:absolute; z-index:200;}
+.tp-bannertimer								{	width:100%; height:10px; background:url(/assets/plugins/ace/revolution_slider/rs-plugin/assets/timer.png);position:absolute; z-index:200;}
 .tp-bannertimer.tp-bottom					{	bottom:0px !important;height:5px;}
 
 
