@@ -5,11 +5,11 @@
   </a>
   <ul class="dropdown-menu">
     <li class="menu-level2"><%= link_to "Edit Profile",edit_user_registration_path%></li>
-    <% if Club.find_by_user_id(User.find_by_email(current_user.email)).nil? %>
+    <% if Club.find_by_user_id(User.find_by_email(current_user.email).id.to_i).nil? %>
         <li class="menu-level2"><%= link_to "Create Club" , new_club_path%></li>
     <% else %>
-        <li class="menu-level2"><%= link_to "Show Club",  club_path(Club.find_by_user_id(User.find_by_email(current_user.email)).id) %></li>
-        <li class="menu-level2"><%= link_to "Edit Club",  edit_club_path(Club.find_by_user_id(User.find_by_email(current_user.email)).id) %></li>
+        <li class="menu-level2"><%= link_to "Show Club",  club_path(Club.find_by_user_id(User.find_by_email(current_user.email)).id.to_i) %></li>
+        <li class="menu-level2"><%= link_to "Edit Club",  edit_club_path(Club.find_by_user_id(User.find_by_email(current_user.email)).id.to_i) %></li>
         <li class="menu-level2"><%= link_to "Show Events",  events_path %></li>
 
     <% end %>
