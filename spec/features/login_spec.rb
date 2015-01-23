@@ -16,10 +16,13 @@ describe 'Sign in' do
       expect(page).to have_content user.email
     end
 
-  #  it 'allows to sign out' do
-  #    visit root_path
- #     click_link_or_button user.email
-#      expect(page).to have_content 'Sign in'
-#    end
+   it 'allows to sign out' do
+      visit root_path
+      click_link 'Sign in'
+      fill_form(:user, { email: 'test@test.de', password: 'Hallo123' })
+      click_button 'Sign in'
+      click_link user.email
+      expect(page).to have_content 'Sign in'
+    end
   end
 end

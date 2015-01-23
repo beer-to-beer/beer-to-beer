@@ -1,0 +1,10 @@
+<div class="body">
+  <% content_for :title, 'New Category' %>
+  <% navigation_add 'Categories', categories_path %>
+  <div class="container">
+    <%= render 'form' %>
+    <div class="glyphicons-demo">
+      <a class="glyphicons no-js left_arrow" href=<%= categories_path %>><i></i>Back</a>
+    </div>
+  </div>
+</div>

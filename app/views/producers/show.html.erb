@@ -1,0 +1,23 @@
+<% content_for :title, 'Producer' %>
+
+<div class="container">
+  <div class="row-fluid margin-bottom-20">
+    <div class="headline"><h3><%= @producer.name %></h3></div>
+
+    <div class="view view-tenth span6">
+      <h2>Location</h2>
+      <%= @producer.address.street %>
+      <%= @producer.address.house_number %><br>
+      <%= @producer.address.city %><br>
+      <%= @producer.address.postal_code %><br>
+      <%= @producer.address.country %>
+    </div>
+
+    <div class="glyphicons-demo">
+      <a class="glyphicons no-js left_arrow" href=<%= producers_path %>><i></i>Back</a>
+      <a class="glyphicons no-js edit" href=<%= edit_producer_path(@producer) %>><i></i>Edit</a>
+    </div>
+
+  </div>
+</div>
+</div>

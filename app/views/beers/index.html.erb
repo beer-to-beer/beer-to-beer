@@ -21,7 +21,6 @@
                     <td style="vertical-align:middle"><%= beer.category.name %></td>
                     <td style="vertical-align:middle"><%= beer.producer.name %></td>
                     <td style="vertical-align:middle"><%= link_to 'Show', beer %></td>
-                    <td style="vertical-align:middle"><a class="glyphicons no-js edit" href=<%= edit_beer_path(beer) %>><i></i>Edit</a></td>
                     <td style="vertical-align:middle"><%= link_to 'Destroy', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                 </tr>
             <% end %>

@@ -1,0 +1,10 @@
+<div class="body">
+  <% content_for :title, 'New Producer' %>
+  <% navigation_add 'Producers', producers_path %>
+  <div class="container">
+    <%= render 'form' %>
+    <div class="glyphicons-demo">
+      <a class="glyphicons no-js left_arrow" href=<%= producers_path %>><i></i>Back</a>
+    </div>
+  </div>
+</div>
