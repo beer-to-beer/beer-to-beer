@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   belongs_to :address
   has_many :ratings
   has_many :beers, :through => :ratings
+  has_many :clubs
 
   accepts_nested_attributes_for :address
 

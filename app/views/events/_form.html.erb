@@ -28,9 +28,19 @@
             <%= f.label :club_id %>
             <% if current_user %>
                 <% if current_user.has_role? :admin %>
-                    <%= f.collection_select :club_id, Club.all, :id, :name, { selected: params[:club_id] } %>
+                    <%= f.collection_select :club_id, Club.all, :id, :name,
+                            if (params[:club_id])
+                              {selected: params[:club_id] }
+                            else
+                              {selected: @event.club_id}
+                            end
+                    %>
                 <% else %>
-                    <%= f.collection_select :club_id, Club.where(:user_id => current_user.id), :id, :name , { selected: params[:club_id] } %>
+                    <%= f.collection_select :club_id, Club.where(:user_id => current_user.id), :id, :name , if (params)
+                                                                                                              {selected: params[:club_id] }
+                                                                                                            else
+                                                                                                              {selected: @event.club.id}
+                                                                                                            end  %>
                 <% end %>
             <% end %><br>
             <div class="actions">

@@ -25,8 +25,8 @@
   </div>
     <div class="view view-tenth span6">
       <h2>Owner</h2>
-      <% u=User.find(@club.user_id) %>
-      E-Mail: <%= mail_to User.find(@club.user_id).email, "#{u.first_name} #{u.last_name}" %>
+
+      E-Mail: <%= mail_to(@club.user.email , "#{@club.user.first_name} #{@club.user.last_name}")%>
     </div>
   </div>
 </div>

@@ -26,15 +26,15 @@ class ClubsController < ApplicationController
   # GET /clubs/new
   def new
     @club = Club.new
-    address=@club.build_address
-
+    if @club.address.nil?
+      @club.build_address
+    end
 
 
   end
 
   # GET /clubs/1/edit
   def edit
-    #@club = Club.where(id: params[:id])
     authorize!(:edit, @club)
   end
 
@@ -49,8 +49,11 @@ class ClubsController < ApplicationController
     else
       @club.active = false
     end
-
-    @club.user_id = current_user.id
+    if (current_user.has_role? :admin)
+      @club.user = club_params.user
+    else
+      @club.user = current_user
+    end
 
 
     respond_to { |format|
@@ -101,6 +104,6 @@ class ClubsController < ApplicationController
     end
     # Never trust parameters from the scary internet, only allow the white list through.
     def club_params
-      params.require(:club).permit(:name, :url, :user_id, :active , address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
+      params.require(:club).permit(:name, :url, :user_id , :active , address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
     end
 end

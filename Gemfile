@@ -50,11 +50,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 #Gems fürs testen
 group :development, :test do
-<<<<<<< HEAD
   gem 'launchy'
-=======
   gem 'sqlite3'
->>>>>>> b07426050d6e93533dbf5e5960663849bf03d869
   gem 'rspec-rails', '3.1.0'
   gem 'capybara', '2.4.4'
   gem 'factory_girl_rails', '4.5.0'

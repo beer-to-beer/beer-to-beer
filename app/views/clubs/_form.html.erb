@@ -49,8 +49,17 @@
                 <td><%= f.text_field :url %></td>
               </tr>
               <tr>
-                <td></td>
-                <td></td>
+                <% if current_user %>
+                    <% if current_user.has_role? :admin %>
+                        <td><%= f.label :user %></td>
+                        <td><%= f.collection_select :user_id, User.all, :id, :first_name, if (@club.user.nil?)
+                                                                                             {selected: current_user.id}
+                                                                                          else
+                                                                                            { selected: @club.user.id}
+                                                                                          end  %></td>
+                    <% end %>
+                <% end %>
+
               </tr>
               <% if current_user.has_role? :admin %>
               <tr class="color-red">
