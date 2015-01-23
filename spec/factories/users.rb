@@ -7,5 +7,7 @@ FactoryGirl.define do
     last_name 'Mueller'
     address_id '0'
 
+
   end
+
 end

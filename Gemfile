@@ -50,6 +50,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 #Gems fürs testen
 group :development, :test do
+  gem 'launchy'
   gem 'rspec-rails', '3.1.0'
   gem 'capybara', '2.4.4'
   gem 'factory_girl_rails', '4.5.0'

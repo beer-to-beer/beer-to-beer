@@ -22,6 +22,7 @@ class Ability
         end
     else
       can :read, :all
+
     end
     #can :create, Event, :user_id => user.id
 
