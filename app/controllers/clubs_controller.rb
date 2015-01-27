@@ -50,7 +50,8 @@ class ClubsController < ApplicationController
       @club.active = false
     end
     if (current_user.has_role? :admin)
-      @club.user = club_params.user
+      #@club.user = club_params.user <- so wars vorher thorsten
+      @club.user = User.find( club_params[:user_id])
     else
       @club.user = current_user
     end
