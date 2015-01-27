@@ -4,7 +4,7 @@ class Club < ActiveRecord::Base
   has_many :events
   belongs_to :address
   belongs_to :user
-  accepts_nested_attributes_for :address, :beers
+  accepts_nested_attributes_for :address, :beers, :user
   #validates :address_id, presence: true
 
 end

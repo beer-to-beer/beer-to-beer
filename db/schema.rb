@@ -75,8 +75,6 @@ ActiveRecord::Schema.define(version: 20150123093600) do
     t.integer  "user_id"
   end
 
-  add_index "clubs", ["user_id"], name: "index_clubs_on_user_id"
-
   create_table "criterions", force: true do |t|
     t.integer  "rating_id"
     t.string   "name"

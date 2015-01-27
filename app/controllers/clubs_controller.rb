@@ -71,6 +71,7 @@ class ClubsController < ApplicationController
   # PATCH/PUT /clubs/1
   # PATCH/PUT /clubs/1.json
   def update
+
     #authorize!(:update, @club)
     respond_to do |format|
       if @club.update(club_params)
