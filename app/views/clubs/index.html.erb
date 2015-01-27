@@ -44,7 +44,7 @@
       <tr>
         <td><%= club.name %></td>
         <td><%= club.url %></td>
-        <td><%= "#{User.find_by(club.user_id).first_name},  #{User.find_by(club.user_id).last_name}" %></td>
+        <td><%= "#{club.user.first_name},  #{club.user.last_name}" %></td>
         <td><% if can? :show, club %>
                  <%=link_to 'Show', club %>
               <% end %></td>
