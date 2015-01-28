@@ -11,4 +11,5 @@
 // about supported directives.
 //
 //= require jquery
+//= require javascripts/jquery-1.8.2.min.js
 //= require plugins/ace/bootstrap/js/bootstrap.min.js
