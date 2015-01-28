@@ -1,6 +1,6 @@
 require 'open-uri'
 FactoryGirl.define do
-  factory :event do
+  factory :events do
     title 'My Event'
     sdate Date.current
     imageURL {URI.parse(Faker::Avatar.image)}

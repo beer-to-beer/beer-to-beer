@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Event, :type => :model do
   let!(:address) { FactoryGirl.create(:address)}
   let!(:club) { FactoryGirl.create(:club, address_id: Address.first.id)}
-  let(:event) { FactoryGirl.create(:event, club_id: Club.first.id)}
+  let(:events) { FactoryGirl.create(:events, club_id: Club.first.id)}
 
   context 'needs a club' do
     it 'is not valid without a club' do

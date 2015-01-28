@@ -6,7 +6,8 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.joins(:club).where('sdate > ?', Date.current).where('clubs.active = ?', true)
+    @events = Event.joins(:club).where('events.sdate >= ?', Date.current).where('clubs.active = ?', true)
+    #@events = Event.where('events.sdate > ?', Date.current)
   end
 
   # GET /events/1
@@ -85,6 +86,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:title, :sdate, :imageURL, :club_id)
+      params.require(:events).permit(:title, :sdate, :imageURL, :club_id)
     end
 end

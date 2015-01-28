@@ -7,8 +7,8 @@ class User < ActiveRecord::Base
 
   accepts_nested_attributes_for :address
 
-
-
+  validates :first_name,:last_name, presence: true
+  validates_associated :address
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
