@@ -3,4 +3,6 @@ class Rating < ActiveRecord::Base
   belongs_to :user
   belongs_to :beer
   accepts_nested_attributes_for :criterions
+  validates :headline,:comment, presence: true
+  validates_associated :criterions
 end

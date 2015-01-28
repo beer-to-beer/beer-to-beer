@@ -1,26 +1,25 @@
 
 
-
+<link href="/assets/ratings.css?body=1" media="all" rel="stylesheet"/>
     <div class="row-fluid margin-bottom-10">
 
 <%= form_for(@rating,  html: {class: "reg-page"}) do |f| %>
-          <h2 align="center">Rate <%=Beer.find(params[:beer_id]).title %></h2>
-  <% if @rating.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
+          <% if !params[:beer_id] %>
+          <h2 align="center">Rate <%=Beer.find(@beerid).title %></h2>
+             <% else %>
+              <h2 align="center">Rate <%=Beer.find(params[:beer_id]).title %></h2>
+              <% end %>
 
-      <ul>
-      <% @rating.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+
 
 
 
           <% if current_user %>
+              <% if params[:beer_id] %>
    <%= f.hidden_field :beer_id,:value => params[:beer_id]%>
+                  <% else %>
+                  <%= f.hidden_field :beer_id,:value => @beerid%>
+                  <%end %>
     <%= f.hidden_field :user_id, :value => current_user.id%>
               <div class="controls">
 
@@ -67,16 +66,19 @@
 
 
             <% end %>
+
                 <div class="field" align="center">
                   <%= f.label :headline %><br>
                   <%= f.text_field :headline, class: "span12" %>
                 </div>
-        
+                </div>
 
+              <div class="controls">
   <div class="field" align="center">
     <%= f.label :comment %><br>
     <%= f.text_area :comment, class: "span12" %>
-  </div>
+
+                </div>
               </div>
               <div class="controls form-inline">
     <%= f.submit class: "btn-u pull-right"%>
