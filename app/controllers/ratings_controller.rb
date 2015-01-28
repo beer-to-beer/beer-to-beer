@@ -63,6 +63,24 @@ class RatingsController < InheritedResources::Base
     @rating.criterions.build
   end
 
+  def create
+    @rating = Rating.new(rating_params)
+
+    respond_to { |format|
+      if @rating.save
+
+        format.html { redirect_to @rating, notice: "Shop was successfully created." }
+        format.json { render :show, status: :created, location: @rating }
+      else
+
+          @beerid = rating_params[:beer_id]
+
+        format.html { render :new }
+        format.json { render json: @rating.errors, status: :unprocessable_entity }
+      end
+    }
+  end
+
 
 
   private
