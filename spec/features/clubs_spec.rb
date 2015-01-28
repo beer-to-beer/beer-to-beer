@@ -3,7 +3,7 @@ describe "Clubs", :type => :feature do
 
   let!(:address) { FactoryGirl.create(:address)}
   let!(:club1) { FactoryGirl.create(:club, address_id: Address.first.id)}
-  let!(:event) { FactoryGirl.create(:event, club_id: Club.first.id)}
+  let!(:events) { FactoryGirl.create(:events, club_id: Club.first.id)}
   let!(:user) {
     FactoryGirl.create(:user)
     user.add_role :admin
