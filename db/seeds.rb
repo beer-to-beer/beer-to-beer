@@ -22,9 +22,9 @@ ca = Category.create(name: "Weizen")
 ca1 = Category.create(name: "Pils")
 pr = Producer.create(name: "Krombacher", address_id: ad.id)
 pr1 = Producer.create(name: "Veltins", address_id: ad.id)
-b1 = Beer.create(title: "Krombacher Weizen", category_id: ca.id, producer_id: pr.id)
-b2 = Beer.create(title: "Krombacher", category_id: ca1.id, producer_id: pr.id)
-b3 = Beer.create(title: "Veltins", category_id: ca1.id, producer_id: pr1.id)
+b1 = Beer.create(title: "Krombacher Weizen", category_id: ca.id, producer_id: pr.id, beerURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/beer/Krombacher_Flasche_Weizen.jpg", :encoding => "UTF-8"))
+b2 = Beer.create(title: "Krombacher", category_id: ca1.id, producer_id: pr.id, beerURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/beer/Krombacher_Flasche_Pils.jpg", :encoding => "UTF-8"))
+b3 = Beer.create(title: "Veltins", category_id: ca1.id, producer_id: pr1.id, beerURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/beer/Veltins_Flasche.jpg", :encoding => "UTF-8"))
 
 sh = Shop.create(name: "Test Shop", address_id: ad.id)
 

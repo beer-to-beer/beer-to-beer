@@ -32,12 +32,8 @@ gem 'spring',        group: :development
 # gem für file upload uploads
 gem 'carrierwave', '0.10.0'
 gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
-#gem 'carrierwave-dropbox', git: 'https://github.com/robin850/carrierwave-dropbox.git'
-
-#gem 'paperclip-dropbox', '>= 1.1.7'
 
 
-#gem 'carrierwave-google_drive'
 # gem für die bearbeitung von files z.B. Größe verändern, converten, ...
 gem 'mini_magick', '4.0.1'
 
@@ -68,11 +64,8 @@ group :development, :test do
   gem 'faker', '1.4.3'
   #erleichterte formularausfüllung bei rspec tests
   gem 'formulaic'
-
-
   gem 'better_errors'
   gem 'binding_of_caller'
-  #gem 'meta_request'
 end
 
 #gem für die Production umgebung

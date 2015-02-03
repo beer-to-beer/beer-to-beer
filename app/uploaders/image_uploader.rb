@@ -1,21 +1,12 @@
 # encoding: utf-8
-#require 'carrierwave/dropbox'
 
-#require 'carrierwave-dropbox/storage/ftp'
 class ImageUploader < CarrierWave::Uploader::Base
 
   require 'carrierwave/storage/ftp'
-  # Include RMagick or MiniMagick support:
-  #include CarrierWave::RMagick
+
   include CarrierWave::MiniMagick
 
-  #include Sprockets::Rails::Helper
-
   # Choose what kind of storage to use for this uploader:
-
-  #storage :dropbox
-  # storage :fog
-  # storage :file
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:

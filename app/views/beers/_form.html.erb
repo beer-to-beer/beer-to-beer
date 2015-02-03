@@ -32,6 +32,11 @@
         <%= info.text_field :name %>
     <% end %>
   </div>
+  <div class="field">
+    <strong>Image</strong><br>
+    <%= f.file_field :imageURL %>
+  </div>
+
       <div class="controls form-inline">
         <%= f.submit class: "btn-u pull-right"%>
       </div>
