@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 20150123093600) do
     t.integer  "address_id"
     t.boolean  "active"
     t.integer  "user_id"
+    t.string   "clubURL"
   end
 
   create_table "criterions", force: true do |t|
