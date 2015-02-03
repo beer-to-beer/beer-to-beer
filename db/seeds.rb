@@ -14,6 +14,7 @@ user.add_role :user
 us = User.create(:email => "beer@beer.com", :password => 'Hallo123', :password_confirmation => 'Hallo123', :first_name => 'Peter', :last_name => 'Mueller', :address_id => ad.id)
 cl1 = Club.create(name: "Test Club" , address_id: ad.id , user_id: user.id, active: false, clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club1.jpg", :encoding => "UTF-8") )
 cl = Club.create(name: "Test Club 2" , address_id: ad.id , user_id: us.id, active: true, clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club2.jpg", :encoding => "UTF-8"))
+cl2 = Club.create(name: "Test Club 1" , address_id: ad.id , user_id: us.id, active: true, clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club3.jpg", :encoding => "UTF-8"))
 Event.create(title: "Test1", sdate: Date.current, club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image1.jpg", :encoding => "UTF-8"))
 Event.create(title: "Test2", sdate: Date.current, club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image2.jpg", :encoding => "UTF-8"))
 Event.create(title: "Test3", sdate: Date.current, club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image3.jpg", :encoding => "UTF-8"))
