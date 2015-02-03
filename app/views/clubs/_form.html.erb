@@ -48,6 +48,10 @@
                 <td><%= f.label :url %><br></td>
                 <td><%= f.text_field :url %></td>
               </tr>
+              <div class="field">
+                <strong>Image</strong><br>
+                <%= f.file_field :clubURL %>
+              </div>
               <tr>
                 <% if current_user %>
                     <% if current_user.has_role? :admin %>

@@ -4,6 +4,11 @@
 <div class= "headline">
   <h3>Club: <%= @club.name %></h3>
 </div>
+
+    <div class="row-fluid">
+      <%= image_tag @club.clubURL, size: "1200x500", alt: "#{@club.name} Bild" %>
+    </div>
+
 <div class="container portfolio-columns">
   <div class="row-fluid">
     <div class="view view-tenth span6">
@@ -25,8 +30,8 @@
   </div>
     <div class="view view-tenth span6">
       <h2>Owner</h2>
-
-      E-Mail: <%= mail_to(@club.user.email , "#{@club.user.first_name} #{@club.user.last_name}")%>
+      Name:  <%= "#{@club.user.first_name} #{@club.user.last_name}" %><br>
+      E-Mail: <%= mail_to(@club.user.email , @club.user.email) %>
     </div>
   </div>
 </div>
