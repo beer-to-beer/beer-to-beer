@@ -5,7 +5,7 @@ CarrierWave.configure do |config|
   config.ftp_passwd = "asdfghjklöä"
   config.ftp_folder = "/www/b2b/uploads"
   config.ftp_url = "http://b2b.absorbiert.de/b2b/uploads/"
-  config.ftp_passive = false #false # false by default
+  config.ftp_passive = true #false # false by default
 
 end
 
