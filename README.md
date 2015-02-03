@@ -18,4 +18,9 @@ rake db:seed
 
 
 
+
+
+gem install carrierwave-dropbox
+
+
 bier-to-bier
