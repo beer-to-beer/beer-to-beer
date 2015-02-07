@@ -12,8 +12,4 @@ RSpec.describe "beers/index", :type => :view do
     ])
   end
 
-  it "renders a list of beers" do
-    render
-    assert_select "tr>td", :text => "Title".to_s, :count => 2
-  end
 end

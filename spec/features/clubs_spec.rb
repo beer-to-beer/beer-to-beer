@@ -1,38 +1,34 @@
 require 'rails_helper'
 describe "Clubs", :type => :feature do
-
-  let!(:address) { FactoryGirl.create(:address)}
-  let!(:club1) { FactoryGirl.create(:club, address_id: Address.first.id)}
-  let!(:events) { FactoryGirl.create(:events, club_id: Club.first.id)}
   let!(:user) {
-    FactoryGirl.create(:user)
+    FactoryGirl.create(:user, address: FactoryGirl.create(:address))
     user.add_role :admin
   }
+  let!(:address) { FactoryGirl.create(:address)}
+  let!(:club1) { FactoryGirl.create(:club, address: FactoryGirl.create(:address), user: user)}
+  #let!(:events) { FactoryGirl.create(:event, club_id: Club.first.id)}
 
-it 'user can login' do
-  visit root_path
-  click_link 'Sign in'
-  fill_in 'user_email', with: user.email
-  fill_in 'user_password', with: 'Hallo123'
-  click_button 'Sign in'
-  expect(user.has_role? :admin)
 
-  expect(page).to have_content 'Signed in successfully'
-end
-  it 'could be added' do
+  before(:each) do
     visit root_path
     click_link 'Sign in'
-    fill_in 'user_email', with: user.email
+    fill_in 'user_email', with: 'admin'
     fill_in 'user_password', with: 'Hallo123'
     click_button 'Sign in'
     expect(page).to have_content 'Signed in successfully'
+  end
+
+  after(:each) do
+    visit "/users/sign_out"
+  end
+
+  it 'could be added' do
     visit new_club_path
 
-    #fill_form(:club, {name: 'Test Club'})
-    fill_in 'club_name', :with => 'Test Club'
-    fill_in 'club_address_attributes_city', :with => 'Münster'
-    fill_in 'club_address_attributes_postal_code', :with => '48143'
-    fill_in 'club_active', :with => true
+    fill_form(:club, {name: Faker::Name.name, city: Faker::Address.city, postal_code: Faker::Address.postcode,
+                      street: Faker::Address.street_name, house_number: Faker::Address.building_number,
+                   country: Faker::Address.country, url: Faker::Internet.url, active: true})
+
     save_and_open_page
     expect{ click_on('Create Club') }.to change(Club, :count).by(1)
   end

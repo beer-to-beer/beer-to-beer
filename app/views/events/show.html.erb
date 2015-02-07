@@ -1,34 +1,35 @@
 <div class="container">
-<p id="notice"><%= notice %></p>
+    <p id="notice"><%= notice %></p>
 
-  <div class= "headline">
-    <h3>Event: <%= @event.title %></h3>
-  </div>
+      <div class= "headline">
+        <h3>Event: <%= @event.title %></h3>
+      </div>
 
-  <div>
-    <div class="row-fluid margin-bottom-10">
-      <div class="span1">
-        </div>
-      <div class="span10 bg-light">
-        <div class="overflow-hidden">
-          <%= image_tag @event.imageURL, size: "700x700", alt: "#{@event.title} Bild" %>
-        </div>
-        <div class="caption">
-          <h3><%= @event.title %></h3>
-          <p>Date: <%= @event.sdate.to_date.to_s(:rfc822) %></p>
-          <p>Starttime: <%= @event.sdate.to_s(:time) %></p>
-          <p>Location: <%= @event.club.name %></p>
+      <div>
+        <div class="row-fluid margin-bottom-10">
+          <div class="span1">
+            </div>
+          <div class="span10 bg-light">
+            <div class="overflow-hidden">
+              <%= image_tag @event.imageURL, size: "700x700", alt: "#{@event.title} Bild" %>
+            </div>
+            <div class="caption">
+              <h3><%= @event.title %></h3>
+              <p>Date: <%= @event.sdate.to_date.to_s(:rfc822) %></p>
+              <p>Starttime: <%= @event.sdate.to_s(:time) %></p>
+              <p>Location: <%= @event.club.name %></p>
+            </div>
+          </div>
+          <div class="span1">
+          </div>
         </div>
       </div>
-      <div class="span1">
-      </div>
-    </div>
-  </div>
 
 
 
-<% if can? :update, @event %>
-<%= link_to 'Edit', edit_event_path(@event),{:class => "btn btn-large btn-primary"} %>
-      <% end %>
-<%= link_to 'Back', events_path , {:class => "btn btn-large btn-primary"}%>
+    <% if can? :update, @event %>
+    <%= link_to 'Edit', edit_event_path(@event),{:class => "btn btn-large btn-primary"} %>
+          <% end %>
+    <%= link_to 'Back', events_path , {:class => "btn btn-large btn-primary"}%>
+
 </div>
