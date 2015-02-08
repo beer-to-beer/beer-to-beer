@@ -3,11 +3,9 @@ FactoryGirl.define do
     email 'test@test.de'
     password 'Hallo123'
     password_confirmation 'Hallo123'
-    first_name 'Peter'
-    last_name 'Mueller'
-    address_id '0'
-
-
+    first_name Faker::Name.first_name
+    last_name Faker::Name.last_name
+    address_id 1
   end
 
 end
