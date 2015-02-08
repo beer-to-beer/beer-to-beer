@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20150123093600) do
     t.datetime "updated_at"
     t.integer  "category_id"
     t.integer  "producer_id"
+    t.string   "beerURL"
   end
 
   add_index "beers", ["category_id"], name: "index_beers_on_category_id"
@@ -73,6 +74,7 @@ ActiveRecord::Schema.define(version: 20150123093600) do
     t.integer  "address_id"
     t.boolean  "active"
     t.integer  "user_id"
+    t.string   "clubURL"
   end
 
   create_table "criterions", force: true do |t|
