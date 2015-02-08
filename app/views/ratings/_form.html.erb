@@ -1,28 +1,27 @@
 
 
+<link href="/assets/ratings.css?body=1" media="all" rel="stylesheet"/>
+<div class="row-fluid margin-bottom-10">
 
-    <div class="row-fluid margin-bottom-10">
-
-<%= form_for(@rating,  html: {class: "reg-page"}) do |f| %>
+  <%= form_for(@rating,  html: {class: "reg-page"}) do |f| %>
+      <% if !params[:beer_id] %>
+          <h2 align="center">Rate <%=Beer.find(@beerid).title %></h2>
+      <% else %>
           <h2 align="center">Rate <%=Beer.find(params[:beer_id]).title %></h2>
-  <% if @rating.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
-
-      <ul>
-      <% @rating.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
 
 
-          <% if current_user %>
-   <%= f.hidden_field :beer_id,:value => params[:beer_id]%>
-    <%= f.hidden_field :user_id, :value => current_user.id%>
-              <div class="controls">
+
+
+      <% if current_user %>
+          <% if params[:beer_id] %>
+              <%= f.hidden_field :beer_id,:value => params[:beer_id]%>
+          <% else %>
+              <%= f.hidden_field :beer_id,:value => @beerid%>
+          <%end %>
+          <%= f.hidden_field :user_id, :value => current_user.id%>
+          <div class="controls">
 
 
             <%= f.fields_for :criterions,@criterion do |info| %>
@@ -40,23 +39,23 @@
                   <% end %>
                   <% if info.index == 1%>
 
-                          <%= info.hidden_field :name, :value => "Taste" %>
-                          <div class="form-group">
-                            <div class="input select rating-a" align="center" style="width:85px">
-                              <label for="example-a">Taste:</label>
-                              <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'], {},:id => "taste"%>
-                            </div>
-                          </div>
+                      <%= info.hidden_field :name, :value => "Taste" %>
+                      <div class="form-group">
+                        <div class="input select rating-a" align="center" style="width:85px">
+                          <label for="example-a">Taste:</label>
+                          <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'], {},:id => "taste"%>
+                        </div>
+                      </div>
                   <% end %>
                   <% if info.index == 2%>
 
-                                  <%= info.hidden_field :name, :value => "Headache" %>
-                                  <div class="form-group">
-                                    <div class="input select rating-a" align="center" style="width:85px">
-                                      <label for="example-a">Headache:</label>
-                                      <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'],{},:id => "headache"%>
-                                    </div>
-                                  </div>
+                      <%= info.hidden_field :name, :value => "Headache" %>
+                      <div class="form-group">
+                        <div class="input select rating-a" align="center" style="width:85px">
+                          <label for="example-a">Headache:</label>
+                          <%= info.select :value, ['1.0', '2.0', '3.0','4.0','5.0'],{},:id => "headache"%>
+                        </div>
+                      </div>
                   <% end %>
 
 
@@ -67,27 +66,27 @@
 
 
             <% end %>
-                <div class="field" align="center">
-                  <%= f.label :headline %><br>
-                  <%= f.text_field :headline, class: "span12" %>
-                </div>
-        
 
-  <div class="field" align="center">
-    <%= f.label :comment %><br>
-    <%= f.text_area :comment, class: "span12" %>
-  </div>
-              </div>
-              <div class="controls form-inline">
-    <%= f.submit class: "btn-u pull-right"%>
-  </div>
+            <div class="field" align="center">
+              <%= f.label :headline %><br>
+              <%= f.text_field :headline, class: "span12" %>
+            </div>
+          </div>
 
+          <div class="controls">
+            <div class="field" align="center">
+              <%= f.label :comment %><br>
+              <%= f.text_area :comment, class: "span12" %>
 
-<% else %>
-       <h3 align="center"> please <%= link_to 'login', new_user_session_path %> to rate a beer</h3>
- <% end %>
-<% end %>
-    </div><!--/row-fluid-->
+            </div>
+          </div>
+          <div class="controls form-inline">
+            <%= f.submit class: "btn-u pull-right"%>
+          </div>
 
 
-
+      <% else %>
+          <h3 align="center"> please <%= link_to 'login', new_user_session_path %> to rate a beer</h3>
+      <% end %>
+  <% end %>
+</div><!--/row-fluid-->
