@@ -2,7 +2,7 @@ class ClubsController < ApplicationController
   before_action :set_club, only: [:show ,:edit, :update, :destroy]
   load_and_authorize_resource except: :create
 
-    skip_load_and_authorize_resource only: [:edit, :update]
+  skip_load_and_authorize_resource only: [:edit, :update]
 
 
 
@@ -98,14 +98,14 @@ class ClubsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_club
+  # Use callbacks to share common setup or constraints between actions.
+  def set_club
 
-      @club = Club.find(params[:id])
+    @club = Club.find(params[:id])
 
-    end
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def club_params
-      params.require(:club).permit(:name, :url, :user_id , :active , address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
-    end
+  end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def club_params
+    params.require(:club).permit(:name, :url, :user_id , :clubURL, :active , address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
+  end
 end

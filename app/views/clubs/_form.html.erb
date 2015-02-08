@@ -1,77 +1,81 @@
 
 
 <%= form_for(@club) do |f| %>
-  <% if @club.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@club.errors.count, "error") %> prohibited this club from being saved:</h2>
+    <% if @club.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@club.errors.count, "error") %> prohibited this club from being saved:</h2>
 
-      <ul>
-      <% @club.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+          <ul>
+            <% @club.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
 
     <div class="container portfolio-columns">
       <div class="row-fluid">
         <div class="view view-tenth span6">
-            <table width="100%">
-              <tr>
-                <td><%= f.label :name %><br></td>
-                <td><%= f.text_field :name %></td>
-              </tr>
-              <%= f.fields_for :address do |info| %>
-              <tr>
-                <td><%= info.label :city %></td>
-                <td><%= info.text_field :city%></td>
-              </tr>
-              <tr>
-                <td><%= info.label :postal_code %></td>
-                <td><%= info.text_field :postal_code%></td>
-              </tr>
-              <tr>
-                <td><%= info.label :street %></td>
-                <td><%= info.text_field :street %></td>
-              </tr>
-              <tr>
-                <td><%= info.label :house_number %></td>
-                <td><%= info.text_field :house_number %></td>
-              </tr>
-              <tr>
-                <td> <%= info.label :country %></td>
-                <td><%= info.text_field :country %></td>
-              </tr>
+          <table width="100%">
+            <tr>
+              <td><%= f.label :name %><br></td>
+              <td><%= f.text_field :name %></td>
+            </tr>
+            <%= f.fields_for :address do |info| %>
+                <tr>
+                  <td><%= info.label :city %></td>
+                  <td><%= info.text_field :city%></td>
+                </tr>
+                <tr>
+                  <td><%= info.label :postal_code %></td>
+                  <td><%= info.text_field :postal_code%></td>
+                </tr>
+                <tr>
+                  <td><%= info.label :street %></td>
+                  <td><%= info.text_field :street %></td>
+                </tr>
+                <tr>
+                  <td><%= info.label :house_number %></td>
+                  <td><%= info.text_field :house_number %></td>
+                </tr>
+                <tr>
+                  <td> <%= info.label :country %></td>
+                  <td><%= info.text_field :country %></td>
+                </tr>
+            <% end %>
+            <tr>
+              <td><%= f.label :url %><br></td>
+              <td><%= f.text_field :url %></td>
+            </tr>
+            <div class="field">
+              <strong>Image</strong><br>
+              <%= f.file_field :clubURL %>
+            </div>
+            <tr>
+              <% if current_user %>
+                  <% if current_user.has_role? :admin %>
+                      <td><%= f.label :user %></td>
+                      <td><%= f.collection_select :user_id, User.all, :id, :first_name, if (@club.user.nil?)
+                                                                                          {selected: current_user.id}
+                                                                                        else
+                                                                                          { selected: @club.user.id}
+                                                                                        end  %></td>
+                  <% end %>
               <% end %>
-              <tr>
-                <td><%= f.label :url %><br></td>
-                <td><%= f.text_field :url %></td>
-              </tr>
-              <tr>
-                <% if current_user %>
-                    <% if current_user.has_role? :admin %>
-                        <td><%= f.label :user %></td>
-                        <td><%= f.collection_select :user_id, User.all, :id, :first_name, if (@club.user.nil?)
-                                                                                             {selected: current_user.id}
-                                                                                          else
-                                                                                            { selected: @club.user.id}
-                                                                                          end  %></td>
-                    <% end %>
-                <% end %>
 
-              </tr>
-              <% if current_user.has_role? :admin %>
-              <tr class="color-red">
-                <td><%= f.label :active %></td>
-                <% if params[:active] = "true" %>
-                    <td><%= f.check_box :active , { :checked => true} %></td>
-                <% else %>
-                    <td><%= f.check_box :active %></td>
-                <% end %>
-              </tr>
-              <% end %>
-            </table>
+            </tr>
+            <% if current_user.has_role? :admin %>
+                <tr class="color-red">
+                  <td><%= f.label :active %></td>
+                  <% if params[:active] = "true" %>
+                      <td><%= f.check_box :active , { :checked => true} %></td>
+                  <% else %>
+                      <td><%= f.check_box :active %></td>
+                  <% end %>
+                </tr>
+            <% end %>
+          </table>
         </div>
         <div class="view view-tenth span6" >
           <%= f.label :beer %>
@@ -81,16 +85,16 @@
       </div>
     </div>
 
-<div>
+    <div>
 
 
 
 
-</div>
-  <div class="field">
-      </div>
-  <div class="actions">
+    </div>
+    <div class="field">
+    </div>
+    <div class="actions">
 
-    <%= f.submit class: "btn-u btn-large"%>
-  </div>
+      <%= f.submit class: "btn-u btn-large"%>
+    </div>
 <% end %>

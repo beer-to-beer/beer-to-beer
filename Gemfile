@@ -13,6 +13,8 @@ gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # Use unicorn as the app server
@@ -29,6 +31,9 @@ gem 'spring',        group: :development
 
 # gem für file upload uploads
 gem 'carrierwave', '0.10.0'
+gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
+
+
 # gem für die bearbeitung von files z.B. Größe verändern, converten, ...
 gem 'mini_magick', '4.0.1'
 
@@ -59,12 +64,16 @@ group :development, :test do
   gem 'faker', '1.4.3'
   #erleichterte formularausfüllung bei rspec tests
   gem 'formulaic'
+  #gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 #gem für die Production umgebung
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 end
 
 

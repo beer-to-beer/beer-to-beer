@@ -17,6 +17,18 @@ GIT
       sass-rails
 
 GIT
+  remote: git://github.com/heroku/rails3_serve_static_assets.git
+  revision: 84910ceb4ca2851d650e66d3b22f5008acf253f8
+  specs:
+    rails3_serve_static_assets (0.0.1)
+
+GIT
+  remote: git://github.com/heroku/rails_log_stdout.git
+  revision: f9a92758f2d5dca5a88bf899a83256302f16ab6c
+  specs:
+    rails_log_stdout (0.0.1)
+
+GIT
   remote: git://github.com/stefanpenner/country_select.git
   revision: d3ba0b99beacf66f189816db88ed46342698b539
   specs:
@@ -60,6 +72,8 @@ GEM
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.9)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.1.0)
       sass (~> 3.2)
     bourbon (3.2.3)
@@ -78,6 +92,9 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+    carrierwave-ftp (0.2.8)
+      carrierwave (>= 0.6.2)
+      net-sftp (~> 2.1.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     coderay (1.1.0)
@@ -92,6 +109,7 @@ GEM
     countries (0.9.3)
       currencies (~> 0.4.2)
     currencies (0.4.2)
+    debug_inspector (0.0.2)
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -183,6 +201,9 @@ GEM
     minitest (5.5.0)
     multi_json (1.10.1)
     nenv (0.1.1)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.2)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -311,10 +332,12 @@ DEPENDENCIES
   ace
   ace-rails-ap
   activeadmin!
+  binding_of_caller
   bootstrap-sass
   cancan
   capybara (= 2.4.4)
   carrierwave (= 0.10.0)
+  carrierwave-ftp
   coffee-rails (~> 4.0.0)
   country_select!
   devise
@@ -332,7 +355,9 @@ DEPENDENCIES
   mini_magick (= 4.0.1)
   pg
   rails (= 4.1.8)
+  rails3_serve_static_assets!
   rails_12factor
+  rails_log_stdout!
   rolify
   rspec-rails (= 3.1.0)
   sass-rails (~> 4.0.3)
