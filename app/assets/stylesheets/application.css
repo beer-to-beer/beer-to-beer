@@ -14,7 +14,7 @@
  *= require stylesheets/ace/headers/header1
  *= require plugins/ace/bootstrap/css/bootstrap-responsive.min
  *= require stylesheets/ace/style_responsive
- *= require plugins/ace/font-awesome/css/font-awesome
+ *= require font-awesome
  *= require stylesheets/ace/effects
  *= require plugins/ace/fancybox/source/jquery.fancybox
  *= require plugins/ace/flexslider/flexslider
