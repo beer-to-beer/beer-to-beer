@@ -10,7 +10,7 @@ describe 'Event' do
   it 'could be deleted event' do
     sign_in_admin
     visit "/events/#{event.id}"
-
+    save_and_open_page
     expect{click_button 'Delete'}.to change(Event, :count).by(-1)
   end
 end
