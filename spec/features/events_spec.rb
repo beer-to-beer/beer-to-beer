@@ -9,6 +9,8 @@ describe 'Event' do
 
   it 'could be deleted event' do
     sign_in_admin
-    expect{Capybara.current_session.driver.delete event_path(event.id)}.to change(Event, :count).by(-1)
+    visit "/events/#{event.id}"
+
+    expect{click_button 'Delete'}.to change(Event, :count).by(-1)
   end
 end

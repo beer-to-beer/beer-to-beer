@@ -30,6 +30,9 @@
   <% if can? :update, @event %>
       <%= link_to 'Edit', edit_event_path(@event),{:class => "btn btn-large btn-primary"} %>
   <% end %>
+  <% if can? :delete, @event %>
+      <%= link_to 'Delete',  {method: :delete },{:class => "btn btn-large btn-primary"} %>
+  <% end %>
   <%= link_to 'Back', events_path , {:class => "btn btn-large btn-primary"}%>
 
 </div>

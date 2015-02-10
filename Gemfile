@@ -64,7 +64,7 @@ group :development, :test do
   gem 'faker', '1.4.3'
   #erleichterte formularausfüllung bei rspec tests
   gem 'formulaic'
-  #gem 'better_errors'
+  gem 'better_errors'
   gem 'binding_of_caller'
 end
 
