@@ -1,44 +1,53 @@
 <link href="/assets/users.css?body=1" media="all" rel="stylesheet"/>
 <div class="body">
 
-    <% content_for :title, 'Login'%>
+  <% content_for :title, 'Login' %>
 
-    <!--/container-->
-  </div>
-  <!--/breadcrumbs-->
-  <div class="container">
-    <div class="row-fluid">
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { role: "form",class: "log-page" }) do |f| %>
-          <h3>Login to your account</h3>
-          <div class="input-prepend">
-            <span class="add-on"><i class="icon-user"></i></span>
+  <!--/container-->
+</div>
+<!--/breadcrumbs-->
+<div class="container">
+  <div class="row-fluid">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {role: "form", class: "log-page"}) do |f| %>
+        <h3 align="center">Login to your account</h3>
+        <hr/>
+        <div class="input-prepend margin-bottom-20">
+          <span class="add-on"><i class="fa fa-user"></i></span>
 
-        <%= f.email_field :email, autofocus: true, class: "input-xlarge" ,placeholder: "Email"%>
-          </div>
-            <div class="input-prepend">
-              <span class="add-on"><i class="icon-lock"></i></span>
-
-        <%= f.password_field :password, autocomplete: "off", class: "input-xlarge" ,placeholder: "Password"%>
-            </div>
-          <div class="controls form-inline">
-      <% if devise_mapping.rememberable? %>
-
-          <label class="checkbox">
-            <%= f.check_box :remember_me ,class: "checkbox"%>
-            <%= f.label :remember_me, class: "checkbox"%>
-          </label>
+          <%= f.email_field :email, autofocus: true, class: "input-xlarge", placeholder: "Email" %>
+        </div>
 
 
-        <% end %>
+        <div class="input-prepend">
+          <span class="add-on margin-bottom-20"><i class="fa fa-lock"></i></span>
 
-      <%= f.submit  t('.sign_in', :default => "Sign in"), class: "btn-u pull-right" %>
-          </div>
-          <hr />
-          <h4>Forgot your Password? </h4>
-          <p>no worries, <%= link_to t(".forgot_your_password", :default => "click here"), new_password_path(resource_name),class: "color-green" %> to reset your password</p>
+          <%= f.password_field :password, autocomplete: "off", class: "input-xlarge", placeholder: "Password" %>
+        </div>
+        <br>
+
+        <div class="controls form-inline">
+          <% if devise_mapping.rememberable? %>
+
+              <label class="checkbox">
+                <%= f.check_box :remember_me, class: "checkbox" %>
+                <%= f.label :remember_me, class: "checkbox", style: "padding-top: 3.5px; padding-left: 5px" %>
+              </label>
+
+
+          <% end %>
+
+          <%= f.submit t('.sign_in', :default => "Sign in"), class: "btn-u pull-right" %>
+        </div>
+        <hr/>
+        <h4>Forgot your Password? </h4>
+
+        <p>no
+          worries, <%= link_to t(".forgot_your_password", :default => "click here"), new_password_path(resource_name), class: "color-green" %>
+          to reset your password</p>
     <% end %>
 
   </div>
 </div>
 
 </div>
+
