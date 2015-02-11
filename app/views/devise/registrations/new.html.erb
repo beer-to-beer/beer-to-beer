@@ -17,7 +17,7 @@
           <div class="controls">
             <%= f.label :first_name do %>
                 First Name<span class="color-red"> *</span>
-           <% end %>
+            <% end %>
 
             <%= f.text_field :first_name, class: "span12" %>
 
@@ -80,9 +80,15 @@
             </div>
           </div>
 
+          <hr/>
+          <div class="controls form-inline">
+            <input type="checkbox">
+            <label class="checkbox" style="padding-top: 4.5px; padding-left: 5px">
+              I read <a href="page_terms.html" class="color-green">Terms and Conditions</a>
+            </label>
+            <button class="btn-u pull-right" type="submit">Register</button>
+          </div>
 
-
-          <%= f.submit t('.sign_up', :default => "Sign up"), class: "btn-u pull-right" %>
       <% end %>
     </div>
   </div>
