@@ -52,7 +52,7 @@
          <a class="glyphicons no-js edit" href=<%= edit_rating_path(@rating, :beer_id => @rating.beer_id) %>><i></i>Edit</a>
 
             <%= link_to @rating, method: :delete, data: {confirm: 'Are you sure?'},class:"glyphicons no-js delete" do%>
-                <i></i>Delete
+                <i></i>Destroy
             <% end %>
         <% end %>
       </div>
