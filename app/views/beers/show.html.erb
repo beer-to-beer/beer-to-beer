@@ -9,19 +9,25 @@
           <div style="overflow:hidden;">
             <ul class="unstyled inline">
               <% @avg = rating.criterions.sum(:value)/3 %>
-              <li><i class="icon-star<% if (@avg < 1) %>-empty<% end %>"></i></li>
-              <li><i class="icon-star<% if (@avg < 2) %>-empty<% end %>"></i></li>
-              <li><i class="icon-star<% if (@avg < 3) %>-empty<% end %>"></i></li>
-              <li><i class="icon-star<% if (@avg < 4) %>-empty<% end %>"></i></li>
-              <li><i class="icon-star<% if (@avg < 5) %>-empty<% end %>"></i></li>
-              <li><%= link_to "By " + rating.user.first_name + " " + rating.user.last_name + " on " + rating.created_at.to_date.to_s, rating %></li>
+              <li><i class="fa fa-star<% if (@avg < 1) %>-o<% end %>"></i></li>
+              <li><i class="fa fa-star<% if (@avg < 2) %>-o<% end %>"></i></li>
+              <li><i class="fa fa-star<% if (@avg < 3) %>-o<% end %>"></i></li>
+              <li><i class="fa fa-star<% if (@avg < 4) %>-o<% end %>"></i></li>
+              <li><i class="fa fa-star<% if (@avg < 5) %>-o<% end %>"></i></li>
+              <li><p>   </p></li>
+              <li><b style="font-size:110%"><%= rating.headline %></b></li>
             </ul>
+            <p>
             <% if rating.comment.length > 150 %>
                 <%= rating.comment.slice!(0..150) %>...
                 <a href="#">read more</a>
             <% else %>
                 <%= rating.comment %>
             <% end %>
+            </p>
+            <p>
+            <%= link_to "By " + rating.user.first_name + " " + rating.user.last_name + " on " + rating.created_at.to_date.to_s, rating %>
+            </p>
           </div>
         </div>
     <% end %>
