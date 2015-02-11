@@ -5,7 +5,7 @@
 
     <% @ratings = Rating.all.where(beer_id: @beer.id) %>
     <% @ratings.each do |rating| %>
-        <div class="span9 booking-blocks">
+        <div class=" booking-blocks span6" style="margin-right: 100px">
           <div style="overflow:hidden;">
             <ul class="unstyled inline">
               <% @avg = rating.criterions.sum(:value)/3 %>
@@ -32,7 +32,7 @@
         </div>
     <% end %>
 
-    <div class="col-md-3 booking-blocks pull-right">
+    <div class="col-md-3 booking-blocks"  >
 
     <div class="overflow-hidden">
       <%= image_tag @beer.beerURL, size: "200x200", alt: "#{@beer.title} Bild" %>
