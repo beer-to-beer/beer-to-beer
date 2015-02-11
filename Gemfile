@@ -60,6 +60,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '3.1.0'
   gem 'capybara', '2.4.4'
+  gem 'selenium-webdriver'
   gem 'factory_girl_rails', '4.5.0'
   gem 'guard-rspec', '4.5.0'
   gem 'faker', '1.4.3'
