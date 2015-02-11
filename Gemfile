@@ -7,7 +7,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
-gem 'jquery-rails'
+gem 'jquery-rails', '2.1.4'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -64,7 +64,7 @@ group :development, :test do
   gem 'faker', '1.4.3'
   #erleichterte formularausfüllung bei rspec tests
   gem 'formulaic'
-  gem 'better_errors'
+ # gem 'better_errors'
   gem 'binding_of_caller'
 end
 

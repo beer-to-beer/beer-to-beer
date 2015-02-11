@@ -10,7 +10,8 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require javascripts/ace/jquery-1.8.2.min.js
+//= require jquery
+//= require jquery_ujs
 //= require jquery.turbolinks
 //= require javascripts/ace/modernizr.custom
 //= require plugins/ace/bootstrap/js/bootstrap.min.js
