@@ -32,11 +32,12 @@
         </div>
     <% end %>
 
-    <div class="overflow-hidden">
-      <%= image_tag @beer.beerURL, size: "700x700", alt: "#{@beer.title} Bild" %>
-    </div>
+    <div class="col-md-3 booking-blocks pull-right">
 
-    <div class="col-md-3">
+    <div class="overflow-hidden">
+      <%= image_tag @beer.beerURL, size: "200x200", alt: "#{@beer.title} Bild" %>
+
+
       <div class="headline"><h3>Facts</h3></div>
       <div class="glyphicons-demo">
         <a class="glyphicons no-js show_big_thumbnails" href="#"><i></i><strong>Category:</strong><%= @beer.category.name %></a>
@@ -48,7 +49,9 @@
       <%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
       <%= link_to 'Edit', edit_beer_path(@beer) %> |
       <%= link_to 'Back', beers_path %>
-
     </div>
+<div>
   </div>
 </div>
+</div>
+    </div>
