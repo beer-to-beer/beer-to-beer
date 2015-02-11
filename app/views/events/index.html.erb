@@ -1,97 +1,106 @@
+<% content_for :title, 'Event' %>
+
 <div class="container">
-  <% if current_user %>
-      <% if current_user.has_role? :admin %>
-          <div>
-            <table width="100%">
-              <tr>
-                <th align="left">Events of inaktiv Clubs</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-              </tr>
-              <% @events_club_inaktiv.each do |event| %>
-                  <tr>
-                    <td width="30%" align="left"><%= link_to event.title, event %></td>
-                    <td width="20%" align="left"><%= event.sdate.to_date.to_s(:rfc822) %></td>
-                    <td width="20%" align="left"><%= event.sdate.to_s(:time) %></td>
-                    <td width="20%" align="left"><%= link_to event.club.name, event.club %></td>
-                    <td width="10%" align="left"><%= link_to '', edit_event_path(event), :class => "fa fa-edit" %><%= link_to '', {method: :delete }, :class => "fa fa-remove" %></td>
-                  </tr>
-              <% end %>
-            </table>
-          </div>
-          <div>
+  <div class="row-fluid">
+    <div class="row-fluid margin-bottom-20">
+      <div class="span6">
+        <div class="headline"><h3>All Events</h3></div>
+        <% if current_user %>
+            <% if current_user.has_role? :admin %>
+                <div>
+                  <table class="table table-hover">
+                    <tr>
+                      <th align="left">Events of inaktiv Clubs</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <% @events_club_inaktiv.each do |event| %>
+                        <tr>
+                          <td width="30%" align="left"><%= link_to event.title, event %></td>
+                          <td width="20%" align="left"><%= event.sdate.to_date.to_s(:rfc822) %></td>
+                          <td width="20%" align="left"><%= event.sdate.to_s(:time) %></td>
+                          <td width="20%" align="left"><%= link_to event.club.name, event.club %></td>
+                          <td width="10%" align="left"><%= link_to '', edit_event_path(event), :class => "fa fa-edit" %><%= link_to '', {method: :delete}, :class => "fa fa-remove" %></td>
+                        </tr>
+                    <% end %>
+                  </table>
+                </div>
+                <div>
 
-            <table width="100%">
-              <tr>
-                <th align="left">Expired Events</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-              </tr>
-              <% @events_old.each do |event| %>
-                  <tr>
-                    <td width="30%" align="left"><%= link_to event.title, event %></td>
-                    <td width="20%" align="left"><%= event.sdate.to_date.to_s(:rfc822) %></td>
-                    <td width="20%" align="left"><%= event.sdate.to_s(:time) %></td>
-                    <td width="20%" align="left"><%= event.club.name %></td>
-                    <td width="10%" align="left"><%= link_to '', edit_event_path(event), :class => "fa fa-edit" %><%= link_to '', {method: :delete }, :class => "fa fa-remove" %></td>
-                  </tr>
-              <% end %>
-            </table>
-          </div>
-      <% end %>
-  <% end %>
-
-
-
-
-
-  <div>
-    <h1>Listing events</h1>
-    <% i = 0 %>
-    <% @events.each do |event| %>
-
-        <% if(i%3 == 0) %>
-            <div>
-              <ul class="thumbnails">
-
+                  <table width="100%">
+                    <tr>
+                      <th align="left">Expired Events</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <% @events_old.each do |event| %>
+                        <tr>
+                          <td width="30%" align="left"><%= link_to event.title, event %></td>
+                          <td width="20%" align="left"><%= event.sdate.to_date.to_s(:rfc822) %></td>
+                          <td width="20%" align="left"><%= event.sdate.to_s(:time) %></td>
+                          <td width="20%" align="left"><%= event.club.name %></td>
+                          <td width="10%" align="left"><%= link_to '', edit_event_path(event), :class => "fa fa-edit" %><%= link_to '', {method: :delete}, :class => "fa fa-remove" %></td>
+                        </tr>
+                    <% end %>
+                  </table>
+                </div>
+            <% end %>
         <% end %>
-        <li class="span4">
-          <div class="thumbnail thumbnail-kenburn">
-            <div class="overflow-hidden">
-              <%= link_to (image_tag event.imageURL, size: "400x700", alt: "#{event.title} Bild"), event %>
-            </div>
-            <div class="caption">
-              <h3><%= link_to event.title, event %></h3>
-              <p>Date: <%= event.sdate.to_date.to_s(:rfc822) %></p>
-              <p>Starttime: <%= event.sdate.to_s(:time) %></p>
-              <p>Location: <%= link_to event.club.name, event.club %></p>
-              <div class="unstyled">
-                <% if can? :update, event %>
-                    <%= link_to '', edit_event_path(event), :class => "fa fa-edit" %>
-                <% end %>
-                <% if can? :delete, event %>
-                    <%= link_to '', {method: :delete }, :class => "fa fa-remove" %>
-                <% end %>
-              </div>
-            </div>
-          </div>
-        </li>
-        <% if(i%3 == 2) or (i == @events.count-1) %>
-
-            </ul>
-            </div>
-        <% end %>
-        <% i+= 1 %>
-    <% end %>
-    <br>
 
 
-    <% if can? :create, Event %>
-        <%= link_to 'New Event', new_event_path , {:class => "btn btn-large btn-u-yellow btn-block btn-primary"}%>
-    <% end %>
+        <div>
+           <% i = 0 %>
+          <% @events.each do |event| %>
+
+              <% if (i%3 == 0) %>
+                  <div>
+                    <ul class="thumbnails">
+
+              <% end %>
+              <li class="span4">
+                <div class="thumbnail thumbnail-kenburn">
+                  <div class="overflow-hidden">
+                    <%= link_to (image_tag event.imageURL, size: "400x700", alt: "#{event.title} Bild"), event %>
+                  </div>
+                  <div class="caption">
+                    <h3><%= link_to event.title, event %></h3>
+
+                    <p>Date: <%= event.sdate.to_date.to_s(:rfc822) %></p>
+
+                    <p>Starttime: <%= event.sdate.to_s(:time) %></p>
+
+                    <p>Location: <%= link_to event.club.name, event.club %></p>
+
+                    <div class="unstyled">
+                      <% if can? :update, event %>
+                          <%= link_to '', edit_event_path(event), :class => "fa fa-edit" %>
+                      <% end %>
+                      <% if can? :delete, event %>
+                          <%= link_to '', {method: :delete}, :class => "fa fa-remove" %>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <% if (i%3 == 2) or (i == @events.count-1) %>
+
+                  </ul>
+                  </div>
+              <% end %>
+              <% i+= 1 %>
+          <% end %>
+          <br>
+
+
+          <% if can? :create, Event %>
+              <%= link_to 'New Event', new_event_path, {:class => "btn btn-large btn-u-yellow btn-block btn-primary"} %>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
