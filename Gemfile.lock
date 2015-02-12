@@ -97,6 +97,8 @@ GEM
       net-sftp (~> 2.1.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
+    childprocess (0.5.5)
+      ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -274,6 +276,7 @@ GEM
       rspec-mocks (~> 3.1.0)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
+    rubyzip (1.1.7)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -283,6 +286,11 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    selenium-webdriver (2.44.0)
+      childprocess (~> 0.5)
+      multi_json (~> 1.0)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
     slop (3.6.0)
     spring (1.2.0)
     sprockets (2.12.3)
@@ -321,6 +329,7 @@ GEM
     unindent (1.0)
     warden (1.2.3)
       rack (>= 1.0)
+    websocket (1.2.1)
     wrap-bootstrap-rails (0.0.3)
       unindent
     xpath (2.0.0)
@@ -364,6 +373,7 @@ DEPENDENCIES
   rspec-rails (= 3.1.0)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  selenium-webdriver
   spring
   sprockets
   sprockets-rails
