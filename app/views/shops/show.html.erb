@@ -1,6 +1,9 @@
 <% content_for :title, 'Shop' %>
 <% navigation_add 'Shop', shops_path %>
 
+<div id="map" class="map margin-bottom-40">
+</div>
+
 <div class="container">
   <div class="row-fluid margin-bottom-20">
 
@@ -26,3 +29,7 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+        Contact.initMap();
+ </script>
