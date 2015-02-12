@@ -1,14 +1,20 @@
 <% content_for :title, 'Shop' %>
+<% navigation_add 'Shop', shops_path %>
 
 <div class="container">
-    <div class="row-fluid margin-bottom-20">
-      <div class="headline"><h3><%= @shop.name %></h3></div>
+  <div class="row-fluid margin-bottom-20">
+
+    <div class="booking-blocks" >
+
+      <div class="overflow-hidden">
+
+        <div class="headline"><h3><%= @shop.name %></h3></div>
 
         <ul class="unstyled who margin-bottom-20">
-          <li><a href="#"><i class="fa fa-home"></i><%= @shop.address_id %></a></li>
-          <li><a href="#"><i class="fa fa-envelope"></i>info@example.com</a></li>
-          <li><a href="#"><i class="fa fa-phone"></i>0123456789</a></li>
-          <li><a href="#"><i class="fa fa-globe"></i>http://www.example.com</a></li>
+          <li><a><i class="fa fa-home"></i><%= @shop.address.street + " " + @shop.address.house_number + ", " + @shop.address.postal_code.to_s + " " +  @shop.address.city +  ", " + @shop.address.country %></a></li>
+          <li><a href="mailto:info@beer.com"><i class="fa fa-envelope"></i>info@example.com</a></li>
+          <li><a><i class="fa fa-phone"></i>0123456789</a></li>
+          <li><a href="http://www.example.com"><i class="fa fa-globe"></i>http://www.example.com</a></li>
         </ul>
 
         <div class="glyphicons-demo">
@@ -16,6 +22,7 @@
           <a class="glyphicons no-js edit" href=<%= edit_shop_path(@shop) %>><i></i>Edit</a>
         </div>
 
+      </div>
     </div>
   </div>
 </div>
