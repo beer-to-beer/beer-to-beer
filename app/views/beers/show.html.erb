@@ -3,9 +3,30 @@
 <div class="container">
   <div class="row">
 
+    <div id="facts" class="booking-blocks " style="float: right; margin-left: 20px; width:auto !important"  >
+
+      <div class="overflow-hidden">
+        <%= image_tag @beer.beerURL, size: "200x200", alt: "#{@beer.title} Bild" %>
+
+
+        <div class="headline"><h3>Facts</h3></div>
+        <div class="glyphicons-demo">
+          <a class="glyphicons no-js show_big_thumbnails" href="#"><i></i><strong>Category:</strong><%= @beer.category.name %></a>
+          <br>
+          <a class="glyphicons no-js beer" href="#"><i></i> <strong>Producer:</strong><%= @beer.producer.name %></a>
+        </div>
+
+        <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id) %> |
+        <%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
+        <%= link_to 'Edit', edit_beer_path(@beer) %> |
+        <%= link_to 'Back', beers_path %>
+      </div>
+      <div>
+      </div>
+    </div>
     <% @ratings = Rating.all.where(beer_id: @beer.id) %>
     <% @ratings.each do |rating| %>
-        <div class=" booking-blocks span9" style="margin-right: 20px">
+        <div id="rating" class=" booking-blocks" style="min-width:40%; width:auto !important">
           <div style="overflow:hidden;">
             <ul class="unstyled inline">
               <% @avg = rating.criterions.sum(:value)/3 %>
@@ -31,27 +52,15 @@
           </div>
         </div>
     <% end %>
-
-    <div class="col-md-3 booking-blocks"  >
-
-    <div class="overflow-hidden">
-      <%= image_tag @beer.beerURL, size: "200x200", alt: "#{@beer.title} Bild" %>
-
-
-      <div class="headline"><h3>Facts</h3></div>
-      <div class="glyphicons-demo">
-        <a class="glyphicons no-js show_big_thumbnails" href="#"><i></i><strong>Category:</strong><%= @beer.category.name %></a>
-        <br>
-        <a class="glyphicons no-js beer" href="#"><i></i> <strong>Producer:</strong><%= @beer.producer.name %></a>
-      </div>
-
-      <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id) %> |
-      <%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
-      <%= link_to 'Edit', edit_beer_path(@beer) %> |
-      <%= link_to 'Back', beers_path %>
-    </div>
-<div>
   </div>
 </div>
-</div>
-    </div>
+<script>
+    $(window).resize(function() {
+        if ($(window).width() < 540){
+            $("#facts").css("float", "left");
+            $("#facts").css("margin-left", "0px");
+            $("#facts").css("margin-right", "20px");
+        }
+        else{$("#facts").css("float", "right");$("#facts").css("margin-left", "20px");$("#facts").css("margin-right", "0px");}
+    });
+</script>
