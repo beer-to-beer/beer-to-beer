@@ -31,5 +31,5 @@
 </div>
 
 <script type="text/javascript">
-        Contact.initMap();
- </script>
+    Contact.initMap('<%= @shop.address.city.to_s + ' ' +  @shop.address.street.to_s + ' ' + @shop.address.house_number.to_s %>')
+</script>
