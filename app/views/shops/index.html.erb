@@ -3,33 +3,45 @@
 <div class="container">
   <div class="row-fluid">
     <div class="row-fluid margin-bottom-20">
-      <div class="span6">
-       <div class="headline"><h3>All Shops</h3></div>
-        <table class="table table-hover">
-          <thead>
-              <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Address</th>
-              </tr>
-          </thead>
-          <tbody>
-             <% @count=1 %>
-             <% @shops.each do |shop| %>
-              <tr>
-                <td style="vertical-align:middle"><%= @count %> </td>
-                <td style="vertical-align:middle"><%= shop.name %></td>
-                <td style="vertical-align:middle"><%= shop.address_id %></td>
-                <td style="vertical-align:middle"><%= link_to 'Show', shop %></td>
-                <td style="vertical-align:middle"><a class="glyphicons no-js edit" href=<%= edit_shop_path(shop) %>><i></i>Edit</a></td>
-                <td style="vertical-align:middle"><%= link_to 'Destroy', shop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-              </tr>
-            <% @count = @count+1 %>
+      <div class="booking-blocks">
+        <div class="overflow-hidden">
+
+          <div class="headline"><h3>All Shops</h3></div>
+
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Address</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <% @count=1 %>
+            <% @shops.each do |shop| %>
+                <tr>
+                  <td style="vertical-align:middle"><%= @count %> </td>
+                  <td style="vertical-align:middle"><%= shop.name %></td>
+                  <td style="vertical-align:middle"><%= shop.address.street + " " + shop.address.house_number + ", " + shop.address.postal_code.to_s + " " + shop.address.city + ", " + shop.address.country %></td>
+                  <td style="vertical-align:middle; float: right"><a class="btn btn-default btn-sm" href=<%= link_to 'destroy', shop_path(shop), method: :delete, data: {confirm: 'Are you sure?'} %>><i class="fa fa-trash-o fa-lg"></i> Destroy</a></td>
+                  <td style="vertical-align:middle; float: right"><a class="btn btn-default btn-sm" href=<%= edit_shop_path(shop) %>><i class="fa fa-pencil"></i> Edit</a></td>
+                  <td style="vertical-align:middle; float: right"><a class="btn btn-default btn-sm" href=<%= shop_path(shop) %>><i class="fa fa-search"></i> Show</a></td>
+                </tr>
+                <% @count = @count+1 %>
             <% end %>
-          </tbody>
-        </table>
+            </tbody>
+
+          </table>
+
+          <% if can? :create, Shop %>
               <%= link_to 'New Shop', new_shop_path %>
+          <% end %>
+
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
