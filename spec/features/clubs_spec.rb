@@ -18,7 +18,7 @@ describe "Clubs", :type => :feature do
   end
 
   after(:each) do
-    visit "/users/sign_out"
+    #visit "/users/sign_out"
   end
 
   it 'could be added' do
@@ -30,7 +30,6 @@ describe "Clubs", :type => :feature do
     click_button 'Sign in'
 
     visit new_club_path
-
     fill_form(:club, {name: Faker::Name.name, city: Faker::Address.city, postal_code: Faker::Address.postcode,
                       street: Faker::Address.street_name, house_number: Faker::Address.building_number,
                       country: Faker::Address.country, url: Faker::Internet.url, active: true})
@@ -40,13 +39,13 @@ describe "Clubs", :type => :feature do
 
 
   it 'could be deleted club',:js => true do
+
     user = FactoryGirl.create(:user)
     user.add_role :admin
     visit root_path
     click_link 'Sign in'
     fill_form(:user, {email: user.email, password: 'Hallo123'})
     click_button 'Sign in'
-
 
     club2 =  FactoryGirl.create(:club, active:true,user: user)
 
@@ -67,9 +66,50 @@ describe "Clubs", :type => :feature do
 
 
   it 'could be deleted and delete Address' do
-    expect{Capybara.current_session.driver.delete club_path(club1.id)}.to change(Address, :count).by(-1)
+    user = FactoryGirl.create(:user)
+    user.add_role :admin
+    visit root_path
+    click_link 'Sign in'
+    fill_form(:user, {email: user.email, password: 'Hallo123'})
+    click_button 'Sign in'
+
+    club3 =  FactoryGirl.create(:club, active:true,user: user)
+    add_club = club3.address.count
+    visit clubs_path
+
+    #expect(page.has_content?('Destroy'))
+
+
+    expect {
+      click_link('Destroy', href: club_path(club3))
+      sleep 10.seconds
+      alert = page.driver.browser.switch_to.alert
+      alert.accept
+      sleep 10.seconds
+    }.to change(Address, :count).by(-1 * add_club)
+
   end
   it 'could be deleted and delete all Events' do
-    expect{Capybara.current_session.driver.delete club_path(club1.id)}.to change(Club, :count).by(-1)
+    user = FactoryGirl.create(:user)
+    user.add_role :admin
+    visit root_path
+    click_link 'Sign in'
+    fill_form(:user, {email: user.email, password: 'Hallo123'})
+    click_button 'Sign in'
+
+    club4 =  FactoryGirl.create(:club, active:true,user: user)
+    count_events = club4.events.count
+    visit clubs_path
+
+    #expect(page.has_content?('Destroy'))
+
+
+    expect {
+      click_link('Destroy', href: club_path(club4))
+      sleep 10.seconds
+      alert = page.driver.browser.switch_to.alert
+      alert.accept
+      sleep 10.seconds
+    }.to change(Event, :count).by(-1* count_events)
   end
 end
