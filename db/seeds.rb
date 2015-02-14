@@ -1,5 +1,5 @@
 #encoding: utf-8
-ad = Address.create(city:  'Münster' , postal_code: '48167', street: 'Straße', house_number: '11', country: 'Germany' )
+ad = Address.create(city:  'Münster' , postal_code: '48149', street: 'Corrensstraße', house_number: '25', country: 'Germany' )
 admin = User.create(:email => "admin@beer.com", :password => 'Admin123', :password_confirmation => 'Admin123', :first_name => 'Admin', :last_name => 'Admin', :address_id => ad.id)
 admin.add_role :admin
 jan = User.create(:email => "jan@beer.com", :password => 'Jan12345', :password_confirmation => 'Jan12345', :first_name => 'Jan', :last_name => 'Wendt', :address_id => ad.id)
@@ -27,7 +27,7 @@ b1 = Beer.create(title: "Krombacher Weizen", category_id: ca.id, producer_id: pr
 b2 = Beer.create(title: "Krombacher", category_id: ca1.id, producer_id: pr.id, beerURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/beer/Krombacher_Flasche_Pils.jpg", :encoding => "UTF-8"))
 b3 = Beer.create(title: "Veltins", category_id: ca1.id, producer_id: pr1.id, beerURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/beer/Veltins_Flasche.jpg", :encoding => "UTF-8"))
 
-sh = Shop.create(name: "Test Shop", address_id: ad.id)
+sh = Shop.create(name: "XXL Shop", address_id: ad.id)
 
 r1 = Rating.create(beer_id: b1.id, user_id:jan.id, headline:"Ganz okay", comment:"gut gut gut" )
 r2 = Rating.create(beer_id: b2.id, user_id:jan.id, headline:"Sehr gut",comment:"gut. dieser text muss lang werden" )
