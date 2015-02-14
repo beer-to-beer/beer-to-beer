@@ -1,58 +1,83 @@
-<%= form_for(@shop) do |f| %>
-  <% if @shop.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@shop.errors.count, "error") %> prohibited this shop from being saved:</h2>
+<%= form_for(@shop, html: {role: "form", class: "reg-page"}) do |f| %>
+    <% if @shop.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@shop.errors.count, "error") %> prohibited this shop from being saved:</h2>
 
-      <ul>
-      <% @shop.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-    <div class="container portfolio-columns">
-      <div class="row-fluid">
-        <div class="view view-tenth span6">
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.fields_for :address do |info| %>
-        <tr>
-          <td><%= info.label :city %></td>
-          <td><%= info.text_field :city%></td>
-        </tr>
-        <tr>
-          <td><%= info.label :postal_code %></td>
-          <td><%= info.text_field :postal_code%></td>
-        </tr>
-        <tr>
-          <td><%= info.label :street %></td>
-          <td><%= info.text_field :street %></td>
-        </tr>
-        <tr>
-          <td><%= info.label :house_number %></td>
-          <td><%= info.text_field :house_number %></td>
-        </tr>
-        <tr>
-          <td> <%= info.label :country %></td>
-          <td><%= info.text_field :country %></td>
-        </tr>
-    <% end %>
-    <div class="view view-tenth span6" >
-      <%= f.label :beer %>
-      <%= f.collection_check_boxes(:beer_ids, Beer.all, :id, :title, {selected: @shop.beers.map(&:id), include_hidden: false }, multiple: true , class: "checkbox inline")%>
-
-    </div>
-  </div>
+          <ul>
+            <% @shop.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
         </div>
+    <% end %>
 
+
+    <div class="controls">
+      <%= f.label :name do %>
+          Name<span class="color-red"> *</span>
+      <% end %>
+      <%= f.text_field :name, class: "span12" %>
     </div>
+
+
+    <div class="controls">
+      <%= f.fields_for :address do |info| %>
+          <div class="fields">
+            <div class="form-group">
+              <%= info.label :city do %>
+                  City<span class="color-red"> *</span>
+              <% end %>
+              <%= info.text_field :city, class: "span12" %>
+            </div>
+            <div class="form-group">
+              <%= info.label :postal_code do %>
+                  Postal Code<span class="color-red"> *</span>
+              <% end %>
+              <%= info.text_field :postal_code, class: "span12" %>
+            </div>
+            <div class="form-group">
+              <%= info.label :street do %>
+                  Street<span class="color-red"> *</span>
+              <% end %>
+              <%= info.text_field :street, class: "span12" %>
+            </div>
+            <div class="form-group">
+              <%= info.label :house_number do %>
+                  House number<span class="color-red"> *</span>
+              <% end %>
+              <%= info.text_field :house_number, class: "span12" %>
+            </div>
+            <div class="form-group">
+              <%= info.label :country do %>
+                  Country<span class="color-red"> *</span>
+              <% end %>
+              <%= info.text_field :country, class: "span12" %>
+            </div>
+          </div>
+      <% end %>
     </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+
+    <div class="controls">
+      <div class="view view-tenth span6">
+        <%= f.label :beer do %>
+            Beers<span class="color-red"> *</span>
+        <% end %>
+      </div>
+      <div class="checkbox pull-right span12">
+        <%= f.collection_check_boxes(:beer_ids, Beer.all, :id, :title) %>
+        <hr/>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="controls form-inline">
+      <input type="checkbox">
+      <label class="checkbox" style="padding-top: 4.5px; padding-left: 5px">
+        I read <a class="color-green">Terms and Conditions</a>
+      </label>
+      <%= f.submit class: "btn-u pull-right" %>
+    </div>
+
 <% end %>
