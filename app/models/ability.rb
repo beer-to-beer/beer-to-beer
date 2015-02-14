@@ -10,9 +10,14 @@ class Ability
       can :manage, :all
     elsif user.has_role?(:user)
       can :create, Club
+      can :create, Rating
+      can :create, Criterion
+      can :create, Shop
+
       can :manage, Rating do |r|
         r.user_id == user.id
       end
+
       can :manage, Criterion do |c|
         c.rating.user_id == user.id
       end

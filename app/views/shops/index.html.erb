@@ -31,17 +31,23 @@
                       <td style="vertical-align:middle;white-space:nowrap; ">
                         <a class="btn btn-default btn-sm" href=<%= shop_path(shop) %>><i class="fa fa-search"></i> Show</a>
                       </td>
+                  <% else %>
+                  <td></td>
                   <% end %>
                   <% if can? :edit, shop %>
                       <td style="vertical-align:middle;white-space:nowrap; ">
                         <a class="btn btn-default btn-sm" href=<%= edit_shop_path(shop) %>><i class="fa fa-pencil"></i>
                           Edit</a>
                       </td>
+                  <% else %>
+                      <td></td>
                   <% end %>
                   <% if can? :delete, shop %>
                       <td style="vertical-align:middle;white-space:nowrap;" >
                         <a class="btn btn-default btn-sm" data-confirm="Are you sure?" data-method="delete" rel="nofollow" href=<%= shop_path(shop) %>><i class="fa fa-trash-o fa-lg"></i> Destroy</a>
                       </td >
+                  <% else %>
+                      <td></td>
 
                   <% end %>
 
