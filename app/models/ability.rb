@@ -8,7 +8,7 @@ class Ability
     if user.has_role?(:admin)
       #Admins
       can :manage, :all
-    elsif user.has_role? :user
+    elsif user.has_role?(:user)
       can :create, Club
 
       can :create, Shop
