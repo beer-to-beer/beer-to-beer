@@ -139,6 +139,7 @@ ActiveRecord::Schema.define(version: 20150123093600) do
   create_table "shops", force: true do |t|
     t.string   "name"
     t.integer  "address_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
