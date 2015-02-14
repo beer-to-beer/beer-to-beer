@@ -1,6 +1,7 @@
 class ShopsController < ApplicationController
   before_action :set_shop, only: [:show, :edit, :update, :destroy]
-  load_and_authorize_resource
+  load_and_authorize_resource except: :create
+
 
 
   def index
@@ -19,7 +20,7 @@ class ShopsController < ApplicationController
   end
 
   def create
-    @shop = Shop.new(shop_params)
+    @shop = Shop.new (shop_params)
 
     respond_to { |format|
       if @shop.save
@@ -60,6 +61,6 @@ class ShopsController < ApplicationController
     end
 
     def shop_params
-      params.require(:shop).permit(:name,:user_id , address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
+      params.require(:shop).permit(:name, :user_id , address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
     end
 end

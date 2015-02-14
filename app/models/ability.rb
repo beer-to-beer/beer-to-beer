@@ -18,9 +18,9 @@ class Ability
       end
 
 
-      #can :manage, Shop do |s|
-     #   s.user_id == user.id
-    #  end
+      can :manage, Shop do |s|
+       s.user_id == user.id
+      end
 
       can :read, :all
 
