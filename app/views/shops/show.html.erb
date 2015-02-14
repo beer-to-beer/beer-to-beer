@@ -22,7 +22,7 @@
 
         <div class="glyphicons-demo">
           <a class="glyphicons no-js left_arrow" href=<%= shops_path %>><i></i>Back</a>
-          <% if can? :create, Shop %>
+          <% if can? :edit, Shop %>
           <a class="glyphicons no-js edit" href=<%= edit_shop_path(@shop) %>><i></i>Edit</a>
           <% end %>
         </div>
