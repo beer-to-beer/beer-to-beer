@@ -3,7 +3,7 @@ class CreateShops < ActiveRecord::Migration
     create_table :shops do |t|
       t.string :name
       t.integer :address_id
-
+      t.integer :user_id
       t.timestamps
     end
   end

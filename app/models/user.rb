@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_many :ratings
   has_many :beers, :through => :ratings
   has_many :clubs
-
+  has_many :shops
   accepts_nested_attributes_for :address
 
   validates :first_name,:last_name, presence: true

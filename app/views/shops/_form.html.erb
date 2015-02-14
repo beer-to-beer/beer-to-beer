@@ -13,7 +13,7 @@
 
     <h3 align="center"><% if current_page?(controller: shops_path, action: 'edit', id: params[:id] || 0 ) %>Edit Shop: <%= @shop.name %><%else%>Create a new Shop<%end%></h3>
     <hr/>
-
+    <%= f.hidden_field :user_id, :value => current_user.id %>
     <div class="controls">
       <%= f.label :name do %>
           Name<span class="color-red"> *</span>
