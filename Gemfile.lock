@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/bmabey/database_cleaner.git
+  revision: a159a1e9830d804973cf5d65a9e6615885644f56
+  specs:
+    database_cleaner (1.4.0)
+
+GIT
   remote: git://github.com/gregbell/active_admin.git
   revision: b5afbf1260f97d40730482f9ea3724dbcfd060ca
   specs:
@@ -350,6 +356,7 @@ DEPENDENCIES
   carrierwave-ftp
   coffee-rails (~> 4.0.0)
   country_select!
+  database_cleaner!
   devise
   devise-bootstrap-views
   factory_girl_rails (= 4.5.0)
