@@ -10,8 +10,18 @@ class Ability
       can :manage, :all
     elsif user.has_role?(:user)
       can :create, Club
+      can :manage, Rating do |r|
+        r.user_id == user.id
+      end
+      can :manage, Criterion do |c|
+        c.rating.user_id == user.id
+      end
 
-      can :create, Shop
+
+      #can :manage, Shop do |s|
+     #   s.user_id == user.id
+    #  end
+
       can :read, :all
 
       @clubs = Club.where(user_id: user.id)

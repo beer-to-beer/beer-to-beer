@@ -1,7 +1,7 @@
 class ShopsController < ApplicationController
   before_action :set_shop, only: [:show, :edit, :update, :destroy]
-  load_and_authorize_resource except: :create
-  skip_load_and_authorize_resource only: [:edit, :update]
+  load_and_authorize_resource
+
 
   def index
     @shops = Shop.all
@@ -16,7 +16,6 @@ class ShopsController < ApplicationController
   end
 
   def edit
-    authorize!(:edit, @shop)
   end
 
   def create

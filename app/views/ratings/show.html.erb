@@ -48,9 +48,11 @@
       <% end %>
       <div class="glyphicons-demo">
         <a class="glyphicons no-js left_arrow" href=<%= ratings_path %>><i></i>Back</a>
-        <% if current_user == @rating.user %>
-         <a class="glyphicons no-js edit" href=<%= edit_rating_path(@rating, :beer_id => @rating.beer_id) %>><i></i>Edit</a>
+        <% if can? :edit, @rating %>
 
+         <a class="glyphicons no-js edit" href=<%= edit_rating_path(@rating, :beer_id => @rating.beer_id) %>><i></i>Edit</a>
+        <% end %>
+        <% if can? :delete, @rating %>
             <%= link_to @rating, method: :delete, data: {confirm: 'Are you sure?'},class:"glyphicons no-js delete" do%>
                 <i></i>Destroy
             <% end %>

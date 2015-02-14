@@ -1,5 +1,5 @@
 class RatingsController < InheritedResources::Base
-
+  load_and_authorize_resource
 
   def index
   if Rails.env.development? or Rails.env.test?
@@ -63,13 +63,17 @@ class RatingsController < InheritedResources::Base
     @rating.criterions.build
   end
 
+  def edit
+    @rating = Rating.find(params[:id])
+    @beerid = @rating.beer_id
+  end
   def create
     @rating = Rating.new(rating_params)
 
     respond_to { |format|
       if @rating.save
 
-        format.html { redirect_to @rating, notice: "Shop was successfully created." }
+        format.html { redirect_to @rating, notice: "Rating was successfully created." }
         format.json { render :show, status: :created, location: @rating }
       else
 
@@ -79,6 +83,22 @@ class RatingsController < InheritedResources::Base
         format.json { render json: @rating.errors, status: :unprocessable_entity }
       end
     }
+  end
+
+  def update
+    @rating = Rating.find(params[:id])
+    respond_to do |format|
+      if @rating.update(rating_params)
+
+        format.html { redirect_to @rating, notice: 'Rating was successfully updated.' }
+        format.json { render :show, status: :ok, location: @rating }
+      else
+        @beerid = @rating.beer_id
+        format.html { render :edit }
+        format.json { render json: @rating.errors, status: :unprocessable_entity }
+      end
+    end
+
   end
 
 
