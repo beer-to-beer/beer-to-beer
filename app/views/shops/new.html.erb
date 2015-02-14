@@ -1,5 +1,17 @@
-<% content_for :title, 'New Shop' %>
+<div class="body">
 
-<%= render 'form' %>
+  <% content_for :title, 'New Shop' %>
+  <% navigation_add 'Shop', shops_path %>
 
-<%= link_to 'Back', shops_path %>
+  <div class="container">
+    <div class="row-fluid">
+
+    <%= render 'form' %>
+
+    <div class="glyphicons-demo">
+      <a class="glyphicons no-js left_arrow" href=<%= shops_path %>><i></i>Back</a>
+    </div>
+
+  </div>
+</div>
+    </div>
