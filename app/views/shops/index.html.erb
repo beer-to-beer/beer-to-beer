@@ -24,15 +24,22 @@
                   <td style="vertical-align:middle"><%= @count %> </td>
                   <td style="vertical-align:middle"><%= shop.name %></td>
                   <td style="vertical-align:middle"><%= shop.address.street + " " + shop.address.house_number + ", " + shop.address.postal_code.to_s + " " + shop.address.city + ", " + shop.address.country %></td>
-                  <td style="vertical-align:middle; float: right">
-                    <a class="btn btn-default btn-sm" data-confirm="Are you sure?" data-method="delete" rel="nofollow" href=<%= shop_path(shop) %>><i class="fa fa-trash-o fa-lg"></i> Destroy</a>
-                  </td>
-                  <td style="vertical-align:middle; float: right">
-                    <a class="btn btn-default btn-sm" href=<%= edit_shop_path(shop) %>><i class="fa fa-pencil"></i> Edit</a>
-                  </td>
-                  <td style="vertical-align:middle; float: right">
-                    <a class="btn btn-default btn-sm" href=<%= shop_path(shop) %>><i class="fa fa-search"></i> Show</a>
-                  </td>
+                  <% if can? :delete, shop %>
+                      <td style="vertical-align:middle; float: right">
+                        <a class="btn btn-default btn-sm" data-confirm="Are you sure?" data-method="delete" rel="nofollow" href=<%= shop_path(shop) %>><i class="fa fa-trash-o fa-lg"></i> Destroy</a>
+                      </td>
+                  <% end %>
+                  <% if can? :edit, shop %>
+                      <td style="vertical-align:middle; float: right">
+                        <a class="btn btn-default btn-sm" href=<%= edit_shop_path(shop) %>><i class="fa fa-pencil"></i>
+                          Edit</a>
+                      </td>
+                  <% end %>
+                  <% if can? :show, shop %>
+                      <td style="vertical-align:middle; float: right">
+                        <a class="btn btn-default btn-sm" href=<%= shop_path(shop) %>><i class="fa fa-search"></i> Show</a>
+                      </td>
+                  <% end %>
                 </tr>
                 <% @count = @count+1 %>
             <% end %>
