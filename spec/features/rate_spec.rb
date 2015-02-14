@@ -79,10 +79,10 @@ describe 'Ratings' do
 
     expect {
       click_link('Destroy')
-      sleep 10.seconds
+      sleep 2.seconds
       alert = page.driver.browser.switch_to.alert
       alert.accept
-      sleep 10.seconds
+      sleep 2.seconds
     }.to change(Rating, :count).by(-1)
 
   end

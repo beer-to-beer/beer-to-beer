@@ -3,7 +3,8 @@ class CreateEvents < ActiveRecord::Migration
     create_table :events do |t|
       t.string :title
       t.datetime :sdate
-      t.integer :club_id
+      #t.integer :club_id
+      t.references :club, index: true
       t.timestamps
     end
   end

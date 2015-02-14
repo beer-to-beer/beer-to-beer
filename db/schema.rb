@@ -94,6 +94,8 @@ ActiveRecord::Schema.define(version: 20150123093600) do
     t.string   "imageURL"
   end
 
+  add_index "events", ["club_id"], name: "index_events_on_club_id"
+
   create_table "producers", force: true do |t|
     t.string   "name"
     t.integer  "address_id"
