@@ -7,27 +7,9 @@ describe "Clubs", :type => :feature do
   #club1=FactoryGirl.create(:club, address: FactoryGirl.create(:address), user: user)
 
 
-  before(:each) do
-
-
-   #kann hier wieder rein, bin jetzt zu faul
-
-
-
-    #expect(page).to have_content user.email
-  end
-
-  after(:each) do
-    #visit "/users/sign_out"
-  end
 
   it 'could be added' do
-    user = FactoryGirl.create(:user)
-    user.add_role :admin
-    visit root_path
-    click_link 'Sign in'
-    fill_form(:user, {email: user.email, password: 'Hallo123'})
-    click_button 'Sign in'
+    sign_in_admin
 
     visit new_club_path
     fill_form(:club, {name: Faker::Name.name, city: Faker::Address.city, postal_code: Faker::Address.postcode,
@@ -40,12 +22,7 @@ describe "Clubs", :type => :feature do
 
   it 'could be deleted club',:js => true do
 
-    user = FactoryGirl.create(:user)
-    user.add_role :admin
-    visit root_path
-    click_link 'Sign in'
-    fill_form(:user, {email: user.email, password: 'Hallo123'})
-    click_button 'Sign in'
+    user = sign_in_admin
 
     club2 =  FactoryGirl.create(:club, active:true,user: user)
 
@@ -66,12 +43,7 @@ describe "Clubs", :type => :feature do
 
 
   it 'could be deleted and delete Address',:js => true do
-    user = FactoryGirl.create(:user)
-    user.add_role :admin
-    visit root_path
-    click_link 'Sign in'
-    fill_form(:user, {email: user.email, password: 'Hallo123'})
-    click_button 'Sign in'
+    user = sign_in_admin
 
     club3 =  FactoryGirl.create(:club, active:true,user: user, address: FactoryGirl.create(:address) )
 
@@ -90,12 +62,7 @@ describe "Clubs", :type => :feature do
 
   end
   it 'could be deleted and delete all Events',:js => true do
-    user = FactoryGirl.create(:user)
-    user.add_role :admin
-    visit root_path
-    click_link 'Sign in'
-    fill_form(:user, {email: user.email, password: 'Hallo123'})
-    click_button 'Sign in'
+    user = sign_in_admin
 
     club4 =  FactoryGirl.create(:club, active:true,user: user )
     FactoryGirl.create(:event, club: club4)
