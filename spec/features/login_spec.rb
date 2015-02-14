@@ -11,18 +11,18 @@ describe 'Sign in' do
     it 'allows to sign in' do
       visit root_path
       click_link 'Sign in'
-      fill_form(:user, { email: 'test@test.de', password: 'Hallo123' })
+      fill_form(:user, { email: user.email, password: 'Hallo123' })
       click_button 'Sign in'
       expect(page).to have_content user.email
     end
 
-   it 'allows to sign out' do
+   it 'allows to sign out', js:true do
       visit root_path
       click_link 'Sign in'
-      fill_form(:user, { email: 'test@test.de', password: 'Hallo123' })
+      fill_form(:user, { email: user.email, password: 'Hallo123' })
       click_button 'Sign in'
       click_link user.email
-      expect(page).to have_content 'Sign in'
+      expect(page).to have_content 'SIGN IN'
     end
   end
 end
