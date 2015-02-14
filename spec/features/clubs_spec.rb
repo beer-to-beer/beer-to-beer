@@ -33,10 +33,10 @@ describe "Clubs", :type => :feature do
 
     expect {
       click_link('Destroy', href: club_path(club2))
-      sleep 10.seconds
+      sleep 2.seconds
       alert = page.driver.browser.switch_to.alert
       alert.accept
-      sleep 10.seconds
+      sleep 2.seconds
     }.to change(Club, :count).by(-1)
 
   end
@@ -54,10 +54,10 @@ describe "Clubs", :type => :feature do
 
     expect {
       click_link('Destroy', href: club_path(club3))
-      sleep 10.seconds
+      sleep 2.seconds
       alert = page.driver.browser.switch_to.alert
       alert.accept
-      sleep 10.seconds
+      sleep 2.seconds
     }.to change(Address, :count).by(-1)
 
   end
@@ -72,10 +72,10 @@ describe "Clubs", :type => :feature do
 
     expect {
       click_link('Destroy', href: club_path(club4))
-      sleep 10.seconds
+      sleep 2.seconds
       alert = page.driver.browser.switch_to.alert
       alert.accept
-      sleep 10.seconds
+      sleep 2.seconds
     }.to change(Event, :count).by(-1)
   end
 end
