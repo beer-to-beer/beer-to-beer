@@ -26,6 +26,8 @@
 //= require turbolinks
 jQuery(document).ready(function() {
     App.init();
+    App.initSliders();
+    Index.initRevolutionSlider();
     });
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-29166220-1']);
