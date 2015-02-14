@@ -65,7 +65,7 @@ describe "Clubs", :type => :feature do
   end
 
 
-  it 'could be deleted and delete Address' do
+  it 'could be deleted and delete Address',:js => true do
     user = FactoryGirl.create(:user)
     user.add_role :admin
     visit root_path
@@ -73,8 +73,8 @@ describe "Clubs", :type => :feature do
     fill_form(:user, {email: user.email, password: 'Hallo123'})
     click_button 'Sign in'
 
-    club3 =  FactoryGirl.create(:club, active:true,user: user)
-    add_club = club3.address.count
+    club3 =  FactoryGirl.create(:club, active:true,user: user, address: FactoryGirl.create(:address) )
+
     visit clubs_path
 
     #expect(page.has_content?('Destroy'))
@@ -86,10 +86,10 @@ describe "Clubs", :type => :feature do
       alert = page.driver.browser.switch_to.alert
       alert.accept
       sleep 10.seconds
-    }.to change(Address, :count).by(-1 * add_club)
+    }.to change(Address, :count).by(-1)
 
   end
-  it 'could be deleted and delete all Events' do
+  it 'could be deleted and delete all Events',:js => true do
     user = FactoryGirl.create(:user)
     user.add_role :admin
     visit root_path
@@ -97,12 +97,11 @@ describe "Clubs", :type => :feature do
     fill_form(:user, {email: user.email, password: 'Hallo123'})
     click_button 'Sign in'
 
-    club4 =  FactoryGirl.create(:club, active:true,user: user)
-    count_events = club4.events.count
+    club4 =  FactoryGirl.create(:club, active:true,user: user )
+    FactoryGirl.create(:event, club: club4)
     visit clubs_path
 
     #expect(page.has_content?('Destroy'))
-
 
     expect {
       click_link('Destroy', href: club_path(club4))
@@ -110,6 +109,6 @@ describe "Clubs", :type => :feature do
       alert = page.driver.browser.switch_to.alert
       alert.accept
       sleep 10.seconds
-    }.to change(Event, :count).by(-1* count_events)
+    }.to change(Event, :count).by(-1)
   end
 end

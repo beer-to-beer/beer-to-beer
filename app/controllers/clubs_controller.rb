@@ -89,7 +89,7 @@ class ClubsController < ApplicationController
   # DELETE /clubs/1.json
   def destroy
     @club.address.destroy if @club.address.present?
-    @club.events.destroy_all if @club.address.present?
+    @club.events.destroy_all if @club.events.present?
     @club.destroy
     respond_to do |format|
       format.html { redirect_to clubs_url, notice: 'Club was successfully destroyed.' }
