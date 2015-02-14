@@ -12,6 +12,9 @@
     <% end %>
 
 
+    <h3 align="center">Create a new Shop</h3>
+    <hr/>
+
     <div class="controls">
       <%= f.label :name do %>
           Name<span class="color-red"> *</span>
@@ -24,29 +27,37 @@
       <%= f.fields_for :address do |info| %>
           <div class="fields">
             <div class="form-group">
+              <div class="span8">
               <%= info.label :city do %>
                   City<span class="color-red"> *</span>
               <% end %>
               <%= info.text_field :city, class: "span12" %>
+                </div>
             </div>
-            <div class="form-group">
+
+              <div class="span4">
               <%= info.label :postal_code do %>
                   Postal Code<span class="color-red"> *</span>
               <% end %>
               <%= info.text_field :postal_code, class: "span12" %>
-            </div>
+                </div>
+
             <div class="form-group">
+              <div class="span8">
               <%= info.label :street do %>
                   Street<span class="color-red"> *</span>
               <% end %>
               <%= info.text_field :street, class: "span12" %>
+                </div>
             </div>
-            <div class="form-group">
+
+              <div class="span4">
               <%= info.label :house_number do %>
                   House number<span class="color-red"> *</span>
               <% end %>
               <%= info.text_field :house_number, class: "span12" %>
-            </div>
+                </div>
+
             <div class="form-group">
               <%= info.label :country do %>
                   Country<span class="color-red"> *</span>
