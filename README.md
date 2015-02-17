@@ -2,7 +2,7 @@
 
 [![Beer-To-Beer](http://beertobeer.herokuapp.com/assets/img/ace/logo.png)](http://beertobeer.herokuapp.com)
 
-## Installation
+## Getting Started
 
 **run following commands**
 
