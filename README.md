@@ -8,24 +8,18 @@
 
 **OS x**
 ```sh
-**1)**  brew install imagemagick
-
-**2)**  bundle install
-
-**3)**  rake db:migrate
-
-**4)**  rake db:seed
+brew install imagemagick
+bundle install
+rake db:migrate
+rake db:seed
 ```
 
 **Ubuntu**
 ```sh
-**1)**  sudo apt-get install imagemagick imagemagick-doc
-
-**2)**  bundle install
-
-**3)**  rake db:migrate
-
-**4)**  rake db:seed
+sudo apt-get install imagemagick imagemagick-doc
+bundle install
+rake db:migrate
+rake db:seed
 ```
 
 ##
