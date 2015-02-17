@@ -1,18 +1,12 @@
 require 'rails_helper'
 
 describe 'Ratings' do
-
-
-
   it 'can be created via form' do
-    user = FactoryGirl.create(:user)
+    user = sign_in_user
     beer = FactoryGirl.create(:beer)
-    visit root_path
-    click_link 'Sign in'
-    fill_form(:user, {email: user.email, password: 'Hallo123'})
-    click_button 'Sign in'
 
-    visit new_rating_path(:beer_id => beer.id)
+
+    visit "/ratings/new?beer_id=#{beer.id}"
     fill_form(:rating, {headline: 'myHeadline', comment: 'myComment'})
     select 5.0, :from => "price"
     select 4.0, :from => "taste"
@@ -30,12 +24,8 @@ describe 'Ratings' do
 
   end
   it 'can be edited via form' do
-    user = FactoryGirl.create(:user)
+    user = sign_in_user
     beer = FactoryGirl.create(:beer)
-    visit root_path
-    click_link 'Sign in'
-    fill_form(:user, {email: user.email, password: 'Hallo123'})
-    click_button 'Sign in'
 
     rating2 = FactoryGirl.create(:rating,headline: 'myHeadline',comment: 'myCommment',user_id: user.id)
     FactoryGirl.create(:criterion, name: "Price", rating_id: rating2.id, value:4.0)
@@ -62,12 +52,8 @@ describe 'Ratings' do
 
 
   it 'can be deleted via form',:js => true do
-    user = FactoryGirl.create(:user)
+    user = sign_in_user
     beer = FactoryGirl.create(:beer)
-    visit root_path
-    click_link 'Sign in'
-    fill_form(:user, {email: user.email, password: 'Hallo123'})
-    click_button 'Sign in'
 
     rating2 = FactoryGirl.create(:rating,headline: 'myHeadline',comment: 'myCommment',user_id: user.id)
     FactoryGirl.create(:criterion, name: "Price", rating_id: rating2.id, value:4.0)

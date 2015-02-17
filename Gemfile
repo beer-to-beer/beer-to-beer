@@ -13,7 +13,7 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
+gem 'spring', '1.2.0',        group: :development
 
 
 # Use ActiveModel has_secure_password
