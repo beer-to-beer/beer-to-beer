@@ -10,6 +10,12 @@
 
 **1)**  brew install imagemagick
 
+**2)**  bundle install
+
+**3)**  rake db:migrate
+
+**4)**  rake db:seed
+
 **Ubuntu**
 
 **1)**  sudo apt-get install imagemagick imagemagick-doc
