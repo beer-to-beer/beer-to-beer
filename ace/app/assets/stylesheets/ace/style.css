@@ -1477,6 +1477,14 @@ ul.blog-tags a i {
 .lft-img-margin { margin:5px 20px 5px 0;}
 
 .overflow-hidden { overflow:hidden;}
+.myoverflow-hidden {
+    overflow:hidden;
+    height: 165px;
+    position: relative;}
+.myoverflow-hidden2 {
+    overflow:hidden;
+    height: 234px;
+    position: relative;}
 .padding-left-5 { padding-left:5px;}
 .img-width-200 { width:200px;}
 
