@@ -13,6 +13,7 @@ class Ability
       can :create, Rating
       can :create, Criterion
       can :create, Shop
+      can :create, Beer
 
       can :manage, Rating do |r|
         r.user_id == user.id
