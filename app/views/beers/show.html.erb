@@ -18,7 +18,9 @@
 
         <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id) %> |
         <%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
-        <%= link_to 'Edit', edit_beer_path(@beer) %> |
+        <% if can? :update, @beer %>
+            <%= link_to 'Edit', edit_beer_path(@beer) %> |
+        <% end %>
         <%= link_to 'Back', beers_path %>
       </div>
       <div>

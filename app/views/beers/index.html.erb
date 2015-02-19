@@ -22,16 +22,38 @@
                 <td style="vertical-align:middle"><%= beer.title %></td>
                 <td style="vertical-align:middle"><%= beer.category.name %></td>
                 <td style="vertical-align:middle"><%= beer.producer.name %></td>
-                <td style="vertical-align:middle"><%= link_to 'Show', beer %></td>
-                <td style="vertical-align:middle"><%= link_to 'Destroy', beer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-              </tr>
+                <% if can? :show, beer %>
+                    <td style="vertical-align:middle;white-space:nowrap; ">
+                      <a class="btn btn-default btn-sm" href=<%= beer_path(beer) %>><i class="fa fa-search"></i> Show</a>
+                    </td>
+                <% else %>
+                    <td></td>
+                <% end %>
+                <% if can? :edit, beer %>
+                    <td style="vertical-align:middle;white-space:nowrap; ">
+                      <a class="btn btn-default btn-sm" href=<%= edit_beer_path(beer) %>><i class="fa fa-pencil"></i>
+                        Edit</a>
+                    </td>
+                <% else %>
+                    <td></td>
+                <% end %>
+                <% if can? :delete, beer %>
+                    <td style="vertical-align:middle;white-space:nowrap;" >
+                      <a class="btn btn-default btn-sm" data-confirm="Are you sure?" data-method="delete" rel="nofollow" href=<%= beer_path(beer) %>><i class="fa fa-trash-o fa-lg"></i> Destroy</a>
+                    </td >
+                <% else %>
+                    <td></td>
+
+                <% end %>
           <% end %>
           </tbody>
         </table>
 
         <br>
 
-        <%= link_to 'New Beer', new_beer_path %>
+        <% if can? :create, Beer %>
+            <%= link_to 'New Beer', new_beer_path, {:class => "btn-u btn-large"}  %>
+        <% end %>
       </div>
     </div>
   </div>
