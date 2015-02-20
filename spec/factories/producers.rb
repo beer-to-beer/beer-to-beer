@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :producer do
-    name "MyString"
-address nil
+    name Faker::Lorem.word
+    address {FactoryGirl.create(:address)}
   end
 
 end

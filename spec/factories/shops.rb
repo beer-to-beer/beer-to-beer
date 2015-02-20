@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :shop do
     name "MyString"
-address_id 1
+    address {FactoryGirl.create(:address)}
   end
 
 end
