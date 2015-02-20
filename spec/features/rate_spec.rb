@@ -23,7 +23,7 @@ describe 'Ratings' do
 
 
   end
-  it 'can be edited via form' do
+  it 'can be edited via fo' do
     user = sign_in_user
     beer = FactoryGirl.create(:beer)
 
@@ -51,7 +51,7 @@ describe 'Ratings' do
   end
 
 
-  it 'can be deleted via form',:js => true do
+  it 'can be deleted',:js => true do
     user = sign_in_user
     beer = FactoryGirl.create(:beer)
 
