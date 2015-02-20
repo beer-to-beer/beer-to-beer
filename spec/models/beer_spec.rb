@@ -1,5 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Beer, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let!(:beer) { FactoryGirl.create(:beer)}
+
+  context 'should' do
+    it 'be valid' do
+      expect(beer).to be_valid
+    end
+  end
 end
