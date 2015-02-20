@@ -25,6 +25,9 @@
           <% if can? :edit, Shop %>
           <a class="glyphicons no-js edit" href=<%= edit_shop_path(@shop) %>><i></i>Edit</a>
           <% end %>
+          <% if can? :delete, @shop %>
+                <a class="glyphicons no-js delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" href=<%= shop_path(@shop) %>><i></i> Destroy</a>
+          <% end %>
         </div>
 
       </div>
