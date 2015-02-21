@@ -88,18 +88,21 @@
   </div>
 </div>
 <!--=== End Slider ===-->
-
+<% if !current_user %>
 <!--=== Purchase Block ===-->
 <div class="row-fluid purchase margin-bottom-30">
   <div class="container">
     <div class="span9">
-      <span>Unify is a clean and fully responsive incredible Template.</span>
+      <span>BeerToBeer is a clean and fully responsive incredible Website.</span>
       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat.</p>
     </div>
-    <a href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697" class="btn-buy hover-effect">Purchase Now</a>
+    <a href="<%= new_user_registration_path %>" class="btn-buy hover-effect">Register Now!</a>
   </div>
 </div><!--/row-fluid-->
 <!-- End Purchase Block -->
+<% end %>
+
+<br>
 <!--=== Content Part ===-->
 <div class="container">
 <!-- Service Blocks -->
@@ -144,7 +147,7 @@
         <div class="myoverflow-hidden"><img style=" position: absolute;top: -9999px;bottom: -9999px;left: -9999px;right: -9999px;margin: auto;" src="<%= beer.beerURL %> " alt="" /></div>
         <%= link_to "read more +", beer, html_options = { class: "btn-more hover-effect" } %>
       </div>
-      <h3><a class="hover-effect" href="#"><%= beer.title %></a></h3>
+      <h3><a class="hover-effect" href="<%= beer_path(beer) %>>"><%= beer.title %></a></h3>
       <p> A beer of the category <%= beer.category.name %> bottled by <%= beer.producer.name %>. Click to see ratings and more information.  </p>
     </div>
   </li>
