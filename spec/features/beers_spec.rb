@@ -8,8 +8,8 @@ describe 'Beers' do
 
     visit "/beers/new"
     fill_form(:beer, {title: 'myBeer'})
-    fill_form(:producer, {name: producer.name})
-    fill_form(:category, {name: category.name})
+    fill_form(:producer, {"beer_producer_attributes_name" => producer.name})
+    fill_form(:category, {"beer_category_attributes_name" => category.name})
 
 
     expect { click_button 'Create Beer' }.to change { Beer.count }.by(1)
