@@ -18,25 +18,32 @@
       </div><!--/span4-->
       <div class="span4">
         <div class="posts">
+
           <div class="headline"><h3>Recent Beer Ratings</h3></div>
+
+          <% @ratings = Rating.all.limit(3) %>
+          <% @ratings.each do |rating| %>
           <dl class="dl-horizontal">
-            <dt><a href="#"><img src="/assets/img/ace/sliders/elastislide/6.jpg" alt="" /></a></dt>
+            <dt><div class="myoverflow-hidden3"><img style=" position: absolute;top: -9999px;bottom: -9999px;left: -9999px;right: -9999px;margin: auto;" src="<%= rating.beer.beerURL %> " alt="" /></div></a></dt>
             <dd>
-              <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p>
+              <p><a href="<%= rating_path(rating) %>">
+                <p>
+                <% if rating.headline.length > 15 %>
+                    <%= rating.headline.slice!(0..15) %>...
+                <% else %>
+                    <%= rating.headline %>
+                <% end %>
+              </p>
+              <p>
+                <% if rating.comment.length > 15 %>
+                    <%= rating.comment.slice!(0..15) %>...
+                <% else %>
+                    <%= rating.comment %>
+                <% end %> </a></p></p>
             </dd>
           </dl>
-          <dl class="dl-horizontal">
-            <dt><a href="#"><img src="/assets/img/ace/sliders/elastislide/10.jpg" alt="" /></a></dt>
-            <dd>
-              <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p>
-            </dd>
-          </dl>
-          <dl class="dl-horizontal">
-            <dt><a href="#"><img src="/assets/img/ace/sliders/elastislide/11.jpg" alt="" /></a></dt>
-            <dd>
-              <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p>
-            </dd>
-          </dl>
+          <% end %>
+
         </div>
       </div><!--/span4-->
       <div class="span4">
