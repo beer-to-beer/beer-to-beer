@@ -29,7 +29,7 @@ describe 'Beers' do
     click_link_or_button 'Edit'
 
     fill_form(:beer, {title: 'myBeer2'})
-    fill form(:category, { "beer_category_attributes_name" => 'Category2' })
+
     fill_form(:producer, { "beer_producer_attributes_name" => 'Producer2' })
 
 
@@ -39,7 +39,7 @@ describe 'Beers' do
 
     expect(page).to have_content 'myBeer2'
     expect(page).to have_content 'Producer2'
-    expect(page).to have_content 'Category2'
+
   end
 
   it 'can be deleted',:js => true do
@@ -49,7 +49,7 @@ describe 'Beers' do
 
 
     expect {
-      click_link_or_button('Destroy')
+      click_link_or_button('Delete')
       sleep 2.seconds
       alert = page.driver.browser.switch_to.alert
       alert.accept

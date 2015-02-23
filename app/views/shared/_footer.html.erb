@@ -24,22 +24,22 @@
           <% @ratings = Rating.all.limit(3) %>
           <% @ratings.each do |rating| %>
           <dl class="dl-horizontal">
-            <dt><div class="myoverflow-hidden3"><img style=" position: absolute;top: -9999px;bottom: -9999px;left: -9999px;right: -9999px;margin: auto;" src="<%= rating.beer.beerURL %> " alt="" /></div></a></dt>
+            <dt><div class="myoverflow-hidden3"><img style=" position: absolute;top: -9999px;bottom: -9999px;left: -9999px;right: -9999px;margin: auto;" src="<%= rating.beer.beerURL %> " alt="" /></div></dt>
             <dd>
               <p><a href="<%= rating_path(rating) %>">
-                <p>
+
                 <% if rating.headline.length > 15 %>
                     <%= rating.headline.slice!(0..15) %>...
                 <% else %>
                     <%= rating.headline %>
                 <% end %>
-              </p>
-              <p>
+
+             <br>
                 <% if rating.comment.length > 15 %>
                     <%= rating.comment.slice!(0..15) %>...
                 <% else %>
                     <%= rating.comment %>
-                <% end %> </a></p></p>
+                <% end %> </a></p>
             </dd>
           </dl>
           <% end %>
