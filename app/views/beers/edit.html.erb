@@ -1,14 +1,17 @@
 <div class="body">
-<% content_for :title, 'Edit Beer' %>
-<% navigation_add 'Beers', beers_path %>
-<div class="container">
 
+  <% content_for :title, 'Edit Beer' %>
+  <% navigation_add 'Beers', beers_path %>
 
+  <div class="container">
+    <div class="row-fluid">
 
-<%= render 'form' %>
+      <%= render 'form' %>
 
-  <div class="glyphicons-demo">
-    <a class="glyphicons no-js left_arrow" href=<%= beers_path %>><i></i>Back</a>
+      <div class="glyphicons-demo">
+        <a class="glyphicons no-js left_arrow" href=<%= beers_path %>><i></i>Back</a>
+      </div>
+
+    </div>
   </div>
 </div>
-    </div>

@@ -1,40 +1,62 @@
-<div class="row-fluid margin-bottom-10">
-  <%= form_for(@beer, html: {role: "form", class: "reg-page"}) do |f| %>
-      <h3 align="center"><% if current_page?(controller: beers_path, action: 'edit', id: params[:id] || 0 ) %>Edit Beer: <%= @beer.title %><%else%>Create a new Beer<%end%></h3>
-      <hr/>
-      <div class="controls">
-      <div class="field">
-        <%= f.label :title %>
-        <%= f.text_field :title %>
-      </div>
+<%= form_for(@beer, html: {role: "form", class: "reg-page"}) do |f| %>
+    <% if @beer.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@beer.errors.count, "error") %> prohibited this beer from being saved:</h2>
+
+          <ul>
+            <% @beer.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
         </div>
-      <div class="controls">
-        <%= f.fields_for :category do |info| %>
-          <div class="field">
-            <%= info.label 'Category' %>
-            <%= info.text_field :name %>
-          </div>
-        <% end %>
-        </div>
+    <% end %>
 
-        <div class="controls">
-        <%= f.fields_for :producer do |info2| %>
-          <div class="field">
-            <%= info2.label 'Producer' %>
-            <%= info2.text_field :name %>
-          </div>
-        <% end %>
-          </div>
+    <h3 align="center">
+      <% if current_page?(controller: beers_path, action: 'edit', id: params[:id] || 0) %>Edit Beer: <%= @beer.title %>
+      <% else %>Create a new Beer
+      <% end %></h3>
 
+    <hr/>
+    <div class="controls">
+      <%= f.label :title do %>
+          Name<span class="color-red"> *</span>
+      <% end %>
+      <%= f.text_field :title, class: "span12" %>
+    </div>
 
-      <div class="field">
-        <strong>Image</strong><br>
-        <%= f.file_field :imageURL %>
-      </div>
+    <div class="controls">
+      <%= f.fields_for :category do |info| %>
+          <%= info.label :category do %>
+              Category<span class="color-red"> *</span>
+          <% end %>
+          <%= info.text_field :name, class: "span12" %>
+      <% end %>
+    </div>
 
-      <div class="controls form-inline">
-        <%= f.submit class: "btn-u pull-right"%>
-      </div>
+    <div class="controls">
+      <%= f.fields_for :producer do |info2| %>
+         <%= info2.label :producer do %>
+              Producer<span class="color-red"> *</span>
+          <% end %>
+          <%= info2.text_field :name, class: "span12" %>
 
-  <% end %>
-</div>
+      <% end %>
+    </div>
+
+    <div class="controls">
+      <%= f.label "Image" %>
+      <%= f.file_field :imageURL %>
+    </div>
+
+    <hr/>
+    <br>
+
+    <div class="controls form-inline">
+      <input type="checkbox">
+      <label class="checkbox" style="padding-top: 4.5px; padding-left: 5px">
+        I read <a class="color-green">Terms and Conditions</a>
+      </label>
+      <%= f.submit class: "btn-u pull-right" %>
+    </div>
+
+<% end %>
