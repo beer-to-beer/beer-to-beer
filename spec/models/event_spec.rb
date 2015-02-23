@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+
 RSpec.describe Event, :type => :model do
   let!(:address) { FactoryGirl.create(:address)}
   let!(:club) { FactoryGirl.create(:club, address_id: Address.first.id)}
