@@ -12,9 +12,9 @@ describe "Clubs", :type => :feature do
     sign_in_admin
 
     visit new_club_path
-    fill_form(:club, {name: Faker::Name.name, city: Faker::Address.city, postal_code: Faker::Address.postcode,
+    fill_form(:club, {name: Faker::Name.name, city: Faker::Address.city,'club_address_attributes_postal_code'=>  Faker::Address.postcode,
                       street: Faker::Address.street_name, house_number: Faker::Address.building_number,
-                      country: Faker::Address.country, url: Faker::Internet.url, active: true})
+                      country: Faker::Address.country, 'club_url' => Faker::Internet.url, active: true})
 
     expect{ click_button('Create Club') }.to change(Club, :count).by(1)
   end
