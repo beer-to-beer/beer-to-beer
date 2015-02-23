@@ -27,35 +27,35 @@
           <div class="fields">
             <div class="form-group">
               <div class="span7">
-              <%= info.label :city do %>
-                  City<span class="color-red"> *</span>
-              <% end %>
-              <%= info.text_field :city, class: "span12" %>
-                </div>
+                <%= info.label :city do %>
+                    City<span class="color-red"> *</span>
+                <% end %>
+                <%= info.text_field :city, class: "span12" %>
+              </div>
             </div>
 
-              <div class="span5">
+            <div class="span5">
               <%= info.label :postal_code do %>
                   Postal Code<span class="color-red"> *</span>
               <% end %>
               <%= info.text_field :postal_code, class: "span12" %>
-                </div>
+            </div>
 
             <div class="form-group">
               <div class="span7">
-              <%= info.label :street do %>
-                  Street<span class="color-red"> *</span>
-              <% end %>
-              <%= info.text_field :street, class: "span12" %>
-                </div>
+                <%= info.label :street do %>
+                    Street<span class="color-red"> *</span>
+                <% end %>
+                <%= info.text_field :street, class: "span12" %>
+              </div>
             </div>
 
-              <div class="span5">
+            <div class="span5">
               <%= info.label :house_number do %>
                   House number<span class="color-red"> *</span>
               <% end %>
               <%= info.text_field :house_number, class: "span12" %>
-                </div>
+            </div>
 
             <div class="form-group">
               <%= info.label :country do %>
@@ -69,17 +69,23 @@
 
 
     <div class="controls">
+      <div class="span7">
         <%= f.label :email %>
         <%= f.text_field :email, class: "span12" %>
+      </div>
+
+      <div class="span5">
+        <%= f.label :phonenumber do %>
+            Phone Number
+        <% end %>
+        <%= f.text_field :phonenumber, class: "span12" %>
+      </div>
     </div>
 
     <div class="controls">
-      <%= f.label :phonenumber %>
-      <%= f.text_field :phonenumber, class: "span12" %>
-    </div>
-
-    <div class="controls">
-      <%= f.label :website %>
+      <%= f.label :website do %>
+          Website<span class="color-red"> *</span>
+      <% end %>
       <%= f.text_field :website, class: "span12" %>
     </div>
 
