@@ -1,9 +1,17 @@
-<% content_for :title, 'New Event' %>
-<% navigation_add 'Events', events_path %>
-<div class="container">
-<h1>New event</h1>
+<div class="body">
 
-<%= render 'form' %>
+  <% content_for :title, 'New Event' %>
+  <% navigation_add 'Events', events_path %>
 
-<%= link_to 'Back', events_path , {:class => "btn btn-large btn-primary"}%>
+  <div class="container">
+    <div class="row-fluid">
+
+      <%= render 'form' %>
+
+      <div class="glyphicons-demo">
+        <a class="glyphicons no-js left_arrow" href=<%= events_path %>><i></i>Back</a>
+      </div>
+
+    </div>
+  </div>
 </div>

@@ -1,12 +1,17 @@
+<div class="body">
 
-<% content_for :title, 'Edit Event' %>
-<% navigation_add 'Events', events_path %>
-<div class="container">
-  <div class= "headline">
-    <h3>Editing event</h3>
+  <% content_for :title, 'Edit Event' %>
+  <% navigation_add 'Events', events_path %>
+
+  <div class="container">
+    <div class="row-fluid">
+
+      <%= render 'form' %>
+
+      <div class="glyphicons-demo">
+        <a class="glyphicons no-js left_arrow" href=<%= events_path %>><i></i>Back</a>
+      </div>
+
+    </div>
   </div>
-<%= render 'form' %>
-
-<%= link_to 'Show', @event, {:class => "btn btn-large btn-primary"}%>
-<%= link_to 'Back', events_path, {:class => "btn btn-large btn-primary"} %>
 </div>
