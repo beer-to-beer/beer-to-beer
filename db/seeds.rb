@@ -12,13 +12,7 @@ user = User.create(:email => "user@beer.com", :password => 'User1234', :password
 user.add_role :user
 
 us = User.create(:email => "beer@beer.com", :password => 'Hallo123', :password_confirmation => 'Hallo123', :first_name => 'Peter', :last_name => 'Mueller', :address_id => ad.id)
-cl1 = Club.create(name: "Test Club" , address_id: ad.id , user_id: user.id, active: false, clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club1.jpg", :encoding => "UTF-8") )
-cl = Club.create(name: "Test Club 2" , address_id: ad.id , user_id: us.id, active: true, clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club2.jpg", :encoding => "UTF-8"))
-cl2 = Club.create(name: "Test Club 1" , address_id: ad.id , user_id: us.id, active: true, clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club3.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test1", sdate: Date.current, club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image1.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test2", sdate: Date.current, club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image2.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test3", sdate: Date.current, club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image3.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test4", sdate: Date.current, club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image4.jpg", :encoding => "UTF-8"))
+
 ca = Category.create(name: "Weizen")
 ca1 = Category.create(name: "Pils")
 pr = Producer.create(name: "Krombacher", address_id: ad.id)
@@ -27,7 +21,16 @@ b1 = Beer.create(title: "Krombacher Weizen", category_id: ca.id, producer_id: pr
 b2 = Beer.create(title: "Krombacher", category_id: ca1.id, producer_id: pr.id, beerURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/beer/Krombacher_Flasche_Pils.jpg", :encoding => "UTF-8"))
 b3 = Beer.create(title: "Veltins", category_id: ca1.id, producer_id: pr1.id, beerURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/beer/Veltins_Flasche.jpg", :encoding => "UTF-8"))
 
-sh = Shop.create(name: "XXL Beerhouse", address_id: ad.id)
+cl1 = Club.create(name: "Test Club" , address_id: ad.id , user_id: user.id, active: false, beer_ids:[b1.id, b2.id,b3.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club1.jpg", :encoding => "UTF-8") )
+cl = Club.create(name: "Test Club 2" , address_id: ad.id , user_id: us.id, active: true, beer_ids:[b1.id, b2.id,b3.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club2.jpg", :encoding => "UTF-8"))
+cl2 = Club.create(name: "Test Club 1" , address_id: ad.id , user_id: us.id, active: true, beer_ids:[b1.id, b2.id,b3.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club3.jpg", :encoding => "UTF-8"))
+
+Event.create(title: "Test1", sdate: Date.current, club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image1.jpg", :encoding => "UTF-8"))
+Event.create(title: "Test2", sdate: Date.current, club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image2.jpg", :encoding => "UTF-8"))
+Event.create(title: "Test3", sdate: Date.current, club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image3.jpg", :encoding => "UTF-8"))
+Event.create(title: "Test4", sdate: Date.current, club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image4.jpg", :encoding => "UTF-8"))
+
+sh = Shop.create(name: "XXL Beerhouse", address_id: ad.id, website: "www.xxlbeerhouse.de", phonenumber: "123456789", email: "info@xxlbeerhouse.de", beer_ids:[b1.id, b2.id,b3.id] )
 
 r1 = Rating.create(beer_id: b1.id, user_id:jan.id, headline:"Ganz okay", comment:"gut gut gut" )
 r2 = Rating.create(beer_id: b2.id, user_id:jan.id, headline:"Sehr gut",comment:"gut. dieser text muss lang werden" )
@@ -35,6 +38,7 @@ r3 = Rating.create(beer_id: b3.id, user_id:jan.id, headline:"Ganz okay",comment:
 r4 = Rating.create(beer_id: b1.id, user_id:thorsten.id,headline:"Ganz okay", comment:"gut gut gut" )
 r5 = Rating.create(beer_id: b2.id, user_id:thorsten.id, headline:"Völlig okay und dies und das",comment:"gut. dieser text muss lang werden" )
 r6 = Rating.create(beer_id: b3.id, user_id:thorsten.id,headline:"Ganz gut", comment:"gut gut gut" )
+
 Criterion.create(rating_id: r1.id, name: "Price",value: "2")
 Criterion.create(rating_id: r1.id, name: "Taste",value: "3")
 Criterion.create(rating_id: r1.id, name: "Headache",value: "3")

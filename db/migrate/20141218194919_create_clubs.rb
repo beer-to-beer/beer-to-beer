@@ -3,7 +3,6 @@ class CreateClubs < ActiveRecord::Migration
     create_table :clubs do |t|
       t.string :name
       t.string :url
-
       t.timestamps
     end
   end
