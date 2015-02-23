@@ -21,6 +21,9 @@
         <% if can? :update, @beer %>
             <%= link_to 'Edit', edit_beer_path(@beer) %> |
         <% end %>
+        <% if can? :delete, @beer %>
+            <%= link_to 'Delete',@rating, method: :delete, data: {confirm: 'Are you sure?'}%> |
+        <% end %>
         <%= link_to 'Back', beers_path %>
       </div>
       <div>

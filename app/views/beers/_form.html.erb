@@ -1,26 +1,31 @@
 <div class="row-fluid margin-bottom-10">
-  <%= form_for(@beer, html: {class: "reg-page"}) do |f| %>
-
+  <%= form_for(@beer, html: {role: "form", class: "reg-page"}) do |f| %>
+      <h3 align="center"><% if current_page?(controller: beers_path, action: 'edit', id: params[:id] || 0 ) %>Edit Beer: <%= @beer.title %><%else%>Create a new Beer<%end%></h3>
+      <hr/>
+      <div class="controls">
       <div class="field">
-        <%= f.label :title %><br>
+        <%= f.label :title %>
         <%= f.text_field :title %>
       </div>
-
-      <div class="field">
-        <strong>Category</strong>
+        </div>
+      <div class="controls">
         <%= f.fields_for :category do |info| %>
-            <%= info.label :name %>
+          <div class="field">
+            <%= info.label 'Category' %>
             <%= info.text_field :name %>
+          </div>
         <% end %>
-      </div>
+        </div>
 
-      <div class="field">
-        <strong>Producer</strong>
+        <div class="controls">
         <%= f.fields_for :producer do |info2| %>
-            <%= info2.label :name %>
+          <div class="field">
+            <%= info2.label 'Producer' %>
             <%= info2.text_field :name %>
+          </div>
         <% end %>
-      </div>
+          </div>
+
 
       <div class="field">
         <strong>Image</strong><br>

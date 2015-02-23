@@ -3,11 +3,12 @@
 <% navigation_add 'Beers', beers_path %>
 <div class="container">
 
-<h1>Editing beer</h1>
+
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @beer %> |
-<%= link_to 'Back', beers_path %>
+  <div class="glyphicons-demo">
+    <a class="glyphicons no-js left_arrow" href=<%= beers_path %>><i></i>Back</a>
+  </div>
 </div>
     </div>
