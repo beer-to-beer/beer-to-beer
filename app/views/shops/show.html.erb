@@ -17,9 +17,9 @@
           <li>
             <a><i class="fa fa-home"></i><%= @shop.address.street + " " + @shop.address.house_number + ", " + @shop.address.postal_code.to_s + " " + @shop.address.city + ", " + @shop.address.country %>
             </a></li>
-          <li><a href="mailto:info@beer.com"><i class="fa fa-envelope"></i>info@example.com</a></li>
-          <li><a><i class="fa fa-phone"></i>0123456789</a></li>
-          <li><a href="http://www.example.com"><i class="fa fa-globe"></i>http://www.example.com</a></li>
+          <li><a href=mailto:<%= @shop.email %>><i class="fa fa-envelope"></i><%= @shop.email %></a></li>
+          <li><a><i class="fa fa-phone"></i><%= @shop.phonenumber %></a></li>
+          <li><a href=<%= @shop.website %>><i class="fa fa-globe"></i><%= @shop.website %></a></li>
         </ul>
 
       </div>
