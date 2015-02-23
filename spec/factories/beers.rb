@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :beer do
-    title Faker::Lorem.word
-    producer_id {FactoryGirl.create(:producer)}
-    category_id {FactoryGirl.create(:category)}
+    title { Faker::Lorem.word}
+    producer {FactoryGirl.create(:producer)}
+    category {FactoryGirl.create(:category)}
 
   end
 
