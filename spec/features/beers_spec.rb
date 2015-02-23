@@ -20,41 +20,31 @@ describe 'Beers' do
   end
 
   it 'can be edited' do
-    user = sign_in_user
+    user = sign_in_admin
     beer1 = FactoryGirl.create(:beer)
-    beer2 = FactoryGirl.create(:beer)
-    address = FactoryGirl.create(:address)
-    shop = FactoryGirl.create(:shop,user: user)
 
 
-    visit shop_path(shop)
+    visit beer_path(beer1)
 
     click_link_or_button 'Edit'
-    fill_form(:shop, {name: 'myShop2'})
-    fill_form(:address, { city: address.city, 'shop_address_attributes_postal_code'=> address.postal_code, street: address.street, house_number: address.house_number,country: address.country })
+    fill_form(:beer, {title: 'myBeer2'})
+    fill_form(:producer, { "beer_producer_attributes_name" => 'Producer2' })
+    fill form(:category, { "beer_category_attributes_name" => 'Category2'})
 
 
 
-    click_link_or_button 'Update Shop'
+    click_link_or_button 'Update Beer'
 
 
-    expect(page).to have_content 'myShop2'
-    expect(page).to have_content address.city
-    expect(page).to have_content address.postal_code
-    expect(page).to have_content address.street
-    expect(page).to have_content address.house_number
-    expect(page).to have_content address.country
+    expect(page).to have_content 'myBeer2'
+    expect(page).to have_content 'Producer2'
+    expect(page).to have_content 'Category2'
   end
 
   it 'can be deleted',:js => true do
-    user = sign_in_user
+    user = sign_in_admin
     beer1 = FactoryGirl.create(:beer)
-    beer2 = FactoryGirl.create(:beer)
-    address = FactoryGirl.create(:address)
-    shop = FactoryGirl.create(:shop,user: user)
-
-
-    visit shop_path(shop)
+    visit beer_path(beer1)
 
 
     expect {
@@ -63,7 +53,7 @@ describe 'Beers' do
       alert = page.driver.browser.switch_to.alert
       alert.accept
       sleep 2.seconds
-    }.to change(Shop, :count).by(-1)
+    }.to change(Beer, :count).by(-1)
 
   end
 
