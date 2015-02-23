@@ -3,73 +3,88 @@
 <div class="container">
   <div class="row-fluid">
     <div class="row-fluid margin-bottom-20">
-      <div class="span6">
-        <div class="headline"><h3>All Clubs</h3></div>
-        <% if current_user %>
-            <% if current_user.has_role? :admin %>
-                <% if @clubs_activ.count == 0 %>
-                    <div>Currently all clubs are activated.</div>
-                <% else %>
-                    <table class="table table-hover">
-                      <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th></th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <% @clubs_activ.each do |a| %>
-                          <tr>
-                            <td>
-                              <%= a.name %>
-                            </td>
-                            <td>
-                              <%= link_to("activate", edit_club_path(a, :active => true)) %>
-                            </td>
-                          </tr>
-                      <% end %>
-                      </tbody>
-                    </table>
-                <% end %>
-            <% end %>
-        <% end %>
-        <table class="table table-striped">
-          <thead>
-          <tr>
-            <th>Name</th>
-            <th>Url</th>
-            <th>User</th>
-            <th colspan="3"></th>
-          </tr>
-          </thead>
-          <tbody>
-          <% @clubs.each do |club| %>
-              <tr>
-                <td><%= club.name %></td>
-                <td><%= club.url %></td>
-                <td><%= "#{club.user.first_name},  #{club.user.last_name}" %></td>
-                <td>
-                  <% if can? :show, club %>
-                      <%= link_to 'Show', club %>
-                  <% end %></td>
-                <td>
-                  <% if can? :edit, club %>
-                      <%= link_to 'Edit', edit_club_path(club) %>
-                  <% end %></td>
-                <td>
-                  <% if can? :delete, club %>
-                      <%= link_to 'Destroy', club, method: :delete, data: {confirm: 'Are you sure?'} %>
-                  <% end %></td>
-              </tr>
-          <% end %>
-          </tbody>
-        </table>
-        <br>
-        <% if can? :create, Club %>
-            <%= link_to 'New Club', new_club_path, {:class => "btn btn-large btn-u-yellow btn-block btn-primary"} %>
-        <% end %>
-      </div>
+      <div class="booking-blocks">
+        <div class="overflow-hidden">
 
+          <div class="headline"><h3>All Clubs</h3></div>
+
+          <% if current_user %>
+              <% if current_user.has_role? :admin %>
+                  <% if @clubs_activ.count == 0 %>
+                      <div>Currently all clubs are activated.</div>
+                  <% else %>
+                      <table class="table table-hover">
+                        <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <% @clubs_activ.each do |a| %>
+                            <tr>
+                              <td style="vertical-align:middle;white-space:nowrap;">
+                                <%= a.name %>
+                              </td>
+                              <td width="100%"></td>
+                              <td style="vertical-align:middle;white-space:nowrap; ">
+                                <a class="btn btn-default btn-sm" href=<%= edit_club_path(a, :active => true) %>><i class="fa fa-check"></i> Activate</a>
+                              </td>
+                            </tr>
+                        <% end %>
+                        </tbody>
+                      </table>
+                  <% end %>
+              <% end %>
+          <% end %>
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>Name</th>
+              <th>Url</th>
+              <th>User</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @clubs.each do |club| %>
+                <tr>
+                  <td style="vertical-align:middle;white-space:nowrap;"><%= club.name %></td>
+                  <td style="vertical-align:middle;white-space:nowrap;"><%= club.url %></td>
+                  <td style="vertical-align:middle;white-space:nowrap;"><%= "#{club.user.first_name},  #{club.user.last_name}" %></td>
+                  <td width="100%"></td>
+                  <% if can? :show, club %>
+                      <td style="vertical-align:middle;white-space:nowrap; ">
+                        <a class="btn btn-default btn-sm" href=<%= clubs_path(club) %>><i class="fa fa-search"></i> Show</a>
+                      </td>
+                  <% else %>
+                      <td></td>
+                  <% end %>
+                  <% if can? :edit, club %>
+                      <td style="vertical-align:middle;white-space:nowrap; ">
+                        <a class="btn btn-default btn-sm" href=<%= edit_club_path(club) %>><i class="fa fa-pencil"></i>
+                          Edit</a>
+                      </td>
+                  <% else %>
+                      <td></td>
+                  <% end %>
+                  <% if can? :delete, club %>
+                      <td style="vertical-align:middle;white-space:nowrap;">
+                        <a class="btn btn-default btn-sm" data-confirm="Are you sure?" data-method="delete" rel="nofollow" href=<%= club_path(club) %>><i class="fa fa-trash-o fa-lg"></i>
+                          Destroy</a>
+                      </td>
+                  <% else %>
+                      <td></td>
+                  <% end %>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+          <br>
+          <% if can? :create, Club %>
+              <%= link_to 'New Club', new_club_path, {:class => "btn-u btn-large"} %>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
