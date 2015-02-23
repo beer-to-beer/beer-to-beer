@@ -9,24 +9,29 @@ describe 'Event' , :type => :feature do
     club1.user= user
     date = Faker::Time.forward(23, :morning)
 
-    fill_form(:event,:new, { title: input('event_title', Faker::Name.title.to_s) } )
-   select(club1.name, from: 'event_club_id')
+    input('event_title', Faker::Name.title.to_s)
+    select(club1.name, from: 'event_club_id')
     attach_file('event_imageURL', "#{Rails.root}/ace/app/assets/img/ace/uploads/event/image1.jpg")
-
-    select date.strftime('%Y'), :from => "event_sdate_1i" #year
-    select date.strftime('%B'), :from => "event_sdate_2i" #month
+    select date.strftime('%Y'), :from => "event_sdate_1i"
+    select date.strftime('%B'), :from => "event_sdate_2i"
     select date.strftime('%e').delete(' '), :from => 'event_sdate_3i'
-    select date.strftime('%H'), :from => "event_sdate_4i" #hour
-    select date.strftime('%M'), :from => "event_sdate_5i" #minute
+    select date.strftime('%H'), :from => "event_sdate_4i"
+    select date.strftime('%M'), :from => "event_sdate_5i"
 
     expect{click_button('Create Event')}.to change(Event, :count).by(1)
   end
-  it 'could be deleted event' do
+  it 'could be deleted event',:js => true do
     sign_in_admin
     club = FactoryGirl.create(:club)
     event = FactoryGirl.create(:event, club_id: club.id)
     visit "/events/#{event.id}"
 
-    expect{click_link 'Delete'}.to change(Event, :count).by(-1)
+    expect{
+      click_link('Destroy')
+      sleep 2.seconds
+      alert = page.driver.browser.switch_to.alert
+      alert.accept
+      sleep 2.seconds
+    }.to change(Event, :count).by(-1)
   end
 end
