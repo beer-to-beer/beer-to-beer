@@ -7,7 +7,7 @@ describe 'Shops' do
     beer2 = FactoryGirl.create(:beer)
     address = FactoryGirl.create(:address)
 
-    visit "/shops/new"
+    visit new_shop_path
     fill_form(:shop, {name: 'myShop'})
     fill_form(:address, { city: address.city, 'shop_address_attributes_postal_code'=> address.postal_code, street: address.street, house_number: address.house_number,country: address.country })
 
