@@ -69,6 +69,22 @@
 
 
     <div class="controls">
+        <%= f.label :email %>
+        <%= f.text_field :email, class: "span12" %>
+    </div>
+
+    <div class="controls">
+      <%= f.label :phonenumber %>
+      <%= f.text_field :phonenumber, class: "span12" %>
+    </div>
+
+    <div class="controls">
+      <%= f.label :website %>
+      <%= f.text_field :website, class: "span12" %>
+    </div>
+
+
+    <div class="controls">
       <div class="view view-tenth span6">
         <%= f.label :beer do %>
             Beers<span class="color-red"> *</span>
