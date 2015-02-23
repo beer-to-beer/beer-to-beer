@@ -1,11 +1,17 @@
-<% content_for :title, 'New Club' %>
-<% navigation_add 'Clubs', clubs_path %>
-<div class="container">
-    <div class= "headline">
-      <h1>New Club</h1>
+<div class="body">
+
+  <% content_for :title, 'New Club' %>
+  <% navigation_add 'Clubs', clubs_path %>
+
+  <div class="container">
+    <div class="row-fluid">
+
+      <%= render 'form' %>
+
+      <div class="glyphicons-demo">
+        <a class="glyphicons no-js left_arrow" href=<%= clubs_path %>><i></i>Back</a>
+      </div>
+
     </div>
-
-    <%= render 'form' %>
-
-    <%= link_to 'Back', clubs_path, {:class => "btn btn-large btn-primary"}%>
+  </div>
 </div>
