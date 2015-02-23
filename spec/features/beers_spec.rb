@@ -29,6 +29,10 @@ describe 'Beers' do
     click_link_or_button 'Edit'
 
     fill_form(:beer, {title: 'myBeer2'})
+<<<<<<< HEAD
+=======
+    fill form(:category, { "beer_category_attributes_name" => 'Category2' })
+>>>>>>> 7bac2619d6004957fa9f5b9b6279d9c9f9246e72
     fill_form(:producer, { "beer_producer_attributes_name" => 'Producer2' })
 
 
