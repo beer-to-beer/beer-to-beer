@@ -22,15 +22,18 @@ describe 'Beers', :type => :feature  do
   it 'can be edited' do
     user = sign_in_admin
     beer1 = FactoryGirl.create(:beer)
+    beerTitle = Faker::Lorem.word
+    producerName = Faker::Lorem.word
+    categoryName = Faker::Lorem.word
     visit beer_path(beer1)
     click_link_or_button 'Edit'
-    fill_in('beer_title',with: 'myBeer2')
-    fill_in('beer_producer_attributes_name' , with: 'Producer2')
-    fill_in('beer_category_attributes_name' , with: 'Category2')
+    fill_in('beer_title',with: beerTitle)
+    fill_in('beer_producer_attributes_name' , with: producerName)
+    fill_in('beer_category_attributes_name' , with: categoryName)
     click_link_or_button 'Update Beer'
-    expect(page).to have_content 'myBeer2'
-    expect(page).to have_content 'Producer2'
-    expect(page).to have_content 'Category2'
+    expect(page).to have_content beerTitle
+    expect(page).to have_content producerName
+    expect(page).to have_content categoryName
 
   end
 
