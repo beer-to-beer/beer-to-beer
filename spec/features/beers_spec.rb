@@ -10,7 +10,7 @@ describe 'Beers', :type => :feature  do
     fill_in('beer_title', with: 'myBeer')
     fill_in('beer_producer_attributes_name', with: producer.name)
     fill_in('beer_category_attributes_name', with: category.name)
-
+    attach_file('beer_beerURL', "#{Rails.root}/ace/app/assets/img/ace/uploads/event/image1.jpg")
     expect { click_button 'Create Beer' }.to change { Beer.count }.by(1)
     visit beer_path(Beer.find_by_title('myBeer').id)
     expect(page).to have_content 'myBeer'
