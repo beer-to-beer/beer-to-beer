@@ -25,10 +25,12 @@ describe 'Beers', :type => :feature  do
     visit beer_path(beer1)
     click_link_or_button 'Edit'
     fill_in('beer_title',with: 'myBeer2')
-    fill_in("beer_producer_attributes_name" , with: 'Producer2')
+    fill_in('beer_producer_attributes_name' , with: 'Producer2')
+    fill_in('beer_category_attributes_name' , with: 'Category2')
     click_link_or_button 'Update Beer'
     expect(page).to have_content 'myBeer2'
     expect(page).to have_content 'Producer2'
+    expect(page).to have_content 'Category2'
 
   end
 
