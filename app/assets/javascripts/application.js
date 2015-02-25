@@ -24,16 +24,13 @@
 //= require javascripts/ace/pages/index.js
 //= require jquery.barrating.js
 //= require turbolinks
-jQuery(document).ready(function() {
-    App.init();
-    App.initSliders();
-    Index.initRevolutionSlider();
-    });
+App.init();
+App.initSliders();
+Index.initRevolutionSlider();
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-29166220-1']);
 _gaq.push(['_setDomainName', 'htmlstream.com']);
 _gaq.push(['_trackPageview']);
-
 (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
