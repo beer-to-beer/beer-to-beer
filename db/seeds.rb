@@ -20,6 +20,7 @@ christopher = User.create(:email => "christopher@beer.com", :password => 'Chris1
 christopher.add_role :user
 
 
+
 ca = Category.create(name: "Weizen")
 ca1 = Category.create(name: "Pils")
 
