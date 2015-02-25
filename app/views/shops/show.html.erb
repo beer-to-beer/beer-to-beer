@@ -1,5 +1,5 @@
-<% content_for :title, 'Shop' %>
-<% navigation_add 'Shop', shops_path %>
+<% content_for :title, 'Shops' %>
+<% navigation_add 'Shops', shops_path %>
 
 <div id="map" class="map margin-bottom-40">
 </div>
@@ -50,7 +50,7 @@
 
 <div class="container glyphicons-demo" style="text-align: center">
   <a class="glyphicons no-js left_arrow" href=<%= shops_path %>><i></i>Back</a>
-  <% if can? :edit, Shop %>
+  <% if can? :edit, @shop %>
       <a class="glyphicons no-js edit" href=<%= edit_shop_path(@shop) %>><i></i>Edit</a>
   <% end %>
   <% if can? :delete, @shop %>

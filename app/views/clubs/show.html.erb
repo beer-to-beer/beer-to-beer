@@ -1,87 +1,94 @@
-<% content_for :title, @club.name %>
+<% content_for :title, 'Clubs' %>
 <% navigation_add 'Clubs', clubs_path %>
-<div class="container">
-  <p id="notice"><%= notice %></p>
 
-  <div class= "headline">
-    <h3>Club: <%= @club.name %></h3>
-  </div>
-
-  <div class="row-fluid">
-    <%= image_tag @club.clubURL, size: "1200x500", alt: "#{@club.name} Bild" %>
-  </div>
-
-  <div class="container portfolio-columns">
-    <div class="row-fluid">
-      <div class="view view-tenth span6">
-
-        <h2>Location</h2>
-        <%= @club.address.street %>
-        <%= @club.address.house_number %><br>
-        <%= @club.address.city %><br>
-        <%= @club.address.postal_code %><br>
-        <%= @club.address.country %>
-      </div>
-      <div class="view view-tenth span6">
-        <br/>
-        <div id="map" class="map margin-bottom-40">
-        </div>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="view view-tenth span6">
-        <h2>Website</h2>
-        <%= link_to @club.url, @club.url, :target => "_blank" %>
-      </div>
-      <div class="view view-tenth span6">
-        <h2>Owner</h2>
-        Name:  <%= "#{@club.user.first_name} #{@club.user.last_name}" %><br>
-        E-Mail: <%= mail_to(@club.user.email , @club.user.email) %>
-      </div>
-    </div>
-  </div>
-  <div class= "headline">
-    <h3>Beers</h3>
-  </div>
-  <div class="row-fluid margin-bottom-10">
-    <div class="bx-wrapper">
-      <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 218px;">
-        <% @club.beers.each do |b| %>
-            <li style="float: left; list-style: none; position: relative; width: 173.5px; margin-right: 10px;">
-              <%= link_to(image_tag(b.beerURL.thumb), b) %>
-
-            </li>
-        <% end %>
-      </div>
-    </div>
-  </div>
-
-  <div class= "headline">
-    <h3>Events</h3>
-  </div>
-  <div class="row-fluid margin-bottom-10">
-    <div class="bx-wrapper">
-      <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 218px;">
-        <% @club.events.each do |p| %>
-            <% if p.sdate >= Date.current.to_date %>
-                <li style="float: left; list-style: none; position: relative; width: 173.5px; margin-right: 10px;">
-                  <%= link_to(image_tag(p.imageURL), p) %>
-                  <p><%= p.sdate.to_date %></p>
-                </li>
-            <% end %>
-        <% end %>
-      </div>
-    </div>
-  </div>
-
-  <% if can? :create, Event %>
-      <%= link_to 'New Event', new_event_path(:club_id => @club.id ), {:class => "btn btn-large btn-primary"}%>
-  <% end %>
-  <% if can? :edit, @club %>
-      <%= link_to 'Edit', edit_club_path(@club) , {:class => "btn btn-large btn-primary"}%>
-  <% end %>
-  <%= link_to 'Back', clubs_path , {:class => "btn btn-large btn-primary"}%>
+<div id="map" class="map margin-bottom-40">
 </div>
-<script type="text/javascript">
-    Contact.initMap('<%= @club.address.city.to_s + ' ' +  @club.address.street.to_s + ' ' + @club.address.house_number.to_s %>')
-</script>
+
+
+<div class="container">
+  <div class="row-fluid margin-bottom-20">
+
+    <div class="booking-blocks">
+
+      <div class="overflow-hidden">
+
+        <div class="headline"><h3><%= @club.name %></h3></div>
+
+        <div class="view view-tenth">
+
+          <ul class="unstyled who margin-bottom-20">
+            <li>
+              <a><i class="fa fa-home"></i><%= @club.address.street + " " + @club.address.house_number + ", " + @club.address.postal_code.to_s + " " + @club.address.city + ", " + @club.address.country %>
+              </a></li>
+            <li>
+              <a href=<%= @club.url %>><i class="fa fa-globe"></i><%= link_to @club.url, @club.url, :target => "_blank" %>
+              </a></li>
+            <li><a><i class="fa fa-user"></i> <%= "#{@club.user.first_name} #{@club.user.last_name}" %></a></li>
+            <li><a href=mailto:<%= @club.user.email %>><i class="fa fa-envelope"></i><%= @club.user.email %></a></li>
+          </ul>
+
+        </div>
+
+        <div class="row-fluid">
+          <%= image_tag @club.clubURL, size: "1200x500", alt: "#{@club.name} Bild" %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid margin-bottom-20">
+
+    <div class="booking-blocks">
+
+      <div class="overflow-hidden">
+
+        <div class="headline"><h3>Beers</h3></div>
+
+        <ul class="unstyled who margin-bottom-20">
+          <% @club.beers.each do |a| %>
+              <li><a href=<%= beer_path(a) %>><i class="fa fa-beer"></i><%= a.title %></a></li>
+          <% end %>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row-fluid margin-bottom-20">
+
+    <div class="booking-blocks">
+
+      <div class="overflow-hidden">
+
+        <div class="headline"><h3>Events</h3></div>
+
+        <ul class="unstyled who margin-bottom-20">
+          <% @club.events.each do |a| %>
+              <li><a href=<%= event_path(a) %>><i class="fa fa-beer"></i><%= a.title %></a></li>
+          <% end %>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container glyphicons-demo" style="text-align: center">
+  <a class="glyphicons no-js left_arrow" href=<%= clubs_path %>><i></i>Back</a>
+  <% if can? :edit, @club %>
+      <a class="glyphicons no-js edit" href=<%= edit_club_path(@club) %>><i></i>Edit</a>
+  <% end %>
+  <% if can? :delete, @club %>
+      <a class="glyphicons no-js delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" href=<%= club_path(@club) %>><i></i>
+        Destroy</a>
+  <% end %>
+</div>
+
+  <script type="text/javascript">
+      Contact.initMap('<%= @club.address.city.to_s + ' ' +  @club.address.street.to_s + ' ' + @club.address.house_number.to_s %>')
+  </script>
