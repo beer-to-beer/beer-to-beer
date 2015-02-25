@@ -44,8 +44,8 @@
       <div class="overflow-hidden">
         <div class="headline"><h3>Beers</h3></div>
 
-            <ul class="unstyled who margin-bottom-20">
-              <% @i = 0 %>
+          <ul class="unstyled who margin-bottom-20">
+            <% @i = 0 %>
               <% @club.beers.each do |beer| %>
                   <% @i = @i +1 %>
                 <li class="span3">
@@ -58,10 +58,11 @@
                     <p> A beer of the category <%= beer.category.name %> bottled by <%= beer.producer.name %>. Click to see ratings and more information.  </p>
                   </div>
                 </li>
-                  <% if @i = 4 %>
+                  <% if @i == 4 %>
                     <% @i = 0 %>
-                      </ul>
-                      <ul>
+                    </ul>
+
+                    <ul class="unstyled who margin-bottom-20">
                   <% end %>
               <% end %>
             </ul>
@@ -81,10 +82,10 @@
 
 
         <ul class="unstyled who margin-bottom-20">
-          <% @i = 0 %>
+          <% @e = 0 %>
           <% @club.events.each do |event| %>
-              <% @i = @i +1 %>
-              <li class="span3">
+              <% @e = @e + 1 %>
+              <li class="span4">
                 <div class="thumbnail-style thumbnail-kenburn">
                   <div class="thumbnail-img">
                     <div class="myoverflow-hidden"><img style=" position: absolute;top: -9999px;bottom: -9999px;left: -9999px;right: -9999px;margin: auto;" src="<%= event.imageURL %> " alt="" /></div>
@@ -94,10 +95,10 @@
 
                 </div>
               </li>
-              <% if @i = 4 %>
-                  <% @i = 0 %>
+              <% if @e == 3 %>
+                  <% @e = 0 %>
                   </ul>
-                  <ul>
+                  <ul class="unstyled who margin-bottom-20">
               <% end %>
           <% end %>
           </ul>
