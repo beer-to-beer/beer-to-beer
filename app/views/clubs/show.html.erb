@@ -40,19 +40,31 @@
 
 <div class="container">
   <div class="row-fluid margin-bottom-20">
-
     <div class="booking-blocks">
-
       <div class="overflow-hidden">
-
         <div class="headline"><h3>Beers</h3></div>
 
-        <ul class="unstyled who margin-bottom-20">
-          <% @club.beers.each do |a| %>
-              <li><a href=<%= beer_path(a) %>><i class="fa fa-beer"></i><%= a.title %></a></li>
-          <% end %>
-        </ul>
-
+            <ul class="unstyled who margin-bottom-20">
+              <% @i = 0 %>
+              <% @club.beers.each do |beer| %>
+                  <% @i = @i +1 %>
+                <li class="span3">
+                  <div class="thumbnail-style thumbnail-kenburn">
+                    <div class="thumbnail-img">
+                      <div class="myoverflow-hidden"><img style=" position: absolute;top: -9999px;bottom: -9999px;left: -9999px;right: -9999px;margin: auto;" src="<%= beer.beerURL %> " alt="" /></div>
+                      <%= link_to "read more +", beer, html_options = { class: "btn-more hover-effect" } %>
+                    </div>
+                    <h3><a class="hover-effect" href="<%= beer_path(beer) %>>"><%= beer.title %></a></h3>
+                    <p> A beer of the category <%= beer.category.name %> bottled by <%= beer.producer.name %>. Click to see ratings and more information.  </p>
+                  </div>
+                </li>
+                  <% if @i = 4 %>
+                    <% @i = 0 %>
+                      </ul>
+                      <ul>
+                  <% end %>
+              <% end %>
+            </ul>
       </div>
     </div>
   </div>
@@ -67,11 +79,29 @@
 
         <div class="headline"><h3>Events</h3></div>
 
+
         <ul class="unstyled who margin-bottom-20">
-          <% @club.events.each do |a| %>
-              <li><a href=<%= event_path(a) %>><i class="fa fa-beer"></i><%= a.title %></a></li>
+          <% @i = 0 %>
+          <% @club.events.each do |event| %>
+              <% @i = @i +1 %>
+              <li class="span3">
+                <div class="thumbnail-style thumbnail-kenburn">
+                  <div class="thumbnail-img">
+                    <div class="myoverflow-hidden"><img style=" position: absolute;top: -9999px;bottom: -9999px;left: -9999px;right: -9999px;margin: auto;" src="<%= event.imageURL %> " alt="" /></div>
+                    <%= link_to event.title, event, html_options = { class: "btn-more hover-effect" } %>
+                  </div>
+                  <h3><a class="hover-effect" href="<%= event_path(event) %>>"><%= event.title %><br/><%= event.sdate.strftime('%e %B %Y') %></a></h3>
+
+                </div>
+              </li>
+              <% if @i = 4 %>
+                  <% @i = 0 %>
+                  </ul>
+                  <ul>
+              <% end %>
           <% end %>
-        </ul>
+          </ul>
+
 
       </div>
     </div>
