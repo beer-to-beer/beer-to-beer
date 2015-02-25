@@ -15,16 +15,6 @@
           <br>
           <a class="glyphicons no-js beer" href="#"><i></i> <strong>Producer:</strong><%= @beer.producer.name %></a>
         </div>
-
-        <%= link_to 'Rate', new_rating_path(:beer_id => @beer.id) %> |
-        <%= link_to 'All Ratings', ratings_path(:beer_id => @beer.id) %> |
-        <% if can? :update, @beer %>
-            <%= link_to 'Edit', edit_beer_path(@beer) %> |
-        <% end %>
-        <% if can? :delete, @beer %>
-            <%= link_to 'Delete',@rating, method: :delete, data: {confirm: 'Are you sure?'}%> |
-        <% end %>
-        <%= link_to 'Back', beers_path %>
       </div>
       <div>
       </div>
@@ -57,6 +47,21 @@
           </div>
         </div>
     <% end %>
+
+    <div class="container glyphicons-demo" style="text-align: center">
+      <a class="glyphicons no-js left_arrow" href=<%= beers_path %>><i></i>Back</a>
+      <% if can? :edit, Beer %>
+          <a class="glyphicons no-js edit" href=<%= edit_beer_path(@beer) %>><i></i>Edit</a>
+      <% end %>
+      <% if can? :create, Rating %>
+          <a class="glyphicons no-js star" href=<%= new_rating_path(:beer_id => @beer.id) %>><i></i>Rate</a>
+      <% end %>
+      <% if can? :delete, @beer %>
+          <a class="glyphicons no-js delete" data-confirm="Are you sure?" data-method="delete" rel="nofollow" href=<%= beer_path(@beer) %>><i></i>
+            Destroy</a>
+      <% end %>
+    </div>
+
   </div>
 </div>
 <script>
