@@ -21,10 +21,13 @@
                       </tr>
                       <% @events_club_inaktiv.each do |event| %>
                           <tr>
-                            <td width="30%" align="left"><%= link_to event.title, event %></td>
+                            <td width="20%" align="left"><%= event.title %></td>
                             <td width="20%" align="left"><%= event.sdate.to_date.to_s(:rfc822) %></td>
                             <td width="20%" align="left"><%= event.sdate.to_s(:time) %></td>
                             <td width="20%" align="left"><%= link_to event.club.name, event.club %></td>
+                            <td width="10%" align="left" style="vertical-align:middle;white-space:nowrap; ">
+                               <a class="btn btn-default btn-sm" href=<%= event_path(event) %>><i class="fa fa-search"></i> Show</a>
+                            </td>
                             <td width="10%" align="left" style="vertical-align:middle;white-space:nowrap; ">
                               <a class="btn btn-default btn-sm" href=<%= edit_event_path(event) %>><i class="fa fa-pencil"></i>
                                 Edit</a>
@@ -49,10 +52,13 @@
                       </tr>
                       <% @events_old.each do |event| %>
                           <tr>
-                            <td width="30%" align="left"><%= link_to event.title, event %></td>
+                            <td width="20%" align="left"><%= event.title %></td>
                             <td width="20%" align="left"><%= event.sdate.to_date.to_s(:rfc822) %></td>
                             <td width="20%" align="left"><%= event.sdate.to_s(:time) %></td>
                             <td width="20%" align="left"><%= event.club.name %></td>
+                            <td width="10%" align="left" style="vertical-align:middle;white-space:nowrap; ">
+                              <a class="btn btn-default btn-sm" href=<%= event_path(event) %>><i class="fa fa-search"></i> Show</a>
+                            </td>
                             <td width="10%" align="left" style="vertical-align:middle;white-space:nowrap; ">
                               <a class="btn btn-default btn-sm" href=<%= edit_event_path(event) %>><i class="fa fa-pencil"></i>
                                 Edit</a>
