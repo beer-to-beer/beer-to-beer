@@ -42,7 +42,7 @@ describe 'Beers', :type => :feature  do
     beer1 = FactoryGirl.create(:beer)
     visit beer_path(beer1)
     expect {
-      click_link_or_button('Delete')
+      click_link_or_button('Destroy')
       sleep 2.seconds
       alert = page.driver.browser.switch_to.alert
       alert.accept

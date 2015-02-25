@@ -3,7 +3,7 @@ class Event < ActiveRecord::Base
   mount_uploader :imageURL, ImageUploader
   accepts_nested_attributes_for :club
   #validates :club_id, :title, presence: true
-  validate :club_id, presence: true
+  validates :club_id, presence: true
   before_destroy :remember_image
   after_destroy :remove_img
 

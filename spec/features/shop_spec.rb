@@ -9,7 +9,7 @@ describe 'Shops' do
 
 
     shop_mail = Faker::Internet.email
-    shop_phone = Faker::Number.number(10)
+    shop_phone = 123456789
     shop_website = Faker::Internet.domain_name
     visit new_shop_path
     fill_form(:shop, {name: 'myShop', email: shop_mail , 'shop_phonenumber' => shop_phone,website: shop_website })
@@ -38,7 +38,7 @@ describe 'Shops' do
     shop = FactoryGirl.create(:shop,user: user)
 
     shop_mail = Faker::Internet.email
-    shop_phone = Faker::Number.number(10)
+    shop_phone = 123456789
     shop_website = Faker::Internet.domain_name
 
     visit shop_path(shop)
