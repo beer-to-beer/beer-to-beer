@@ -1,4 +1,4 @@
-# bier-to-bier
+# Beer To Beer
 
 ##Heroku App
 
