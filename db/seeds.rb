@@ -36,9 +36,9 @@ b4 = Beer.create(title: "Erdinger", category_id: ca.id, producer_id: pr3.id, bee
 b5 = Beer.create(title: "Heineken", category_id: ca1.id, producer_id: pr2.id, beerURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/beer/Heineken.jpg", :encoding => "UTF-8"))
 
 
-cl = Club.create(name: "Beer Club" , address_id: ad.id , user_id: user.id, active: false, beer_ids:[b1.id, b2.id,b3.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club1.jpg", :encoding => "UTF-8") )
-cl1 = Club.create(name: "Club of Beer" , address_id: ad.id , user_id: thorsten.id, active: true, beer_ids:[b2.id, b3.id,b4.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club2.jpg", :encoding => "UTF-8"))
-cl2 = Club.create(name: "The Club" , address_id: ad.id , user_id: christopher.id, active: true, beer_ids:[b3.id, b4.id,b5.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club3.jpg", :encoding => "UTF-8"))
+cl = Club.create(name: "Beer Club" , address_id: ad.id , user_id: user.id, active: false, url: "http://www.google.de" ,beer_ids:[b1.id, b2.id,b3.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club1.jpg", :encoding => "UTF-8") )
+cl1 = Club.create(name: "Club of Beer" , address_id: ad.id , user_id: thorsten.id, active: true, url: "http://www.google.de", beer_ids:[b2.id, b3.id,b4.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club2.jpg", :encoding => "UTF-8"))
+cl2 = Club.create(name: "The Club" , address_id: ad.id , user_id: christopher.id, active: true, url: "http://www.google.de", beer_ids:[b3.id, b4.id,b5.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club3.jpg", :encoding => "UTF-8"))
 
 Event.create(title: "Event 1", sdate: Faker::Time.forward(23, :morning).change(year: 2016), club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image1.jpg", :encoding => "UTF-8"))
 Event.create(title: "Event 2", sdate: Faker::Time.forward(23, :morning).change(year: 2016), club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image2.jpg", :encoding => "UTF-8"))
