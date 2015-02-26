@@ -25,7 +25,7 @@ rake db:seed
 ```
 
 ##
-##Testnutzer:
+##Testnutzer
 **Admin**
  - admin@beer.com Passwort: Admin123
  
