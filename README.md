@@ -23,3 +23,14 @@ rake db:seed
 ```
 
 ##
+
+
+User können…
+-	Sich registrieren und einloggen
+-	Eigene Biere erstellen
+-	Biere Bewerten
+-	Sich durchschnittliche Bewertungen und Bewertungen anderer User ansehen
+-	Shops erstellen und angeben welche Biere dort verkauft werden
+-	Clubs erstellen
+-	Events erstellen, die in ihren Clubs stattfinden
+-	Angeben welche Biere in ihrem Club oder auf ihrem Event ausgeschenkt werden
