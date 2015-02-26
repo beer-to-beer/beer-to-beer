@@ -8,6 +8,7 @@ class CreateShops < ActiveRecord::Migration
       t.string :website
       t.integer :user_id
       t.timestamps
+      t.boolean :active
     end
   end
 end

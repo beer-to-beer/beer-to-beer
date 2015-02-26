@@ -8,6 +8,35 @@
 
           <div class="headline"><h3>All Shops</h3></div>
 
+          <% if current_user %>
+              <% if current_user.has_role? :admin %>
+                  <% if @shops_activ.count == 0 %>
+                      <div>Currently all Shops are activated.</div>
+                  <% else %>
+                      <table class="table table-hover">
+                        <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <% @shops_activ.each do |a| %>
+                            <tr>
+                              <td style="vertical-align:middle;white-space:nowrap;">
+                                <%= a.name %>
+                              </td>
+                              <td width="100%"></td>
+                              <td style="vertical-align:middle;white-space:nowrap; ">
+                                <a class="btn btn-default btn-sm" href=<%= edit_shop_path(a, :active => true) %>><i class="fa fa-check"></i> Activate</a>
+                              </td>
+                            </tr>
+                        <% end %>
+                        </tbody>
+                      </table>
+                  <% end %>
+              <% end %>
+          <% end %>
           <table class="table table-hover">
             <thead>
             <tr>

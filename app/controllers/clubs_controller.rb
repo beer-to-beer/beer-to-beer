@@ -13,8 +13,6 @@ class ClubsController < ApplicationController
     @clubs = Club.where(active: true)
     @clubs_activ = Club.where(active: false)
 
-
-    #
   end
 
   # GET /clubs/1

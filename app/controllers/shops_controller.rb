@@ -5,7 +5,9 @@ class ShopsController < ApplicationController
 
 
   def index
-    @shops = Shop.all
+    @shops = Shop.where(active: true)
+    @shops_activ = Shop.where(active: false)
+
   end
 
   def show
@@ -13,7 +15,7 @@ class ShopsController < ApplicationController
 
   def new
     @shop = Shop.new
-    address=@shop.build_address
+    @shop.build_address
   end
 
   def edit
@@ -21,6 +23,18 @@ class ShopsController < ApplicationController
 
   def create
     @shop = Shop.new (shop_params)
+
+    if (@shop.active == true and current_user.has_role? :admin)
+      @shop.active = true
+    else
+      @shop.active = false
+    end
+    if (current_user.has_role? :admin)
+      #@club.user = club_params.user <- so wars vorher thorsten
+      @shop.user = User.find( shop_params[:user_id])
+    else
+      @shop.user = current_user
+    end
 
     respond_to { |format|
       if @shop.save
@@ -61,6 +75,6 @@ class ShopsController < ApplicationController
     end
 
     def shop_params
-      params.require(:shop).permit(:name, :user_id , :email, :phonenumber, :website, address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
+      params.require(:shop).permit(:name, :user_id , :email, :phonenumber, :website, :active , address_attributes: [:city, :postal_code, :street, :house_number, :country], beer_ids: [] )
     end
 end

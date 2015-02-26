@@ -6,6 +6,5 @@ class Club < ActiveRecord::Base
   belongs_to :user
   accepts_nested_attributes_for :address, :beers, :user
   mount_uploader :clubURL, ImageUploader
-  #validates :address_id, presence: true
 
 end

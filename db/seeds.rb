@@ -40,15 +40,15 @@ cl = Club.create(name: "Beer Club" , address_id: ad.id , user_id: user.id, activ
 cl1 = Club.create(name: "Club of Beer" , address_id: ad.id , user_id: thorsten.id, active: true, beer_ids:[b2.id, b3.id,b4.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club2.jpg", :encoding => "UTF-8"))
 cl2 = Club.create(name: "The Club" , address_id: ad.id , user_id: christopher.id, active: true, beer_ids:[b3.id, b4.id,b5.id], clubURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/club/club3.jpg", :encoding => "UTF-8"))
 
-Event.create(title: "Test1", sdate: Date.current, club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image1.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test2", sdate: Date.current, club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image2.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test3", sdate: Date.current, club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image3.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test4", sdate: Date.current, club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image4.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test5", sdate: Date.current, club_id: cl2.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image3.jpg", :encoding => "UTF-8"))
-Event.create(title: "Test6", sdate: Date.current, club_id: cl2.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image4.jpg", :encoding => "UTF-8"))
+Event.create(title: "Event 1", sdate: Faker::Time.forward(23, :morning).change(year: 2016), club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image1.jpg", :encoding => "UTF-8"))
+Event.create(title: "Event 2", sdate: Faker::Time.forward(23, :morning).change(year: 2016), club_id: cl.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image2.jpg", :encoding => "UTF-8"))
+Event.create(title: "Event 3", sdate: Faker::Time.forward(23, :morning).change(year: 2016), club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image3.jpg", :encoding => "UTF-8"))
+Event.create(title: "Event 4", sdate: Faker::Time.forward(23, :morning).change(year: 2016), club_id: cl1.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image4.jpg", :encoding => "UTF-8"))
+Event.create(title: "Event 5", sdate: Faker::Time.forward(23, :morning).change(year: 2016), club_id: cl2.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image3.jpg", :encoding => "UTF-8"))
+Event.create(title: "Event 6", sdate: Faker::Time.forward(23, :morning).change(year: 2016), club_id: cl2.id, imageURL: File.new("#{Rails.root}/ace/app/assets/img/ace/uploads/event/image4.jpg", :encoding => "UTF-8"))
 
-sh = Shop.create(name: "XXL Beerhouse", address_id: ad.id, website: "www.xxlbeerhouse.de", phonenumber: "123456789", email: "info@xxlbeerhouse.de", beer_ids:[b1.id, b2.id,b3.id] )
-sh1 = Shop.create(name: "House of Beer", address_id: ad.id, website: "www.houseofbeer.de", phonenumber: "123456789", email: "info@houseofbeer.de", beer_ids:[b3.id, b4.id,b5.id] )
+sh = Shop.create(name: "XXL Beerhouse", address_id: ad.id, website: "www.xxlbeerhouse.de", phonenumber: "123456789", email: "info@xxlbeerhouse.de", active: false ,beer_ids:[b1.id, b2.id,b3.id] )
+sh1 = Shop.create(name: "House of Beer", address_id: ad.id, website: "www.houseofbeer.de", phonenumber: "123456789", email: "info@houseofbeer.de", active: true, beer_ids:[b3.id, b4.id,b5.id] )
 
 
 r1 = Rating.create(beer_id: b1.id, user_id:jan.id, headline:"Ganz okay", comment:"consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt" )
