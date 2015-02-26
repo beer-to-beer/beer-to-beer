@@ -1,5 +1,7 @@
 # bier-to-bier
 
+##Heroku App
+
 [![Beer-To-Beer](http://beertobeer.herokuapp.com/assets/img/ace/logo.png)](http://beertobeer.herokuapp.com)
 
 ## Getting Started
@@ -23,9 +25,16 @@ rake db:seed
 ```
 
 ##
+##Testnutzer:
+**Admin**
+ - admin@beer.com Passwort: Admin123
+ 
+**User**
+ - user@beer.com Passwort: User1234
 
+##Userstorys
 
-User können…
+**User können…**
 -	Sich registrieren und einloggen
 -	Eigene Biere erstellen
 -	Biere Bewerten
@@ -34,3 +43,7 @@ User können…
 -	Clubs erstellen
 -	Events erstellen, die in ihren Clubs stattfinden
 -	Angeben welche Biere in ihrem Club oder auf ihrem Event ausgeschenkt werden
+
+**Admins können...**
+- von Usern angelegt Clubs/Shops für die Website frei geben
+- sämtliche Beiträge einsehen, editieren und löschen
