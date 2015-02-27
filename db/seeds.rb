@@ -1,4 +1,5 @@
 #encoding: utf-8
+require 'faker'
 ad = Address.create(city:  'Münster' , postal_code: '48149', street: 'Corrensstraße', house_number: '25', country: 'Germany' )
 
 admin = User.create(:email => "admin@beer.com", :password => 'Admin123', :password_confirmation => 'Admin123', :first_name => 'Admin', :last_name => 'Admin', :address_id => ad.id)
