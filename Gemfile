@@ -14,7 +14,7 @@ gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring', '1.2.0',        group: :development
-
+gem 'faker', '1.4.3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -64,7 +64,7 @@ group :development, :test do
   gem 'selenium-webdriver', '>=2.45.0.dev3'
   gem 'factory_girl_rails', '4.5.0'
   gem 'guard-rspec', '4.5.0'
-  gem 'faker', '1.4.3'
+
   #erleichterte formularausfüllung bei rspec tests
   gem 'formulaic'
  # gem 'better_errors'
